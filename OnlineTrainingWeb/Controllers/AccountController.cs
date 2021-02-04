@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Model;
 using OnlineTrainingWeb.ViewModel;
+using System;
 
 namespace OnlineTrainingWeb.Controllers
 {
@@ -149,7 +150,13 @@ namespace OnlineTrainingWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+
+                var CurrentDate = Convert.ToDateTime(model.CreatedDate.ToLongDateString());
+                var CurrentTime = Convert.ToDateTime(model.CreatedTime.ToLongTimeString());
+
+                var CurrentDateTime= new DateTime(CurrentDate.Year, CurrentDate.Month, CurrentDate.Day, CurrentTime.Hour, CurrentTime.Minute, CurrentTime.Second);
+
+                var user = new ApplicationUser {FullName=model.FullName, UserName = model.Email, Email = model.Email,CreatedData=CurrentDateTime };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

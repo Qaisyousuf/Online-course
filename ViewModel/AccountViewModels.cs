@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace OnlineTrainingWeb.ViewModel
@@ -65,6 +66,10 @@ namespace OnlineTrainingWeb.ViewModel
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name ="Full Name")]
+        public string FullName { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -79,6 +84,15 @@ namespace OnlineTrainingWeb.ViewModel
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+
+        [DataType(DataType.Date)]
+        [Display(Name ="Created Date")]
+        public DateTime CreatedDate { get; set; }
+
+        [DataType(DataType.Time)]
+        [Display(Name = "Created Time")]
+        public DateTime CreatedTime { get; set; }
     }
 
     public class ResetPasswordViewModel

@@ -64,11 +64,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="ForLearner.cs" />
+    <Compile Include="HomeBanner.cs" />
+    <Compile Include="HomeCourseSection.cs" />
+    <Compile Include="HomeExplorationBanner.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="OurVision .cs" />
+    <Compile Include="OurVisionExplation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

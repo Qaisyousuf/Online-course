@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="CountryName.cs" />
+    <Compile Include="CourseContentExplanation.cs" />
+    <Compile Include="COVID-19.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="ForLearner.cs" />
     <Compile Include="HomeBanner.cs" />
@@ -71,8 +74,13 @@
     <Compile Include="HomeExplorationBanner.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="OurVision .cs" />
+    <Compile Include="OurVisionBanner.cs" />
     <Compile Include="OurVisionExplation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizBasicInfo.cs" />
+    <Compile Include="QuizContent.cs" />
+    <Compile Include="UserbenefitsContents.cs" />
+    <Compile Include="UserBenefitsSection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

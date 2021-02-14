@@ -92,6 +92,7 @@
     <Compile Include="HomeBannerViewModel.cs" />
     <Compile Include="HomeCourseSectionViewModel.cs" />
     <Compile Include="HomeExplorationBannerViewModel.cs" />
+    <Compile Include="HomePageViewModel.cs" />
     <Compile Include="ManageViewModels.cs" />
     <Compile Include="OurVisionBannerViewModel.cs" />
     <Compile Include="OurVisionExplationViewModel.cs" />

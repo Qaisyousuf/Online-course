@@ -99,6 +99,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuizBasicInfoViewModel.cs" />
     <Compile Include="QuizContentViewModel.cs" />
+    <Compile Include="QuizPageViewModel.cs" />
+    <Compile Include="QuizQuestionViewModel.cs" />
     <Compile Include="UserbenefitsContentsViewModel.cs" />
     <Compile Include="UserBenefitsSectionViewModel.cs" />
   </ItemGroup>

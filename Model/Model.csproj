@@ -79,6 +79,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuizBasicInfo.cs" />
     <Compile Include="QuizContent.cs" />
+    <Compile Include="QuizPage.cs" />
+    <Compile Include="QuizQuestion.cs" />
     <Compile Include="UserbenefitsContents.cs" />
     <Compile Include="UserBenefitsSection.cs" />
   </ItemGroup>

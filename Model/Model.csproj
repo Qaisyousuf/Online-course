@@ -74,6 +74,8 @@
     <Compile Include="HomeCourseSection.cs" />
     <Compile Include="HomeExplorationBanner.cs" />
     <Compile Include="HomePage.cs" />
+    <Compile Include="HowOnlineTrainingWorks.cs" />
+    <Compile Include="Onlinetrainingbenefits.cs" />
     <Compile Include="OurVision .cs" />
     <Compile Include="OurVisionBanner.cs" />
     <Compile Include="OurVisionExplation.cs" />
@@ -82,6 +84,9 @@
     <Compile Include="QuizContent.cs" />
     <Compile Include="QuizPage.cs" />
     <Compile Include="QuizQuestion.cs" />
+    <Compile Include="SubscriptionContent.cs" />
+    <Compile Include="SubscriptionSystem.cs" />
+    <Compile Include="TrainerIntro.cs" />
     <Compile Include="UserbenefitsContents.cs" />
     <Compile Include="UserBenefitsSection.cs" />
   </ItemGroup>

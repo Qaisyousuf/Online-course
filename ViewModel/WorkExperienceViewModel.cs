@@ -9,7 +9,7 @@ namespace ViewModel
     {
         public WorkExperienceViewModel()
         {
-            WorkExperienceTags = new List<WorkExperienceTags>();
+            WorkExperTags = new List<WorkExperienceTags>();
         }
         public int Id { get; set; }
 
@@ -28,10 +28,6 @@ namespace ViewModel
         [DataType(DataType.Url)]
         public string AnimationUrl { get; set; }
 
-        [Display(Name = "Tags Id")]
-        public int TagsId { get; set; }
-
-        [ForeignKey("TagsId")]
-        public List<WorkExperienceTags> WorkExperienceTags { get; set; }
+        public virtual ICollection<WorkExperienceTags> WorkExperTags { get; set; }
     }
 }

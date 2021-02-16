@@ -109,11 +109,13 @@
     <Compile Include="SubscriptionContentViewModel.cs" />
     <Compile Include="SubscriptionSystemViewModel.cs" />
     <Compile Include="TrainerIntroViewModel.cs" />
+    <Compile Include="TrainerPhilosophyViewModel.cs" />
     <Compile Include="UserbenefitsContentsViewModel.cs" />
     <Compile Include="UserBenefitsSectionViewModel.cs" />
     <Compile Include="VideoReviewViewModel.cs" />
     <Compile Include="WhatTrainerLovesViewModel.cs" />
     <Compile Include="WhyOnlineTrainingIsImportantViewModel.cs" />
+    <Compile Include="WorkExperienceTagsViewModel.cs" />
     <Compile Include="WorkExperienceViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -84,11 +84,17 @@
     <Compile Include="QuizContent.cs" />
     <Compile Include="QuizPage.cs" />
     <Compile Include="QuizQuestion.cs" />
+    <Compile Include="StudentsSay.cs" />
     <Compile Include="SubscriptionContent.cs" />
     <Compile Include="SubscriptionSystem.cs" />
     <Compile Include="TrainerIntro.cs" />
     <Compile Include="UserbenefitsContents.cs" />
     <Compile Include="UserBenefitsSection.cs" />
+    <Compile Include="VideoReview.cs" />
+    <Compile Include="WhatTrainerLoves.cs" />
+    <Compile Include="WhyOnlineTrainingIsImportant.cs" />
+    <Compile Include="WorkExperience.cs" />
+    <Compile Include="WorkExperienceTags.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

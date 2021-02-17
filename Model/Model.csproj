@@ -89,6 +89,7 @@
     <Compile Include="SubscriptionSystem.cs" />
     <Compile Include="TrainerIntro.cs" />
     <Compile Include="TrainerPhilosophy.cs" />
+    <Compile Include="TrainerVision.cs" />
     <Compile Include="UserbenefitsContents.cs" />
     <Compile Include="UserBenefitsSection.cs" />
     <Compile Include="VideoReview.cs" />

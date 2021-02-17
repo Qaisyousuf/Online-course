@@ -110,6 +110,7 @@
     <Compile Include="SubscriptionSystemViewModel.cs" />
     <Compile Include="TrainerIntroViewModel.cs" />
     <Compile Include="TrainerPhilosophyViewModel.cs" />
+    <Compile Include="TrainerSocialMediaViewModel.cs" />
     <Compile Include="TrainerVisionViewModel.cs" />
     <Compile Include="UserbenefitsContentsViewModel.cs" />
     <Compile Include="UserBenefitsSectionViewModel.cs" />

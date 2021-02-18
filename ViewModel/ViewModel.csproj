@@ -90,6 +90,8 @@
     <Compile Include="CountryNameViewModel.cs" />
     <Compile Include="CourseBannerViewModel.cs" />
     <Compile Include="CourseContentExplanationViewModel.cs" />
+    <Compile Include="CourseContentsViewModel.cs" />
+    <Compile Include="CourseEachSectionViewModel.cs" />
     <Compile Include="COVID_19ViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />
     <Compile Include="HomeBannerViewModel.cs" />

@@ -69,6 +69,8 @@
     <Compile Include="CountryName.cs" />
     <Compile Include="CourseBanner.cs" />
     <Compile Include="CourseContentExplanation.cs" />
+    <Compile Include="CourseContents.cs" />
+    <Compile Include="CourseEachSection.cs" />
     <Compile Include="COVID-19.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="ForLearner.cs" />

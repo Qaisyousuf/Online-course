@@ -68,6 +68,8 @@
     <Compile Include="ApplicationUser.cs" />
     <Compile Include="LaunchYourCodingCareer.cs" />
     <Compile Include="Quiklink.cs" />
+    <Compile Include="WhoIsThisProgramForContentSection.cs" />
+    <Compile Include="WhoIsThisProgramForEachDetails.cs" />
     <Compile Include="YouMayLike.cs" />
     <Compile Include="CountryName.cs" />
     <Compile Include="CourseBanner.cs" />

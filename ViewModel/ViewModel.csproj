@@ -125,6 +125,8 @@
     <Compile Include="VideoReviewViewModel.cs" />
     <Compile Include="WhatTrainerLovesViewModel.cs" />
     <Compile Include="WhatYouWillLearnViewModel.cs" />
+    <Compile Include="WhoIsThisProgramForContentSectionViewModel.cs" />
+    <Compile Include="WhoIsThisProgramForEachDetailsViewModel.cs" />
     <Compile Include="WhyOnlineTrainingIsImportantViewModel.cs" />
     <Compile Include="WorkExperienceTagsViewModel.cs" />
     <Compile Include="WorkExperienceViewModel.cs" />

@@ -102,6 +102,7 @@
     <Compile Include="HomePageViewModel.cs" />
     <Compile Include="HowOnlineTrainingWorksViewModel.cs" />
     <Compile Include="LaunchYourCodingCareerViewModel.cs" />
+    <Compile Include="LearningModelViewModel.cs" />
     <Compile Include="ManageViewModels.cs" />
     <Compile Include="OnlinetrainingbenefitsViewModel.cs" />
     <Compile Include="OurVisionBannerViewModel.cs" />

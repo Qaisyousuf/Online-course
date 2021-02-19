@@ -91,6 +91,7 @@
     <Compile Include="CourseBannerViewModel.cs" />
     <Compile Include="CourseContentExplanationViewModel.cs" />
     <Compile Include="CourseContentsViewModel.cs" />
+    <Compile Include="CourseDescriptionViewModel.cs" />
     <Compile Include="CourseDetailsViewModel.cs" />
     <Compile Include="CourseEachSectionViewModel.cs" />
     <Compile Include="COVID_19ViewModel.cs" />
@@ -121,9 +122,11 @@
     <Compile Include="UserBenefitsSectionViewModel.cs" />
     <Compile Include="VideoReviewViewModel.cs" />
     <Compile Include="WhatTrainerLovesViewModel.cs" />
+    <Compile Include="WhatYouWillLearnViewModel.cs" />
     <Compile Include="WhyOnlineTrainingIsImportantViewModel.cs" />
     <Compile Include="WorkExperienceTagsViewModel.cs" />
     <Compile Include="WorkExperienceViewModel.cs" />
+    <Compile Include="YouMayLikeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

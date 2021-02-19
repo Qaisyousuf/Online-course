@@ -66,10 +66,12 @@
     <Compile Include="AboutBanner.cs" />
     <Compile Include="AboutPage.cs" />
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="YouMayLike.cs" />
     <Compile Include="CountryName.cs" />
     <Compile Include="CourseBanner.cs" />
     <Compile Include="CourseContentExplanation.cs" />
     <Compile Include="CourseContents.cs" />
+    <Compile Include="CourseDescription.cs" />
     <Compile Include="CourseDetails.cs" />
     <Compile Include="CourseEachSection.cs" />
     <Compile Include="COVID-19.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="UserBenefitsSection.cs" />
     <Compile Include="VideoReview.cs" />
     <Compile Include="WhatTrainerLoves.cs" />
+    <Compile Include="WhatYouWillLearn.cs" />
     <Compile Include="WhyOnlineTrainingIsImportant.cs" />
     <Compile Include="WorkExperience.cs" />
     <Compile Include="WorkExperienceTags.cs" />

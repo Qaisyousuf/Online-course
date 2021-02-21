@@ -94,6 +94,7 @@
     <Compile Include="CourseDescriptionViewModel.cs" />
     <Compile Include="CourseDetailsViewModel.cs" />
     <Compile Include="CourseEachSectionViewModel.cs" />
+    <Compile Include="CoursePageViewModel.cs" />
     <Compile Include="COVID_19ViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />
     <Compile Include="HomeBannerViewModel.cs" />

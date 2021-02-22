@@ -89,6 +89,7 @@
     <Compile Include="AccountViewModels.cs" />
     <Compile Include="ContactBannerViewModel.cs" />
     <Compile Include="ContactDetailsViewModel.cs" />
+    <Compile Include="ContactFormViewModel.cs" />
     <Compile Include="CountryNameViewModel.cs" />
     <Compile Include="CourseBannerViewModel.cs" />
     <Compile Include="CourseContentExplanationViewModel.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="CourseEachSectionViewModel.cs" />
     <Compile Include="CoursePageViewModel.cs" />
     <Compile Include="COVID_19ViewModel.cs" />
+    <Compile Include="EmplyeesViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />
     <Compile Include="HomeBannerViewModel.cs" />
     <Compile Include="HomeCourseSectionViewModel.cs" />
@@ -120,6 +122,7 @@
     <Compile Include="StudentsSayViewModel.cs" />
     <Compile Include="SubscriptionContentViewModel.cs" />
     <Compile Include="SubscriptionSystemViewModel.cs" />
+    <Compile Include="ThankYouPageViewModel.cs" />
     <Compile Include="TrainerIntroViewModel.cs" />
     <Compile Include="TrainerPhilosophyViewModel.cs" />
     <Compile Include="TrainerSocialMediaViewModel.cs" />

@@ -88,8 +88,10 @@
     <Compile Include="AboutPageViewModel.cs" />
     <Compile Include="AccountViewModels.cs" />
     <Compile Include="ContactBannerViewModel.cs" />
+    <Compile Include="ContactCounterViewModel.cs" />
     <Compile Include="ContactDetailsViewModel.cs" />
     <Compile Include="ContactFormViewModel.cs" />
+    <Compile Include="ContactPageViewModel.cs" />
     <Compile Include="CountryNameViewModel.cs" />
     <Compile Include="CourseBannerViewModel.cs" />
     <Compile Include="CourseContentExplanationViewModel.cs" />
@@ -101,6 +103,7 @@
     <Compile Include="COVID_19ViewModel.cs" />
     <Compile Include="EmplyeesViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />
+    <Compile Include="GeolocationStudentsViewModel.cs" />
     <Compile Include="HomeBannerViewModel.cs" />
     <Compile Include="HomeCourseSectionViewModel.cs" />
     <Compile Include="HomeExplorationBannerViewModel.cs" />

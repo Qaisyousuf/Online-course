@@ -67,10 +67,13 @@
     <Compile Include="AboutPage.cs" />
     <Compile Include="ApplicationUser.cs" />
     <Compile Include="ContactBanner.cs" />
+    <Compile Include="ContactCounter.cs" />
     <Compile Include="ContactDetails.cs" />
     <Compile Include="ContactForm.cs" />
+    <Compile Include="ContactPage.cs" />
     <Compile Include="CoursePage.cs" />
     <Compile Include="Emplyees.cs" />
+    <Compile Include="GeolocationStudents.cs" />
     <Compile Include="LaunchYourCodingCareer.cs" />
     <Compile Include="LearningModel.cs" />
     <Compile Include="Quiklink.cs" />

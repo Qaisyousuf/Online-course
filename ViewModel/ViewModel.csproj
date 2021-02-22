@@ -87,6 +87,7 @@
     <Compile Include="AboutBannerViewModel.cs" />
     <Compile Include="AboutPageViewModel.cs" />
     <Compile Include="AccountViewModels.cs" />
+    <Compile Include="ContactBannerViewModel.cs" />
     <Compile Include="CountryNameViewModel.cs" />
     <Compile Include="CourseBannerViewModel.cs" />
     <Compile Include="CourseContentExplanationViewModel.cs" />

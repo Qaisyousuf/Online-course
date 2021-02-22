@@ -66,6 +66,7 @@
     <Compile Include="AboutBanner.cs" />
     <Compile Include="AboutPage.cs" />
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="ContactBanner.cs" />
     <Compile Include="CoursePage.cs" />
     <Compile Include="LaunchYourCodingCareer.cs" />
     <Compile Include="LearningModel.cs" />

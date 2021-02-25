@@ -66,6 +66,8 @@
     <Compile Include="AboutBanner.cs" />
     <Compile Include="AboutPage.cs" />
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="BuildBetterSkillsFasterSection.cs" />
+    <Compile Include="BuillBetterSkillsFaster .cs" />
     <Compile Include="BusinessBanner.cs" />
     <Compile Include="ContactBanner.cs" />
     <Compile Include="ContactCounter.cs" />

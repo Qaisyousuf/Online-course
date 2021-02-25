@@ -131,6 +131,7 @@
     <Compile Include="TrainerPhilosophyViewModel.cs" />
     <Compile Include="TrainerSocialMediaViewModel.cs" />
     <Compile Include="TrainerVisionViewModel.cs" />
+    <Compile Include="UpskillingExplorationViewModel.cs" />
     <Compile Include="UpskillingImportanceViewModel.cs" />
     <Compile Include="UserbenefitsContentsViewModel.cs" />
     <Compile Include="UserBenefitsSectionViewModel.cs" />

@@ -144,6 +144,8 @@
     <Compile Include="WhoIsThisProgramForContentSectionViewModel.cs" />
     <Compile Include="WhoIsThisProgramForEachDetailsViewModel.cs" />
     <Compile Include="WhyOnlineTrainingIsImportantViewModel.cs" />
+    <Compile Include="WhyYouNeedUpSkillingTeamSection.cs" />
+    <Compile Include="WhyYouNeedUpskillingYourTeamViewModel.cs" />
     <Compile Include="WorkExperienceTagsViewModel.cs" />
     <Compile Include="WorkExperienceViewModel.cs" />
     <Compile Include="YouMayLikeViewModel.cs" />

@@ -79,9 +79,12 @@
     <Compile Include="GeolocationStudents.cs" />
     <Compile Include="LaunchYourCodingCareer.cs" />
     <Compile Include="LearningModel.cs" />
+    <Compile Include="MetaTag.cs" />
+    <Compile Include="OpenGraphMetaTags.cs" />
     <Compile Include="Quiklink.cs" />
     <Compile Include="ThankYouPage.cs" />
     <Compile Include="TrustedbyForUpSkilling.cs" />
+    <Compile Include="TwitterMetaTags.cs" />
     <Compile Include="UpskillingExploration.cs" />
     <Compile Include="UpskillingImportance.cs" />
     <Compile Include="WhoIsThisProgramForContentSection.cs" />

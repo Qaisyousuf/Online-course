@@ -115,7 +115,9 @@
     <Compile Include="LaunchYourCodingCareerViewModel.cs" />
     <Compile Include="LearningModelViewModel.cs" />
     <Compile Include="ManageViewModels.cs" />
+    <Compile Include="MetaTagViewModel.cs" />
     <Compile Include="OnlinetrainingbenefitsViewModel.cs" />
+    <Compile Include="OpenGraphMetaTagsViewModel.cs" />
     <Compile Include="OurVisionBannerViewModel.cs" />
     <Compile Include="OurVisionExplationViewModel.cs" />
     <Compile Include="OurVisionViewModel.cs" />
@@ -134,6 +136,7 @@
     <Compile Include="TrainerSocialMediaViewModel.cs" />
     <Compile Include="TrainerVisionViewModel.cs" />
     <Compile Include="TrustedbyForUpSkillingViewModel.cs" />
+    <Compile Include="TwitterMetaTagsViewModel.cs" />
     <Compile Include="UpskillingExplorationViewModel.cs" />
     <Compile Include="UpskillingImportanceViewModel.cs" />
     <Compile Include="UserbenefitsContentsViewModel.cs" />

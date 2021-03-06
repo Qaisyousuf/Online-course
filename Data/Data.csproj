@@ -75,6 +75,10 @@
     <Compile Include="Migrations\202103011821418_AboutBannerAdded.Designer.cs">
       <DependentUpon>202103011821418_AboutBannerAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103011919460_AllModelsAddedToDatabase.cs" />
+    <Compile Include="Migrations\202103011919460_AllModelsAddedToDatabase.Designer.cs">
+      <DependentUpon>202103011919460_AllModelsAddedToDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103011821418_AboutBannerAdded.resx">
       <DependentUpon>202103011821418_AboutBannerAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103011919460_AllModelsAddedToDatabase.resx">
+      <DependentUpon>202103011919460_AllModelsAddedToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,7 +36,7 @@ namespace ViewModel
         [Display(Name = "Country Name")]
         public int CountryId { get; set; }
 
-        [ForeignKey("CountryName")]
+        [ForeignKey("CountryId")]
         public CountryName CountryNames { get; set; }
     }
 }

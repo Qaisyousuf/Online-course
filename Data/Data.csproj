@@ -64,9 +64,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Concrete Implementation\HomeBannerRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
+    <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
+    <Compile Include="Interfaces\IHomeBannerRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">
       <DependentUpon>202102042239365_Initial.cs</DependentUpon>

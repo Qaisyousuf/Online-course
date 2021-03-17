@@ -19,12 +19,16 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         }
         public ActionResult Index()
         {
-           var homebanner= uow.HomeBannerRepository.GetAll();
+            return View();
+        }
+        [HttpGet]
+        public ActionResult GetHomeBanner()
+        {
+            var _HomeBanner = uow.HomeBannerRepository.GetAll();
 
             List<HomeBannerViewModel> viewmodel = new List<HomeBannerViewModel>();
 
-
-            foreach (var item in homebanner)
+            foreach (var item in _HomeBanner)
             {
                 viewmodel.Add(new HomeBannerViewModel
                 {
@@ -36,11 +40,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     JoinButtonUrl=item.JoinButtonUrl,
                     DiscoverButton=item.DiscoverButton,
                     DiscoverButtonUrl=item.DiscoverButton,
-
-
                 });
             }
-            return View(viewmodel);
+            return Json(new { data = viewmodel }, JsonRequestBehavior.AllowGet);
         }
     }
 }

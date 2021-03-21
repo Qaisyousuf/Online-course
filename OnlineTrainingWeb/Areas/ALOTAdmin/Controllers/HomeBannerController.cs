@@ -44,5 +44,12 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
             }
             return Json(new { data = viewmodel }, JsonRequestBehavior.AllowGet);
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+           
+          return View(new HomeBannerViewModel());
+        }
     }
 }

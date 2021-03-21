@@ -6,7 +6,9 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
+
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
 
@@ -202,7 +204,6 @@
     </header>
     <!--/.Double navigation-->
     <!--Main Layout-->
-    
     @*<div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -228,16 +229,18 @@
         </footer>
     </div>
 
-   
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/popper")
     @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
     @RenderSection("scripts", required: false)
 
     <script>
-        $(document).ready(function() {
-  
-  // SideNav Initializationa
-	$(".button-collapse").sideNav();
-});
+        $(document).ready(function () {
+
+            // SideNav Initializationa
+            $(".button-collapse").sideNav();
+        });
     </script>
 </body>
 </html>

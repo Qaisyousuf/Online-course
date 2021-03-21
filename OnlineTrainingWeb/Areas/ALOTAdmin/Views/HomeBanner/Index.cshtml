@@ -8,6 +8,7 @@
        Home Banners
     </h3>
     <div class="card-body">
+        <a class="btn btn-indigo btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","HomeBanner",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
@@ -32,53 +33,13 @@
 
 @section scripts{
     <script>
+        var Popup, dataTable;
         $(document).ready(function () {
-
             dataTable = $("#dataTable").DataTable({
                 "ajax": {
-                  
                     "url": "/ALOTAdmin/HomeBanner/GetHomeBanner",
                     "type": "GET",
                     "datatype": "json",
-                    "dom": "lfrtiBp",
-                    buttons: [
-                        {
-                            extend: 'copyHtml5',
-                            text: '<i class="glyphicon glyphicon-file"> Copy</i>',
-                            titleAttr: 'Copy',
-
-
-                        },
-                        {
-                            extend: 'excelHtml5',
-                            text: '<i class="glyphicon glyphicon-save-file"> Excel</i>',
-                            titleAttr: 'Excel',
-
-
-                        },
-                        {
-                            extend: 'pdfHtml5',
-                            text: '<i class="glyphicon glyphicon-save-file"> PDF</i>',
-                            titleAttr: 'PDF',
-
-
-                        },
-
-                        {
-                            extend: 'print',
-                            text: '<i class="glyphicon glyphicon-print"> Print</i>',
-                            titleAttr: 'PRINT',
-
-
-                        },
-                        {
-                            extend: 'colvis',
-                            text: '<i class="glyphicon glyphicon-eye-open"> Visibilité des colonnes</i>',
-                            titleAttr: 'Columns Visiblty',
-
-
-                        },
-                    ],
 
                 },
                 "columns": [
@@ -88,17 +49,18 @@
                     { "data": "JoinButton" },
                     { "data": "DiscoverButton" },
 
+
                     {
                         "data": "actions",
-                        "className": "dt-body-right",
+                        "className": "dt-body-center",
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "ProjectCounting")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "ProjectCounting")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "AboutBanner")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "AboutBanner")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
-                        "width":"150px"
+                       
                     }
 
                 ],
@@ -108,6 +70,141 @@
                 }
             });
         });
+
+
+
+        function PopupForm(url) {
+
+            var formDiv = $('<div/>');
+            $.get(url)
+                .done(function (response) {
+                    formDiv.html(response);
+
+                    Popup = formDiv.dialog({
+                        modal: true,
+
+                        open: function () {
+                            overlayOpacityNormal = $('.ui-widget-overlay').css('opacity');
+                            $('.ui-widget-overlay').css('opacity', .9);
+                        },
+
+                        beforeClose: function () {
+                            $('.ui-widget-overlay').css('opacity', .9);
+                        },
+                        autoOpen: true,
+                        resizable: true,
+                        title: 'Entry Form',
+                        height: 500,
+                        
+                        
+                        width: 900,
+
+
+                        close: function () {
+                            Popup.dialog('destroy').remove();
+                        }
+
+                    });
+                });
+        }
+        function SubmitFormCreate(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+                            Popup.dialog('close');
+                            dataTable.ajax.reload();
+
+                            $.notify(data.message, {
+                                globalPosition: "top center",
+                                className: "success"
+                            });
+
+
+                        }
+                    }
+                });
+            }
+            return false;
+        }
+
+        function SubmitFormEdit(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+                            Popup.dialog('close');
+                            dataTable.ajax.reload();
+
+                            $.notify(data.message, {
+                                globalPosition: "top center",
+                                className: "success"
+                            });
+
+
+                        }
+                    }
+                });
+            }
+            return false;
+        }
+        function SubmitFormDetails(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+                            Popup.dialog('close');
+                            dataTable.ajax.reload();
+
+                            $.notify(data.message, {
+                                globalPosition: "top center",
+                                className: "success"
+                            });
+
+
+                        }
+                    }
+                });
+            }
+            return false;
+        }
+        function Delete(id) {
+            if (confirm('Are You Sure to Delete this  Record ?'))
+            {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Delete", "AboutBanner")/' + id,
+                    success: function (data) {
+                        if (data.success)
+                        {
+                            dataTable.ajax.reload();
+
+                            $.notify(data.message, {
+                                globalPosition: "top center",
+                                className: "success"
+                            })
+
+                        }
+                    }
+
+                });
+            }
+        }
+
+
+           
     </script>
 
 }

@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Home Page Banner";
 }
 
 <div class="card">
@@ -8,7 +8,7 @@
        Home Banners
     </h3>
     <div class="card-body">
-        <a class="btn btn-indigo btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","HomeBanner",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
+        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","HomeBanner",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
@@ -36,12 +36,32 @@
         var Popup, dataTable;
         $(document).ready(function () {
             dataTable = $("#dataTable").DataTable({
+                "info": false,
+                "responsive": true,
+                "fixedHeader": true,
+                fixedColumns: true,
+               
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+              
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'copyHtml5', footer: true,
+                        
+                    },
+                    { extend: 'excelHtml5', footer: true, download: 'open' },
+                    { extend: 'csvHtml5', footer: true, download: 'open' },
+                    { extend: 'pdfHtml5', footer: true, download: 'open' },
+                  
+                ],
                 "ajax": {
                     "url": "/ALOTAdmin/HomeBanner/GetHomeBanner",
                     "type": "GET",
                     "datatype": "json",
-
+                   
+                    
                 },
+              
                 "columns": [
                     { "data": "Id" },
                     { "data": "MainTitle" },
@@ -56,7 +76,7 @@
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "AboutBanner")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "AboutBanner")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "HomeBanner")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "HomeBanner")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
@@ -185,7 +205,7 @@
             {
                 $.ajax({
                     type: "POST",
-                    url: '@Url.Action("Delete", "AboutBanner")/' + id,
+                    url: '@Url.Action("Delete", "HomeBanner")/' + id,
                     success: function (data) {
                         if (data.success)
                         {

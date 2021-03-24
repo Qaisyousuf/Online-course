@@ -24,7 +24,8 @@ namespace OnlineTrainingWeb
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/mdb.min.js",
-            "~/Scripts/jquery-ui-1.12.1.min"));
+            "~/Scripts/jquery-ui-1.12.1.min",
+             "~/Scripts/notify.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

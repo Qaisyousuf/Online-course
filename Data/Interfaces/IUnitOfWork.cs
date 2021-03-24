@@ -11,5 +11,7 @@ namespace Data.Interfaces
         ApplicationDbContext Context { get; }
 
         IHomeBannerRepository HomeBannerRepository { get; }
+
+        void Commit();
     }
 }

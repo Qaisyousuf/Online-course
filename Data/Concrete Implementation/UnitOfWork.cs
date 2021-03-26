@@ -15,6 +15,13 @@ namespace Data.Concrete_Implementation
             get { return new HomeBannerRepository(Context); }
         }
 
+        public IHomeExplanationBannerRepository HomeExplanationBannerRepository
+        {
+            get { return new HomeExplanationBannerRepository(Context); }
+        }
+
+        
+
         public void Commit()
         {
             Context.SaveChanges();

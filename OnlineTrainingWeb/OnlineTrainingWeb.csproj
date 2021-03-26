@@ -185,6 +185,7 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Areas\ALOTAdmin\ALOTAdminAreaRegistration.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeBannerController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\HomeExplanationBannerController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -277,7 +278,10 @@
     <Content Include="Areas\ALOTAdmin\Views\HomeBanner\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\HomeBanner\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\HomeBanner\Details.cshtml" />
-    <Content Include="Areas\ALOTAdmin\Views\HomeBanner\Detailss.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomeExplanationBanner\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomeExplanationBanner\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomeExplanationBanner\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomeExplanationBanner\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -412,7 +416,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\ALOTAdmin\Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

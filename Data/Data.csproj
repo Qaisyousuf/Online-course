@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Concrete Implementation\ForLearnerRepository.cs" />
     <Compile Include="Concrete Implementation\HomeBannerRepository.cs" />
     <Compile Include="Concrete Implementation\HomeExplanationBannerRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IHomeBannerRepository.cs" />
     <Compile Include="Interfaces\IHomeExplanationBannerRepository.cs" />
+    <Compile Include="Interfaces\IForLearnerRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />

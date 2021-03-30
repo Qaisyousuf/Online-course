@@ -20,7 +20,7 @@ namespace Data.Concrete_Implementation
             get { return new HomeExplanationBannerRepository(Context); }
         }
 
-        
+        public IForLearnerRepository ForLearnerRepository => new ForLearnerRepository(Context);
 
         public void Commit()
         {

@@ -187,6 +187,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\ForLearnerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeExplanationBannerController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -287,6 +288,10 @@
     <Content Include="Areas\ALOTAdmin\Views\ForLearner\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ForLearner\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ForLearner\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVision\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVision\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVision\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVision\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

@@ -22,6 +22,8 @@ namespace Data.Concrete_Implementation
 
         public IForLearnerRepository ForLearnerRepository => new ForLearnerRepository(Context);
 
+        public IOurVisionRepository OurVisionRepository => new OurVisionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

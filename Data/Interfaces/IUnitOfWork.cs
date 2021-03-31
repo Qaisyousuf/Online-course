@@ -13,6 +13,7 @@ namespace Data.Interfaces
         IHomeBannerRepository HomeBannerRepository { get; }
         IHomeExplanationBannerRepository HomeExplanationBannerRepository { get; }
         IForLearnerRepository ForLearnerRepository { get; }
+        IOurVisionRepository OurVisionRepository { get; }
 
         void Commit();
     }

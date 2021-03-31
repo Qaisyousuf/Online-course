@@ -14,6 +14,7 @@ namespace Data.Interfaces
         IHomeExplanationBannerRepository HomeExplanationBannerRepository { get; }
         IForLearnerRepository ForLearnerRepository { get; }
         IOurVisionRepository OurVisionRepository { get; }
+        ICovid19Repository Covid19Repository { get; }
 
         void Commit();
     }

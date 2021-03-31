@@ -24,6 +24,8 @@ namespace Data.Concrete_Implementation
 
         public IOurVisionRepository OurVisionRepository => new OurVisionRepository(Context);
 
+        public ICovid19Repository Covid19Repository => new Covid19Repository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

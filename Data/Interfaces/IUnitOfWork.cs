@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Data.Interfaces
 {
@@ -15,6 +11,7 @@ namespace Data.Interfaces
         IForLearnerRepository ForLearnerRepository { get; }
         IOurVisionRepository OurVisionRepository { get; }
         ICovid19Repository Covid19Repository { get; }
+        ICourseSubSectionRepository CourseSubSectionRepository { get; }
 
         void Commit();
     }

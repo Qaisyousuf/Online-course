@@ -26,6 +26,8 @@ namespace Data.Concrete_Implementation
 
         public ICovid19Repository Covid19Repository => new Covid19Repository(Context);
 
+        public ICourseSubSectionRepository CourseSubSectionRepository => new CourseEachSubSectionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

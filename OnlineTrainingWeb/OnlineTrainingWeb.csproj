@@ -184,6 +184,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Areas\ALOTAdmin\ALOTAdminAreaRegistration.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\CourseEachSectionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\COVID19Controller.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ForLearnerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeBannerController.cs" />
@@ -297,6 +298,10 @@
     <Content Include="Areas\ALOTAdmin\Views\COVID19\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\COVID19\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\COVID19\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseEachSection\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseEachSection\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseEachSection\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseEachSection\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

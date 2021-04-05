@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Concrete Implementation\CourseContenntRepository.cs" />
     <Compile Include="Concrete Implementation\CourseEachSubSectionRepository.cs" />
     <Compile Include="Concrete Implementation\Covid19Repository.cs" />
     <Compile Include="Concrete Implementation\ForLearnerRepository.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Concrete Implementation\Repository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
+    <Compile Include="Interfaces\ICourseContenntRepository.cs" />
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />
     <Compile Include="Interfaces\ICovid19Repository.cs" />
     <Compile Include="Interfaces\IHomeBannerRepository.cs" />

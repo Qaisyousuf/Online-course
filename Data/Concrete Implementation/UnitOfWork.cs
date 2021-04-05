@@ -28,6 +28,8 @@ namespace Data.Concrete_Implementation
 
         public ICourseSubSectionRepository CourseSubSectionRepository => new CourseEachSubSectionRepository(Context);
 
+        public ICourseContenntRepository CourseContenntRepository => new CourseContenntRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

@@ -13,6 +13,7 @@ namespace Data.Interfaces
         ICovid19Repository Covid19Repository { get; }
         ICourseSubSectionRepository CourseSubSectionRepository { get; }
         ICourseContenntRepository CourseContenntRepository { get; }
+        IQuizContentRepository QuizContentRepository { get; }
 
         void Commit();
     }

@@ -71,6 +71,7 @@
     <Compile Include="Concrete Implementation\HomeBannerRepository.cs" />
     <Compile Include="Concrete Implementation\HomeExplanationBannerRepository.cs" />
     <Compile Include="Concrete Implementation\OurVisionRepository.cs" />
+    <Compile Include="Concrete Implementation\QuizContentRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Interfaces\IHomeExplanationBannerRepository.cs" />
     <Compile Include="Interfaces\IForLearnerRepository.cs" />
     <Compile Include="Interfaces\IOurVisionRepository.cs" />
+    <Compile Include="Interfaces\IQuizContentRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
@@ -94,6 +96,14 @@
     <Compile Include="Migrations\202103011919460_AllModelsAddedToDatabase.cs" />
     <Compile Include="Migrations\202103011919460_AllModelsAddedToDatabase.Designer.cs">
       <DependentUpon>202103011919460_AllModelsAddedToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104052053161_CountryTableNameChanged.cs" />
+    <Compile Include="Migrations\202104052053161_CountryTableNameChanged.Designer.cs">
+      <DependentUpon>202104052053161_CountryTableNameChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104052152325_CountryTableNameChnagedAgain.cs" />
+    <Compile Include="Migrations\202104052152325_CountryTableNameChnagedAgain.Designer.cs">
+      <DependentUpon>202104052152325_CountryTableNameChnagedAgain.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +127,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103011919460_AllModelsAddedToDatabase.resx">
       <DependentUpon>202103011919460_AllModelsAddedToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104052053161_CountryTableNameChanged.resx">
+      <DependentUpon>202104052053161_CountryTableNameChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104052152325_CountryTableNameChnagedAgain.resx">
+      <DependentUpon>202104052152325_CountryTableNameChnagedAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

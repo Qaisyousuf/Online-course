@@ -18,6 +18,18 @@ namespace Data.Concrete_Implementation
             _context.Set<TModel>().Add(entity);
         }
 
+        public IQueryable<TModel> GetAll(params string[] navigationProperties)
+        {
+            IQueryable<TModel> data = _context.Set<TModel>().AsQueryable();
+
+            foreach (string navigationproperty in navigationProperties)
+            {
+                data = data.Include(navigationproperty);
+            }
+
+            return data;
+        }
+
         public IQueryable<TModel> GetAll()
         {
             var data = _context.Set<TModel>();

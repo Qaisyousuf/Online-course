@@ -14,6 +14,8 @@ namespace Data.Interfaces
 
         IQueryable<TModel> GetAll();
 
+        IQueryable<TModel> GetAll(params string[] navigationProperties);
+
         TModel GetById(object Id);
 
         void Remove(TModel entity);

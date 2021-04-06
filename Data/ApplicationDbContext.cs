@@ -9,7 +9,7 @@ namespace Data
         public ApplicationDbContext()
             : base("ALOnlineTraining", throwIfV1Schema: false)
         {
-
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<AboutBanner> AboutBanners { get; set; }

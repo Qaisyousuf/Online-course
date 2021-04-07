@@ -193,6 +193,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizBasicInfoController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizContentController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\QuizQuestionController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -317,6 +318,10 @@
     <Content Include="Areas\ALOTAdmin\Views\QuizBasicInfo\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\QuizBasicInfo\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\QuizBasicInfo\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizQuestion\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizQuestion\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizQuestion\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizQuestion\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

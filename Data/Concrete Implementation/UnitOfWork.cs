@@ -36,6 +36,8 @@ namespace Data.Concrete_Implementation
 
         public ICountryNamesRepository CountryNamesRepository => new CountryNamesRepository(Context);
 
+        public IQuizQuestionRepository QuizQuestionRepository => new QuizQuestionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

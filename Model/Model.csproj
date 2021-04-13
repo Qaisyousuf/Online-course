@@ -82,6 +82,7 @@
     <Compile Include="MetaTag.cs" />
     <Compile Include="OpenGraphMetaTags.cs" />
     <Compile Include="Quiklink.cs" />
+    <Compile Include="QuizResults.cs" />
     <Compile Include="ThankYouPage.cs" />
     <Compile Include="TrustedbyForUpSkilling.cs" />
     <Compile Include="TwitterMetaTags.cs" />

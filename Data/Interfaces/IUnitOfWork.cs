@@ -17,6 +17,7 @@ namespace Data.Interfaces
         IQuizBasicInfoRepository QuizBasicInfoRepository { get; }
         ICountryNamesRepository CountryNamesRepository { get; }
         IQuizQuestionRepository QuizQuestionRepository { get; }
+        IQuizResultsRepository QuizResultsRepository { get; }
 
         void Commit();
     }

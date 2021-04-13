@@ -75,6 +75,7 @@
     <Compile Include="Concrete Implementation\QuizBasicInfoRepository.cs" />
     <Compile Include="Concrete Implementation\QuizContentRepository.cs" />
     <Compile Include="Concrete Implementation\QuizQuestionRepository.cs" />
+    <Compile Include="Concrete Implementation\QuizResultsRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Interfaces\IQuizBasicInfoRepository.cs" />
     <Compile Include="Interfaces\IQuizContentRepository.cs" />
     <Compile Include="Interfaces\IQuizQuestionRepository.cs" />
+    <Compile Include="Interfaces\IQuizResultsRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
@@ -114,6 +116,10 @@
     <Compile Include="Migrations\202104052253450_QuizBasicInfoAddedToQuizPage.cs" />
     <Compile Include="Migrations\202104052253450_QuizBasicInfoAddedToQuizPage.Designer.cs">
       <DependentUpon>202104052253450_QuizBasicInfoAddedToQuizPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104131747000_QuizResultsAdded.cs" />
+    <Compile Include="Migrations\202104131747000_QuizResultsAdded.Designer.cs">
+      <DependentUpon>202104131747000_QuizResultsAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104052253450_QuizBasicInfoAddedToQuizPage.resx">
       <DependentUpon>202104052253450_QuizBasicInfoAddedToQuizPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104131747000_QuizResultsAdded.resx">
+      <DependentUpon>202104131747000_QuizResultsAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

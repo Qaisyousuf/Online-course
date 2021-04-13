@@ -127,6 +127,7 @@
     <Compile Include="QuizContentViewModel.cs" />
     <Compile Include="QuizPageViewModel.cs" />
     <Compile Include="QuizQuestionViewModel.cs" />
+    <Compile Include="QuizResultsViewModel.cs" />
     <Compile Include="StudentsSayViewModel.cs" />
     <Compile Include="SubscriptionContentViewModel.cs" />
     <Compile Include="SubscriptionSystemViewModel.cs" />

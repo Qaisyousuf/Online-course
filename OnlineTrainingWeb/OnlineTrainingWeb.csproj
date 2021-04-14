@@ -190,6 +190,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\ForLearnerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeExplanationBannerController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\HomePageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizBasicInfoController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizContentController.cs" />
@@ -327,6 +328,10 @@
     <Content Include="Areas\ALOTAdmin\Views\QuizResults\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\QuizResults\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\QuizResults\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomePage\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomePage\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomePage\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\HomePage\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -481,6 +486,10 @@
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{467acb86-1573-454c-b487-d3514043e7da}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{a1b2b64a-466e-4ae9-8ebc-6d41d14dd4a4}</Project>
+      <Name>Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\ViewModel\ViewModel.csproj">
       <Project>{c9d1d8de-9b43-4000-ba50-2a7bc4b337b8}</Project>

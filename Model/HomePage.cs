@@ -15,13 +15,13 @@ namespace Model
 
         public string Slug { get; set; }
 
-        [Display(Name ="Home Banner Id")]
+        [Display(Name ="Home Banner")]
         public int HomeBannerId { get; set; }
 
         [ForeignKey("HomeBannerId")]
         public HomeBanner HomeBanner { get; set; }
 
-        [Display(Name = "Home Banner Exploration Id")]
+        [Display(Name = "Home Exploration")]
         public int HomeExplorationBannerId { get; set; }
 
         [ForeignKey("HomeExplorationBannerId")]

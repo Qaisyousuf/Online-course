@@ -19,6 +19,7 @@ namespace Data.Interfaces
         IQuizQuestionRepository QuizQuestionRepository { get; }
         IQuizResultsRepository QuizResultsRepository { get; }
         IHomePageRepository HomePageRepository { get; }
+        IAboutBannerRepository AboutBannerRepository { get; }
 
         void Commit();
     }

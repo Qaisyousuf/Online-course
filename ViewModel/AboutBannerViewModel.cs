@@ -24,7 +24,7 @@ namespace ViewModel
         public string JoinButton { get; set; }
 
         [Required]
-        [Display(Name = "Main button url")]
+        [Display(Name = "Join button url")]
         public string JoinButtonUrl { get; set; }
 
         [Required]
@@ -33,6 +33,6 @@ namespace ViewModel
 
         [Required]
         [Display(Name = "Discover button url")]
-        public string DiscoverButtonTUrl { get; set; }
+        public string DiscoverButtonUrl { get; set; }
     }
 }

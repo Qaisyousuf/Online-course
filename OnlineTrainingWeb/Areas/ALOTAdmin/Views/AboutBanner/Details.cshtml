@@ -1,13 +1,13 @@
-﻿@model ViewModel.HomeBannerViewModel
+﻿@model ViewModel.AboutBannerViewModel
 @{
     Layout = null;
 }
 
 <div>
-    
+
 
     <div class="card-body card-body-cascade d-flex justify-content-center mt-n2">
-        @using (Html.BeginForm("Details", "HomeBanner", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
+        @using (Html.BeginForm("Details", "AboutBanner", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
         {
             @Html.HiddenFor(model => model.Id)
 
@@ -19,7 +19,7 @@
 
 
 
-                  <text><i class="fas fa-info"></i> Details of <span class="tag">@Model.MainTitle</span></text>
+                    <text><i class="fas fa-info"></i> Details of <span class="tag">@Model.MainTitle</span></text>
 
 
 
@@ -33,7 +33,6 @@
                         <table class="table table-hover mb-0">
 
                             <!--Table head-->
-                            
                             <!--Table head-->
                             <!--Table body-->
                             <tbody>
@@ -107,4 +106,3 @@
     </div>
 
 </div>
-

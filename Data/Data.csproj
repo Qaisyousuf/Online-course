@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Concrete Implementation\AboutBannerRepository.cs" />
     <Compile Include="Concrete Implementation\CountryNamesRepository.cs" />
     <Compile Include="Concrete Implementation\CourseContenntRepository.cs" />
     <Compile Include="Concrete Implementation\CourseEachSubSectionRepository.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Concrete Implementation\Slug.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
+    <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
     <Compile Include="Interfaces\ICourseContenntRepository.cs" />
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />
@@ -125,6 +127,10 @@
     <Compile Include="Migrations\202104131747000_QuizResultsAdded.Designer.cs">
       <DependentUpon>202104131747000_QuizResultsAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104142242090_AboutBannerDiscoverButtonChanged.cs" />
+    <Compile Include="Migrations\202104142242090_AboutBannerDiscoverButtonChanged.Designer.cs">
+      <DependentUpon>202104142242090_AboutBannerDiscoverButtonChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104131747000_QuizResultsAdded.resx">
       <DependentUpon>202104131747000_QuizResultsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104142242090_AboutBannerDiscoverButtonChanged.resx">
+      <DependentUpon>202104142242090_AboutBannerDiscoverButtonChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

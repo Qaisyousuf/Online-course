@@ -8,6 +8,6 @@
         public string JoinButton { get; set; }
         public string JoinButtonUrl { get; set; }
         public string DiscoverButton { get; set; }
-        public string DiscoverButtonTUrl { get; set; }
+        public string DiscoverButtonUrl { get; set; }
     }
 }

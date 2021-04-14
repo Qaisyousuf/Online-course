@@ -42,6 +42,8 @@ namespace Data.Concrete_Implementation
 
         public IHomePageRepository HomePageRepository => new HomePageRepository(Context);
 
+        public IAboutBannerRepository AboutBannerRepository => new AboutBannerRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

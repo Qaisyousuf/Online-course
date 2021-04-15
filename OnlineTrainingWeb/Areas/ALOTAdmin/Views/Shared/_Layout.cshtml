@@ -123,6 +123,14 @@
                                     <li>
                                         <a href="/ALOTAdmin/CourseContents/Index" class="waves-effect">Course Contents</a>
                                     </li>
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fas fa-question-circle"></i> Quiz<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
                                     <li>
                                         <a href="/ALOTAdmin/QuizContent/Index" class="waves-effect">Quiz Content</a>
                                     </li>
@@ -139,30 +147,14 @@
                             </div>
                         </li>
                         <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-hand-point-up"></i>
-                                Instruction<i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="#" class="waves-effect">For bloggers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="waves-effect">For authors</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
                             <a class="collapsible-header waves-effect arrow-r"><i class="fas fa-eye"></i> About<i class="fas fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul>
                                     <li>
-                                        <a href="#" class="waves-effect">Introduction</a>
+                                        <a href="/ALOTAdmin/AboutBanner/Index" class="waves-effect">About Banner</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="waves-effect">Monthly meetings</a>
+                                        <a href="/ALOTAdmin/TrainerIntro/Index" class="waves-effect">Trainer Intro</a>
                                     </li>
                                 </ul>
                             </div>
@@ -274,13 +266,15 @@
     @Scripts.Render("~/bundles/bootstrap")
     <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
     @RenderSection("scripts", required: false)
-
     <script>
-        $(document).ready(function () {
-
-            // SideNav Initializationa
-            $(".button-collapse").sideNav();
-        });
+                    $(document).ready(function () {
+                        $(".button-collapse").sideNav({
+                            breakpoint: 1600
+                        });
+                    // SideNav Scrollbar Initialization
+                    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+                    var ps = new PerfectScrollbar(sideNavScrollbar);
+                });
     </script>
 </body>
 </html>

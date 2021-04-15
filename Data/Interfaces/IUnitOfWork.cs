@@ -20,6 +20,7 @@ namespace Data.Interfaces
         IQuizResultsRepository QuizResultsRepository { get; }
         IHomePageRepository HomePageRepository { get; }
         IAboutBannerRepository AboutBannerRepository { get; }
+        ITrainerIntroRepository TrainerIntroRepository { get; }
 
         void Commit();
     }

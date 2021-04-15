@@ -80,6 +80,7 @@
     <Compile Include="Concrete Implementation\QuizResultsRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
     <Compile Include="Concrete Implementation\Slug.cs" />
+    <Compile Include="Concrete Implementation\TrainerIntroRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Interfaces\IQuizResultsRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ISlug.cs" />
+    <Compile Include="Interfaces\ITrainerIntroRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">

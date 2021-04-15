@@ -44,6 +44,8 @@ namespace Data.Concrete_Implementation
 
         public IAboutBannerRepository AboutBannerRepository => new AboutBannerRepository(Context);
 
+        public ITrainerIntroRepository TrainerIntroRepository => new TrainerIntroRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

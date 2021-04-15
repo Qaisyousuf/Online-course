@@ -1,12 +1,11 @@
-﻿@model ViewModel.ForLearnerViewModel
+﻿@model ViewModel.HowOnlineTrainingWorksViewModel
 @{
     Layout = null;
 }
-
 <div>
 
     <div class="card-body card-body-cascade d-flex justify-content-center mt-n2">
-        @using (Html.BeginForm("Details", "HomeExplanationBanner", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
+        @using (Html.BeginForm("Details", "HowOnlineTrainingWorks", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
         {
             @Html.HiddenFor(model => model.Id)
 
@@ -41,19 +40,58 @@
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
                                     </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ButtonText)</td>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.Title)</td>
 
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.ButtonText)</td>
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.Title)</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
                                     </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ButtonUrl)</td>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.VideoUrl)</td>
 
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.ButtonUrl)</td>
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.VideoUrl)</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.AnimationUrl)</td>
 
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.AnimationUrl)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.LogoUrlandroid)</td>
+
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.LogoUrlandroid)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.LogoUrlIOS)</td>
+
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.LogoUrlIOS)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ApplicationDownloadButton)</td>
+
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.ApplicationDownloadButton)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ApplicationDownloadUrl)</td>
+
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.ApplicationDownloadUrl)</td>
+                                </tr>
                                 <tr class="">
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
@@ -88,3 +126,4 @@
     </div>
 
 </div>
+

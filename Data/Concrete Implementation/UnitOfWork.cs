@@ -52,6 +52,8 @@ namespace Data.Concrete_Implementation
 
         public IUserBenefitsSectionRepository UserBenefitsSectionRepository => new UserBenefitsSectionRepository(Context);
 
+        public IHowOnlineTrainingWorksRepository HowOnlineTrainingWorksRepository => new HowOnlineTrainingWorksRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

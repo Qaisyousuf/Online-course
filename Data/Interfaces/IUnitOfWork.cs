@@ -24,6 +24,7 @@ namespace Data.Interfaces
         IOnlinetrainingbenefitsRepository OnlinetrainingbenefitsRepository { get; }
         IUserbenefitsContentsRepository UserbenefitsContentsRepository { get; }
         IUserBenefitsSectionRepository UserBenefitsSectionRepository { get; }
+        IHowOnlineTrainingWorksRepository HowOnlineTrainingWorksRepository { get; }
 
         void Commit();
     }

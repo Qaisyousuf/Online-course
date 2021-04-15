@@ -46,6 +46,8 @@ namespace Data.Concrete_Implementation
 
         public ITrainerIntroRepository TrainerIntroRepository => new TrainerIntroRepository(Context);
 
+        public IOnlinetrainingbenefitsRepository OnlinetrainingbenefitsRepository => new OnlinetrainingbenefitsRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

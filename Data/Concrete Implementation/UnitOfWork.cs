@@ -50,6 +50,8 @@ namespace Data.Concrete_Implementation
 
         public IUserbenefitsContentsRepository UserbenefitsContentsRepository => new UserbenefitsContentsRepository(Context);
 
+        public IUserBenefitsSectionRepository UserBenefitsSectionRepository => new UserBenefitsSectionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

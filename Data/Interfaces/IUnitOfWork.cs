@@ -23,6 +23,7 @@ namespace Data.Interfaces
         ITrainerIntroRepository TrainerIntroRepository { get; }
         IOnlinetrainingbenefitsRepository OnlinetrainingbenefitsRepository { get; }
         IUserbenefitsContentsRepository UserbenefitsContentsRepository { get; }
+        IUserBenefitsSectionRepository UserBenefitsSectionRepository { get; }
 
         void Commit();
     }

@@ -84,6 +84,7 @@
     <Compile Include="Concrete Implementation\TrainerIntroRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
+    <Compile Include="Concrete Implementation\UserBenefitsSectionRepository.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Interfaces\ITrainerIntroRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUserbenefitsContentsRepository.cs" />
+    <Compile Include="Interfaces\IUserBenefitsSectionRepository.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">
       <DependentUpon>202102042239365_Initial.cs</DependentUpon>

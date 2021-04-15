@@ -199,6 +199,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizQuestionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizResultsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerIntroController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -347,6 +348,10 @@
     <Content Include="Areas\ALOTAdmin\Views\OnlineTrainingBenefits\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\OnlineTrainingBenefits\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\OnlineTrainingBenefits\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserbenefitsContents\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserbenefitsContents\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserbenefitsContents\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserbenefitsContents\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

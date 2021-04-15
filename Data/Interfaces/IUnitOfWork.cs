@@ -22,6 +22,7 @@ namespace Data.Interfaces
         IAboutBannerRepository AboutBannerRepository { get; }
         ITrainerIntroRepository TrainerIntroRepository { get; }
         IOnlinetrainingbenefitsRepository OnlinetrainingbenefitsRepository { get; }
+        IUserbenefitsContentsRepository UserbenefitsContentsRepository { get; }
 
         void Commit();
     }

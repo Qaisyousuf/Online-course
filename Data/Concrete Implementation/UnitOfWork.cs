@@ -48,6 +48,8 @@ namespace Data.Concrete_Implementation
 
         public IOnlinetrainingbenefitsRepository OnlinetrainingbenefitsRepository => new OnlinetrainingbenefitsRepository(Context);
 
+        public IUserbenefitsContentsRepository UserbenefitsContentsRepository => new UserbenefitsContentsRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

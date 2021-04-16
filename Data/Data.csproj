@@ -82,6 +82,7 @@
     <Compile Include="Concrete Implementation\QuizResultsRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
     <Compile Include="Concrete Implementation\Slug.cs" />
+    <Compile Include="Concrete Implementation\SubscriptionContentRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerIntroRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Interfaces\IQuizResultsRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ISlug.cs" />
+    <Compile Include="Interfaces\ISubscriptionContentRepository.cs" />
     <Compile Include="Interfaces\ITrainerIntroRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUserbenefitsContentsRepository.cs" />

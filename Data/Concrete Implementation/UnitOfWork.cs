@@ -54,6 +54,8 @@ namespace Data.Concrete_Implementation
 
         public IHowOnlineTrainingWorksRepository HowOnlineTrainingWorksRepository => new HowOnlineTrainingWorksRepository(Context);
 
+        public ISubscriptionContentRepository SubscriptionContentRepository => new SubscriptionContentRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

@@ -56,6 +56,8 @@ namespace Data.Concrete_Implementation
 
         public ISubscriptionContentRepository SubscriptionContentRepository => new SubscriptionContentRepository(Context);
 
+        public IWhyOnlineTrainingIsImportantRepository WhyOnlineTrainingIsImportantRepository => new WhyOnlineTrainingIsImportantRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

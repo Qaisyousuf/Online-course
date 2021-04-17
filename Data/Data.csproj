@@ -87,6 +87,7 @@
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
     <Compile Include="Concrete Implementation\UserBenefitsSectionRepository.cs" />
+    <Compile Include="Concrete Implementation\WhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUserbenefitsContentsRepository.cs" />
     <Compile Include="Interfaces\IUserBenefitsSectionRepository.cs" />
+    <Compile Include="Interfaces\IWhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">
       <DependentUpon>202102042239365_Initial.cs</DependentUpon>
@@ -142,6 +144,10 @@
     <Compile Include="Migrations\202104142242090_AboutBannerDiscoverButtonChanged.cs" />
     <Compile Include="Migrations\202104142242090_AboutBannerDiscoverButtonChanged.Designer.cs">
       <DependentUpon>202104142242090_AboutBannerDiscoverButtonChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.cs" />
+    <Compile Include="Migrations\202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.Designer.cs">
+      <DependentUpon>202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104142242090_AboutBannerDiscoverButtonChanged.resx">
       <DependentUpon>202104142242090_AboutBannerDiscoverButtonChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.resx">
+      <DependentUpon>202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -203,6 +203,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerIntroController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserBenefitsSectionController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\WhyOnlineTrainingIsImportantController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -367,6 +368,10 @@
     <Content Include="Areas\ALOTAdmin\Views\SubscriptionContent\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\SubscriptionContent\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\SubscriptionContent\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyOnlineTrainingIsImportant\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyOnlineTrainingIsImportant\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyOnlineTrainingIsImportant\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyOnlineTrainingIsImportant\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

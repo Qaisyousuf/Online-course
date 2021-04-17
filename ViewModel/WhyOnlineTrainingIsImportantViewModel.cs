@@ -8,7 +8,7 @@ namespace ViewModel
 
         [Required]
         [Display(Name ="Main Title")]
-        public int MainTitle { get; set; }
+        public string MainTitle { get; set; }
 
         [Required]
         [Display(Name = "Main Content")]
@@ -18,7 +18,8 @@ namespace ViewModel
         public string Title { get; set; }
 
         [Required]
-        public string Content { get; set; }
+        [Display(Name ="Sub Content")]
+        public string SubContent { get; set; }
 
         [Required]
         [Display(Name = "Icon url")]

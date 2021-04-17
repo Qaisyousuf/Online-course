@@ -25,5 +25,14 @@ namespace ViewModel
         [Required]
         [Display(Name ="Student Name")]
         public string StudentName { get; set; }
+
+
+        [Required]
+        [Display(Name ="Pic Url")]
+        public string PicUrl { get; set; }
+
+        [Required]
+        [Display(Name ="Country Name")]
+        public string CountryName { get; set; }
     }
 }

@@ -58,6 +58,8 @@ namespace Data.Concrete_Implementation
 
         public IWhyOnlineTrainingIsImportantRepository WhyOnlineTrainingIsImportantRepository => new WhyOnlineTrainingIsImportantRepository(Context);
 
+        public IStudentsSaysRepository StudentsSaysRepository => new StudentsSaysRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

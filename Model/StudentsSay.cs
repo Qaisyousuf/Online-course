@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
     public class StudentsSay:EntityBase
     {
@@ -12,6 +6,8 @@ namespace Model
         public string Content { get; set; }
         public string ProgramName { get; set; }
         public string StudentName { get; set; }
+        public string CountryName { get; set; }
+        public string PicUrl { get; set; }
 
     }
 }

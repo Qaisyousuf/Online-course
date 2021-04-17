@@ -27,6 +27,7 @@ namespace Data.Interfaces
         IHowOnlineTrainingWorksRepository HowOnlineTrainingWorksRepository { get; }
         ISubscriptionContentRepository SubscriptionContentRepository { get; }
         IWhyOnlineTrainingIsImportantRepository WhyOnlineTrainingIsImportantRepository { get; }
+        IStudentsSaysRepository StudentsSaysRepository { get; } 
 
         void Commit();
     }

@@ -82,6 +82,7 @@
     <Compile Include="Concrete Implementation\QuizResultsRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
     <Compile Include="Concrete Implementation\Slug.cs" />
+    <Compile Include="Concrete Implementation\StudentsSaysRepository.cs" />
     <Compile Include="Concrete Implementation\SubscriptionContentRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerIntroRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Interfaces\IQuizResultsRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ISlug.cs" />
+    <Compile Include="Interfaces\IStudentsSaysRepository.cs" />
     <Compile Include="Interfaces\ISubscriptionContentRepository.cs" />
     <Compile Include="Interfaces\ITrainerIntroRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
@@ -149,6 +151,14 @@
     <Compile Include="Migrations\202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.Designer.cs">
       <DependentUpon>202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104171327325_StudentSaysDataTypeChanged.cs" />
+    <Compile Include="Migrations\202104171327325_StudentSaysDataTypeChanged.Designer.cs">
+      <DependentUpon>202104171327325_StudentSaysDataTypeChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104171409214_CountryNameAddedToStudentSaysModel.cs" />
+    <Compile Include="Migrations\202104171409214_CountryNameAddedToStudentSaysModel.Designer.cs">
+      <DependentUpon>202104171409214_CountryNameAddedToStudentSaysModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -189,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.resx">
       <DependentUpon>202104171302109_WhyOnlineTrainingIsImportentDataTypeChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104171327325_StudentSaysDataTypeChanged.resx">
+      <DependentUpon>202104171327325_StudentSaysDataTypeChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104171409214_CountryNameAddedToStudentSaysModel.resx">
+      <DependentUpon>202104171409214_CountryNameAddedToStudentSaysModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

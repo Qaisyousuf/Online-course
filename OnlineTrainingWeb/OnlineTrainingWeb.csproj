@@ -204,6 +204,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerIntroController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserBenefitsSectionController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\VideoReviewController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WhyOnlineTrainingIsImportantController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -377,6 +378,10 @@
     <Content Include="Areas\ALOTAdmin\Views\StudetnsSays\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\StudetnsSays\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\StudetnsSays\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\VideoReview\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\VideoReview\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\VideoReview\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\VideoReview\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

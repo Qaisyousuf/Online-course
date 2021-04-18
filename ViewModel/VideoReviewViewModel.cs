@@ -33,7 +33,11 @@ namespace ViewModel
 
         [Required]
         [Display(Name="Program Finish Date")]
+        [DataType(DataType.Date)]
         public DateTime ProgramCompletionDate { get; set; }
+
+        [Required]
+        [Display(Name="Program Image Url")]
         public string ProgramImageUrl { get; set; }
     }
 }

@@ -60,6 +60,8 @@ namespace Data.Concrete_Implementation
 
         public IStudentsSaysRepository StudentsSaysRepository => new StudentsSaysRepository(Context);
 
+        public IVideoReviewRepository VideoReviewRepository => new VideoReviewRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

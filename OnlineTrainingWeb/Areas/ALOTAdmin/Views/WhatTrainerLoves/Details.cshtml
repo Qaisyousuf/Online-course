@@ -1,11 +1,11 @@
-﻿@model ViewModel.OurVisionViewModel
+﻿@model ViewModel.WhatTrainerLovesViewModel
 @{
     Layout = null;
 }
 
 <div>
     <div class="card-body card-body-cascade d-flex justify-content-center mt-n2">
-        @using (Html.BeginForm("Details", "HomeExplanationBanner", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
+        @using (Html.BeginForm("Details", "WhatTrainerLoves", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
         {
             @Html.HiddenFor(model => model.Id)
 
@@ -40,44 +40,19 @@
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
                                     </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ButtonText)</td>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.Title)</td>
 
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.ButtonText)</td>
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.Title)</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
                                     </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ButtonUrl)</td>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.IconUrl)</td>
 
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.ButtonUrl)</td>
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.IconUrl)</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">
-                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
-                                    </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ImageUrl)</td>
-
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.ImageUrl)</td>
-                                </tr>
-
-                                <tr class="">
-                                    <th scope="row">
-                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
-                                    </th>
-                                    <td class="font-weight-bold">  @Html.DisplayNameFor(model => model.Content)</td>
-                                    <td class="collapse" id="collapseExample"> @Html.Raw(Model.Content)</td>
-                                    <td>
-                                        <button class="btn btn-info btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample"
-                                                aria-expanded="false" aria-controls="collapseExample">
-                                            view content
-                                        </button>
-                                    </td>
-
-
-                                </tr>
-
-
+      
                             </tbody>
                             <!--Table body-->
                         </table>
@@ -94,4 +69,3 @@
 
     </div>
 </div>
-

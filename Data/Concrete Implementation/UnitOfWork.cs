@@ -62,6 +62,8 @@ namespace Data.Concrete_Implementation
 
         public IVideoReviewRepository VideoReviewRepository => new VideoReviewRepository(Context);
 
+        public IWhatTrainerLovesRepository WhatTrainerLovesRepository => new WhatTrainerLovesRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

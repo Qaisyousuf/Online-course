@@ -89,6 +89,7 @@
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
     <Compile Include="Concrete Implementation\UserBenefitsSectionRepository.cs" />
     <Compile Include="Concrete Implementation\VideoReviewRepository.cs" />
+    <Compile Include="Concrete Implementation\WhatTrainerLovesRepository.cs" />
     <Compile Include="Concrete Implementation\WhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Interfaces\IUserbenefitsContentsRepository.cs" />
     <Compile Include="Interfaces\IUserBenefitsSectionRepository.cs" />
     <Compile Include="Interfaces\IVideoReviewRepository.cs" />
+    <Compile Include="Interfaces\IWhatTrainerLovesRepository.cs" />
     <Compile Include="Interfaces\IWhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">

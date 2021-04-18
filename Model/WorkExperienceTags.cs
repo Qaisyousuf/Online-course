@@ -10,6 +10,6 @@ namespace Model
         }
         public string TagsName { get; set; }
 
-        public virtual ICollection<WorkExperience> WorkExperiences { get; set; }
+        public  ICollection<WorkExperience> WorkExperiences { get; set; }
     }
 }

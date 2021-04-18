@@ -20,7 +20,7 @@ namespace Model
         public string AnimationUrl { get; set; }
 
 
-        public virtual ICollection<WorkExperienceTags> WorkExperTags { get; set; }
+        public  ICollection<WorkExperienceTags> WorkExperTags { get; set; }
 
 
     }

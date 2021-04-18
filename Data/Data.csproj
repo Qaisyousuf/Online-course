@@ -91,6 +91,8 @@
     <Compile Include="Concrete Implementation\VideoReviewRepository.cs" />
     <Compile Include="Concrete Implementation\WhatTrainerLovesRepository.cs" />
     <Compile Include="Concrete Implementation\WhyOnlineTrainingIsImportantRepository.cs" />
+    <Compile Include="Concrete Implementation\WorkExperienceRepository.cs" />
+    <Compile Include="Concrete Implementation\WorkExperienceTagsRepository.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
@@ -119,6 +121,8 @@
     <Compile Include="Interfaces\IVideoReviewRepository.cs" />
     <Compile Include="Interfaces\IWhatTrainerLovesRepository.cs" />
     <Compile Include="Interfaces\IWhyOnlineTrainingIsImportantRepository.cs" />
+    <Compile Include="Interfaces\IWorkExperienceRepository.cs" />
+    <Compile Include="Interfaces\IWorkExperienceTagsRepository.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">
       <DependentUpon>202102042239365_Initial.cs</DependentUpon>
@@ -162,6 +166,10 @@
     <Compile Include="Migrations\202104171409214_CountryNameAddedToStudentSaysModel.cs" />
     <Compile Include="Migrations\202104171409214_CountryNameAddedToStudentSaysModel.Designer.cs">
       <DependentUpon>202104171409214_CountryNameAddedToStudentSaysModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104181304532_WorkExperinceRelationChanged.cs" />
+    <Compile Include="Migrations\202104181304532_WorkExperinceRelationChanged.Designer.cs">
+      <DependentUpon>202104181304532_WorkExperinceRelationChanged.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -209,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104171409214_CountryNameAddedToStudentSaysModel.resx">
       <DependentUpon>202104171409214_CountryNameAddedToStudentSaysModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104181304532_WorkExperinceRelationChanged.resx">
+      <DependentUpon>202104181304532_WorkExperinceRelationChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

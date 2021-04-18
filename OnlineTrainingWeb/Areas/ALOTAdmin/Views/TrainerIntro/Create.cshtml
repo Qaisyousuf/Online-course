@@ -2,8 +2,6 @@
 @{
     Layout = null;
 }
-
-
 @using (Html.BeginForm("Create", "TrainerIntro", FormMethod.Post, new { onsubmit = "return SubmitFormCreate(this)" }))
 {
     @Html.AntiForgeryToken()

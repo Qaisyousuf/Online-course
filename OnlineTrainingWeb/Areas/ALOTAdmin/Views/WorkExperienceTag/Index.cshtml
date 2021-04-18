@@ -1,22 +1,21 @@
-﻿@model IEnumerable<ViewModel.TrainerIntroViewModel>
+﻿@model IEnumerable<ViewModel.WorkExperienceTagsViewModel>
 
 @{
-    ViewBag.Title = "Trainer Intro";
+    ViewBag.Title = "Work Experience Tag";
 }
+
 <div class="card">
     <h3 class="card-header blue-gradient white-text text-uppercase font-weight-normal text-center py-4">
-        trainer intro
+       Tags
     </h3>
     <div class="card-body">
-        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","TrainerIntro",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
+        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","WorkExperienceTag",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
                     <tr>
                         <th scope="col" class="text-primary"><i class="fas fa-sort-numeric-down"></i># </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Name </th>
-                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Image url </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Location </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Tag Name </th>
                         <th scope="col" class="text-primary"><i class="fas fa-tools"></i> Action</th>
                     </tr>
                 </thead>
@@ -52,7 +51,7 @@
 
                 ],
                 "ajax": {
-                    "url": "/ALOTAdmin/TrainerIntro/GetTrainerIntroData",
+                    "url": "/ALOTAdmin/WorkExperienceTag/GetWorkExperienceTagData",
                     "type": "GET",
                     "datatype": "json",
 
@@ -61,9 +60,8 @@
 
                 "columns": [
                     { "data": "Id" },
-                    { "data": "Name" },
-                    { "data": "TrainerImageUrl" },
-                    { "data": "TrainerLocation" },
+                    { "data": "TagsName" },
+                   
 
 
                     {
@@ -72,7 +70,7 @@
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "TrainerIntro")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "TrainerIntro")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "WorkExperienceTag")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "WorkExperienceTag")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
@@ -201,7 +199,7 @@
             {
                 $.ajax({
                     type: "POST",
-                    url: '@Url.Action("Delete", "TrainerIntro")/' + id,
+                    url: '@Url.Action("Delete", "WorkExperienceTag")/' + id,
                     success: function (data) {
                         if (data.success)
                         {

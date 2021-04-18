@@ -30,6 +30,8 @@ namespace Data.Interfaces
         IStudentsSaysRepository StudentsSaysRepository { get; } 
         IVideoReviewRepository VideoReviewRepository { get; }
         IWhatTrainerLovesRepository WhatTrainerLovesRepository { get; }
+        IWorkExperienceRepository WorkExperienceRepository { get; }
+        IWorkExperienceTagsRepository WorkExperienceTagsRepository { get; }
 
         void Commit();
     }

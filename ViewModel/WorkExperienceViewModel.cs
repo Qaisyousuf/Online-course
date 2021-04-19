@@ -29,5 +29,12 @@ namespace ViewModel
         public string AnimationUrl { get; set; }
 
         public virtual ICollection<WorkExperienceTags> WorkExperTags { get; set; }
+
+        [Display(Name ="Tag Id")]
+        public int[] TagsId { get; set; }
+
+        [Display(Name ="Tag Name")]
+        public List<string> TagsNames { get; set; }
+
     }
 }

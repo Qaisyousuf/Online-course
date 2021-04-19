@@ -1,25 +1,22 @@
-﻿@model IEnumerable<ViewModel.QuizBasicInfoViewModel>
+﻿@model IEnumerable<ViewModel.WorkExperienceViewModel>
 
 @{
-    ViewBag.Title = "Quiz basic info";
+    ViewBag.Title = "Work Experience";
 }
-
-
 <div class="card">
     <h3 class="card-header blue-gradient white-text text-uppercase font-weight-normal text-center py-4">
-        Course Contents
+        Work Experience
     </h3>
     <div class="card-body">
-        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","QuizBasicInfo",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
+        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","WorkExperience",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
                     <tr>
                         <th scope="col" class="text-primary"><i class="fas fa-sort-numeric-down"></i># </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Full Name </th>
-                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Email </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Mobile </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Country </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Main Title </th>
+                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Title </th>
+                        @*<th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Tags </th>*@
                         <th scope="col" class="text-primary"><i class="fas fa-tools"></i> Action</th>
                     </tr>
                 </thead>
@@ -55,7 +52,7 @@
 
                 ],
                 "ajax": {
-                    "url": "/ALOTAdmin/QuizBasicInfo/GetQuizBasicInfoData",
+                    "url": "/ALOTAdmin/WorkExperience/GetWorkExperienceData",
                     "type": "GET",
                     "datatype": "json",
 
@@ -64,11 +61,9 @@
 
                 "columns": [
                     { "data": "Id" },
-                    { "data": "FullName" },
-                    { "data": "Email" },
-                    { "data": "Mobile" },
-                    { "data": "CountryNames.LandName" },
-
+                    { "data": "MainTitle" },
+                    { "data": "Title" },
+                    
 
                     {
                         "data": "actions",
@@ -76,7 +71,7 @@
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "QuizBasicInfo")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "QuizBasicInfo")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "WorkExperience")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "WorkExperience")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
@@ -205,7 +200,7 @@
             {
                 $.ajax({
                     type: "POST",
-                    url: '@Url.Action("Delete", "QuizBasicInfo")/' + id,
+                    url: '@Url.Action("Delete", "WorkExperience")/' + id,
                     success: function (data) {
                         if (data.success)
                         {

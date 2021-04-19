@@ -202,6 +202,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\StudetnsSaysController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionContentController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerIntroController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\TrainerPhilosophyController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserBenefitsSectionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\VideoReviewController.cs" />
@@ -397,6 +398,10 @@
     <Content Include="Areas\ALOTAdmin\Views\WorkExperience\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\WorkExperience\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\WorkExperience\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TrainerPhilosophy\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TrainerPhilosophy\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TrainerPhilosophy\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TrainerPhilosophy\Edit.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

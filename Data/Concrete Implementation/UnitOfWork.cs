@@ -68,6 +68,8 @@ namespace Data.Concrete_Implementation
 
         public IWorkExperienceTagsRepository WorkExperienceTagsRepository =>new  WorkExperienceTagsRepository(Context);
 
+        public ITrainerPhilosophyRepository TrainerPhilosophyRepository => new TrainerPhilosophyRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

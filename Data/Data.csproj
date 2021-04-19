@@ -85,6 +85,7 @@
     <Compile Include="Concrete Implementation\StudentsSaysRepository.cs" />
     <Compile Include="Concrete Implementation\SubscriptionContentRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerIntroRepository.cs" />
+    <Compile Include="Concrete Implementation\TrainerPhilosophyRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
     <Compile Include="Concrete Implementation\UserBenefitsSectionRepository.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Interfaces\IStudentsSaysRepository.cs" />
     <Compile Include="Interfaces\ISubscriptionContentRepository.cs" />
     <Compile Include="Interfaces\ITrainerIntroRepository.cs" />
+    <Compile Include="Interfaces\ITrainerPhilosophyRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUserbenefitsContentsRepository.cs" />
     <Compile Include="Interfaces\IUserBenefitsSectionRepository.cs" />

@@ -33,6 +33,7 @@ namespace Data.Interfaces
         IWorkExperienceRepository WorkExperienceRepository { get; }
         IWorkExperienceTagsRepository WorkExperienceTagsRepository { get; }
         ITrainerPhilosophyRepository TrainerPhilosophyRepository { get; }
+        ITrainerVisionRepository TrainerVisionRepository { get; }
 
         void Commit();
     }

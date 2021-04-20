@@ -70,6 +70,8 @@ namespace Data.Concrete_Implementation
 
         public ITrainerPhilosophyRepository TrainerPhilosophyRepository => new TrainerPhilosophyRepository(Context);
 
+        public ITrainerVisionRepository TrainerVisionRepository => new TrainerVisionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

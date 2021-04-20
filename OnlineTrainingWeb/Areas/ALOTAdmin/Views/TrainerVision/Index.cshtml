@@ -1,22 +1,24 @@
-﻿@model IEnumerable<ViewModel.TrainerPhilosophyViewModel>
+﻿@model IEnumerable<ViewModel.TrainerVisionViewModel>
 
 @{
-    ViewBag.Title = "Trainer Philosophy";
+    ViewBag.Title = "Trainer Vision";
 }
+
 <div class="card">
     <h3 class="card-header blue-gradient white-text text-uppercase font-weight-normal text-center py-4">
-        Trainer Philosophy
+        Trainer Vision
     </h3>
     <div class="card-body">
-        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","TrainerPhilosophy",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
+        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","TrainerVision",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
                     <tr>
                         <th scope="col" class="text-primary"><i class="fas fa-sort-numeric-down"></i># </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Main Title </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i>  Title </th>
                         <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Name </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Pic url </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Best Regards </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> ProfileImage url </th>
                         <th scope="col" class="text-primary"><i class="fas fa-tools"></i> Action</th>
                     </tr>
                 </thead>
@@ -52,7 +54,7 @@
 
                 ],
                 "ajax": {
-                    "url": "/ALOTAdmin/TrainerPhilosophy/GetTrainerPhilosophyData",
+                    "url": "/ALOTAdmin/TrainerVision/GetTrainerVisionData",
                     "type": "GET",
                     "datatype": "json",
 
@@ -61,8 +63,9 @@
 
                 "columns": [
                     { "data": "Id" },
-                    { "data": "MainTitle" },
-                    { "data": "Name" },
+                    { "data": "Title" },
+                    { "data": "TrainerName" },
+                    { "data": "BestRegards" },
                     { "data": "ProfileImageUrl" },
 
 
@@ -72,7 +75,7 @@
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "TrainerPhilosophy")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "TrainerPhilosophy")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "TrainerVision")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "TrainerVision")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
@@ -201,7 +204,7 @@
             {
                 $.ajax({
                     type: "POST",
-                    url: '@Url.Action("Delete", "TrainerPhilosophy")/' + id,
+                    url: '@Url.Action("Delete", "TrainerVision")/' + id,
                     success: function (data) {
                         if (data.success)
                         {

@@ -1,8 +1,10 @@
 using Data.Concrete_Implementation;
 using Data.Interfaces;
+using OnlineTrainingWeb.Controllers;
 using System;
 
 using Unity;
+using Unity.Injection;
 
 namespace OnlineTrainingWeb
 {
@@ -45,6 +47,10 @@ namespace OnlineTrainingWeb
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
             container.RegisterType<IUnitOfWork, UnitOfWork>();
+            container.RegisterType<AccountController>(new InjectionConstructor());
+           
+            container.RegisterType<ManageController>(new InjectionConstructor());
+            
         }
     }
 }

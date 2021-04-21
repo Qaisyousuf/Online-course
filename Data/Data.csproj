@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="Concrete Implementation\AboutBannerRepository.cs" />
+    <Compile Include="Concrete Implementation\AboutPageRepository.cs" />
     <Compile Include="Concrete Implementation\CountryNamesRepository.cs" />
     <Compile Include="Concrete Implementation\CourseContenntRepository.cs" />
     <Compile Include="Concrete Implementation\CourseEachSubSectionRepository.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Concrete Implementation\WorkExperienceTagsRepository.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
+    <Compile Include="Interfaces\IAboutPageRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
     <Compile Include="Interfaces\ICourseContenntRepository.cs" />
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />

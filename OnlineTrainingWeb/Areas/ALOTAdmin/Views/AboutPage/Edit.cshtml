@@ -1,10 +1,9 @@
-﻿@model ViewModel.HomePageViewModel
+﻿@model ViewModel.AboutPageViewModel
 @{
     Layout = null;
 }
 
-
-@using (Html.BeginForm("Edit", "HomePage", FormMethod.Post, new { onsubmit = "return SubmitFormEdit(this)" }))
+@using (Html.BeginForm("Edit", "AboutPage", FormMethod.Post, new { onsubmit = "return SubmitFormEdit(this)" }))
 {
     @Html.AntiForgeryToken()
 
@@ -34,20 +33,14 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.HomeBannerId, htmlAttributes: new { @class = "control-label" })
+                    @Html.LabelFor(model => model.BannerId, htmlAttributes: new { @class = "control-label" })
                     <div>
-                        @Html.DropDownListFor(m => m.HomeBannerId, new SelectList(ViewBag.HomeBannerData, "Id", "MainTitle"), "-----Select home banner ------", new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.HomeBannerId, "", new { @class = "text-danger" })
+                        @Html.DropDownListFor(m => m.BannerId, new SelectList(ViewBag.AboutBanner, "Id", "MainTitle"), "-----Select home banner ------", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.BannerId, "", new { @class = "text-danger" })
                     </div>
                 </div>
 
-                <div class="form-group">
-                    @Html.LabelFor(model => model.HomeExplorationBannerId, htmlAttributes: new { @class = "control-label" })
-                    <div>
-                        @Html.DropDownListFor(m => m.HomeExplorationBannerId, new SelectList(ViewBag.HomeExplorationData, "Id", "MainTitle"), "-----Select your country ------", new { @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.HomeExplorationBannerId, "", new { @class = "text-danger" })
-                    </div>
-                </div>
+             
 
             </div>
             <div class="col-lg-6">

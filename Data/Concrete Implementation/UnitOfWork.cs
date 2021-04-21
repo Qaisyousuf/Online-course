@@ -74,6 +74,8 @@ namespace Data.Concrete_Implementation
 
         public ITrainerSocialMediaRepository TrainerSocialMediaRepository => new TrainerSocialMediaRepository(Context);
 
+        public IAboutPageRepository AboutPageRepository => new AboutPageRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

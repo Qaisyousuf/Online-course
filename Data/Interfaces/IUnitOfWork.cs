@@ -35,6 +35,7 @@ namespace Data.Interfaces
         ITrainerPhilosophyRepository TrainerPhilosophyRepository { get; }
         ITrainerVisionRepository TrainerVisionRepository { get; }
         ITrainerSocialMediaRepository TrainerSocialMediaRepository { get; }
+        IAboutPageRepository AboutPageRepository { get; }
 
         void Commit();
     }

@@ -76,6 +76,8 @@ namespace Data.Concrete_Implementation
 
         public IAboutPageRepository AboutPageRepository => new AboutPageRepository(Context);
 
+        public ICourseBannerRepository CourseBannerRepository =>new CourseBannerRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

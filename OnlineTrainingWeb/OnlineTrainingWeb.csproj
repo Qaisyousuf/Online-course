@@ -186,6 +186,7 @@
     <Compile Include="Areas\ALOTAdmin\ALOTAdminAreaRegistration.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\AboutBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\AboutPageController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\CourseBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseEachSectionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\COVID19Controller.cs" />
@@ -417,6 +418,10 @@
     <Content Include="Areas\ALOTAdmin\Views\AboutPage\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\AboutPage\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\AboutPage\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseBanner\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseBanner\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseBanner\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseBanner\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

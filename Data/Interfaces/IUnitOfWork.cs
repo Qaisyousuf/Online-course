@@ -38,6 +38,7 @@ namespace Data.Interfaces
         IAboutPageRepository AboutPageRepository { get; }
         ICourseBannerRepository CourseBannerRepository { get; }
         ICourseContentExplanationRepository CourseContentExplanationRepository { get; }
+        ICourseDetailsRepository CourseDetailsRepository { get; }
 
         void Commit();
     }

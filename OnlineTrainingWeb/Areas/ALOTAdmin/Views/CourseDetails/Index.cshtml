@@ -1,23 +1,25 @@
-﻿
+﻿@model IEnumerable<ViewModel.CourseDetailsViewModel>
+
 @{
-    ViewBag.Title = "Home Page Banner";
+    ViewBag.Title = "Course Details";
 }
 
 <div class="card">
     <h3 class="card-header blue-gradient white-text text-uppercase font-weight-normal text-center py-4">
-       Home Banners
+        course details
     </h3>
     <div class="card-body">
-        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","HomeBanner",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
+        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","CourseDetails",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
                     <tr>
                         <th scope="col" class="text-primary"><i class="fas fa-sort-numeric-down"></i># </th>
                         <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Main Title </th>
-                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Sub Title </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Btn Join </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-glasses"></i> Btn Discover </th>
+                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Program Name </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Language </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Student Finished </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-glasses"></i> Trainer </th>
                         <th scope="col" class="text-primary"><i class="fas fa-tools"></i> Action</th>
                     </tr>
                 </thead>
@@ -38,34 +40,35 @@
                 "responsive": true,
                 "fixedHeader": true,
                 fixedColumns: true,
-               
+
                 "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-              
+
                 dom: 'Bfrtip',
                 buttons: [
                     {
                         extend: 'copyHtml5', footer: true,
-                        
+
                     },
                     { extend: 'excelHtml5', footer: true, download: 'open' },
                     { extend: 'csvHtml5', footer: true, download: 'open' },
                     { extend: 'pdfHtml5', footer: true, download: 'open' },
-                  
+
                 ],
                 "ajax": {
-                    "url": "/ALOTAdmin/HomeBanner/GetHomeBanner",
+                    "url": "/ALOTAdmin/CourseDetails/GetCourseDatailsData",
                     "type": "GET",
                     "datatype": "json",
-                   
-                    
+
+
                 },
-              
+
                 "columns": [
                     { "data": "Id" },
                     { "data": "MainTitle" },
-                    { "data": "SubTitle" },
-                    { "data": "JoinButton" },
-                    { "data": "DiscoverButton" },
+                    { "data": "ProgramName" },
+                    { "data": "Language" },
+                    { "data": "SutdentFinished" },
+                    { "data": "Trainer" },
 
 
                     {
@@ -74,11 +77,11 @@
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "HomeBanner")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "HomeBanner")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "CourseDetails")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "CourseDetails")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
-                       
+
                     }
 
                 ],
@@ -113,8 +116,8 @@
                         resizable: true,
                         title: 'Entry Form',
                         height: 500,
-                        
-                        
+
+
                         width: 900,
 
 
@@ -203,7 +206,7 @@
             {
                 $.ajax({
                     type: "POST",
-                    url: '@Url.Action("Delete", "HomeBanner")/' + id,
+                    url: '@Url.Action("Delete", "CourseDetails")/' + id,
                     success: function (data) {
                         if (data.success)
                         {
@@ -222,7 +225,7 @@
         }
 
 
-           
+
     </script>
 
 }

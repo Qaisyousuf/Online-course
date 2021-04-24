@@ -189,6 +189,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseContnetExplanationController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\CourseDetailsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseEachSectionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\COVID19Controller.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ForLearnerController.cs" />
@@ -427,6 +428,10 @@
     <Content Include="Areas\ALOTAdmin\Views\CourseContnetExplanation\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\CourseContnetExplanation\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\CourseContnetExplanation\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseDetails\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseDetails\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseDetails\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CourseDetails\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

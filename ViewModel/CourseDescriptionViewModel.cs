@@ -26,6 +26,7 @@ namespace ViewModel
 
         [Required]
         [Display(Name ="Image url")]
+        [DataType(DataType.Url)]
         public string ImageUrl { get; set; }
     }
 }

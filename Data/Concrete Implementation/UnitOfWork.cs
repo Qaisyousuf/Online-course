@@ -82,6 +82,8 @@ namespace Data.Concrete_Implementation
 
         public ICourseDetailsRepository CourseDetailsRepository => new CourseDetailsRepository(Context);
 
+        public ICourseDescriptionRepository CourseDescriptionRepository => new CourseDescriptionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

@@ -39,6 +39,7 @@ namespace Data.Interfaces
         ICourseBannerRepository CourseBannerRepository { get; }
         ICourseContentExplanationRepository CourseContentExplanationRepository { get; }
         ICourseDetailsRepository CourseDetailsRepository { get; }
+        ICourseDescriptionRepository CourseDescriptionRepository { get; }
 
         void Commit();
     }

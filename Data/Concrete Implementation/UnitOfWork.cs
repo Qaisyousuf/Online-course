@@ -86,6 +86,8 @@ namespace Data.Concrete_Implementation
 
         public IYouMayLikeRepository YouMayLikeRepository => new YouMayLikeRepository(Context);
 
+        public ILaunchYourCodingCareerRepository launchYourCoding => new LaunchYourCodingCareerRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

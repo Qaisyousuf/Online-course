@@ -1,10 +1,10 @@
-﻿@model ViewModel.CourseDescriptionViewModel
+﻿@model ViewModel.LaunchYourCodingCareerViewModel
 @{
     Layout = null;
 }
 <div>
     <div class="card-body card-body-cascade d-flex justify-content-center mt-n2">
-        @using (Html.BeginForm("Details", "CourseDescription", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
+        @using (Html.BeginForm("Details", "LaunchYourCodingCareer", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
         {
             @Html.HiddenFor(model => model.Id)
 
@@ -39,9 +39,17 @@
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
                                     </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.Title)</td>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.VideoUrl)</td>
 
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.Title)</td>
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.VideoUrl)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.AnimationUrl)</td>
+
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.AnimationUrl)</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -63,9 +71,17 @@
                                     <th scope="row">
                                         <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
                                     </th>
-                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.ImageUrl)</td>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.RegisterButton)</td>
 
-                                    <td class="text-primary"> @Html.DisplayFor(model => model.ImageUrl)</td>
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.RegisterButton)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold"> @Html.DisplayNameFor(model => model.RegisterButtonUrl)</td>
+
+                                    <td class="text-primary"> @Html.DisplayFor(model => model.RegisterButtonUrl)</td>
                                 </tr>
 
                                 <tr class="">

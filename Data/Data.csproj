@@ -79,6 +79,7 @@
     <Compile Include="Concrete Implementation\HomeExplanationBannerRepository.cs" />
     <Compile Include="Concrete Implementation\HomePageRepository.cs" />
     <Compile Include="Concrete Implementation\HowOnlineTrainingWorksRepository.cs" />
+    <Compile Include="Concrete Implementation\LaunchYourCodingCareerRepository.cs" />
     <Compile Include="Concrete Implementation\OnlinetrainingbenefitsRepository.cs" />
     <Compile Include="Concrete Implementation\OurVisionRepository.cs" />
     <Compile Include="Concrete Implementation\QuizBasicInfoRepository.cs" />
@@ -118,6 +119,7 @@
     <Compile Include="Interfaces\IForLearnerRepository.cs" />
     <Compile Include="Interfaces\IHomePageRepository.cs" />
     <Compile Include="Interfaces\IHowOnlineTrainingWorksRepository.cs" />
+    <Compile Include="Interfaces\ILaunchYourCodingCareerRepository.cs" />
     <Compile Include="Interfaces\IOnlinetrainingbenefitsRepository.cs" />
     <Compile Include="Interfaces\IOurVisionRepository.cs" />
     <Compile Include="Interfaces\IQuizBasicInfoRepository.cs" />

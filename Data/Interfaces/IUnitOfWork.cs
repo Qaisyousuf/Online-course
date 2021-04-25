@@ -41,6 +41,7 @@ namespace Data.Interfaces
         ICourseDetailsRepository CourseDetailsRepository { get; }
         ICourseDescriptionRepository CourseDescriptionRepository { get; }
         IYouMayLikeRepository YouMayLikeRepository { get; }
+        ILaunchYourCodingCareerRepository launchYourCoding { get; }
 
         void Commit();
     }

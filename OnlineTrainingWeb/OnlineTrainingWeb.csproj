@@ -198,6 +198,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeExplanationBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomePageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HowOnlineTrainingWorksController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\LaunchYourCodingCareerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OnlineTrainingBenefitsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizBasicInfoController.cs" />
@@ -442,6 +443,10 @@
     <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\LaunchYourCodingCareer\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\LaunchYourCodingCareer\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\LaunchYourCodingCareer\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\LaunchYourCodingCareer\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

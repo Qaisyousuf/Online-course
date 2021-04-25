@@ -84,6 +84,8 @@ namespace Data.Concrete_Implementation
 
         public ICourseDescriptionRepository CourseDescriptionRepository => new CourseDescriptionRepository(Context);
 
+        public IYouMayLikeRepository YouMayLikeRepository => new YouMayLikeRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

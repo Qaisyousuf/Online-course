@@ -40,6 +40,7 @@ namespace Data.Interfaces
         ICourseContentExplanationRepository CourseContentExplanationRepository { get; }
         ICourseDetailsRepository CourseDetailsRepository { get; }
         ICourseDescriptionRepository CourseDescriptionRepository { get; }
+        IYouMayLikeRepository YouMayLikeRepository { get; }
 
         void Commit();
     }

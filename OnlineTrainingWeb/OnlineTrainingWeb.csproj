@@ -217,6 +217,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\WhyOnlineTrainingIsImportantController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceTagController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\YouMayLikeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -437,6 +438,10 @@
     <Content Include="Areas\ALOTAdmin\Views\CourseDescription\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\CourseDescription\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\CourseDescription\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\YouMayLike\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

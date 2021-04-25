@@ -101,6 +101,7 @@
     <Compile Include="Concrete Implementation\WhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="Concrete Implementation\WorkExperienceRepository.cs" />
     <Compile Include="Concrete Implementation\WorkExperienceTagsRepository.cs" />
+    <Compile Include="Concrete Implementation\YouMayLikeRepository.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\IAboutPageRepository.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Interfaces\IWhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="Interfaces\IWorkExperienceRepository.cs" />
     <Compile Include="Interfaces\IWorkExperienceTagsRepository.cs" />
+    <Compile Include="Interfaces\IYouMayLikeRepository.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">
       <DependentUpon>202102042239365_Initial.cs</DependentUpon>

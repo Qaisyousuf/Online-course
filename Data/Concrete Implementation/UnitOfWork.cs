@@ -88,6 +88,8 @@ namespace Data.Concrete_Implementation
 
         public ILaunchYourCodingCareerRepository launchYourCoding => new LaunchYourCodingCareerRepository(Context);
 
+        public IQuiklinkRepository QuiklinkRepository => new QuiklinkRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

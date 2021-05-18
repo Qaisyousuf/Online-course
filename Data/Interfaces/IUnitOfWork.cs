@@ -44,6 +44,7 @@ namespace Data.Interfaces
         ILaunchYourCodingCareerRepository launchYourCoding { get; }
         IQuiklinkRepository QuiklinkRepository { get; }
         IThisProgramForWhoContentSectionRepository ThisProgramForWhoContentSectionRepository { get; }
+        IWhoIsThisProgramForEachDetailsRepository WhoIsThisProgramForEachDetails { get; }
 
         void Commit();
     }

@@ -101,6 +101,7 @@
     <Compile Include="Concrete Implementation\UserBenefitsSectionRepository.cs" />
     <Compile Include="Concrete Implementation\VideoReviewRepository.cs" />
     <Compile Include="Concrete Implementation\WhatTrainerLovesRepository.cs" />
+    <Compile Include="Concrete Implementation\WhoIsThisProgramForEachDetailsRepository.cs" />
     <Compile Include="Concrete Implementation\WhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="Concrete Implementation\WorkExperienceRepository.cs" />
     <Compile Include="Concrete Implementation\WorkExperienceTagsRepository.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="Interfaces\IUserBenefitsSectionRepository.cs" />
     <Compile Include="Interfaces\IVideoReviewRepository.cs" />
     <Compile Include="Interfaces\IWhatTrainerLovesRepository.cs" />
+    <Compile Include="Interfaces\IWhoIsThisProgramForEachDetailsRepository.cs" />
     <Compile Include="Interfaces\IWhyOnlineTrainingIsImportantRepository.cs" />
     <Compile Include="Interfaces\IWorkExperienceRepository.cs" />
     <Compile Include="Interfaces\IWorkExperienceTagsRepository.cs" />

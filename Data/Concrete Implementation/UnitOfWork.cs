@@ -92,6 +92,8 @@ namespace Data.Concrete_Implementation
 
         public IThisProgramForWhoContentSectionRepository ThisProgramForWhoContentSectionRepository => new ThisProgramForWhoContentSectionRepository(Context);
 
+        public IWhoIsThisProgramForEachDetailsRepository WhoIsThisProgramForEachDetails => new WhoIsThisProgramForEachDetailsRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

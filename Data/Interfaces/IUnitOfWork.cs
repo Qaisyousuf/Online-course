@@ -43,6 +43,7 @@ namespace Data.Interfaces
         IYouMayLikeRepository YouMayLikeRepository { get; }
         ILaunchYourCodingCareerRepository launchYourCoding { get; }
         IQuiklinkRepository QuiklinkRepository { get; }
+        IThisProgramForWhoContentSectionRepository ThisProgramForWhoContentSectionRepository { get; }
 
         void Commit();
     }

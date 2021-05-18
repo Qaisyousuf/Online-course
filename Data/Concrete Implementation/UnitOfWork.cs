@@ -90,6 +90,8 @@ namespace Data.Concrete_Implementation
 
         public IQuiklinkRepository QuiklinkRepository => new QuiklinkRepository(Context);
 
+        public IThisProgramForWhoContentSectionRepository ThisProgramForWhoContentSectionRepository => new ThisProgramForWhoContentSectionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

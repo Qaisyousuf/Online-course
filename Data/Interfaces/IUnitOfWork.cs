@@ -45,6 +45,7 @@ namespace Data.Interfaces
         IQuiklinkRepository QuiklinkRepository { get; }
         IThisProgramForWhoContentSectionRepository ThisProgramForWhoContentSectionRepository { get; }
         IWhoIsThisProgramForEachDetailsRepository WhoIsThisProgramForEachDetails { get; }
+        ILearningModelRepository LearningModelRepository { get; }
 
         void Commit();
     }

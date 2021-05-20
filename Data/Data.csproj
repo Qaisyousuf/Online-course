@@ -80,6 +80,7 @@
     <Compile Include="Concrete Implementation\HomePageRepository.cs" />
     <Compile Include="Concrete Implementation\HowOnlineTrainingWorksRepository.cs" />
     <Compile Include="Concrete Implementation\LaunchYourCodingCareerRepository.cs" />
+    <Compile Include="Concrete Implementation\LearningModelRepository.cs" />
     <Compile Include="Concrete Implementation\OnlinetrainingbenefitsRepository.cs" />
     <Compile Include="Concrete Implementation\OurVisionRepository.cs" />
     <Compile Include="Concrete Implementation\QuiklinkRepository.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Interfaces\IHomePageRepository.cs" />
     <Compile Include="Interfaces\IHowOnlineTrainingWorksRepository.cs" />
     <Compile Include="Interfaces\ILaunchYourCodingCareerRepository.cs" />
+    <Compile Include="Interfaces\ILearningModelRepository.cs" />
     <Compile Include="Interfaces\IOnlinetrainingbenefitsRepository.cs" />
     <Compile Include="Interfaces\IOurVisionRepository.cs" />
     <Compile Include="Interfaces\IQuiklinkRepository.cs" />

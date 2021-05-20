@@ -94,6 +94,7 @@ namespace Data.Concrete_Implementation
 
         public IWhoIsThisProgramForEachDetailsRepository WhoIsThisProgramForEachDetails => new WhoIsThisProgramForEachDetailsRepository(Context);
 
+        public ILearningModelRepository LearningModelRepository => new LearningModelRepository(Context);
         public void Commit()
         {
             Context.SaveChanges();

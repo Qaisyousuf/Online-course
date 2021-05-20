@@ -46,6 +46,7 @@ namespace Data.Interfaces
         IThisProgramForWhoContentSectionRepository ThisProgramForWhoContentSectionRepository { get; }
         IWhoIsThisProgramForEachDetailsRepository WhoIsThisProgramForEachDetails { get; }
         ILearningModelRepository LearningModelRepository { get; }
+        ICoursePageRepository CoursePageRepository { get; }
 
         void Commit();
     }

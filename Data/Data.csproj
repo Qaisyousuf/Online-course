@@ -73,6 +73,7 @@
     <Compile Include="Concrete Implementation\CourseDescriptionRepository.cs" />
     <Compile Include="Concrete Implementation\CourseDetailsRepository.cs" />
     <Compile Include="Concrete Implementation\CourseEachSubSectionRepository.cs" />
+    <Compile Include="Concrete Implementation\CoursePageRepository.cs" />
     <Compile Include="Concrete Implementation\Covid19Repository.cs" />
     <Compile Include="Concrete Implementation\ForLearnerRepository.cs" />
     <Compile Include="Concrete Implementation\HomeBannerRepository.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Interfaces\ICourseContentExplanationRepository.cs" />
     <Compile Include="Interfaces\ICourseDescriptionRepository.cs" />
     <Compile Include="Interfaces\ICourseDetailsRepository.cs" />
+    <Compile Include="Interfaces\ICoursePageRepository.cs" />
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />
     <Compile Include="Interfaces\ICovid19Repository.cs" />
     <Compile Include="Interfaces\IHomeBannerRepository.cs" />

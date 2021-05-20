@@ -198,6 +198,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\HomeExplanationBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HomePageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HowOnlineTrainingWorksController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\CoursePageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LaunchYourCodingCareerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LearningModelController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OnlineTrainingBenefitsController.cs" />
@@ -467,6 +468,10 @@
     <Content Include="Areas\ALOTAdmin\Views\LearningModel\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\LearningModel\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\LearningModel\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CoursePage\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CoursePage\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CoursePage\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\CoursePage\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -601,6 +606,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\ALOTAdmin\Views\ICoursePage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

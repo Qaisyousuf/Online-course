@@ -98,6 +98,8 @@ namespace Data.Concrete_Implementation
 
         public ICoursePageRepository CoursePageRepository => new CoursePageRepository(Context);
 
+        public IContactBannerRepository ContactBannerRepository => new ContactBannerRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

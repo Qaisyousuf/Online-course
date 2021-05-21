@@ -48,6 +48,7 @@ namespace Data.Interfaces
         ILearningModelRepository LearningModelRepository { get; }
         ICoursePageRepository CoursePageRepository { get; }
         IContactBannerRepository ContactBannerRepository { get; }
+        IContactDetailsRepository ContactDetailsRepository { get; }
 
         void Commit();
     }

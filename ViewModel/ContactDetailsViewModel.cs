@@ -24,13 +24,24 @@ namespace ViewModel
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [DataType(DataType.DateTime)]
-        [Display(Name ="Working Start Date")]
+        [DataType(DataType.Date)]
+        [Display(Name ="Start Date")]
         public DateTime WorkingStartDate { get; set; }
 
-        [DataType(DataType.DateTime)]
-        [Display(Name ="Working End Date")]
+        [DataType(DataType.Time)]
+        [Display(Name ="Start Time")]
+        public DateTime WorkingStartTime { get; set; }
+
+
+
+        [DataType(DataType.Date)]
+        [Display(Name ="End Date")]
         public DateTime WrokingEndDate { get; set; }
+
+
+        [DataType(DataType.Time)]
+        [Display(Name ="End Time")]
+        public DateTime EndTime { get; set; }
 
         [Required]
         public string Address { get; set; }

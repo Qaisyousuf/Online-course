@@ -102,6 +102,10 @@ namespace Data.Concrete_Implementation
 
         public IContactDetailsRepository ContactDetailsRepository => new ContactDetailsRepository(Context);
 
+        public IContactFormRepository ContactFormRepository => new ContactFormRepository(Context);
+
+        public IEmployeesNumbersRepository EmployeesNumbersRepository => new EmployeesNumbersRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

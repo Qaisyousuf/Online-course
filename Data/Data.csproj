@@ -68,6 +68,7 @@
     <Compile Include="Concrete Implementation\AboutPageRepository.cs" />
     <Compile Include="Concrete Implementation\ContactBannerRepository.cs" />
     <Compile Include="Concrete Implementation\ContactDetailsRepository.cs" />
+    <Compile Include="Concrete Implementation\ContactFormRepository.cs" />
     <Compile Include="Concrete Implementation\CountryNamesRepository.cs" />
     <Compile Include="Concrete Implementation\CourseBannerRepository.cs" />
     <Compile Include="Concrete Implementation\CourseContenntRepository.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Concrete Implementation\CourseEachSubSectionRepository.cs" />
     <Compile Include="Concrete Implementation\CoursePageRepository.cs" />
     <Compile Include="Concrete Implementation\Covid19Repository.cs" />
+    <Compile Include="Concrete Implementation\EmployeesNumbersRepository.cs" />
     <Compile Include="Concrete Implementation\ForLearnerRepository.cs" />
     <Compile Include="Concrete Implementation\HomeBannerRepository.cs" />
     <Compile Include="Concrete Implementation\HomeExplanationBannerRepository.cs" />
@@ -115,6 +117,7 @@
     <Compile Include="Interfaces\IAboutPageRepository.cs" />
     <Compile Include="Interfaces\IContactBannerRepository.cs" />
     <Compile Include="Interfaces\IContactDetailsRepository.cs" />
+    <Compile Include="Interfaces\IContactFormRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
     <Compile Include="Interfaces\ICourseBannerRepository.cs" />
     <Compile Include="Interfaces\ICourseContenntRepository.cs" />
@@ -124,6 +127,7 @@
     <Compile Include="Interfaces\ICoursePageRepository.cs" />
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />
     <Compile Include="Interfaces\ICovid19Repository.cs" />
+    <Compile Include="Interfaces\IEmployeesNumbersRepository.cs" />
     <Compile Include="Interfaces\IHomeBannerRepository.cs" />
     <Compile Include="Interfaces\IHomeExplanationBannerRepository.cs" />
     <Compile Include="Interfaces\IForLearnerRepository.cs" />
@@ -205,6 +209,10 @@
     <Compile Include="Migrations\202104181304532_WorkExperinceRelationChanged.Designer.cs">
       <DependentUpon>202104181304532_WorkExperinceRelationChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105211320250_ContactFomrDataTypeChanged.cs" />
+    <Compile Include="Migrations\202105211320250_ContactFomrDataTypeChanged.Designer.cs">
+      <DependentUpon>202105211320250_ContactFomrDataTypeChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -254,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104181304532_WorkExperinceRelationChanged.resx">
       <DependentUpon>202104181304532_WorkExperinceRelationChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105211320250_ContactFomrDataTypeChanged.resx">
+      <DependentUpon>202105211320250_ContactFomrDataTypeChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

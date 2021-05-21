@@ -188,6 +188,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\AboutPageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactDetailsController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\ContactFormController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CourseContnetExplanationController.cs" />
@@ -203,6 +204,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\CoursePageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LaunchYourCodingCareerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LearningModelController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\NumberOfEmployeesController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OnlineTrainingBenefitsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuikLinkController.cs" />
@@ -482,6 +484,12 @@
     <Content Include="Areas\ALOTAdmin\Views\ContactDetails\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ContactDetails\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ContactDetails\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\NumberOfEmployees\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\NumberOfEmployees\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\NumberOfEmployees\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\NumberOfEmployees\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ContactForm\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ContactForm\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -616,7 +624,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\ALOTAdmin\Views\ICoursePage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

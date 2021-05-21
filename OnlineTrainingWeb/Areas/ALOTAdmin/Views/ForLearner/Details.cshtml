@@ -6,7 +6,7 @@
 <div>
 
     <div class="card-body card-body-cascade d-flex justify-content-center mt-n2">
-        @using (Html.BeginForm("Details", "HomeExplanationBanner", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
+        @using (Html.BeginForm("Details", "ForLearner", FormMethod.Get, new { onsubmit = "return SubmitFormDetails(this)" }))
         {
             @Html.HiddenFor(model => model.Id)
 

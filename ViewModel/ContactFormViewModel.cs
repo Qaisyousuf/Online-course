@@ -24,7 +24,7 @@ namespace ViewModel
         public string JobTitle { get; set; }
 
         [DataType(DataType.MultilineText)]
-        public int Message { get; set; }
+        public string Message { get; set; }
 
 
         [Display(Name = "Employee")]

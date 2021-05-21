@@ -97,6 +97,7 @@
     <Compile Include="Concrete Implementation\Slug.cs" />
     <Compile Include="Concrete Implementation\StudentsSaysRepository.cs" />
     <Compile Include="Concrete Implementation\SubscriptionContentRepository.cs" />
+    <Compile Include="Concrete Implementation\SubscriptionSystemRepository.cs" />
     <Compile Include="Concrete Implementation\ThisProgramForWhoContentSectionRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerIntroRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerPhilosophyRepository.cs" />
@@ -146,6 +147,7 @@
     <Compile Include="Interfaces\ISlug.cs" />
     <Compile Include="Interfaces\IStudentsSaysRepository.cs" />
     <Compile Include="Interfaces\ISubscriptionContentRepository.cs" />
+    <Compile Include="Interfaces\ISubscriptionSystemRepository.cs" />
     <Compile Include="Interfaces\IThisProgramForWhoContentSectionRepository.cs" />
     <Compile Include="Interfaces\ITrainerIntroRepository.cs" />
     <Compile Include="Interfaces\ITrainerPhilosophyRepository.cs" />

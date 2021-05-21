@@ -214,6 +214,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizResultsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\StudetnsSaysController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionContentController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionSystemController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ThisProgramForWhoContentSectionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerIntroController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerPhilosophyController.cs" />
@@ -490,6 +491,8 @@
     <Content Include="Areas\ALOTAdmin\Views\NumberOfEmployees\Details.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ContactForm\Index.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ContactForm\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SubscriptionSystem\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SubscriptionSystem\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

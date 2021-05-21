@@ -106,6 +106,8 @@ namespace Data.Concrete_Implementation
 
         public IEmployeesNumbersRepository EmployeesNumbersRepository => new EmployeesNumbersRepository(Context);
 
+        public ISubscriptionSystemRepository SubscriptionSystemRepository => new SubscriptionSystemRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

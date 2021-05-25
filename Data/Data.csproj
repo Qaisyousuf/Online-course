@@ -69,6 +69,7 @@
     <Compile Include="Concrete Implementation\ContactBannerRepository.cs" />
     <Compile Include="Concrete Implementation\ContactDetailsRepository.cs" />
     <Compile Include="Concrete Implementation\ContactFormRepository.cs" />
+    <Compile Include="Concrete Implementation\ContactPageRepository.cs" />
     <Compile Include="Concrete Implementation\CountryNamesRepository.cs" />
     <Compile Include="Concrete Implementation\CourseBannerRepository.cs" />
     <Compile Include="Concrete Implementation\CourseContenntRepository.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="Interfaces\IContactBannerRepository.cs" />
     <Compile Include="Interfaces\IContactDetailsRepository.cs" />
     <Compile Include="Interfaces\IContactFormRepository.cs" />
+    <Compile Include="Interfaces\IContactPageRepository.cs" />
     <Compile Include="Interfaces\ICountryNamesRepository.cs" />
     <Compile Include="Interfaces\ICourseBannerRepository.cs" />
     <Compile Include="Interfaces\ICourseContenntRepository.cs" />

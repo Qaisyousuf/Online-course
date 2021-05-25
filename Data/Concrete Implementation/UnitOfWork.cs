@@ -108,6 +108,8 @@ namespace Data.Concrete_Implementation
 
         public ISubscriptionSystemRepository SubscriptionSystemRepository => new SubscriptionSystemRepository(Context);
 
+        public IContactPageRepository ContactpageRepository => new ContactPageRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

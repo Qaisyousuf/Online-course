@@ -52,6 +52,8 @@ namespace Data.Interfaces
         IContactFormRepository ContactFormRepository { get; }
         IEmployeesNumbersRepository EmployeesNumbersRepository { get; }
         ISubscriptionSystemRepository SubscriptionSystemRepository { get; }
+        IContactPageRepository ContactpageRepository { get; }
+
 
         void Commit();
     }

@@ -53,6 +53,7 @@ namespace Data.Interfaces
         IEmployeesNumbersRepository EmployeesNumbersRepository { get; }
         ISubscriptionSystemRepository SubscriptionSystemRepository { get; }
         IContactPageRepository ContactpageRepository { get; }
+        IBusinessBannerRepository BusinessBannerRepository { get; }
 
 
         void Commit();

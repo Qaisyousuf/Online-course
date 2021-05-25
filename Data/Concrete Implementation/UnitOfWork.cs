@@ -110,6 +110,8 @@ namespace Data.Concrete_Implementation
 
         public IContactPageRepository ContactpageRepository => new ContactPageRepository(Context);
 
+        public IBusinessBannerRepository BusinessBannerRepository => new BusinessBannerRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

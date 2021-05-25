@@ -66,6 +66,7 @@
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="Concrete Implementation\AboutBannerRepository.cs" />
     <Compile Include="Concrete Implementation\AboutPageRepository.cs" />
+    <Compile Include="Concrete Implementation\BusinessBannerRepository.cs" />
     <Compile Include="Concrete Implementation\ContactBannerRepository.cs" />
     <Compile Include="Concrete Implementation\ContactDetailsRepository.cs" />
     <Compile Include="Concrete Implementation\ContactFormRepository.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\IAboutPageRepository.cs" />
+    <Compile Include="Interfaces\IBusinessBannerRepository.cs" />
     <Compile Include="Interfaces\IContactBannerRepository.cs" />
     <Compile Include="Interfaces\IContactDetailsRepository.cs" />
     <Compile Include="Interfaces\IContactFormRepository.cs" />

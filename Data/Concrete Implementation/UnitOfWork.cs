@@ -112,6 +112,8 @@ namespace Data.Concrete_Implementation
 
         public IBusinessBannerRepository BusinessBannerRepository => new BusinessBannerRepository(Context);
 
+        public IUpskillingImportanceRepository UpskillingImportanceRepository => new UpskillingImportanceRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

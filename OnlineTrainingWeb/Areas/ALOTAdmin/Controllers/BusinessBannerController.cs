@@ -137,7 +137,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
             uow.BusinessBannerRepository.Remove(businessBanner);
             uow.Commit();
 
-            return View(viewmodel);
+            return Json(new { success = true, message = "Data deleted successfuly" }, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

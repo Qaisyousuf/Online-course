@@ -54,7 +54,7 @@ namespace Data.Interfaces
         ISubscriptionSystemRepository SubscriptionSystemRepository { get; }
         IContactPageRepository ContactpageRepository { get; }
         IBusinessBannerRepository BusinessBannerRepository { get; }
-
+        IUpskillingImportanceRepository UpskillingImportanceRepository { get; }
 
         void Commit();
     }

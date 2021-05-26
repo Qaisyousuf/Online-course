@@ -120,6 +120,8 @@ namespace Data.Concrete_Implementation
 
         public IWhyYouNeedUpskillingYourTeamRepository WhyYouNeedUpskillingYourTeamRepository => new WhyYouNeedUpskillingYourTeamRepository(Context);
 
+        public IWhyYouNeedUpSkillingYourTeamSectionRepository WhyYouNeedUpSkillingYourTeamSection => new WhyYouNeedUpSkillingYourTeamSectionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

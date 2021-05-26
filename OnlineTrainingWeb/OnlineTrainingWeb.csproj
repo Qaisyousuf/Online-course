@@ -232,6 +232,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\WhoIsThisProgramEachDetailsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WhyOnlineTrainingIsImportantController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WhyYouNeedUpskillingYourTeamController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\WhyYouNeedUpSkillingYourTeamSectionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceTagController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\YouMayLikeController.cs" />
@@ -523,6 +524,10 @@
     <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpskillingYourTeam\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpskillingYourTeam\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpskillingYourTeam\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpSkillingYourTeamSection\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpSkillingYourTeamSection\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpSkillingYourTeamSection\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\WhyYouNeedUpSkillingYourTeamSection\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

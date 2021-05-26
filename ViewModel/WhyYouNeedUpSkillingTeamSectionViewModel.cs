@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    public class WhyYouNeedUpSkillingTeamSection
+    public class WhyYouNeedUpSkillingTeamSectionViewModel
     {
         public int Id { get; set; }
 

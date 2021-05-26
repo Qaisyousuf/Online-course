@@ -115,6 +115,9 @@ namespace Data.Concrete_Implementation
         public IUpskillingImportanceRepository UpskillingImportanceRepository => new UpskillingImportanceRepository(Context);
 
         public IUpskillingExplorationRepository UpskillingExplorationRepository => new UpskillingExplorationRepository(Context);
+
+        public ITrustedbyForUpSkillingRepository TrustedbyForUpSkillingRepository => new TrustedbyForUpSkillingRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

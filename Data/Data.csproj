@@ -105,6 +105,7 @@
     <Compile Include="Concrete Implementation\TrainerPhilosophyRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerSocialMediaRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerVisionRepository.cs" />
+    <Compile Include="Concrete Implementation\TrustedbyForUpSkillingRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="Concrete Implementation\UpskillingExplorationRepository.cs" />
     <Compile Include="Concrete Implementation\UpskillingImportanceRepository.cs" />
@@ -159,6 +160,7 @@
     <Compile Include="Interfaces\ITrainerPhilosophyRepository.cs" />
     <Compile Include="Interfaces\ITrainerSocialMediaRepository.cs" />
     <Compile Include="Interfaces\ITrainerVisionRepository.cs" />
+    <Compile Include="Interfaces\ITrustedbyForUpSkillingRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUpskillingExplorationRepository.cs" />
     <Compile Include="Interfaces\IUpskillingImportanceRepository.cs" />

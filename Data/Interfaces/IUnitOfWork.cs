@@ -56,6 +56,7 @@ namespace Data.Interfaces
         IBusinessBannerRepository BusinessBannerRepository { get; }
         IUpskillingImportanceRepository UpskillingImportanceRepository { get; }
         IUpskillingExplorationRepository UpskillingExplorationRepository { get; }
+        ITrustedbyForUpSkillingRepository TrustedbyForUpSkillingRepository { get; }
 
         void Commit();
     }

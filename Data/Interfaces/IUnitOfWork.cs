@@ -57,6 +57,7 @@ namespace Data.Interfaces
         IUpskillingImportanceRepository UpskillingImportanceRepository { get; }
         IUpskillingExplorationRepository UpskillingExplorationRepository { get; }
         ITrustedbyForUpSkillingRepository TrustedbyForUpSkillingRepository { get; }
+        IWhyYouNeedUpskillingYourTeamRepository WhyYouNeedUpskillingYourTeamRepository { get; }
 
         void Commit();
     }

@@ -118,6 +118,8 @@ namespace Data.Concrete_Implementation
 
         public ITrustedbyForUpSkillingRepository TrustedbyForUpSkillingRepository => new TrustedbyForUpSkillingRepository(Context);
 
+        public IWhyYouNeedUpskillingYourTeamRepository WhyYouNeedUpskillingYourTeamRepository => new WhyYouNeedUpskillingYourTeamRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

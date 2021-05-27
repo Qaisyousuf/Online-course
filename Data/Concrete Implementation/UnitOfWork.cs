@@ -126,6 +126,8 @@ namespace Data.Concrete_Implementation
 
         public IBuildBetterSkillsFasterSectionRepository BuildBetterSkillsFasterSectionRepository => new BuildBetterSkillsFasterSectionRepository(Context);
 
+        public IGeolocationStudentsRepository GeolocationStudentsRepository => new GeolocationStudentsRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

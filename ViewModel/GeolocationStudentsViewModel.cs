@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Model;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
@@ -17,14 +19,18 @@ namespace ViewModel
         public string Name { get; set; }
 
         [Required]
-        public string Country { get; set; }
-
-        [Required]
         [Display(Name="Program Name")]
         public string ProgramName { get; set; }
 
         [Required]
         [Display(Name="Country Flag")]
         public string CountryFlag { get; set; }
+
+
+        [Display(Name = "Country Name")]
+        public int CountryId { get; set; }
+
+        [ForeignKey("CountryId")]
+        public CountryName CountryName { get; set; }
     }
 }

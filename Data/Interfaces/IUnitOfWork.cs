@@ -59,6 +59,7 @@ namespace Data.Interfaces
         ITrustedbyForUpSkillingRepository TrustedbyForUpSkillingRepository { get; }
         IWhyYouNeedUpskillingYourTeamRepository WhyYouNeedUpskillingYourTeamRepository { get; }
         IWhyYouNeedUpSkillingYourTeamSectionRepository WhyYouNeedUpSkillingYourTeamSection { get; }
+        IBuillBetterSkillsFasterRepository BuillBetterSkillsFasterRepository { get; }
 
         void Commit();
     }

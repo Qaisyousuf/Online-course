@@ -79,6 +79,7 @@ namespace Data
         public DbSet<YouMayLike> YouMayLikes { get; set; }
         public DbSet<QuizResults> QuizResults { get; set; }
         public DbSet<UpskillingEmployee> UpskillingEmployees { get; set; }
+        public DbSet<ITSkillsGapImpactsOnBusiness> ITSkillsGapImpactsOnBusinesses { get; set; }
 
 
 

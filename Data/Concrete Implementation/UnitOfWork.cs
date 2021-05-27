@@ -130,6 +130,8 @@ namespace Data.Concrete_Implementation
 
         public IUpSkillingEmployeesRepository UpSkillingEmployeesRepository => new UpSkillingEmployeesRepository(Context);
 
+        public IITSkillsGapImpactsOnBusinessRepository ITSkillsGapImpactsOnBusiness => new ITSkillsGapImpactsOnBusinessRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

@@ -207,6 +207,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\HomePageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\HowOnlineTrainingWorksController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\CoursePageController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\ITSkillGapImpactOnbusinessController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LaunchYourCodingCareerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LearningModelController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\NumberOfEmployeesController.cs" />
@@ -548,6 +549,10 @@
     <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ITSkillGapImpactOnbusiness\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ITSkillGapImpactOnbusiness\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ITSkillGapImpactOnbusiness\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ITSkillGapImpactOnbusiness\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

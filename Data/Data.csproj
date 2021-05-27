@@ -89,6 +89,7 @@
     <Compile Include="Concrete Implementation\HomeExplanationBannerRepository.cs" />
     <Compile Include="Concrete Implementation\HomePageRepository.cs" />
     <Compile Include="Concrete Implementation\HowOnlineTrainingWorksRepository.cs" />
+    <Compile Include="Concrete Implementation\ITSkillsGapImpactsOnBusinessRepository.cs" />
     <Compile Include="Concrete Implementation\LaunchYourCodingCareerRepository.cs" />
     <Compile Include="Concrete Implementation\LearningModelRepository.cs" />
     <Compile Include="Concrete Implementation\OnlinetrainingbenefitsRepository.cs" />
@@ -150,6 +151,7 @@
     <Compile Include="Interfaces\IForLearnerRepository.cs" />
     <Compile Include="Interfaces\IHomePageRepository.cs" />
     <Compile Include="Interfaces\IHowOnlineTrainingWorksRepository.cs" />
+    <Compile Include="Interfaces\IITSkillsGapImpactsOnBusinessRepository.cs" />
     <Compile Include="Interfaces\ILaunchYourCodingCareerRepository.cs" />
     <Compile Include="Interfaces\ILearningModelRepository.cs" />
     <Compile Include="Interfaces\IOnlinetrainingbenefitsRepository.cs" />
@@ -249,6 +251,10 @@
     <Compile Include="Migrations\202105271324285_UpSkillingEmployeeAdded.Designer.cs">
       <DependentUpon>202105271324285_UpSkillingEmployeeAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105271455515_ITSkillsGapImpactOnBusiness.cs" />
+    <Compile Include="Migrations\202105271455515_ITSkillsGapImpactOnBusiness.Designer.cs">
+      <DependentUpon>202105271455515_ITSkillsGapImpactOnBusiness.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -310,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105271324285_UpSkillingEmployeeAdded.resx">
       <DependentUpon>202105271324285_UpSkillingEmployeeAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105271455515_ITSkillsGapImpactOnBusiness.resx">
+      <DependentUpon>202105271455515_ITSkillsGapImpactOnBusiness.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

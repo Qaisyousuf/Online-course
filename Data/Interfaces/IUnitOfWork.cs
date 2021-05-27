@@ -63,6 +63,7 @@ namespace Data.Interfaces
         IBuildBetterSkillsFasterSectionRepository BuildBetterSkillsFasterSectionRepository { get; }
         IGeolocationStudentsRepository GeolocationStudentsRepository { get; }
         IUpSkillingEmployeesRepository UpSkillingEmployeesRepository { get; }
+        IITSkillsGapImpactsOnBusinessRepository ITSkillsGapImpactsOnBusiness { get; }
 
         void Commit();
     }

@@ -226,6 +226,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerSocialMediaController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrustedbyForUpSkillingController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingEmployeeController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingExplorationController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingImportanceController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
@@ -543,6 +544,10 @@
     <Content Include="Areas\ALOTAdmin\Views\GeoLocationStudents\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\GeoLocationStudents\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\GeoLocationStudents\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UpSkillingEmployee\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

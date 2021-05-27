@@ -86,6 +86,7 @@
     <Compile Include="ThankYouPage.cs" />
     <Compile Include="TrustedbyForUpSkilling.cs" />
     <Compile Include="TwitterMetaTags.cs" />
+    <Compile Include="UpskillingEmployee .cs" />
     <Compile Include="UpskillingExploration.cs" />
     <Compile Include="UpskillingImportance.cs" />
     <Compile Include="WhoIsThisProgramForContentSection.cs" />

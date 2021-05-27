@@ -110,6 +110,7 @@
     <Compile Include="Concrete Implementation\TrainerVisionRepository.cs" />
     <Compile Include="Concrete Implementation\TrustedbyForUpSkillingRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
+    <Compile Include="Concrete Implementation\UpSkillingEmployeesRepository.cs" />
     <Compile Include="Concrete Implementation\UpskillingExplorationRepository.cs" />
     <Compile Include="Concrete Implementation\UpskillingImportanceRepository.cs" />
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="Interfaces\ITrainerVisionRepository.cs" />
     <Compile Include="Interfaces\ITrustedbyForUpSkillingRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\IUpSkillingEmployeesRepository.cs" />
     <Compile Include="Interfaces\IUpskillingExplorationRepository.cs" />
     <Compile Include="Interfaces\IUpskillingImportanceRepository.cs" />
     <Compile Include="Interfaces\IUserbenefitsContentsRepository.cs" />
@@ -243,6 +245,10 @@
     <Compile Include="Migrations\202105270958106_GeolocationModelChangedForCountryName.Designer.cs">
       <DependentUpon>202105270958106_GeolocationModelChangedForCountryName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105271324285_UpSkillingEmployeeAdded.cs" />
+    <Compile Include="Migrations\202105271324285_UpSkillingEmployeeAdded.Designer.cs">
+      <DependentUpon>202105271324285_UpSkillingEmployeeAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -301,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105270958106_GeolocationModelChangedForCountryName.resx">
       <DependentUpon>202105270958106_GeolocationModelChangedForCountryName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105271324285_UpSkillingEmployeeAdded.resx">
+      <DependentUpon>202105271324285_UpSkillingEmployeeAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

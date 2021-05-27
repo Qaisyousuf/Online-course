@@ -78,6 +78,7 @@ namespace Data
         public DbSet<WorkExperienceTags> WorkExperienceTags { get; set; }
         public DbSet<YouMayLike> YouMayLikes { get; set; }
         public DbSet<QuizResults> QuizResults { get; set; }
+        public DbSet<UpskillingEmployee> UpskillingEmployees { get; set; }
 
 
 

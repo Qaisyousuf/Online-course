@@ -128,6 +128,8 @@ namespace Data.Concrete_Implementation
 
         public IGeolocationStudentsRepository GeolocationStudentsRepository => new GeolocationStudentsRepository(Context);
 
+        public IUpSkillingEmployeesRepository UpSkillingEmployeesRepository => new UpSkillingEmployeesRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

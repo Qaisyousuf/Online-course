@@ -60,6 +60,7 @@ namespace Data.Interfaces
         IWhyYouNeedUpskillingYourTeamRepository WhyYouNeedUpskillingYourTeamRepository { get; }
         IWhyYouNeedUpSkillingYourTeamSectionRepository WhyYouNeedUpSkillingYourTeamSection { get; }
         IBuillBetterSkillsFasterRepository BuillBetterSkillsFasterRepository { get; }
+        IBuildBetterSkillsFasterSectionRepository BuildBetterSkillsFasterSectionRepository { get; }
 
         void Commit();
     }

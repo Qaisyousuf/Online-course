@@ -140,6 +140,8 @@ namespace Data.Concrete_Implementation
 
         public IOGTagsRepository OGTagsRepository => new OGTagsRepository(Context);
 
+        public ITwitterTagRepository TwitterTagRepository => new TwitterTagRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

@@ -231,6 +231,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerSocialMediaController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrainerVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\TrustedbyForUpSkillingController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\TwitterTagsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingEmployeeController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingExplorationController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingImportanceController.cs" />
@@ -573,6 +574,10 @@
     <Content Include="Areas\ALOTAdmin\Views\OGTags\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\OGTags\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\OGTags\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

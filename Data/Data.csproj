@@ -114,6 +114,7 @@
     <Compile Include="Concrete Implementation\TrainerSocialMediaRepository.cs" />
     <Compile Include="Concrete Implementation\TrainerVisionRepository.cs" />
     <Compile Include="Concrete Implementation\TrustedbyForUpSkillingRepository.cs" />
+    <Compile Include="Concrete Implementation\TwitterTagRepository.cs" />
     <Compile Include="Concrete Implementation\UnitOfWork.cs" />
     <Compile Include="Concrete Implementation\UpSkillingEmployeesRepository.cs" />
     <Compile Include="Concrete Implementation\UpskillingExplorationRepository.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Interfaces\ITrainerSocialMediaRepository.cs" />
     <Compile Include="Interfaces\ITrainerVisionRepository.cs" />
     <Compile Include="Interfaces\ITrustedbyForUpSkillingRepository.cs" />
+    <Compile Include="Interfaces\ITwitterTagRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\IUpSkillingEmployeesRepository.cs" />
     <Compile Include="Interfaces\IUpskillingExplorationRepository.cs" />

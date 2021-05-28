@@ -68,6 +68,8 @@ namespace Data.Interfaces
         IBusinessPageRepository BusinessPageRepository { get; }
         IMetaTagRepository MetaTagRepository { get; }
         IOGTagsRepository OGTagsRepository { get; }
+        ITwitterTagRepository TwitterTagRepository { get; }
+
 
         void Commit();
     }

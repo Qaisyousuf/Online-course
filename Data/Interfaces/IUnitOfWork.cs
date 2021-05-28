@@ -66,6 +66,7 @@ namespace Data.Interfaces
         IITSkillsGapImpactsOnBusinessRepository ITSkillsGapImpactsOnBusiness { get; }
         IITGapSkillsSectionRepository ITGapSkillsSectionRepository { get; }
         IBusinessPageRepository BusinessPageRepository { get; }
+        IMetaTagRepository MetaTagRepository { get; }
 
         void Commit();
     }

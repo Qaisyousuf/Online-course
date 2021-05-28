@@ -136,6 +136,8 @@ namespace Data.Concrete_Implementation
 
         public IBusinessPageRepository BusinessPageRepository => new BusinessPageRepository(Context);
 
+        public IMetaTagRepository MetaTagRepository => new MetaTagRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

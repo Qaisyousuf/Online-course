@@ -77,6 +77,7 @@
     <Compile Include="CoursePage.cs" />
     <Compile Include="Emplyees.cs" />
     <Compile Include="GeolocationStudents.cs" />
+    <Compile Include="ITSkillGapSection.cs" />
     <Compile Include="ITSkillsGapImpactsOnBusiness.cs" />
     <Compile Include="LaunchYourCodingCareer.cs" />
     <Compile Include="LearningModel.cs" />

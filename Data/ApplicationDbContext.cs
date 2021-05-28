@@ -80,6 +80,8 @@ namespace Data
         public DbSet<QuizResults> QuizResults { get; set; }
         public DbSet<UpskillingEmployee> UpskillingEmployees { get; set; }
         public DbSet<ITSkillsGapImpactsOnBusiness> ITSkillsGapImpactsOnBusinesses { get; set; }
+        public DbSet<ITSkillGapSection> ITSkillsGapSections { get; set; }
+
 
 
 

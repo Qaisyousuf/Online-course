@@ -112,6 +112,7 @@
     <Compile Include="HomeExplorationBannerViewModel.cs" />
     <Compile Include="HomePageViewModel.cs" />
     <Compile Include="HowOnlineTrainingWorksViewModel.cs" />
+    <Compile Include="ITSkillGapSectionViewModel.cs" />
     <Compile Include="ITSkillsGapImpactsOnBusinessViewModel.cs" />
     <Compile Include="LaunchYourCodingCareerViewModel.cs" />
     <Compile Include="LearningModelViewModel.cs" />

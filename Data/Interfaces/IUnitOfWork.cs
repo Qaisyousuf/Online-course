@@ -64,6 +64,7 @@ namespace Data.Interfaces
         IGeolocationStudentsRepository GeolocationStudentsRepository { get; }
         IUpSkillingEmployeesRepository UpSkillingEmployeesRepository { get; }
         IITSkillsGapImpactsOnBusinessRepository ITSkillsGapImpactsOnBusiness { get; }
+        IITGapSkillsSectionRepository ITGapSkillsSectionRepository { get; }
 
         void Commit();
     }

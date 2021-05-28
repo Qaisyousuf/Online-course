@@ -132,6 +132,8 @@ namespace Data.Concrete_Implementation
 
         public IITSkillsGapImpactsOnBusinessRepository ITSkillsGapImpactsOnBusiness => new ITSkillsGapImpactsOnBusinessRepository(Context);
 
+        public IITGapSkillsSectionRepository ITGapSkillsSectionRepository => new ITGapSkillsSectionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

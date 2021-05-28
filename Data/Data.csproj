@@ -95,6 +95,7 @@
     <Compile Include="Concrete Implementation\LaunchYourCodingCareerRepository.cs" />
     <Compile Include="Concrete Implementation\LearningModelRepository.cs" />
     <Compile Include="Concrete Implementation\MetaTagRepository.cs" />
+    <Compile Include="Concrete Implementation\OGTagsRepository.cs" />
     <Compile Include="Concrete Implementation\OnlinetrainingbenefitsRepository.cs" />
     <Compile Include="Concrete Implementation\OurVisionRepository.cs" />
     <Compile Include="Concrete Implementation\QuiklinkRepository.cs" />
@@ -160,6 +161,7 @@
     <Compile Include="Interfaces\ILaunchYourCodingCareerRepository.cs" />
     <Compile Include="Interfaces\ILearningModelRepository.cs" />
     <Compile Include="Interfaces\IMetaTagRepository.cs" />
+    <Compile Include="Interfaces\IOGTagsRepository.cs" />
     <Compile Include="Interfaces\IOnlinetrainingbenefitsRepository.cs" />
     <Compile Include="Interfaces\IOurVisionRepository.cs" />
     <Compile Include="Interfaces\IQuiklinkRepository.cs" />

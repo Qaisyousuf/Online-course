@@ -214,6 +214,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\LearningModelController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\MetaTagsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\NumberOfEmployeesController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\OGTagsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OnlineTrainingBenefitsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuikLinkController.cs" />
@@ -568,6 +569,10 @@
     <Content Include="Areas\ALOTAdmin\Views\MetaTags\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\MetaTags\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\MetaTags\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OGTags\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OGTags\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OGTags\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OGTags\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

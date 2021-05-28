@@ -138,6 +138,8 @@ namespace Data.Concrete_Implementation
 
         public IMetaTagRepository MetaTagRepository => new MetaTagRepository(Context);
 
+        public IOGTagsRepository OGTagsRepository => new OGTagsRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

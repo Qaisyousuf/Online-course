@@ -69,6 +69,7 @@
     <Compile Include="Concrete Implementation\BuildBetterSkillsFasterSectionRepository.cs" />
     <Compile Include="Concrete Implementation\BuillBetterSkillsFasterRepository.cs" />
     <Compile Include="Concrete Implementation\BusinessBannerRepository.cs" />
+    <Compile Include="Concrete Implementation\BusinessPageRepository.cs" />
     <Compile Include="Concrete Implementation\ContactBannerRepository.cs" />
     <Compile Include="Concrete Implementation\ContactDetailsRepository.cs" />
     <Compile Include="Concrete Implementation\ContactFormRepository.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Interfaces\IBuildBetterSkillsFasterSectionRepository.cs" />
     <Compile Include="Interfaces\IBuillBetterSkillsFasterRepository.cs" />
     <Compile Include="Interfaces\IBusinessBannerRepository.cs" />
+    <Compile Include="Interfaces\IBusinessPageRepository.cs" />
     <Compile Include="Interfaces\IContactBannerRepository.cs" />
     <Compile Include="Interfaces\IContactDetailsRepository.cs" />
     <Compile Include="Interfaces\IContactFormRepository.cs" />
@@ -261,6 +263,10 @@
     <Compile Include="Migrations\202105280719117_ITSkillGapSectionAdded.Designer.cs">
       <DependentUpon>202105280719117_ITSkillGapSectionAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105280832458_BusinessPageAdded.cs" />
+    <Compile Include="Migrations\202105280832458_BusinessPageAdded.Designer.cs">
+      <DependentUpon>202105280832458_BusinessPageAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -328,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105280719117_ITSkillGapSectionAdded.resx">
       <DependentUpon>202105280719117_ITSkillGapSectionAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105280832458_BusinessPageAdded.resx">
+      <DependentUpon>202105280832458_BusinessPageAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

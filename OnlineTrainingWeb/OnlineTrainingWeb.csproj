@@ -189,6 +189,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\BuildBetterSkillsFasterController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\BuildBetterSkillsFasterSecitonController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\BusinessBannerController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\BusinessPageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactDetailsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactFormController.cs" />
@@ -558,6 +559,10 @@
     <Content Include="Areas\ALOTAdmin\Views\ITGapSkillsSection\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ITGapSkillsSection\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\ITGapSkillsSection\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\BusinessPage\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\BusinessPage\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\BusinessPage\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\BusinessPage\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

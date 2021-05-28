@@ -65,6 +65,7 @@ namespace Data.Interfaces
         IUpSkillingEmployeesRepository UpSkillingEmployeesRepository { get; }
         IITSkillsGapImpactsOnBusinessRepository ITSkillsGapImpactsOnBusiness { get; }
         IITGapSkillsSectionRepository ITGapSkillsSectionRepository { get; }
+        IBusinessPageRepository BusinessPageRepository { get; }
 
         void Commit();
     }

@@ -134,6 +134,8 @@ namespace Data.Concrete_Implementation
 
         public IITGapSkillsSectionRepository ITGapSkillsSectionRepository => new ITGapSkillsSectionRepository(Context);
 
+        public IBusinessPageRepository BusinessPageRepository => new BusinessPageRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

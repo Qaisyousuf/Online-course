@@ -81,6 +81,7 @@ namespace Data
         public DbSet<UpskillingEmployee> UpskillingEmployees { get; set; }
         public DbSet<ITSkillsGapImpactsOnBusiness> ITSkillsGapImpactsOnBusinesses { get; set; }
         public DbSet<ITSkillGapSection> ITSkillsGapSections { get; set; }
+        public DbSet<BusinessPage> BusinessPages { get; set; }
 
 
 

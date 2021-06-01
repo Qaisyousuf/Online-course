@@ -273,6 +273,18 @@
     <Compile Include="Migrations\202105280832458_BusinessPageAdded.Designer.cs">
       <DependentUpon>202105280832458_BusinessPageAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105311328181_UserModelDaTimeChanged.cs" />
+    <Compile Include="Migrations\202105311328181_UserModelDaTimeChanged.Designer.cs">
+      <DependentUpon>202105311328181_UserModelDaTimeChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105311335016_DatetimeChangedInUserModel.cs" />
+    <Compile Include="Migrations\202105311335016_DatetimeChangedInUserModel.Designer.cs">
+      <DependentUpon>202105311335016_DatetimeChangedInUserModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106011302463_DateTimeChangedToDateTime2.cs" />
+    <Compile Include="Migrations\202106011302463_DateTimeChangedToDateTime2.Designer.cs">
+      <DependentUpon>202106011302463_DateTimeChangedToDateTime2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -343,6 +355,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105280832458_BusinessPageAdded.resx">
       <DependentUpon>202105280832458_BusinessPageAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105311328181_UserModelDaTimeChanged.resx">
+      <DependentUpon>202105311328181_UserModelDaTimeChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105311335016_DatetimeChangedInUserModel.resx">
+      <DependentUpon>202105311335016_DatetimeChangedInUserModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106011302463_DateTimeChangedToDateTime2.resx">
+      <DependentUpon>202106011302463_DateTimeChangedToDateTime2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

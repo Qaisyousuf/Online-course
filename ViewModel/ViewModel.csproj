@@ -91,6 +91,7 @@
     <Compile Include="BuillBetterSkillsFasterViewModel.cs" />
     <Compile Include="BusinessBannerViewModel.cs" />
     <Compile Include="BusinessPageViewModel.cs" />
+    <Compile Include="CheckBoxItemViewModel.cs" />
     <Compile Include="ContactBannerViewModel.cs" />
     <Compile Include="ContactCounterViewModel.cs" />
     <Compile Include="ContactDetailsViewModel.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="CourseEachSectionViewModel.cs" />
     <Compile Include="CoursePageViewModel.cs" />
     <Compile Include="COVID_19ViewModel.cs" />
+    <Compile Include="EditUsersViewModel.cs" />
     <Compile Include="EmplyeesViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />
     <Compile Include="GeolocationStudentsViewModel.cs" />
@@ -113,6 +115,7 @@
     <Compile Include="HomeExplorationBannerViewModel.cs" />
     <Compile Include="HomePageViewModel.cs" />
     <Compile Include="HowOnlineTrainingWorksViewModel.cs" />
+    <Compile Include="InsertUserViewModel.cs" />
     <Compile Include="ITSkillGapSectionViewModel.cs" />
     <Compile Include="ITSkillsGapImpactsOnBusinessViewModel.cs" />
     <Compile Include="LaunchYourCodingCareerViewModel.cs" />
@@ -131,6 +134,8 @@
     <Compile Include="QuizPageViewModel.cs" />
     <Compile Include="QuizQuestionViewModel.cs" />
     <Compile Include="QuizResultsViewModel.cs" />
+    <Compile Include="RoleViewModel.cs" />
+    <Compile Include="ShowUserViewModel.cs" />
     <Compile Include="StudentsSayViewModel.cs" />
     <Compile Include="SubscriptionContentViewModel.cs" />
     <Compile Include="SubscriptionSystemViewModel.cs" />

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Model;
+using System;
 using System.Data.Entity;
 
 namespace Data
@@ -84,13 +85,21 @@ namespace Data
         public DbSet<BusinessPage> BusinessPages { get; set; }
 
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Properties<DateTime>().Configure(c => c.HasColumnType("datetime2"));
+
+            base.OnModelCreating(modelBuilder);
+        }
 
 
-        
 
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+        
     }
+
+   
 }

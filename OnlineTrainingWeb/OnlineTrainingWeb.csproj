@@ -48,6 +48,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcCheckBoxList, Version=1.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcCheckBoxList.1.4.5\lib\net45\MvcCheckBoxList.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -222,6 +225,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizContentController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizQuestionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizResultsController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\RolesController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\StudetnsSaysController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionContentController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionSystemController.cs" />
@@ -237,6 +241,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingImportanceController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserBenefitsSectionController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\UsersController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\VideoReviewController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WhatTrainerLovesController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WhoIsThisProgramEachDetailsController.cs" />
@@ -578,6 +583,13 @@
     <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Index.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\TwitterTags\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Roles\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Roles\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Roles\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Roles\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Users\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Users\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Users\Edit.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

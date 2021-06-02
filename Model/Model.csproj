@@ -82,6 +82,7 @@
     <Compile Include="ITSkillsGapImpactsOnBusiness.cs" />
     <Compile Include="LaunchYourCodingCareer.cs" />
     <Compile Include="LearningModel.cs" />
+    <Compile Include="MenuSearchBox.cs" />
     <Compile Include="MetaTag.cs" />
     <Compile Include="OpenGraphMetaTags.cs" />
     <Compile Include="Quiklink.cs" />

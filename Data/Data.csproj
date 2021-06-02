@@ -94,6 +94,7 @@
     <Compile Include="Concrete Implementation\ITSkillsGapImpactsOnBusinessRepository.cs" />
     <Compile Include="Concrete Implementation\LaunchYourCodingCareerRepository.cs" />
     <Compile Include="Concrete Implementation\LearningModelRepository.cs" />
+    <Compile Include="Concrete Implementation\MenuSearchBoxRepository.cs" />
     <Compile Include="Concrete Implementation\MetaTagRepository.cs" />
     <Compile Include="Concrete Implementation\OGTagsRepository.cs" />
     <Compile Include="Concrete Implementation\OnlinetrainingbenefitsRepository.cs" />
@@ -161,6 +162,7 @@
     <Compile Include="Interfaces\IITSkillsGapImpactsOnBusinessRepository.cs" />
     <Compile Include="Interfaces\ILaunchYourCodingCareerRepository.cs" />
     <Compile Include="Interfaces\ILearningModelRepository.cs" />
+    <Compile Include="Interfaces\IMenuSearchBoxRepository.cs" />
     <Compile Include="Interfaces\IMetaTagRepository.cs" />
     <Compile Include="Interfaces\IOGTagsRepository.cs" />
     <Compile Include="Interfaces\IOnlinetrainingbenefitsRepository.cs" />
@@ -285,6 +287,10 @@
     <Compile Include="Migrations\202106011302463_DateTimeChangedToDateTime2.Designer.cs">
       <DependentUpon>202106011302463_DateTimeChangedToDateTime2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106021557123_MenuSearchBoxModelAddedTotheDataBase.cs" />
+    <Compile Include="Migrations\202106021557123_MenuSearchBoxModelAddedTotheDataBase.Designer.cs">
+      <DependentUpon>202106021557123_MenuSearchBoxModelAddedTotheDataBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -364,6 +370,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106011302463_DateTimeChangedToDateTime2.resx">
       <DependentUpon>202106011302463_DateTimeChangedToDateTime2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106021557123_MenuSearchBoxModelAddedTotheDataBase.resx">
+      <DependentUpon>202106021557123_MenuSearchBoxModelAddedTotheDataBase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

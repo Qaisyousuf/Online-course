@@ -83,6 +83,7 @@ namespace Data
         public DbSet<ITSkillsGapImpactsOnBusiness> ITSkillsGapImpactsOnBusinesses { get; set; }
         public DbSet<ITSkillGapSection> ITSkillsGapSections { get; set; }
         public DbSet<BusinessPage> BusinessPages { get; set; }
+        public DbSet<MenuSearchBox> MenuSearchBoxes { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

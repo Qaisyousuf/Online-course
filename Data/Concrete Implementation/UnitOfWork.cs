@@ -142,6 +142,8 @@ namespace Data.Concrete_Implementation
 
         public ITwitterTagRepository TwitterTagRepository => new TwitterTagRepository(Context);
 
+        public IMenuSearchBoxRepository MenuSearchBoxRepository => new MenuSearchBoxRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

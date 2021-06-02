@@ -122,6 +122,7 @@
     <Compile Include="LaunchYourCodingCareerViewModel.cs" />
     <Compile Include="LearningModelViewModel.cs" />
     <Compile Include="ManageViewModels.cs" />
+    <Compile Include="MenuSearchBoxViewModel.cs" />
     <Compile Include="MetaTagViewModel.cs" />
     <Compile Include="OnlinetrainingbenefitsViewModel.cs" />
     <Compile Include="OpenGraphMetaTagsViewModel.cs" />

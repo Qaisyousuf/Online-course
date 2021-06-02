@@ -106,6 +106,7 @@
     <Compile Include="CourseEachSectionViewModel.cs" />
     <Compile Include="CoursePageViewModel.cs" />
     <Compile Include="COVID_19ViewModel.cs" />
+    <Compile Include="DeleteUserViewModelcs.cs" />
     <Compile Include="EditUsersViewModel.cs" />
     <Compile Include="EmplyeesViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />

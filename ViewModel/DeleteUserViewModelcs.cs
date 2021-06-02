@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    public class EditUsersViewModel
+   public class DeleteUserViewModelcs
     {
-        public EditUsersViewModel()
+        public DeleteUserViewModelcs()
         {
             Roles = new List<CheckBoxItemViewModel>();
         }
-        public string Id { get; set; }
-
         [Required]
         [Display(Name = "Full Name")]
         public string FullName { get; set; }
@@ -21,7 +22,7 @@ namespace ViewModel
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-       
+        [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
@@ -36,6 +37,7 @@ namespace ViewModel
         [DataType(DataType.Date)]
         [Display(Name = "Created Date")]
         public DateTime CreatedDate { get; set; }
+
 
 
         public List<CheckBoxItemViewModel> Roles { get; set; }

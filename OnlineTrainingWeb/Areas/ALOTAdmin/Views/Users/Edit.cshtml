@@ -1,17 +1,17 @@
 ﻿@model ViewModel.EditUsersViewModel
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit account";
 }
 
-<h2>Edit</h2>
+
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
 <div class="form-horizontal">
-    <h4>EditUsersViewModel</h4>
+    <h4>Edit the account</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     @Html.HiddenFor(model => model.Id)
@@ -31,8 +31,7 @@
             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
         </div>
     </div>
-
-
+  
 
     @Html.LabelFor(model => model.Roles, htmlAttributes: new { @class = "control-label", style = "" })
     <div class="align-content-center">
@@ -46,8 +45,6 @@
         @Html.ValidationMessageFor(model => model.Roles, "", new { @class = "text-danger " })
 
     </div>
-
-
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">

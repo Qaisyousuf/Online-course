@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -25,6 +26,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         {
             return View();
         }
+
+
 
         [HttpGet]
         public ActionResult GetUserData()
@@ -72,51 +75,11 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
 
         }
 
-        private EditUsersViewModel GetEditUsers(string id)
-        {
-            var dbUser = UserManager.Users.Where(x => x.Id == id).FirstOrDefault();
-
-            var currentRoles = dbUser.Roles.Select(x => x.RoleId).ToList();
-
-            var allRoles = _roleMange.Roles.ToList();
-
-            EditUsersViewModel editUser = new EditUsersViewModel
-            {
-                Id = dbUser.Id,
-                FullName = dbUser.FullName,
-                Email = dbUser.Email,
-                CreatedDate = dbUser.CreatedData,
-            };
-
-
-            foreach (var item in allRoles)
-            {
-                if(currentRoles.Contains(item.Id))
-
-                {
-                    editUser.Roles.Add(new CheckBoxItemViewModel
-                    {
-                        Id = item.Id,
-                        Text =item.Name,
-                        Checked=true,
-                        
-                    });
-                }
-                else
-                {
-                    editUser.Roles.Add(new CheckBoxItemViewModel
-                    {
-                        Id = item.Id,
-                        Text =item.Name,
-                        Checked=false,
-                    });
-                }
-            }
-            return editUser;
-
-        }
+      
+        
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "FullName,Email,Password,ConfirmPassword,CreatedDate,CreatedTime")] InsertUserViewModel viewmodel, string[] roles)
         {
             if (ModelState.IsValid)
@@ -161,18 +124,142 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     Text = item.Name,
                     Checked = false
                 });
-
             }
           
             return View(viewmodel);
         }
 
+        private DeleteUserViewModelcs GetDeleteData(string id)
+        {
+            var dbUser = UserManager.Users.Include(u => u.Roles).Where(x => x.Id == id).FirstOrDefault();
+
+            var curretnRolesForDelete = dbUser.Roles.Select(x => x.RoleId).ToList();
+
+            var allRolesForDelete = _roleMange.Roles.ToList();
+
+            DeleteUserViewModelcs deleteUser = new DeleteUserViewModelcs();
+
+            deleteUser.FullName = dbUser.FullName;
+            deleteUser.Email = dbUser.Email;
+            deleteUser.CreatedDate = dbUser.CreatedData;
+
+            foreach (var role in allRolesForDelete)
+            {
+                if (curretnRolesForDelete.Contains(role.Id))
+                {
+                    deleteUser.Roles.Add(new CheckBoxItemViewModel { Id = role.Id, Text = role.Name, Checked = true });
+                }
+                else
+                {
+                    deleteUser.Roles.Add(new CheckBoxItemViewModel { Id = role.Id, Text = role.Name, Checked = false });
+                }
+            }
+
+            return deleteUser;
+        }
+
+        [HttpGet]
+        public ActionResult Delete(string id)
+        {
+            var deleteUsers = GetDeleteData(id);
+            return View(deleteUsers);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirm(string id)
+        {
+            var userFromDb = UserManager.Users.Where(x => x.Id == id).FirstOrDefault();
+
+            var userDeleteed = UserManager.Delete(userFromDb);
+
+            return RedirectToAction(nameof(Index));
+        }
+        private EditUsersViewModel GetEditUser(string id)
+        {
+            var dbUser = UserManager.Users.Include(u => u.Roles).Where(x => x.Id == id).FirstOrDefault();
+
+            // we fetch all the roleids for the above user
+
+            var currentUserRoles = dbUser.Roles.Select(x => x.RoleId).ToList();
+
+            // we fetch all the roles from the roles table
+
+            var allRoles = _roleMange.Roles.ToList();
+
+            EditUsersViewModel editUser = new EditUsersViewModel();
+
+            editUser.Id = dbUser.Id;
+            editUser.FullName = dbUser.UserName;
+            editUser.Email = dbUser.Email;
+            editUser.CreatedDate = dbUser.CreatedData;
+           
+
+            foreach (var role in allRoles)
+            {
+                if (currentUserRoles.Contains(role.Id))
+                {
+                    editUser.Roles.Add(new CheckBoxItemViewModel { Id = role.Id, Text = role.Name, Checked = true });
+                }
+                else
+                {
+                    editUser.Roles.Add(new CheckBoxItemViewModel { Id = role.Id, Text = role.Name, Checked = false });
+                }
+            }
+
+            return editUser;
+
+        }
 
         [HttpGet]
         public ActionResult Edit(string id)
         {
-            var user = GetEditUsers(id);
+            var user = GetEditUser(id);
             return View(user);
+        }
+
+        [HttpPost]
+        public ActionResult Edit([Bind(Include = "Id,FullName,Email,Password,ConfirmPassword,CreatedDate")] EditUsersViewModel viewmodel, string[] Roles)
+        {
+            if (ModelState.IsValid)
+            {
+                var dbuser = UserManager.Users.Where(x => x.Id == viewmodel.Id).FirstOrDefault();
+
+                if (dbuser != null)
+                {
+                    string[] currentRoles = dbuser.Roles.Select(x => x.RoleId).ToArray();
+
+                    string[] roleNmae = _roleMange.Roles.Where(x => currentRoles.Contains(x.Id)).Select(x => x.Name).ToArray();
+
+                    UserManager.RemoveFromRoles(dbuser.Id, roleNmae);
+
+                    dbuser.UserName = viewmodel.FullName;
+                    dbuser.Email = viewmodel.Email;
+                    dbuser.CreatedData = DateTime.Now;
+
+                    UserManager.Update(dbuser);
+
+                    if (Roles != null)
+                    {
+                        var requiredRoles = _roleMange.Roles.Where(x => Roles.Contains(x.Id)).Select(x => x.Name).ToArray();
+
+                        UserManager.AddToRoles(dbuser.Id, requiredRoles);
+                    }
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return HttpNotFound();
+                }
+
+            }
+            else
+            {
+                var editUser = GetEditUser(viewmodel.Id);
+                viewmodel.Roles = editUser.Roles;
+
+                return View(viewmodel);
+            }
         }
     }
 }

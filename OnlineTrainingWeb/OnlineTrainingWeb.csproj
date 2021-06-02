@@ -590,6 +590,7 @@
     <Content Include="Areas\ALOTAdmin\Views\Users\Index.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\Users\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Users\Delete.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

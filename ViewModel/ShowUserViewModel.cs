@@ -10,6 +10,10 @@ namespace ViewModel
 {
    public  class ShowUserViewModel
     {
+        public ShowUserViewModel()
+        {
+            Roles = new List<CheckBoxItemViewModel>();
+        }
         public string Id { get; set; }
 
         [Required]

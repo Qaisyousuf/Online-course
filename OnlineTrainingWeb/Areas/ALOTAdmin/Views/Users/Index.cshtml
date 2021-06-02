@@ -72,7 +72,7 @@
                         "data": "actions",
                         "className": "dt-body-right",
                         "render": function (data, type, row, meta) {
-                            data = '<a class="btn-floating  btn-default" href="/ALOTAdmin/Users/Edit/' + row.Id + '"><i class="fas fa-edit"></i></a> | <a class="btn-floating btn-danger" href="/OPMSAdmin/AdminUser/Delete/' + row.Id + '"><i class="fas fa-trash-alt"></i></a> | <a class="btn-floating btn-info" href="/ALOTAdmin/Users/Details/' + row.Id + '"><i class="fas fa-info"></i></a> ';
+                            data = '<a class="btn-floating  btn-default" href="/ALOTAdmin/Users/Edit/' + row.Id + '"><i class="fas fa-edit"></i></a> | <a class="btn-floating btn-danger" href="/ALOTAdmin/Users/Delete/' + row.Id + '"><i class="fas fa-trash-alt"></i></a> | <a class="btn-floating btn-info" href="/ALOTAdmin/Users/Details/' + row.Id + '"><i class="fas fa-info"></i></a> ';
 
                             return data;
                         }
@@ -121,102 +121,7 @@
                     });
                 });
         }
-        function SubmitFormCreate(form) {
-            $.validator.unobtrusive.parse(form);
-            if ($(form).valid()) {
-                $.ajax({
-                    type: "POST",
-                    url: form.action,
-                    data: $(form).serialize(),
-                    success: function (data) {
-                        if (data.success) {
-                            Popup.dialog('close');
-                            dataTable.ajax.reload();
-
-                            $.notify(data.message, {
-                                globalPosition: "top center",
-                                className: "success"
-                            });
-
-
-                        }
-                    }
-                });
-            }
-            return false;
-        }
-
-        function SubmitFormEdit(form) {
-            $.validator.unobtrusive.parse(form);
-            if ($(form).valid()) {
-                $.ajax({
-                    type: "POST",
-                    url: form.action,
-                    data: $(form).serialize(),
-                    success: function (data) {
-                        if (data.success) {
-                            Popup.dialog('close');
-                            dataTable.ajax.reload();
-
-                            $.notify(data.message, {
-                                globalPosition: "top center",
-                                className: "success"
-                            });
-
-
-                        }
-                    }
-                });
-            }
-            return false;
-        }
-        function SubmitFormDetails(form) {
-            $.validator.unobtrusive.parse(form);
-            if ($(form).valid()) {
-                $.ajax({
-                    type: "POST",
-                    url: form.action,
-                    data: $(form).serialize(),
-                    success: function (data) {
-                        if (data.success) {
-                            Popup.dialog('close');
-                            dataTable.ajax.reload();
-
-                            $.notify(data.message, {
-                                globalPosition: "top center",
-                                className: "success"
-                            });
-
-
-                        }
-                    }
-                });
-            }
-            return false;
-        }
-        function Delete(id) {
-            if (confirm('Are You Sure to Delete this  Record ?'))
-            {
-                $.ajax({
-                    type: "POST",
-                    url: '@Url.Action("Delete", "Roles")/' + id,
-                    success: function (data) {
-                        if (data.success)
-                        {
-                            dataTable.ajax.reload();
-
-                            $.notify(data.message, {
-                                globalPosition: "top center",
-                                className: "success"
-                            })
-
-                        }
-                    }
-
-                });
-            }
-        }
-
+       
 
 
     </script>

@@ -84,6 +84,7 @@
     <Compile Include="Concrete Implementation\CoursePageRepository.cs" />
     <Compile Include="Concrete Implementation\Covid19Repository.cs" />
     <Compile Include="Concrete Implementation\EmployeesNumbersRepository.cs" />
+    <Compile Include="Concrete Implementation\FooterLinksRepository.cs" />
     <Compile Include="Concrete Implementation\ForLearnerRepository.cs" />
     <Compile Include="Concrete Implementation\GeolocationStudentsRepository.cs" />
     <Compile Include="Concrete Implementation\HomeBannerRepository.cs" />
@@ -153,6 +154,7 @@
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />
     <Compile Include="Interfaces\ICovid19Repository.cs" />
     <Compile Include="Interfaces\IEmployeesNumbersRepository.cs" />
+    <Compile Include="Interfaces\IFooterLinksRepository.cs" />
     <Compile Include="Interfaces\IGeolocationStudentsRepository.cs" />
     <Compile Include="Interfaces\IHomeBannerRepository.cs" />
     <Compile Include="Interfaces\IHomeExplanationBannerRepository.cs" />
@@ -297,6 +299,10 @@
     <Compile Include="Migrations\202106040757049_MenusModelAdded.Designer.cs">
       <DependentUpon>202106040757049_MenusModelAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106041339360_FooterLinksAndSiteSettingModelsAdded.cs" />
+    <Compile Include="Migrations\202106041339360_FooterLinksAndSiteSettingModelsAdded.Designer.cs">
+      <DependentUpon>202106041339360_FooterLinksAndSiteSettingModelsAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -382,6 +388,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106040757049_MenusModelAdded.resx">
       <DependentUpon>202106040757049_MenusModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106041339360_FooterLinksAndSiteSettingModelsAdded.resx">
+      <DependentUpon>202106041339360_FooterLinksAndSiteSettingModelsAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

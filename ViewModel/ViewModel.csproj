@@ -109,6 +109,7 @@
     <Compile Include="DeleteUserViewModelcs.cs" />
     <Compile Include="EditUsersViewModel.cs" />
     <Compile Include="EmplyeesViewModel.cs" />
+    <Compile Include="FooterLinksViewModel.cs" />
     <Compile Include="ForLearnerViewModel.cs" />
     <Compile Include="GeolocationStudentsViewModel.cs" />
     <Compile Include="HomeBannerViewModel.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="QuizResultsViewModel.cs" />
     <Compile Include="RoleViewModel.cs" />
     <Compile Include="ShowUserViewModel.cs" />
+    <Compile Include="SiteSettingsViewmodel.cs" />
     <Compile Include="StudentsSayViewModel.cs" />
     <Compile Include="SubscriptionContentViewModel.cs" />
     <Compile Include="SubscriptionSystemViewModel.cs" />

@@ -77,6 +77,7 @@
     <Compile Include="ContactPage.cs" />
     <Compile Include="CoursePage.cs" />
     <Compile Include="Emplyees.cs" />
+    <Compile Include="FooterLinks.cs" />
     <Compile Include="GeolocationStudents.cs" />
     <Compile Include="ITSkillGapSection.cs" />
     <Compile Include="ITSkillsGapImpactsOnBusiness.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="OpenGraphMetaTags.cs" />
     <Compile Include="Quiklink.cs" />
     <Compile Include="QuizResults.cs" />
+    <Compile Include="SiteSettings.cs" />
     <Compile Include="ThankYouPage.cs" />
     <Compile Include="TrustedbyForUpSkilling.cs" />
     <Compile Include="TwitterMetaTags.cs" />

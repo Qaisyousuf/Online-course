@@ -146,6 +146,8 @@ namespace Data.Concrete_Implementation
 
         public IMenuRepository MenuRepository => new MenuRepository(Context);
 
+        public IFooterLinksRepository FooterLinksRepository => new FooterLinksRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

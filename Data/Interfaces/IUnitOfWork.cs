@@ -71,6 +71,7 @@ namespace Data.Interfaces
         ITwitterTagRepository TwitterTagRepository { get; }
         IMenuSearchBoxRepository MenuSearchBoxRepository { get; }
         IMenuRepository MenuRepository { get; }
+        IFooterLinksRepository FooterLinksRepository { get; }
 
 
         void Commit();

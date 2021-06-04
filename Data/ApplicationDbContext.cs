@@ -85,6 +85,8 @@ namespace Data
         public DbSet<BusinessPage> BusinessPages { get; set; }
         public DbSet<MenuSearchBox> MenuSearchBoxes { get; set; }
         public DbSet<Menus> Menus { get; set; }
+        public DbSet<FooterLinks> FooterLinks { get; set; }
+        public DbSet<SiteSettings> SiteSettings { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

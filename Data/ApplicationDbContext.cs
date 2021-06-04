@@ -84,6 +84,7 @@ namespace Data
         public DbSet<ITSkillGapSection> ITSkillsGapSections { get; set; }
         public DbSet<BusinessPage> BusinessPages { get; set; }
         public DbSet<MenuSearchBox> MenuSearchBoxes { get; set; }
+        public DbSet<Menus> Menus { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

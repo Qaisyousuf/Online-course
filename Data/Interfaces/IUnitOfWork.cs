@@ -70,6 +70,7 @@ namespace Data.Interfaces
         IOGTagsRepository OGTagsRepository { get; }
         ITwitterTagRepository TwitterTagRepository { get; }
         IMenuSearchBoxRepository MenuSearchBoxRepository { get; }
+        IMenuRepository MenuRepository { get; }
 
 
         void Commit();

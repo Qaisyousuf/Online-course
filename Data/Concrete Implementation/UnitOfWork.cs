@@ -144,6 +144,8 @@ namespace Data.Concrete_Implementation
 
         public IMenuSearchBoxRepository MenuSearchBoxRepository => new MenuSearchBoxRepository(Context);
 
+        public IMenuRepository MenuRepository => new MenuRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

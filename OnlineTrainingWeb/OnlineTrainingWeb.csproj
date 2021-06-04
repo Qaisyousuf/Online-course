@@ -215,6 +215,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\ITSkillGapImpactOnbusinessController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LaunchYourCodingCareerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\LearningModelController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\MenusController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\MenuSearchController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\MetaTagsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\NumberOfEmployeesController.cs" />
@@ -227,6 +228,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizQuestionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizResultsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\RolesController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\SearchBoxImplementationController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\StudetnsSaysController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionContentController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionSystemController.cs" />
@@ -596,6 +598,12 @@
     <Content Include="Areas\ALOTAdmin\Views\MenuSearch\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\MenuSearch\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\MenuSearch\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SearchBoxImplementation\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Menus\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Menus\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Menus\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Menus\Delete.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\Menus\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

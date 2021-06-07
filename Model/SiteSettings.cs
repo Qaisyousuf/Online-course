@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Model
 {
@@ -9,11 +10,14 @@ namespace Model
         {
             FotterLinks = new List<FooterLinks>();
         }
+        public string SiteTitle { get; set; }
         public string SiteName { get; set; }
         public string SiteOwner { get; set; }
         public string GoogleSiteVerification { get; set; }
         public string GoogleAnalytics { get; set; }
         public DateTime SiteLastUpdatedDate { get; set; }
+
+
 
         public string AnimationUrl { get; set; }
 

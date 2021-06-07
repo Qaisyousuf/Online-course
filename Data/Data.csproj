@@ -107,6 +107,7 @@
     <Compile Include="Concrete Implementation\QuizQuestionRepository.cs" />
     <Compile Include="Concrete Implementation\QuizResultsRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
+    <Compile Include="Concrete Implementation\SiteSettingrepository.cs" />
     <Compile Include="Concrete Implementation\Slug.cs" />
     <Compile Include="Concrete Implementation\StudentsSaysRepository.cs" />
     <Compile Include="Concrete Implementation\SubscriptionContentRepository.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Concrete Implementation\WorkExperienceRepository.cs" />
     <Compile Include="Concrete Implementation\WorkExperienceTagsRepository.cs" />
     <Compile Include="Concrete Implementation\YouMayLikeRepository.cs" />
+    <Compile Include="FluentAPI\SiteSettingMapping.cs" />
     <Compile Include="FluentAPI\WorkExperinceMapping.cs" />
     <Compile Include="Interfaces\IAboutBannerRepository.cs" />
     <Compile Include="Interfaces\IAboutPageRepository.cs" />
@@ -177,6 +179,7 @@
     <Compile Include="Interfaces\IQuizQuestionRepository.cs" />
     <Compile Include="Interfaces\IQuizResultsRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\ISiteSettingrepository.cs" />
     <Compile Include="Interfaces\ISlug.cs" />
     <Compile Include="Interfaces\IStudentsSaysRepository.cs" />
     <Compile Include="Interfaces\ISubscriptionContentRepository.cs" />
@@ -303,6 +306,10 @@
     <Compile Include="Migrations\202106041339360_FooterLinksAndSiteSettingModelsAdded.Designer.cs">
       <DependentUpon>202106041339360_FooterLinksAndSiteSettingModelsAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.cs" />
+    <Compile Include="Migrations\202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.Designer.cs">
+      <DependentUpon>202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -391,6 +398,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106041339360_FooterLinksAndSiteSettingModelsAdded.resx">
       <DependentUpon>202106041339360_FooterLinksAndSiteSettingModelsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.resx">
+      <DependentUpon>202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

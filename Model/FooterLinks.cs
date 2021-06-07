@@ -8,8 +8,13 @@ namespace Model
 {
     public class FooterLinks:EntityBase
     {
+        public FooterLinks()
+        {
+            SiteSettings = new List<SiteSettings>();
+        }
         public string NavigationName { get; set; }
         public string LinkUrl { get; set; }
 
+        public List<SiteSettings> SiteSettings { get; set; }
     }
 }

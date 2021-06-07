@@ -230,6 +230,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizResultsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\RolesController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SearchBoxImplementationController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\SiteSettingsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\StudetnsSaysController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionContentController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\SubscriptionSystemController.cs" />
@@ -743,6 +744,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\ALOTAdmin\Views\SiteSettings\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

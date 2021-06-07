@@ -148,6 +148,8 @@ namespace Data.Concrete_Implementation
 
         public IFooterLinksRepository FooterLinksRepository => new FooterLinksRepository(Context);
 
+        public ISiteSettingrepository SiteSettingrepository => new SiteSettingrepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

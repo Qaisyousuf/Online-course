@@ -72,6 +72,7 @@ namespace Data.Interfaces
         IMenuSearchBoxRepository MenuSearchBoxRepository { get; }
         IMenuRepository MenuRepository { get; }
         IFooterLinksRepository FooterLinksRepository { get; }
+        ISiteSettingrepository SiteSettingrepository { get; }
 
 
         void Commit();

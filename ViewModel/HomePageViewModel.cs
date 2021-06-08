@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class HomePageViewModel
+    public class HomePageViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

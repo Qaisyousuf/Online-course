@@ -257,6 +257,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceTagController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\YouMayLikeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">

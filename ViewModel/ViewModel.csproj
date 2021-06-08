@@ -87,6 +87,7 @@
     <Compile Include="AboutBannerViewModel.cs" />
     <Compile Include="AboutPageViewModel.cs" />
     <Compile Include="AccountViewModels.cs" />
+    <Compile Include="BaseViewModel.cs" />
     <Compile Include="BuildBetterSkillsFasterSectionViewModel.cs" />
     <Compile Include="BuillBetterSkillsFasterViewModel.cs" />
     <Compile Include="BusinessBannerViewModel.cs" />

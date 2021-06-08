@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Data.Concrete_Implementation;
 using Data.Interfaces;
-using Model;
+using Models;
 using ViewModel;
 
 namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers

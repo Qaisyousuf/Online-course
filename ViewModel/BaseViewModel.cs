@@ -1,4 +1,4 @@
-﻿using Model;
+﻿using Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,6 +15,10 @@ namespace ViewModel
         {
             FooterLinks = new List<FooterLinks>();
         }
+
+        public int Id { get; set; }
+
+
         [Required]
         [Display(Name = "Site title")]
         public string SiteTitle { get; set; }

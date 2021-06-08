@@ -310,6 +310,10 @@
     <Compile Include="Migrations\202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.Designer.cs">
       <DependentUpon>202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106081503411_MenusPropertyChanged.cs" />
+    <Compile Include="Migrations\202106081503411_MenusPropertyChanged.Designer.cs">
+      <DependentUpon>202106081503411_MenusPropertyChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -318,9 +322,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
+    <ProjectReference Include="..\Model\Models.csproj">
       <Project>{467acb86-1573-454c-b487-d3514043e7da}</Project>
-      <Name>Model</Name>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -401,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.resx">
       <DependentUpon>202106041545392_ManyToManyRelationshipForSiteSettingsAndFooterLinksCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106081503411_MenusPropertyChanged.resx">
+      <DependentUpon>202106081503411_MenusPropertyChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

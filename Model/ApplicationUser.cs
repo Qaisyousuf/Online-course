@@ -8,7 +8,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Models
 {
     public class ApplicationUser : IdentityUser
     {

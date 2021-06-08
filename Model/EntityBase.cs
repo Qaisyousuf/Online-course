@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace Model
+namespace Models
 {
     public abstract class EntityBase
     {

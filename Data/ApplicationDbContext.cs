@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
-using Model;
+using Models;
 using System;
 using System.Data.Entity;
 

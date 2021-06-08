@@ -1,4 +1,4 @@
-﻿using Model;
+﻿using Models;
 using System.Data.Entity.ModelConfiguration;
 
 namespace Data.FluentAPI

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{C9D1D8DE-9B43-4000-BA50-2A7BC4B337B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{467ACB86-1573-454C-B487-D3514043E7DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Model\Models.csproj", "{467ACB86-1573-454C-B487-D3514043E7DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineTrainingWeb", "OnlineTrainingWeb\OnlineTrainingWeb.csproj", "{0D181DB2-1D96-4D38-BDAA-A6842FECB7A2}"
 EndProject

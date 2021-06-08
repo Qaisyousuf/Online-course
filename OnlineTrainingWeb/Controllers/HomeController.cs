@@ -29,9 +29,9 @@ namespace OnlineTrainingWeb.Controllers
         }
 
         [ChildActionOnly]
-        public ActionResult Menus()
+        public ActionResult PartialMenus()
         {
-
+           
             var context = _uow.Context;
             var menus = context.Menus;
 
@@ -41,23 +41,23 @@ namespace OnlineTrainingWeb.Controllers
             }
             var subMenus = menus.AsNoTracking().ToList();
 
-            List<MenusViewModel> viewmodel = new List<MenusViewModel>();
+            //List<MenusViewModel> viewmodel = new List<MenusViewModel>();
 
-            foreach (var item in viewmodel)
-            {
-                viewmodel.Add(new MenusViewModel
-                {
-                    Id=item.Id,
-                    Title=item.Title,
-                    Description=item.Description,
-                    Url=item.Url,
-                    Parent=item.Parent,
-                    ParentId=item.ParentId,
-                });
-            }
+            //foreach (var item in viewmodel)
+            //{
+            //    viewmodel.Add(new MenusViewModel
+            //    {
+            //        Id=item.Id,
+            //        Title=item.Title,
+            //        Description=item.Description,
+            //        Url=item.Url,
+            //        Parent=item.Parent,
+            //        ParentId=item.ParentId,
+            //    });
+            //}
 
             context.Dispose();
-            return PartialView(viewmodel);
+            return PartialView(subMenus);
         }
     }
 }

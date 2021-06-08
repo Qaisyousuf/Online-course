@@ -1,4 +1,4 @@
-﻿namespace Model
+﻿namespace Models
 {
     public class COVID_19:EntityBase
     {

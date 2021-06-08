@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Model
+namespace Models
 {
     public class Menus:EntityBase
     {
@@ -12,6 +12,8 @@ namespace Model
         public string Title { get; set; }
         public string Description { get; set; }
         public string Url { get; set; }
+
+        [InverseProperty("SubMenus")]
         public int? ParentId { get; set; }
 
         public Menus Parent { get; set; }

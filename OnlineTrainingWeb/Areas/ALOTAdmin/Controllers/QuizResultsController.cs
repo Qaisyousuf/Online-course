@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using System.Collections.Generic;
 using ViewModel;
-using Model;
+using Models;
 
 namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
 {

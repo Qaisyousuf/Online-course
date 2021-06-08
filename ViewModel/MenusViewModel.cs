@@ -1,11 +1,11 @@
-﻿using Model;
+﻿using Models;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class MenusViewModel:BaseViewModel
+    public class MenusViewModel
     {
         public MenusViewModel()
         {
@@ -21,6 +21,8 @@ namespace ViewModel
         [Required]
         public string Url { get; set; }
 
+        [InverseProperty("SubMenus")]
+        [Display(Name ="Sub Menus")]
         public int? ParentId { get; set; }
 
         public Menus Parent { get; set; }

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using OnlineTrainingWeb.ViewModel;
 using Data.Interfaces;
 using ViewModel;
-using Model;
+using Models;
 
 namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
 {

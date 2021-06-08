@@ -1,5 +1,5 @@
 ﻿using Data.Interfaces;
-using Model;
+using Models;
 namespace Data.Concrete_Implementation
 {
     class Covid19Repository:Repository<COVID_19>,ICovid19Repository

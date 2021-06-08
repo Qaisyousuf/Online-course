@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Model
+namespace Models
 {
     public class SiteSettings:EntityBase
     {

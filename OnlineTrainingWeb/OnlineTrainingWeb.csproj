@@ -747,7 +747,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Home\Menus.cshtml" />
+    <Content Include="Views\Home\PartialMenus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -768,9 +768,9 @@
       <Project>{d1d33a33-5e2b-4b90-aa63-12fcb22623e9}</Project>
       <Name>Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
+    <ProjectReference Include="..\Model\Models.csproj">
       <Project>{467acb86-1573-454c-b487-d3514043e7da}</Project>
-      <Name>Model</Name>
+      <Name>Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{a1b2b64a-466e-4ae9-8ebc-6d41d14dd4a4}</Project>
@@ -780,6 +780,9 @@
       <Project>{c9d1d8de-9b43-4000-ba50-2a7bc4b337b8}</Project>
       <Name>ViewModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

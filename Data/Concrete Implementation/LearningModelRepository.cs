@@ -1,5 +1,5 @@
 ﻿using Data.Interfaces;
-using Model;
+using Models;
 namespace Data.Concrete_Implementation
 {
     public class LearningModelRepository:Repository<LearningModel>,ILearningModelRepository

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Model;
+using Models;
 using ViewModel;
 
 namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
@@ -33,7 +33,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     Url = item.Url,
                     Parent = item.Parent,
                     ParentId = item.ParentId,
-                    SubMenus = item.SubMenus,
+                  
                 });
             }
             GetMenus();
@@ -73,7 +73,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            GetMenus();
+            ViewBag.SubMenus = uow.MenuRepository.GetAll();
             return View(new MenusViewModel());
         }
 
@@ -90,7 +90,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     Url = viewmodel.Url,
                     Parent = viewmodel.Parent,
                     ParentId=viewmodel.ParentId,
-                    SubMenus = viewmodel.SubMenus,
+                   
                 };
 
                 uow.MenuRepository.Add(menus);
@@ -116,7 +116,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 SubMenus = menu.SubMenus,
             };
 
-            GetMenus();
+            ViewBag.SubMenus = uow.MenuRepository.GetAll();
             return View(viewmodel);
         }
 
@@ -133,7 +133,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 menus.Url = viewmodel.Url;
                 menus.Parent = viewmodel.Parent;
                 menus.ParentId = viewmodel.ParentId;
-                menus.SubMenus = viewmodel.SubMenus;
+              
 
                 uow.MenuRepository.Update(menus);
                 uow.Commit();

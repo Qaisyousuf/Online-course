@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Model
+namespace Models
 {
     public class WorkExperienceTags:EntityBase
     {

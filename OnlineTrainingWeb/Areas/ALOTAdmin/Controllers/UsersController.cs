@@ -8,7 +8,7 @@ using Data;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
-using Model;
+using Models;
 using ViewModel;
 
 namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers

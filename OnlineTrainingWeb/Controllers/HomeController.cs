@@ -27,5 +27,37 @@ namespace OnlineTrainingWeb.Controllers
 
             return View();
         }
+
+        [ChildActionOnly]
+        public ActionResult Menus()
+        {
+
+            var context = _uow.Context;
+            var menus = context.Menus;
+
+            foreach (var menu in menus)
+            {
+                context.Entry(menu).Collection(s => s.SubMenus).Query().Where(x => x.ParentId == menu.Id);
+            }
+            var subMenus = menus.AsNoTracking().ToList();
+
+            List<MenusViewModel> viewmodel = new List<MenusViewModel>();
+
+            foreach (var item in viewmodel)
+            {
+                viewmodel.Add(new MenusViewModel
+                {
+                    Id=item.Id,
+                    Title=item.Title,
+                    Description=item.Description,
+                    Url=item.Url,
+                    Parent=item.Parent,
+                    ParentId=item.ParentId,
+                });
+            }
+
+            context.Dispose();
+            return PartialView(viewmodel);
+        }
     }
 }

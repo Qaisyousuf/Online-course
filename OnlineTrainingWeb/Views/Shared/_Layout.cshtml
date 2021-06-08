@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - @Model.SiteTitle</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     @Styles.Render("~/Content/css")
@@ -19,9 +19,13 @@
             <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                
                 <ul class="navbar-nav mr-auto">
+                    @Html.Action("Menus", "Home")
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -35,17 +39,7 @@
                         <a class="nav-link" href="#">Opinions</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                        <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
+
                 @Html.Partial("_LoginPartial")
             </div>
         </nav>
@@ -80,18 +74,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @Model.SiteLastUpdatedDate - @Model.SiteName</p>
+            <p>&copy; @Model.SiteLastUpdatedDate - @Model.SiteName -@Model.SiteOwner</p>
 
-            @foreach (var item in Model.FooterLinksTag)
-            {
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">@item</a>
-                    </li>
-                    
-                </ul>
-            }
-
+           
         </footer>
     </div>
 

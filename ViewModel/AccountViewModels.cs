@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using ViewModel;
 
 namespace OnlineTrainingWeb.ViewModel
 {
-    public class ExternalLoginConfirmationViewModel
+    public class ExternalLoginConfirmationViewModel:BaseViewModel
     {
         [Required]
         [Display(Name = "Email")]

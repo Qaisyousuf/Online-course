@@ -31,7 +31,7 @@ namespace OnlineTrainingWeb.Controllers
 
                     var site = _uow.Context.SiteSettings.FirstOrDefault();
 
-                    var siteSettings = _uow.Context.SiteSettings.FirstOrDefault(x => x.Id == site.Id);
+                    var siteSettings = _uow.Context.SiteSettings.Where(x => x.Id == site.Id).FirstOrDefault();
 
                     baseViewModel.SiteName = siteSettings.SiteName;
                     baseViewModel.SiteTitle = siteSettings.SiteTitle;

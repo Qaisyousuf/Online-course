@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ViewModel.SiteSettingsViewmodel>
+
+@{
+    ViewBag.Title = "Site Settings";
+}
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteOwner)
+        </th>
+       
+        
+        <th>
+           Footer Links
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteOwner)
+        </td>
+       
+       
+      
+        <td>
+            @foreach(var tag in item.FooterLinksTag)
+            {
+                <span class="badge badge-pill badge-default">@tag</span>
+            }
+        </td>
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

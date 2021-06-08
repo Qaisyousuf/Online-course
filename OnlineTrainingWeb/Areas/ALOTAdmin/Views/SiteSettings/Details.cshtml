@@ -1,0 +1,76 @@
+﻿@model ViewModel.SiteSettingsViewmodel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h3>Details of @Model.SiteName</h3>
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteOwner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteOwner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GoogleSiteVerification)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoogleSiteVerification)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GoogleAnalytics)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoogleAnalytics)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteLastUpdatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SiteLastUpdatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnimationUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnimationUrl)
+        </dd>
+
+    
+
+    </dl>
+</div>
+<p>
+  
+    @Html.ActionLink("Back to List", "Index")
+</p>

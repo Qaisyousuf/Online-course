@@ -38,7 +38,7 @@
                 <div class="form-group">
                     @Html.LabelFor(model => model.TagsId, htmlAttributes: new { @class = "control-label" })
                     <div class="CheckBox">
-                        @Html.ListBoxFor(model=>model.TagsId,new MultiSelectList(ViewBag.TagsData,"Id","TagsName"),new { @class="form-control"})
+                        @Html.ListBoxFor(model=>model.TagsId,new MultiSelectList(ViewBag.FooterData, "Id", "NavigationName"),new { @class="form-control"})
                         @Html.ValidationMessageFor(model => model.TagsId, "", new { @class = "text-danger" })
                     </div>
                 </div>

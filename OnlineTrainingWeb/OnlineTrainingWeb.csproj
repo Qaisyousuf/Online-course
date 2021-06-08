@@ -610,6 +610,11 @@
     <Content Include="Areas\ALOTAdmin\Views\FooterLinks\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\FooterLinks\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\FooterLinks\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SiteSettings\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SiteSettings\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SiteSettings\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SiteSettings\Delete.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\SiteSettings\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -744,7 +749,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\ALOTAdmin\Views\SiteSettings\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

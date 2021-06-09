@@ -1,5 +1,5 @@
 ﻿@model  List<Models.Menus>
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav ">
     @foreach (var menu in Model)
     {
         if (menu.ParentId == null)
@@ -21,7 +21,7 @@
             }
             else
             {
-                <li><a title="@menu.Description" href="@menu.Url">@menu.Title</a></li>
+                <li class="nav-item"><a class="nav-link" title="@menu.Description" href="@menu.Url">@menu.Title</a></li>
             }
         }
     }

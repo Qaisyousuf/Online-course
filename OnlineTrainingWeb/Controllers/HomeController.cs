@@ -41,18 +41,18 @@ namespace OnlineTrainingWeb.Controllers
             }
             var subMenus = menus.AsNoTracking().ToList();
 
-            //List<MenusViewModel> viewmodel = new List<MenusViewModel>();
+            List<MenusViewModel> viewmodel = new List<MenusViewModel>();
 
             //foreach (var item in viewmodel)
             //{
             //    viewmodel.Add(new MenusViewModel
             //    {
-            //        Id=item.Id,
-            //        Title=item.Title,
-            //        Description=item.Description,
-            //        Url=item.Url,
-            //        Parent=item.Parent,
-            //        ParentId=item.ParentId,
+            //        Id = item.Id,
+            //        Title = item.Title,
+            //        Description = item.Description,
+            //        Url = item.Url,
+            //        Parent = item.Parent,
+            //        ParentId = item.ParentId,
             //    });
             //}
 

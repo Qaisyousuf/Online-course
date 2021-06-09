@@ -12,34 +12,36 @@
 
 </head>
 <body>
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg fixed-top navbar-dark default-color right">
+        <a class="navbar-brand" href="#">Online Training</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            @Html.Action("PartialMenus", "Home")
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    @Html.Partial("_LoginPartial")
+                </li>
+             
+                
+            </ul>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+    
 
-    <header>
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-            <a class="navbar-brand" href="#"><strong>Online Training</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
 
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               
-
-                @Html.Action("PartialMenus","Home")
-               
-
-                @Html.Partial("_LoginPartial")
-            </div>
-        </nav>
-
-    </header>
-   
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @Model.SiteLastUpdatedDate - @Model.SiteName -@Model.SiteOwner</p>
 
-           
+
         </footer>
     </div>
 

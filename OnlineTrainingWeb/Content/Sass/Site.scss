@@ -1,12 +1,13 @@
-﻿$btn-primary: rgb(231, 161, 161);
+﻿@import'core/_CustomColor.scss';
+@import'_custom-styles.scss';
+@import'_custom-variables.scss';
 
-$background-color: BB7171;
 
-$PaddingLeft:15px;
+
 $PaddingRight:15px;
 $paddingTop:50px;
 body {
-    background-color:$background-color;
+    background-color:$primary-color;
     padding-top:$paddingTop;
 }
 input,

@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace ViewModel
 {
@@ -50,6 +51,20 @@ namespace ViewModel
         [Display(Name = "Animation Url")]
         [Required]
         public string AnimationUrl { get; set; }
+
+        [Required]
+        [AllowHtml]
+        [Display(Name = "site Content")]
+        public string SiteContent { get; set; }
+
+        [Required]
+        [Display(Name = "Designed by")]
+        public string DesignedBy { get; set; }
+
+        [Required]
+        [Display(Name = "Site Copyright")]
+        public string Sitecopyright { get; set; }
+
 
         public int FooterId { get; set; }
 

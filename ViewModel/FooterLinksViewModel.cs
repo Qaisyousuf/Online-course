@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    public class FooterLinksViewModel:BaseViewModel
+    public class FooterLinksViewModel
     {
         public FooterLinksViewModel()
         {

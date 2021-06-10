@@ -45,6 +45,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         [HttpGet]
         public ActionResult Create()
         {
+            var SiteSettings = uow.SiteSettingrepository.GetAll();
             return View(new FooterLinksViewModel());
         }
 
@@ -58,6 +59,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     Id=viewmodel.Id,
                     LinkUrl=viewmodel.LinkUrl,
                     NavigationName=viewmodel.NavigationName,
+                    SiteSettings=viewmodel.SiteSettings,
                 };
 
                 uow.FooterLinksRepository.Add(footerlinks);
@@ -76,8 +78,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Id=footerlinks.Id,
                 NavigationName=footerlinks.NavigationName,
                 LinkUrl=footerlinks.LinkUrl,
+                SiteSettings=footerlinks.SiteSettings,
             };
-
+            var SiteSettings = uow.SiteSettingrepository.GetAll();
             return View(viewmodel);
         }
 

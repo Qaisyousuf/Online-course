@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Web.Mvc;
 
 namespace ViewModel
 {
@@ -46,6 +47,20 @@ namespace ViewModel
         [Required]
         public string AnimationUrl { get; set; }
 
+        [Required]
+        [AllowHtml]
+        [Display(Name ="site Content")]
+        public string SiteContent { get; set; }
+
+        [Required]
+        [Display(Name ="Designed by")]
+        public string DesignedBy { get; set; }
+
+        [Required]
+        [Display(Name ="Site Copyright")]
+        public string Sitecopyright { get; set; }
+
+        [Display(Name ="Footer Links")]
         public int FooterId { get; set; }
 
         [ForeignKey("FooterId")]

@@ -16,7 +16,9 @@ namespace Models
         public string GoogleSiteVerification { get; set; }
         public string GoogleAnalytics { get; set; }
         public DateTime SiteLastUpdatedDate { get; set; }
-
+        public string SiteContent { get; set; }
+        public string DesignedBy { get; set; }
+        public string Sitecopyright { get; set; }
 
 
         public string AnimationUrl { get; set; }

@@ -27,11 +27,14 @@ namespace OnlineTrainingWeb.Controllers
 
                 if(baseViewModel !=null)
                 {
-                  
 
+                    var footerId = _uow.Context.FooterLinks.Select(x => x.Id).ToList();
+
+                    var footerTag = _uow.Context.FooterLinks.Where(x => footerId.Contains(x.Id)).Select(x => x.NavigationName).ToList();
                     var site = _uow.Context.SiteSettings.FirstOrDefault();
 
-                    var siteSettings = _uow.Context.SiteSettings.Where(x => x.Id == site.Id).FirstOrDefault();
+                   
+                    var siteSettings = _uow.Context.SiteSettings.Include("FotterLinks").FirstOrDefault();
 
                     baseViewModel.SiteName = siteSettings.SiteName;
                     baseViewModel.SiteTitle = siteSettings.SiteTitle;
@@ -40,13 +43,22 @@ namespace OnlineTrainingWeb.Controllers
                     baseViewModel.GoogleSiteVerification = siteSettings.GoogleSiteVerification;
                     baseViewModel.AnimationUrl = siteSettings.AnimationUrl;
                     baseViewModel.SiteLastUpdatedDate = siteSettings.SiteLastUpdatedDate;
-                    baseViewModel.FooterLinksTag = baseViewModel.FooterLinksTag;
+                    baseViewModel.SiteContent = siteSettings.SiteContent;
+                    baseViewModel.Sitecopyright = siteSettings.Sitecopyright;
+                    baseViewModel.DesignedBy = siteSettings.DesignedBy;
 
-                    ViewBag.FooterTags = _uow.FooterLinksRepository.GetAll();
+                   
 
+                    int[] footterLinksIt = siteSettings.FotterLinks.Select(x => x.Id).ToArray();
 
+                    baseViewModel.FooterLinksId = footterLinksIt;
 
-                  
+                    baseViewModel.FooterLinks = siteSettings.FotterLinks;
+
+                    baseViewModel.FooterLinksTag = footerTag;
+                   
+                   
+
 
                 }
             }

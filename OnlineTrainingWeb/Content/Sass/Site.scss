@@ -1,9 +1,19 @@
 ﻿$btn-primary: rgb(231, 161, 161);
 
-$background-color: rgb(190, 65, 153);
+$background-color: BB7171;
 
 $PaddingLeft:15px;
 $PaddingRight:15px;
+$paddingTop:50px;
 body {
     background-color:$background-color;
+    padding-top:$paddingTop;
+}
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.dl-horizontal dt {
+    white-space: normal;
 }

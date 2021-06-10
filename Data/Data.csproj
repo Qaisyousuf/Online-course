@@ -314,6 +314,10 @@
     <Compile Include="Migrations\202106081503411_MenusPropertyChanged.Designer.cs">
       <DependentUpon>202106081503411_MenusPropertyChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106100807300_SiteSettinghasChnagedtheProperty.cs" />
+    <Compile Include="Migrations\202106100807300_SiteSettinghasChnagedtheProperty.Designer.cs">
+      <DependentUpon>202106100807300_SiteSettinghasChnagedtheProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -408,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106081503411_MenusPropertyChanged.resx">
       <DependentUpon>202106081503411_MenusPropertyChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106100807300_SiteSettinghasChnagedtheProperty.resx">
+      <DependentUpon>202106100807300_SiteSettinghasChnagedtheProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -30,12 +30,17 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 var tagName = uow.Context.FooterLinks.Where(x => footerIds.Contains(x.Id)).Select(x => x.NavigationName).ToList();
                 viewmodel.Add(new SiteSettingsViewmodel
                 {
-                    Id=item.Id,SiteTitle=item.SiteTitle,SiteName=item.SiteName,
+                    Id=item.Id,
+                    SiteTitle =item.SiteTitle,
+                    SiteName =item.SiteName,
                     SiteOwner=item.SiteOwner,
                     SiteLastUpdatedDate=item.SiteLastUpdatedDate,
                     GoogleAnalytics=item.GoogleAnalytics,
                     GoogleSiteVerification=item.GoogleSiteVerification,
                     AnimationUrl=item.AnimationUrl,
+                    SiteContent=item.SiteContent,
+                    DesignedBy=item.DesignedBy,
+                    Sitecopyright=item.Sitecopyright,
                     FooterLinksTag = tagName,
                 });
             }
@@ -97,6 +102,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     GoogleAnalytics=viewmodel.GoogleAnalytics,
                     SiteLastUpdatedDate=DateTime.Now,
                     AnimationUrl=viewmodel.AnimationUrl,
+                    SiteContent=viewmodel.SiteContent,
+                    Sitecopyright=viewmodel.Sitecopyright,
+                    DesignedBy=viewmodel.DesignedBy,
                     FotterLinks=viewmodel.FooterLinks,
                 };
 
@@ -130,6 +138,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 GoogleAnalytics=siteSetting.GoogleAnalytics,
                 GoogleSiteVerification=siteSetting.GoogleSiteVerification,
                 AnimationUrl=siteSetting.AnimationUrl,
+                SiteContent=siteSetting.SiteContent,
+                Sitecopyright=siteSetting.Sitecopyright,
+                DesignedBy=siteSetting.DesignedBy,
+
             };
 
             int[] footerlinksId = siteSetting.FotterLinks.Select(x=>x.Id).ToArray();
@@ -141,7 +153,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit([Bind(Include = "Id,SiteTitle,SiteName,SiteOwner,GoogleSiteVerification,GoogleAnalytics,SiteLastUpdatedDate,AnimationUrl")] SiteSettingsViewmodel viewmodel,int[] FooterlinksId)
+        public ActionResult Edit([Bind(Include = "Id,SiteTitle,SiteName,SiteOwner,GoogleSiteVerification,GoogleAnalytics,SiteLastUpdatedDate,AnimationUrl,SiteContent,DesignedBy,Sitecopyright")] SiteSettingsViewmodel viewmodel,int[] FooterlinksId)
         {
             if(ModelState.IsValid)
             {
@@ -153,6 +165,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 siteSettings.SiteOwner = viewmodel.SiteOwner;
                 siteSettings.GoogleAnalytics = viewmodel.GoogleAnalytics;
                 siteSettings.GoogleSiteVerification = viewmodel.GoogleSiteVerification;
+                siteSettings.SiteContent = viewmodel.SiteContent;
+                siteSettings.Sitecopyright = viewmodel.Sitecopyright;
+                siteSettings.DesignedBy = viewmodel.DesignedBy;
 
                 siteSettings.AnimationUrl = viewmodel.AnimationUrl;
                 siteSettings.SiteLastUpdatedDate = DateTime.Now;
@@ -188,6 +203,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 GoogleAnalytics = siteSetting.GoogleAnalytics,
                 GoogleSiteVerification = siteSetting.GoogleSiteVerification,
                 AnimationUrl = siteSetting.AnimationUrl,
+                SiteContent=siteSetting.SiteContent,
+                DesignedBy=siteSetting.DesignedBy,
+                Sitecopyright=siteSetting.Sitecopyright,
             };
 
             int[] footerlinksId = siteSetting.FotterLinks.Select(x => x.Id).ToArray();
@@ -212,6 +230,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 GoogleAnalytics = siteSetting.GoogleAnalytics,
                 GoogleSiteVerification = siteSetting.GoogleSiteVerification,
                 AnimationUrl = siteSetting.AnimationUrl,
+                SiteContent=siteSetting.SiteContent,
+                Sitecopyright=siteSetting.Sitecopyright,
+                DesignedBy=siteSetting.DesignedBy,
             };
 
             int[] footerlinksId = siteSetting.FotterLinks.Select(x => x.Id).ToArray();
@@ -239,6 +260,9 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 GoogleAnalytics = siteSetting.GoogleAnalytics,
                 GoogleSiteVerification = siteSetting.GoogleSiteVerification,
                 AnimationUrl = siteSetting.AnimationUrl,
+                SiteContent=siteSetting.SiteContent,
+                Sitecopyright=siteSetting.Sitecopyright,
+                DesignedBy=siteSetting.DesignedBy,
             };
 
             int[] footerlinksId = siteSetting.FotterLinks.Select(x => x.Id).ToArray();

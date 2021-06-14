@@ -60,10 +60,7 @@ namespace ViewModel
         [Display(Name ="Site Copyright")]
         public string Sitecopyright { get; set; }
 
-        [Display(Name ="Footer Links")]
-        public int FooterId { get; set; }
-
-        [ForeignKey("FooterId")]
+        
         public List<FooterLinks> FooterLinks { get; set; }
     }
 }

@@ -17,18 +17,18 @@ namespace ViewModel
             FooterLinks = new List<FooterLinks>();
         }
 
-        public int Id { get; set; }
+        
 
 
-        [Required]
+       
         [Display(Name = "Site title")]
         public string SiteTitle { get; set; }
 
-        [Required]
+       
         [Display(Name = "Site Name")]
         public string SiteName { get; set; }
 
-        [Required]
+       
         [Display(Name = "Site Owner")]
         public string SiteOwner { get; set; }
 
@@ -49,26 +49,24 @@ namespace ViewModel
 
 
         [Display(Name = "Animation Url")]
-        [Required]
+       
         public string AnimationUrl { get; set; }
 
-        [Required]
+       
         [AllowHtml]
         [Display(Name = "site Content")]
         public string SiteContent { get; set; }
 
-        [Required]
+        
         [Display(Name = "Designed by")]
         public string DesignedBy { get; set; }
 
-        [Required]
+      
         [Display(Name = "Site Copyright")]
         public string Sitecopyright { get; set; }
 
 
-        public int FooterId { get; set; }
-
-        [ForeignKey("FooterId")]
+       
         public List<FooterLinks> FooterLinks { get; set; }
     }
 }

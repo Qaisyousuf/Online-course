@@ -4,11 +4,15 @@
 
 
 
-$PaddingRight:15px;
-$paddingTop:50px;
 body {
-    background-color:$primary-color;
-    padding-top:$paddingTop;
+    background-color:$Background-color;
+   
+}
+.body-content
+{
+    padding-top:$padding-top;
+    padding-left:$padding-left;
+    padding-right:$padding-right;
 }
 input,
 select,

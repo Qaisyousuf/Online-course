@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,24 +10,37 @@ namespace OnlineTrainingWeb.Controllers
 {
     public class HomeController : BaseController
     {
-        public ActionResult Index()
+        
+        public ActionResult Index(string slug)
         {
-            return View(new HomePageViewModel());
+            if (string.IsNullOrEmpty(slug))
+                slug = "home";
+            if(!_uow.HomePageRepository.SlugExists(slug))
+            {
+                TempData["PageNotFound"] = "Page not found";
+                return RedirectToAction(nameof(Index), new { slug="" });
+            }
+
+            HomePageViewModel viewmodel;
+            HomePage pagefromDb;
+            pagefromDb = _uow.HomePageRepository.GetHomePageBySlug(slug);
+            ViewBag.PageTitle = pagefromDb.Title;
+
+            TempData["HomeBanner"] = pagefromDb.HomeBannerId;
+            TempData["ExplorationBanner"] = pagefromDb.HomeExplorationBannerId;
+
+            viewmodel = new HomePageViewModel
+            {
+                Id=pagefromDb.Id,
+                Title=pagefromDb.Title,
+                Content=pagefromDb.Content,
+
+            };
+          
+            return View(viewmodel);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+    
 
         [ChildActionOnly]
         public ActionResult PartialMenus()

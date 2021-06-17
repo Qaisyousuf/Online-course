@@ -322,6 +322,10 @@
     <Compile Include="Migrations\202106141414381_SiteSettingdAndFooterLinksAddedBackToDatabase.Designer.cs">
       <DependentUpon>202106141414381_SiteSettingdAndFooterLinksAddedBackToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106161457555_NewPropertyAddToHomeBanner.cs" />
+    <Compile Include="Migrations\202106161457555_NewPropertyAddToHomeBanner.Designer.cs">
+      <DependentUpon>202106161457555_NewPropertyAddToHomeBanner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -422,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106141414381_SiteSettingdAndFooterLinksAddedBackToDatabase.resx">
       <DependentUpon>202106141414381_SiteSettingdAndFooterLinksAddedBackToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106161457555_NewPropertyAddToHomeBanner.resx">
+      <DependentUpon>202106161457555_NewPropertyAddToHomeBanner.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,10 +1,14 @@
+html, body, header, .view {
+  height: 100%; }
+
 body {
-  background-color: #FBFBFB; }
+  background-color: #FBFBFB !important;
+  font-family: "Ubuntu", sans-serif; }
 
 .body-content {
-  padding-top: 50px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
 
 input,
 select,
@@ -13,5 +17,153 @@ textarea {
 
 .dl-horizontal dt {
   white-space: normal; }
+
+.navbar {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0) !important;
+  -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0) !important;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0) !important; }
+
+.top-nav-collapse {
+  background-color: #133166 !important;
+  -webkit-box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+  -moz-box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+  box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+  color: #dfe8f0 !important;
+  color: #dfe8f0;
+  font-weight: bold;
+  color: #c3d8e6 !important; }
+
+@media only screen and (max-width: 990px) {
+  .navbar {
+    background-color: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+    -webkit-box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+    -moz-box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+    background-color: #133166 !important; } }
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+    -webkit-box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+    -moz-box-shadow: -1px 10px 9px -7px rgba(0, 0, 0, 0.53) !important;
+    background-color: #133166 !important; } }
+.navbar-nav .nav-link {
+  color: #f2f8fc;
+  font-weight: bold; }
+
+.navbar-nav .nav-link:hover {
+  color: #c3d8e6 !important;
+  font-weight: bold !important; }
+
+.navbar-brand {
+  color: #f2f8fc;
+  font-weight: bold; }
+
+.navbar-brand:hover {
+  color: #c3d8e6; }
+
+#LoginNavbarButton {
+  color: #f2f8fc;
+  font-weight: bold; }
+
+.btn {
+  color: #f2f8fc !important;
+  background-color: #194085 !important; }
+
+.BannerMainContents {
+  padding-top: 150px; }
+
+.textColor {
+  color: #dfe8f0 !important;
+  font-weight: bold !important; }
+
+p {
+  color: #dfe8f0 !important; }
+
+.textColorForSecondHeading h1 {
+  color: #86949e !important;
+  text-align: center;
+  font-weight: bold !important; }
+.textColorForSecondHeading p {
+  color: #86949e !important;
+  text-align: center; }
+
+.HomeBannerMainSection {
+  background-image: url(../Images/BigBackground.svg);
+  background-size: cover;
+  margin-top: 0px;
+  padding-top: 0px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 200px; }
+
+@media (max-width: 1920px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 200px; } }
+@media (max-width: 1820px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: -100px; } }
+@media (max-width: 1766px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: -30px; } }
+@media (max-width: 1666px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: -30px; } }
+@media (max-width: 1566px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: -30px; } }
+@media (max-width: 1440px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/1440_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 900px;
+    padding-top: 50px; } }
+@media (max-width: 1366px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/1440_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 786px;
+    padding-top: 0px; } }
 
 /*# sourceMappingURL=Site.css.map */

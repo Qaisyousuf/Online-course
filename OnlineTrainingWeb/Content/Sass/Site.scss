@@ -1,11 +1,137 @@
 ﻿@import'core/_CustomColor.scss';
 @import'_custom-styles.scss';
 @import'_custom-variables.scss';
+@import'_CustomNavbar.scss';
+@import'_CustomButtons.scss';
 
 
+
+@mixin MainNavbar {
+    background-color: $navbarBackground !important;
+    -webkit-box-shadow: $webkit-box-shadow !important;
+    -moz-box-shadow: $-moz-box-shadow !important;
+    box-shadow: $Navbar_Box_Shadow !important;
+
+    
+   
+}
+
+@mixin CollapseNavbar {
+    background-color: $NavbarColorForScrolling !important;
+    -webkit-box-shadow: $Collapse_webkit-box-shadow !important;
+    -moz-box-shadow: $Collapse_moz-box-shadow !important;
+    box-shadow: $Collapse_Navbar_Box_Shadow !important;
+    color:$CustomNavbarLinkColorScrolling !important;
+
+}
+
+@mixin SmallAndMedumNavbar {
+    background-color: $Small_webkit-box-shadow !important;
+    -webkit-box-shadow: $Small_moz-box-shadow !important;
+    -moz-box-shadow: $Small_Navbar_Box_Shadow !important;
+    background-color: $NavbarColorForScrolling !important;
+}
+
+@mixin CustomNavbarTextColor{
+
+    color:$customNavbarLinksColor;
+    font-weight:$navbarFountStyle;
+}
+@mixin CustomNavbarTextColorHover {
+    color: $NavbarTextHoverColor !important;
+    font-weight: $NavbarFontStyleHover !important;;
+}
+@mixin CustomNavbarTextColorCollapse {
+    color: $CustomNavbarLinkColorScrolling;
+    font-weight: $navbarFountStyle;
+}
+
+@mixin BrandNavbar {
+    color: $customNavbarLinksColor;
+    font-weight: $navbarFountStyle;
+}
+
+@mixin Primarybutton{
+    color:$primaryButtonColor !important;
+    background-color:$primary-color !important;
+}
+
+@mixin HeadingTextColor{
+    color:$HeadingTextColor !important;
+    font-weight:$HeadingTextWidth !important;
+}
+
+@mixin PragraphText{
+    color:$PragraphTextColor !important;
+}
+
+@mixin NavbarBrandHover{
+
+    color:$NavbarFontColor;
+}
+
+@mixin BannerBackground_1920 {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top:200px;
+   
+}
+
+@mixin BannerBackground_1820 {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: -100px;
+}
+@mixin BannerBackground_1766 {
+    background-image: url(../Images/BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: -30px;
+}
+@mixin BannerBackground_1440 {
+    background-image: url(../Images/1440_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 900px;
+    padding-top: 50px;
+}
+@mixin BannerBackground_1366 {
+    background-image: url(../Images/1440_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 786px;
+    padding-top: 0px;
+}
+@mixin BannerSecondHeading {
+    color: $SecondHeadingTextColor !important;
+    font-weight: $SecondPragraphTextColor !important;
+}
+html, body, header, .view {
+    height: $bodyandViewHieght;
+}
 
 body {
-    background-color:$Background-color;
+  
+    background-color:#FBFBFB !important;
+    font-family:$FamilyFont;
    
 }
 .body-content
@@ -22,3 +148,118 @@ textarea {
 .dl-horizontal dt {
     white-space: normal;
 }
+
+.navbar {
+    @include MainNavbar
+}
+.top-nav-collapse {
+   
+   @include CollapseNavbar;
+   @include CustomNavbarTextColorCollapse;
+   color:$NavbarFontColor!important;
+}
+@media only screen and (max-width: 990px) {
+    .navbar {
+        @include SmallAndMedumNavbar
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        @include SmallAndMedumNavbar
+    }
+}
+.navbar-nav .nav-link{
+
+    @include CustomNavbarTextColor
+}
+.navbar-nav .nav-link:hover {
+
+    @include CustomNavbarTextColorHover;
+}
+
+.navbar-brand{
+
+    @include BrandNavbar
+}
+.navbar-brand:hover {
+
+   @include NavbarBrandHover;
+}
+
+#LoginNavbarButton {
+    @include BrandNavbar
+}
+
+.btn {
+    @include Primarybutton
+}
+
+
+
+
+
+.BannerMainContents {
+    padding-top: 150px;
+}
+
+.textColor{
+   @include HeadingTextColor
+}
+p {
+    @include PragraphText;
+}
+
+.textColorForSecondHeading {
+    h1 {
+        color: $SecondHeadingTextColor !important;
+        text-align: center;
+        font-weight:$HeadingTextWidth !important;
+    }
+
+    p {
+        color: $SecondPragraphTextColor !important;
+        text-align: center;
+       
+    }
+}
+.HomeBannerMainSection {
+    @include BannerBackground_1920;
+}
+   
+@media(max-width:1920px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1920;
+    }
+}
+@media(max-width:1820px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1820;
+    }
+}
+@media(max-width:1766px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1766;
+    }
+}
+@media(max-width:1666px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1766;
+    }
+}
+@media(max-width:1566px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1766;
+    }
+}
+@media(max-width:1440px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1440;
+    }
+}
+@media(max-width:1366px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1366;
+    }
+}
+
+

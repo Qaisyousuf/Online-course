@@ -20,6 +20,14 @@ namespace ViewModel
         public string ImageUrl { get; set; }
 
         [Required]
+        [Display(Name ="Main Subtitle")]
+        public string SubMaintitle { get; set; }
+
+        [Required]
+        [Display(Name ="Content")]
+        public string Content { get; set; }
+
+        [Required]
         [Display(Name ="Join button")]
         public string JoinButton { get; set; }
 

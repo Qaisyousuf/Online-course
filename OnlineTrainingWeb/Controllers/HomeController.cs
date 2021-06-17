@@ -35,12 +35,35 @@ namespace OnlineTrainingWeb.Controllers
                 Title=pagefromDb.Title,
                 Content=pagefromDb.Content,
 
+
             };
           
             return View(viewmodel);
         }
 
-    
+         [HttpGet]
+         [ChildActionOnly]
+         public ActionResult GetHomeBanner()
+        {
+            int id = (int)TempData["HomeBanner"];
+            var homebanner = _uow.HomeBannerRepository.GetById(id);
+
+            HomeBannerViewModel viewmodel = new HomeBannerViewModel
+            {
+                Id=homebanner.Id,
+                MainTitle=homebanner.MainTitle,
+                SubTitle=homebanner.SubTitle,
+                ImageUrl=homebanner.ImageUrl,
+                JoinButton=homebanner.JoinButton,
+                JoinButtonUrl=homebanner.JoinButtonUrl,
+                DiscoverButton=homebanner.DiscoverButton,
+                DiscoverButtonUrl=homebanner.DiscoverButton,
+                Content=homebanner.Content,
+                SubMaintitle=homebanner.SubMaintitle,
+            };
+
+            return PartialView(viewmodel);
+        }
 
         [ChildActionOnly]
         public ActionResult PartialMenus()

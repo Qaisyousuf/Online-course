@@ -78,29 +78,40 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
-    padding-top:200px;
+    padding-top:220px;
    
 }
 
 @mixin BannerBackground_1820 {
-    background-image: url(../Images/BigBackground.svg);
+    background-image: url(../Images/1820_BigBackground.svg);
     background-size: cover;
     margin-top: 0px;
     padding-top: 0px;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding-top: -100px;
+    height: 1024px;
+    padding-top: 220px;
 }
-@mixin BannerBackground_1766 {
-    background-image: url(../Images/BigBackground.svg);
+@mixin BannerBackground_1720 {
+    background-image: url(../Images/1720_BigBackground.svg);
     background-size: cover;
     margin-top: 0px;
     padding-top: 0px;
     background-position: center center;
     background-repeat: no-repeat;
+    height:1000px;
+    padding-top: 100px;
+    padding-bottom:100px;
+}
+@mixin BannerBackground_1660{
+    background-image: url(../Images/1660_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+  
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 100vh;
-    padding-top: -30px;
+    /*padding-top: 150px;*/
 }
 @mixin BannerBackground_1440 {
     background-image: url(../Images/1440_BigBackground.svg);
@@ -108,16 +119,44 @@
     margin-top: 0px;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 900px;
-    padding-top: 50px;
+    height: 800px;
+    /*padding-top: 120px;*/
 }
 @mixin BannerBackground_1366 {
-    background-image: url(../Images/1440_BigBackground.svg);
+    background-image: url(../Images/1360_BigBackground.svg);
     background-size: cover;
     margin-top: 0px;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 786px;
+    height: 700px;
+    padding-top: 0px;
+}
+@mixin BannerBackground_1280 {
+    background-image: url(../Images/1280_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+    padding-top: 0px;
+}
+
+@mixin BannerBackground_990 {
+    background-image: url(../Images/990_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding-top: 20px;
+}
+@mixin BannerBackground_786 {
+    background-image: url(../Images/786_BigBackground.svg);
+    background-size: cover;
+    margin-top: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
     padding-top: 0px;
 }
 @mixin BannerSecondHeading {
@@ -199,7 +238,7 @@ textarea {
 
 
 .BannerMainContents {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .textColor{
@@ -225,8 +264,8 @@ p {
 .HomeBannerMainSection {
     @include BannerBackground_1920;
 }
-   
-@media(max-width:1920px) {
+
+@media(min-width: 1720px) and (max-width:1920px) {
     .HomeBannerMainSection {
         @include BannerBackground_1920;
     }
@@ -238,17 +277,17 @@ p {
 }
 @media(max-width:1766px) {
     .HomeBannerMainSection {
-        @include BannerBackground_1766;
+        @include BannerBackground_1720;
     }
 }
-@media(max-width:1666px) {
+@media(max-width:1660px) {
     .HomeBannerMainSection {
-        @include BannerBackground_1766;
+        @include BannerBackground_1660;
     }
 }
 @media(max-width:1566px) {
     .HomeBannerMainSection {
-        @include BannerBackground_1766;
+        @include BannerBackground_1720;
     }
 }
 @media(max-width:1440px) {
@@ -261,5 +300,21 @@ p {
         @include BannerBackground_1366;
     }
 }
+@media(max-width:1280px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1280;
+    }
+}
+@media(max-width:990px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_990;
+    }
+}
+@media(max-width:767px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_786;
+    }
+}
+
 
 

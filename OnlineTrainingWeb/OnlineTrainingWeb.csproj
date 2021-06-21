@@ -273,15 +273,9 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\1280_BigBackground.svg" />
-    <Content Include="Content\Images\1360_BigBackground.svg" />
-    <Content Include="Content\Images\1440_BigBackground.svg" />
-    <Content Include="Content\Images\1660_BigBackground.svg" />
-    <Content Include="Content\Images\1720_BigBackground.svg" />
-    <Content Include="Content\Images\1820_BigBackground.svg" />
-    <Content Include="Content\Images\786_BigBackground.svg" />
-    <Content Include="Content\Images\990_BigBackground.svg" />
-    <Content Include="Content\Images\BigBackground.svg" />
+    <Content Include="Content\Images\1360_GigBackgroundTest.svg" />
+    <Content Include="Content\Images\1440_GigBackgroundFinal.svg" />
+    <Content Include="Content\Images\1920_GigBackgroundFinal.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
     <Content Include="Content\Sass\BackendSite.css" />
@@ -1242,6 +1236,7 @@
     <Content Include="Scripts\node_modules\lottie-player\package.json" />
     <Content Include="Scripts\node_modules\lottie-player\README.md" />
     <Content Include="Views\Home\GetHomeBanner.cshtml" />
+    <Content Include="Views\Home\GetHomeExploration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

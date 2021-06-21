@@ -65,6 +65,24 @@ namespace OnlineTrainingWeb.Controllers
             return PartialView(viewmodel);
         }
 
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetHomeExploration()
+        {
+            int id = (int)TempData["ExplorationBanner"];
+            var homeExploraitonBanner = _uow.HomeExplanationBannerRepository.GetById(id);
+            HomeExplorationBannerViewModel viewmodel = new HomeExplorationBannerViewModel
+            {
+                Id=homeExploraitonBanner.Id,
+               MainTitle=homeExploraitonBanner.MainTitle,
+               SubTitle=homeExploraitonBanner.SubTitle,
+
+            };
+
+            return PartialView(viewmodel);
+
+        }
+
         [ChildActionOnly]
         public ActionResult PartialMenus()
         {

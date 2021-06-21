@@ -3,48 +3,51 @@
 
 @if (Model?.Id != null)
 {
-<div class="HomeBannerMainSection">
-    <header class="BannerMainContents">
 
-        <!-- Full Page Intro -->
-        <div class="h-100">
-            <!-- Mask & flexbox options-->
-            <div class="mask">
-                <!-- Content -->
-                <div class="container h-100">
-                    <!--Grid row-->
-                    <div class="row align-items-center h-100">
-                        <!--Grid column-->
-                        <div class="col-md-6 col-lg-6">
-                            <h1 class="mb-2 textColor ">@Model.MainTitle</h1>
-                            <p class="mb-2 pb-2 text-justify">@Model.SubTitle</p>
-                            <a href="@Model.JoinButtonUrl" class="btn  btn-rounded btn-md ml-0"><i class="fas fa-sign-in-alt"></i> @Model.JoinButton</a>
-                            <a href="@Model.DiscoverButtonUrl" class="btn   btn-rounded btn-rounded btn-md"> <i class="fas fa-book-open"></i> @Model.DiscoverButton</a>
+    
+    <!-- Main navigation -->
+    <div class="HomeBannerMainSection">
+            <header class="BannerMainContents">
 
+                <!-- Full Page Intro -->
+                <div class="h-100">
+                    <!-- Mask & flexbox options-->
+                    <div class="mask">
+                        <!-- Content -->
+                        <div class="container h-100 ">
+                            <!--Grid row-->
+                            <div class="row d-flex align-items-center h-100">
+                                <!--Grid column-->
+                                <div class="col-md-6 col-lg-6">
+                                    <h1 class="mb-2 textColor ">@Model.MainTitle</h1>
+                                    <p class="mb-2 pb-2 text-justify">@Model.SubTitle</p>
+                                    <a href="@Model.JoinButtonUrl" class="btn  btn-rounded btn-md ml-0"><i class="fas fa-sign-in-alt"></i> @Model.JoinButton</a>
+                                    <a href="@Model.DiscoverButtonUrl" class="btn   btn-rounded btn-rounded btn-md"> <i class="fas fa-book-open"></i> @Model.DiscoverButton</a>
+
+                                </div>
+                                <!--Grid column-->
+                                <!--Grid column-->
+                                <div class="col-md-6 col-lg-6">
+                                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_eTM2vQ.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+
+
+                                </div>
+                                <!--Grid column-->
+                                <div class="col-md-10 col-sm-12 col-lg-10 pt-5 textColorForSecondHeading offset-lg-1 offset-md-1 text-center">
+                                    <h1 class=" ">@Model.SubMaintitle</h1>
+                                    <p class=" text-justify">@Model.Content</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
                         </div>
-                        <!--Grid column-->
-                        <!--Grid column-->
-                        <div class="col-md-6 col-lg-6">
-                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_eTM2vQ.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
-
-
-                        </div>
-                        <!--Grid column-->
-                        <div class="col-md-10 col-sm-12 col-lg-10 pt-5 textColorForSecondHeading offset-lg-1 offset-md-1 text-center">
-                            <h1 class=" ">@Model.SubMaintitle</h1>
-                            <p class=" text-justify">@Model.Content</p>
-                        </div>
+                        <!-- Content -->
                     </div>
-                    <!--Grid row-->
+                    <!-- Mask & flexbox options-->
                 </div>
-                <!-- Content -->
-            </div>
-            <!-- Mask & flexbox options-->
-        </div>
-        <!-- Full Page Intro -->
+                <!-- Full Page Intro -->
 
-    </header>
-</div>
+            </header>
+        </div>
 
 
 }

@@ -14,6 +14,5 @@ namespace Models
         public string ButtonUrl { get; set; }
         public string ImageUrl { get; set; }
 
-
     }
 }

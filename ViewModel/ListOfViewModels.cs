@@ -10,5 +10,7 @@ namespace ViewModel
     {
         public List<CourseContentsViewModel> ListofCourseContentExploratoin { get; set; }
         public List<CourseEachSectionViewModel> ListCourseEachSection { get; set; }
+        public List<ForLearnerViewModel> ListOfForLearner { get; set; }
+        public List<OurVisionViewModel> ListOfOurVision { get; set; }
     }
 }

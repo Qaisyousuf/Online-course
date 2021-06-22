@@ -112,6 +112,34 @@ namespace OnlineTrainingWeb.Controllers
 
         [HttpGet]
         [ChildActionOnly]
+        public ActionResult GetForlearner()
+        {
+            var forLearner = _uow.ForLearnerRepository.GetAll();
+
+            List<ForLearnerViewModel> viewmodel = new List<ForLearnerViewModel>();
+
+            foreach (var item in forLearner)
+            {
+                viewmodel.Add(new ForLearnerViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    ButtonText=item.ButtonText,
+                    ButtonUrl=item.ButtonUrl,
+                });
+            }
+
+            ListOfViewModels ForLearnerData = new ListOfViewModels
+            {
+                ListOfForLearner = viewmodel
+            };
+
+            return PartialView(ForLearnerData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
         public ActionResult CourseEachSection()
         {
             var courseEachSection = _uow.CourseSubSectionRepository.GetAll();
@@ -141,6 +169,35 @@ namespace OnlineTrainingWeb.Controllers
             };
 
             return PartialView(EachSectoinViewModel);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetOurVision()
+        {
+            var ourVision = _uow.OurVisionRepository.GetAll();
+
+            List<OurVisionViewModel> viewmodel = new List<OurVisionViewModel>();
+
+            foreach (var item in ourVision)
+            {
+                viewmodel.Add(new OurVisionViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    ButtonText=item.ButtonText,
+                    ButtonUrl=item.ButtonUrl,
+                    ImageUrl=item.ImageUrl,
+                });
+            }
+
+            ListOfViewModels OurVisionData = new ListOfViewModels
+            {
+                ListOfOurVision=viewmodel
+            };
+
+            return PartialView(OurVisionData);
         }
 
         [ChildActionOnly]

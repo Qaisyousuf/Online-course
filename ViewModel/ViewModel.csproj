@@ -123,6 +123,7 @@
     <Compile Include="ITSkillsGapImpactsOnBusinessViewModel.cs" />
     <Compile Include="LaunchYourCodingCareerViewModel.cs" />
     <Compile Include="LearningModelViewModel.cs" />
+    <Compile Include="ListOfViewModels.cs" />
     <Compile Include="ManageViewModels.cs" />
     <Compile Include="MenuSearchBoxViewModel.cs" />
     <Compile Include="MenusViewModel.cs" />

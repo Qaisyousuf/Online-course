@@ -71,7 +71,7 @@
 }
 
 @mixin BannerBackground_1920 {
-    background-image:url(../Images/1920_GigBackgroundFinal.svg);
+    background-image: url(../Images/1920_GigBackgroundFinal.svg);
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -96,13 +96,10 @@
     padding-top: 120px;
 
     .textColorForSecondHeading {
-        padding-top: 120px !important;
+        margin-top: 80px !important;
+        margin-bottom: 0px;
     }
 }
-
-
-
-
 @mixin BannerBackground_1440 {
     background-image: url(../Images/1440_GigBackgroundFinal.svg);
     background-size: cover;
@@ -129,13 +126,14 @@
     padding-top: 100px;
 
     .textColorForSecondHeading {
-        padding-top: 100px !important;
+        margin-top: 60px !important;
+        margin-bottom: 0px;
     }
 }
 @mixin BannerBackground_1366 {
     background-image: url(../Images/1360_GigBackgroundTest.svg);
     background-size: cover;
-    margin-top: 0px;
+    background-position:center;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -154,19 +152,110 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height:700px;
-    padding-top:100px;
+    height: 700px;
+    padding-top: 100px;
 
     .textColorForSecondHeading {
-        padding-top: 60px !important;
+        margin-top: 30px !important;
+        margin-bottom:0px;
+    }
+}
+@mixin BannerBackground_990 {
+    background-image: url(../Images/1360_GigBackgroundTest.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 900px;
+    padding-top: 130px;
+
+    .textColorForSecondHeading {
+        margin-top: 0px !important;
+       
+    }
+}
+
+@mixin BannerBackground_768 {
+    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 850px;
+   
+
+    .textColorForSecondHeading {
+        margin-top: 0px !important;
+    }
+}
+@mixin BannerBackground_530 {
+    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 900px;
+
+
+    .textColorForSecondHeading {
+        margin-top: 0px !important;
     }
 }
 
 
-//HomeBannerExploration
-@mixin HomeBannerExploratoin_1920 {
-    background-image: url(../Images/1920_ExplorationBanner.svg);
+
+@mixin Explorationbanner1920 {
+    background-image: url(../Images/1920ExploratoinBanner.svg);
     background-size: cover;
+    background-position: center;
     margin-top: 0px;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -186,112 +275,178 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100vh;
-    padding-top:100px;
-    width:auto;
+    height: 300px;
+    width: auto;
 }
-@mixin HomeBannerExploratoin_1720 {
-    background-image: url(../Images/1720_HomeExplorationBahher.svg);
+@mixin Explorationbanner1360 {
+    background-image: url(../Images/1440ExploratoinBanner.svg);
     background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
-}
-@mixin HomeBannerExploratoin_1660 {
-    background-image: url(../Images/1660_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
-   
-}
-@mixin HomeBannerExploratoin_1440 {
-    background-image: url(../Images/1440_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
-   
-}
-@mixin HomeBannerExploratoin_1360 {
-    background-image: url(../Images/1360_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
+    background-position:center;
     
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width:auto;
+   
+
+   
+}
+@mixin Explorationbanner1280 {
+    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+@mixin Explorationbanner1024 {
+    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+@mixin Explorationbanner990 {
+    background-image: url(../Images/1024ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+}
+@mixin Explorationbanner768 {
+    background-image: url(../Images/768ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 400px;
+    width: auto;
+}
+@mixin Explorationbanner530 {
+    background-image: url(../Images/530ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
+    width: auto;
 }
 
+//HomeBannerExploration
 
 
+
+@mixin CourseEachSectionShadow {
+    border-radius: .25rem;
+    box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
+    -webkit-box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important ;
+    -moz-box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important ;
+}
+
+.card.card-cascade .view.view-cascade{
+    @include CourseEachSectionShadow;
+}
 @mixin BannerSecondHeading {
     color: $SecondHeadingTextColor !important;
     font-weight: $SecondPragraphTextColor !important;
@@ -305,6 +460,49 @@
     }
     p{
         color:$BannerExplorationPragraphTextColor !important;
+    }
+    h1,h2,h3,h4,h5,h6{
+        color:$BannerExplorationPragraphTextColor !important;
+        
+    }
+}
+@mixin HomeBannerExplorationFontColor {
+
+    .display-2 {
+        color: $BannerExplorationTextColor !important;
+        font-weight: $BahherExplorationFontWidth !important;
+    }
+
+    p {
+        color: $BannerExplorationPragraphTextColor !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $BannerExplorationPragraphTextColor !important;
+    }
+}
+@mixin HomeBannerExplorationFontColorSmallSize {
+
+    .display-2 {
+        color: $BannerExplorationTextColor !important;
+        font-weight: $BahherExplorationFontWidth !important;
+        font-size:$DisplayTextSizeForSmall !important;
+    }
+
+    p {
+        color: $BannerExplorationPragraphTextColor !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $BannerExplorationPragraphTextColor !important;
+    }
+}
+
+@media(min-width:300px) and (max-width:768px)
+{
+    .HomebannerExplorationTextColor {
+
+        @include HomeBannerExplorationFontColorSmallSize;
     }
 }
 
@@ -422,6 +620,13 @@ p {
     }
 }
 
+@media(max-width:1920px)
+{
+    .HomeBannerMainSection{
+        @include BannerBackground_1920;
+    }
+}
+
 @media(min-width:1366px) and (max-width:1440px)
 {
     .HomeBannerMainSection {
@@ -436,11 +641,62 @@ p {
     }
 }
 
+@media(max-width:768px)
+{
+    .HomeBannerMainSection {
+        @include BannerBackground_768;
+    }
+}
+@media(min-width:300px) and (max-width:550px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_530;
+    }
+}
+
 //SecondHomeBanner
 
+@media(min-width:1920px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1920;
+    }
+}
+@media(min-width:1360px) and (max-width:1440px)
+{
+    .SecondHomeBanner {
+        @include Explorationbanner1360
+    }
+}
 
+@media(min-width:1280px) and (max-width:1360px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1280;
+    }
+}
+@media(min-width:990px) and (max-width:1280px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1024;
+    }
+}
+@media(min-width:768px) and (max-width:990px) {
+    .SecondHomeBanner {
+        @include Explorationbanner990;
+    }
+}
+@media(min-width:500px) and (max-width:768px) {
+    .SecondHomeBanner {
+        @include Explorationbanner768;
+    }
+}
+@media(min-width:300px) and (max-width:500px) {
+    .SecondHomeBanner {
+        @include Explorationbanner530;
+    }
+}
+
+
+    
 /*.SecondHomeBanner {
-    background-image: url(../Images/1920_ExplorationBanner.svg);
+    background-image: url(../Images/1360ExploratoinBanner.svg);
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -461,30 +717,12 @@ p {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height:100vh;
+    height:400px;
    
 }*/
-@media(max-width:1720px) {
-    .SecondHomeBanner {
-        @include HomeBannerExploratoin_1720;
-    }
-}
-@media(max-width:1660px) {
-    .SecondHomeBanner {
-        @include HomeBannerExploratoin_1660;
-    }
-}
-@media(max-width:1440px) {
-    .SecondHomeBanner {
-        @include HomeBannerExploratoin_1440;
-    }
-}
 
-@media(max-width:1360px) {
-    .SecondHomeBanner {
-        @include HomeBannerExploratoin_1360;
-    }
-}
+
+
 
 
 

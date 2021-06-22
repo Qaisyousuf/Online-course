@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace ViewModel
 {
-    public class CourseEachSectionViewModel
+    public class CourseEachSectionViewModel:BaseViewModel
     {
         public int Id { get; set; }
 
@@ -38,6 +39,7 @@ namespace ViewModel
         public string ReadMoreButtonUrl { get; set; }
 
         [Required]
+        [AllowHtml]
         [Display(Name ="Download curriculum")]
         public string DownloadCurriculumButton { get; set; }
 

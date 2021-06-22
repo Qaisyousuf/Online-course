@@ -1,8 +1,25 @@
+.card.card-cascade .view.view-cascade {
+  border-radius: .25rem;
+  box-shadow: -3px -2px 5px -46px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: -3px -2px 5px -46px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: -3px -2px 5px -46px rgba(0, 0, 0, 0.75) !important; }
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .HomebannerExplorationTextColor .display-2 {
+    color: #3e5d94 !important;
+    font-weight: bold !important;
+    font-size: 2rem !important; }
+  .HomebannerExplorationTextColor p {
+    color: #3e5d94 !important; }
+  .HomebannerExplorationTextColor h1, .HomebannerExplorationTextColor h2, .HomebannerExplorationTextColor h3, .HomebannerExplorationTextColor h4, .HomebannerExplorationTextColor h5, .HomebannerExplorationTextColor h6 {
+    color: #3e5d94 !important; } }
 .HomebannerExplorationTextColor .display-2 {
-  color: #DFE8F0 !important;
+  color: #3e5d94 !important;
   font-weight: bold !important; }
 .HomebannerExplorationTextColor p {
-  color: #DFE8F0 !important; }
+  color: #3e5d94 !important; }
+.HomebannerExplorationTextColor h1, .HomebannerExplorationTextColor h2, .HomebannerExplorationTextColor h3, .HomebannerExplorationTextColor h4, .HomebannerExplorationTextColor h5, .HomebannerExplorationTextColor h6 {
+  color: #3e5d94 !important; }
 
 html, body, header, .view {
   height: 100%; }
@@ -83,11 +100,11 @@ p {
   color: #dfe8f0 !important; }
 
 .textColorForSecondHeading h1 {
-  color: #86949e !important;
+  color: #3e5d94 !important;
   text-align: center;
   font-weight: bold !important; }
 .textColorForSecondHeading p {
-  color: #86949e !important;
+  color: #133166 !important;
   text-align: center; }
 
 @media (min-wdith: 1720px) and (max-width: 1920px) {
@@ -116,7 +133,36 @@ p {
     height: 1024px;
     padding-top: 120px; }
     .HomeBannerMainSection .textColorForSecondHeading {
-      padding-top: 120px !important; } }
+      margin-top: 80px !important;
+      margin-bottom: 0px; } }
+@media (max-width: 1920px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/1920_GigBackgroundFinal.svg);
+    background-size: cover;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1024px;
+    padding-top: 120px; }
+    .HomeBannerMainSection .textColorForSecondHeading {
+      margin-top: 80px !important;
+      margin-bottom: 0px; } }
 @media (min-width: 1366px) and (max-width: 1440px) {
   .HomeBannerMainSection {
     background-image: url(../Images/1440_GigBackgroundFinal.svg);
@@ -143,12 +189,13 @@ p {
     height: 100vh;
     padding-top: 100px; }
     .HomeBannerMainSection .textColorForSecondHeading {
-      padding-top: 100px !important; } }
+      margin-top: 60px !important;
+      margin-bottom: 0px; } }
 @media (max-width: 1366px) {
   .HomeBannerMainSection {
     background-image: url(../Images/1360_GigBackgroundTest.svg);
     background-size: cover;
-    margin-top: 0px;
+    background-position: center;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -170,9 +217,238 @@ p {
     height: 700px;
     padding-top: 100px; }
     .HomeBannerMainSection .textColorForSecondHeading {
-      padding-top: 60px !important; } }
+      margin-top: 30px !important;
+      margin-bottom: 0px; } }
+@media (max-width: 768px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 850px; }
+    .HomeBannerMainSection .textColorForSecondHeading {
+      margin-top: 0px !important; } }
+@media (min-width: 300px) and (max-width: 550px) {
+  .HomeBannerMainSection {
+    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 900px; }
+    .HomeBannerMainSection .textColorForSecondHeading {
+      margin-top: 0px !important; } }
+@media (min-width: 1920px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/1920ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 300px;
+    width: auto; } }
+@media (min-width: 1360px) and (max-width: 1440px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto; } }
+@media (min-width: 1280px) and (max-width: 1360px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto; } }
+@media (min-width: 990px) and (max-width: 1280px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto; } }
+@media (min-width: 768px) and (max-width: 990px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/1024ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 300px;
+    width: auto; } }
+@media (min-width: 500px) and (max-width: 768px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/768ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 400px;
+    width: auto; } }
+@media (min-width: 300px) and (max-width: 500px) {
+  .SecondHomeBanner {
+    background-image: url(../Images/530ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
+    width: auto; } }
 /*.SecondHomeBanner {
-    background-image: url(../Images/1920_ExplorationBanner.svg);
+    background-image: url(../Images/1360ExploratoinBanner.svg);
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -193,104 +469,8 @@ p {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height:100vh;
+    height:400px;
    
 }*/
-@media (max-width: 1720px) {
-  .SecondHomeBanner {
-    background-image: url(../Images/1720_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh; } }
-@media (max-width: 1660px) {
-  .SecondHomeBanner {
-    background-image: url(../Images/1660_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh; } }
-@media (max-width: 1440px) {
-  .SecondHomeBanner {
-    background-image: url(../Images/1440_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh; } }
-@media (max-width: 1360px) {
-  .SecondHomeBanner {
-    background-image: url(../Images/1360_HomeExplorationBahher.svg);
-    background-size: cover;
-    margin-top: 0px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh; } }
 
 /*# sourceMappingURL=Site.css.map */

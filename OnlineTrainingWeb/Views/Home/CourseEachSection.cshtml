@@ -1,0 +1,50 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListCourseEachSection != null)
+{
+<div class="container">
+   
+    <div class="row">
+        
+            @foreach (var item in Model.ListCourseEachSection)
+            {
+         <div class="col-md-4 pt-4">
+            <div class="card card-cascade">
+
+                <!--Card image-->
+                <div class="view view-cascade">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--/.Card image-->
+                <!--Card content-->
+                <div class="card-body card-body-cascade HomebannerExplorationTextColor text-center ">
+                    <!--Title-->
+                    <h5 class="font-weight-bold"><i class="fas fa-code"></i> @item.Title</h5>
+                    <h5><i class="fas fa-terminal"></i> @item.MainTitle</h5>
+
+                    <p class="card-text text-justify">@item.Content</p>
+
+                    <a href="@item.ReadMoreButtonUrl" class="btn btn-rounded btn-sm"><i class="far fa-eye"></i> @item.ReadMoreButton</a>
+                    <a href="@item.DownloadCurriculumButton" class="btn btn-rounded btn-sm" target="_blank"><i class="fas fa-cloud-download-alt"></i> @item.DwonloadCurriculumText</a>
+                    <!--Facebook-->
+
+
+                </div>
+                <!--/.Card content-->
+                <div class="card-footer">
+                    <span class="chip">@item.Duration</span>
+                </div>
+            </div>
+        </div>
+        
+            }
+       
+
+    </div>
+  
+</div>
+    
+}

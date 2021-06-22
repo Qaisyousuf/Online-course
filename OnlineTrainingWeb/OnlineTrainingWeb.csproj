@@ -273,9 +273,16 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\1024ExploratoinBanner.svg" />
+    <Content Include="Content\Images\1360ExploratoinBanner.svg" />
     <Content Include="Content\Images\1360_GigBackgroundTest.svg" />
+    <Content Include="Content\Images\1440ExploratoinBanner.svg" />
     <Content Include="Content\Images\1440_GigBackgroundFinal.svg" />
+    <Content Include="Content\Images\1920ExploratoinBanner.svg" />
     <Content Include="Content\Images\1920_GigBackgroundFinal.svg" />
+    <Content Include="Content\Images\530ExploratoinBanner.svg" />
+    <Content Include="Content\Images\768ExploratoinBanner.svg" />
+    <Content Include="Content\Images\768_GigBackgroundTest.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
     <Content Include="Content\Sass\BackendSite.css" />
@@ -1237,6 +1244,8 @@
     <Content Include="Scripts\node_modules\lottie-player\README.md" />
     <Content Include="Views\Home\GetHomeBanner.cshtml" />
     <Content Include="Views\Home\GetHomeExploration.cshtml" />
+    <Content Include="Views\Home\GetCourseContent.cshtml" />
+    <Content Include="Views\Home\CourseEachSection.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

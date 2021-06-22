@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    public class CourseContentExplanationViewModel
+    public class CourseContentExplanationViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

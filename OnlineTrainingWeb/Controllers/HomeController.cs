@@ -83,6 +83,66 @@ namespace OnlineTrainingWeb.Controllers
 
         }
 
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetCourseContent()
+        {
+            var courseContent = _uow.CourseContenntRepository.GetAll();
+
+            List<CourseContentsViewModel> viewmodel = new List<CourseContentsViewModel>();
+
+            foreach (var item in courseContent)
+            {
+                viewmodel.Add(new CourseContentsViewModel
+                {
+                    Id=item.Id,
+                    Title=item.Title,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                  AnimationUrl =item.AnimationUrl,
+                });
+            }
+
+            ListOfViewModels listOfCourseContentExploration = new ListOfViewModels
+            {
+                ListofCourseContentExploratoin=viewmodel
+            };
+            return PartialView(listOfCourseContentExploration);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult CourseEachSection()
+        {
+            var courseEachSection = _uow.CourseSubSectionRepository.GetAll();
+
+            List<CourseEachSectionViewModel> viewmodel = new List<CourseEachSectionViewModel>();
+
+            foreach (var item in courseEachSection)
+            {
+                viewmodel.Add(new CourseEachSectionViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    Content=item.Content,
+                    ImageUrl=item.ImageUrl,
+                    Duration=item.Duration,
+                    ReadMoreButton=item.ReadMoreButton,
+                    ReadMoreButtonUrl=item.ReadMoreButtonUrl,
+                    DownloadCurriculumButton=item.DownloadCurriculumButton,
+                    DwonloadCurriculumText=item.DwonloadCurriculumText,
+                });
+            }
+
+            ListOfViewModels EachSectoinViewModel = new ListOfViewModels
+            {
+                ListCourseEachSection = viewmodel,
+            };
+
+            return PartialView(EachSectoinViewModel);
+        }
+
         [ChildActionOnly]
         public ActionResult PartialMenus()
         {

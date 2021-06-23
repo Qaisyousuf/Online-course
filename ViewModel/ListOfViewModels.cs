@@ -12,5 +12,6 @@ namespace ViewModel
         public List<CourseEachSectionViewModel> ListCourseEachSection { get; set; }
         public List<ForLearnerViewModel> ListOfForLearner { get; set; }
         public List<OurVisionViewModel> ListOfOurVision { get; set; }
+        public List<COVID_19ViewModel> ListOfCovid { get; set; }
     }
 }

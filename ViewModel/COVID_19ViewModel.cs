@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class COVID_19ViewModel
+    public class COVID_19ViewModel:BaseViewModel
     {
         public int Id { get; set; }
 
@@ -17,5 +17,21 @@ namespace ViewModel
         [Display(Name ="Image url")]
         [DataType(DataType.Url)]
         public string ImageUrl { get; set; }
+
+        [Required]
+        [Display(Name ="Covid button text")]
+        public string CovidButtonText { get; set; }
+
+        [Required]
+        [Display(Name ="Covid button url")]
+        public string CovidButtonUrl { get; set; }
+
+        [Required]
+        [Display(Name ="Course button text")]
+        public string CourseButtonText { get; set; }
+
+        [Required]
+        [Display(Name ="Course button url")]
+        public string CourseButtonUrl { get; set; }
     }
 }

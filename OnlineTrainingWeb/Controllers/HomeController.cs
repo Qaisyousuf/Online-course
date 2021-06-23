@@ -200,6 +200,37 @@ namespace OnlineTrainingWeb.Controllers
             return PartialView(OurVisionData);
         }
 
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetCovidData()
+        {
+            var covid = _uow.Covid19Repository.GetAll();
+
+            List<COVID_19ViewModel> viewmodel = new List<COVID_19ViewModel>();
+
+            foreach (var item in covid)
+            {
+                viewmodel.Add(new COVID_19ViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    ImageUrl=item.ImageUrl,
+                    CovidButtonText=item.CovidButtonText,
+                    CovidButtonUrl=item.CovidButtonUrl,
+                    CourseButtonText=item.CourseButtonText,
+                    CourseButtonUrl=item.CourseButtonUrl,
+                });
+            }
+
+            ListOfViewModels CovidData = new ListOfViewModels
+            {
+                ListOfCovid=viewmodel
+            };
+
+            return PartialView(CovidData);
+        }
+
         [ChildActionOnly]
         public ActionResult PartialMenus()
         {

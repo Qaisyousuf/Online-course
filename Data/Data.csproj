@@ -326,6 +326,10 @@
     <Compile Include="Migrations\202106161457555_NewPropertyAddToHomeBanner.Designer.cs">
       <DependentUpon>202106161457555_NewPropertyAddToHomeBanner.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106230931152_CovidModelChanged.cs" />
+    <Compile Include="Migrations\202106230931152_CovidModelChanged.Designer.cs">
+      <DependentUpon>202106230931152_CovidModelChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -429,6 +433,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106161457555_NewPropertyAddToHomeBanner.resx">
       <DependentUpon>202106161457555_NewPropertyAddToHomeBanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106230931152_CovidModelChanged.resx">
+      <DependentUpon>202106230931152_CovidModelChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

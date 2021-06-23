@@ -282,6 +282,7 @@
     <Content Include="Content\Images\1920_GigBackgroundFinal.svg" />
     <Content Include="Content\Images\530ExploratoinBanner.svg" />
     <Content Include="Content\Images\768ExploratoinBanner.svg" />
+    <Content Include="Content\Images\768OurVision.svg" />
     <Content Include="Content\Images\768_GigBackgroundTest.svg" />
     <Content Include="Content\Images\OurVison.svg" />
     <Content Include="Content\mdb.css" />
@@ -1249,6 +1250,7 @@
     <Content Include="Views\Home\CourseEachSection.cshtml" />
     <Content Include="Views\Home\GetForlearner.cshtml" />
     <Content Include="Views\Home\GetOurVision.cshtml" />
+    <Content Include="Views\Home\GetCovidData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

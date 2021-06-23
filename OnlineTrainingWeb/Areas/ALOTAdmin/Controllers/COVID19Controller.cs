@@ -34,6 +34,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     MainTitle=item.MainTitle,
                     Content=item.Content,
                     ImageUrl=item.ImageUrl,
+                    CourseButtonText=item.CourseButtonText,
+                    CourseButtonUrl=item.CourseButtonUrl,
+                    CovidButtonText=item.CovidButtonText,
+                    CovidButtonUrl=item.CovidButtonUrl,
                 });
             }
             return Json(new { data = viewmodel }, JsonRequestBehavior.AllowGet);
@@ -55,6 +59,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     MainTitle=viewmodel.MainTitle,
                     Content=viewmodel.Content,
                     ImageUrl=viewmodel.ImageUrl,
+                    CourseButtonText=viewmodel.CourseButtonText,
+                    CourseButtonUrl=viewmodel.CourseButtonUrl,
+                    CovidButtonUrl=viewmodel.CovidButtonUrl,
+                    CovidButtonText=viewmodel.CovidButtonText,
                 };
 
                 uow.Covid19Repository.Add(covid);
@@ -74,6 +82,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 MainTitle=covid.MainTitle,
                 Content=covid.Content,
                 ImageUrl=covid.ImageUrl,
+                CourseButtonText=covid.CourseButtonText,
+                CourseButtonUrl=covid.CourseButtonUrl,
+                CovidButtonText=covid.CovidButtonText,
+                CovidButtonUrl=covid.CovidButtonUrl,
 
             };
 
@@ -91,6 +103,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 covid.MainTitle = viewmodel.MainTitle;
                 covid.Content = viewmodel.Content;
                 covid.ImageUrl = viewmodel.ImageUrl;
+                covid.CourseButtonText = viewmodel.CourseButtonText;
+                covid.CourseButtonUrl = viewmodel.CourseButtonUrl;
+                covid.CovidButtonText = viewmodel.CovidButtonText;
+                covid.CovidButtonUrl = viewmodel.CovidButtonUrl;
 
                 uow.Covid19Repository.Update(covid);
                 uow.Commit();
@@ -109,6 +125,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 MainTitle=covid.MainTitle,
                 Content=covid.Content,
                 ImageUrl=covid.ImageUrl,
+                CovidButtonText=covid.CovidButtonText,
+                CovidButtonUrl=covid.CovidButtonUrl,
+                CourseButtonUrl=covid.CourseButtonUrl,
+                CourseButtonText=covid.CourseButtonText,
             };
 
             uow.Covid19Repository.Remove(covid);
@@ -128,6 +148,10 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 MainTitle = covid.MainTitle,
                 Content = covid.Content,
                 ImageUrl = covid.ImageUrl,
+                CovidButtonText = covid.CovidButtonText,
+                CovidButtonUrl = covid.CovidButtonUrl,
+                CourseButtonUrl = covid.CourseButtonUrl,
+                CourseButtonText = covid.CourseButtonText,
 
             };
 

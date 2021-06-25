@@ -483,11 +483,11 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: auto;
+    height: 750px;
     width: auto;
 }
 
-
+//Course Each Section
 
 @mixin CourseEachSectionShadow {
     border-radius: .25rem;
@@ -515,8 +515,37 @@
     }
     h1,h2,h3,h4,h5,h6{
         color:$BannerExplorationPragraphTextColor !important;
+        font-weight:$FooterFontWidth !important;
         
     }
+}
+
+@mixin FooterFont {
+    p{
+        color:$FooterPraghraphText !important;
+    }
+
+    h1, h2, h3, h4, h5,h6 {
+        color: $FooterHeadingText !important;
+        font-weight: $FooterFontWidth !important;
+    }
+}
+
+.FooterFontStyle{
+    @include FooterFont;
+}
+
+@mixin FooterLinksStyle{
+    a{
+        color:$FooterLinksColor !important;
+    }
+    i{
+        color:$FooterLinksColor !important;
+    }
+}
+
+.linksStyle{
+    @include FooterLinksStyle;
 }
 @mixin HomeBannerExplorationFontColor {
 
@@ -558,6 +587,101 @@
     }
 }
 
+//footer
+
+@mixin MainFooter {
+    background-image: url(../Images/Footer.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+@mixin MainFooter1440 {
+    background-image: url(../Images/Footer.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width:100%;
+   
+    height: 830px;
+    
+    flex-direction: row;
+}
+@mixin MainFooter1180 {
+    background-image: url(../Images/Footer1180.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+@mixin MainFooter990 {
+    background-image: url(../Images/Footer990.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+@mixin MainFooter769 {
+    background-image: url(../Images/Footer769.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+@mixin MainFooter500 {
+    background-image: url(../Images/Footer500.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height:1600px;
+    flex-direction: row;
+}
+@mixin MainFooter360 {
+    background-image: url(../Images/Footer500.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 1600px;
+    flex-direction: row;
+}
 .HomebannerExplorationTextColor {
 
    @include HomeBannerExplorationFontColor;
@@ -755,6 +879,7 @@ p {
     }
 }
 
+
 @media(min-width:300px) and (max-width:768px)
 {
     .OurVisonmainBackground {
@@ -762,6 +887,49 @@ p {
         }
     }
 }
+.FooterMainBackground {
+    @include MainFooter;
+}
+@media(min-width:1360px) and (max-width:1920px) {
+    .FooterMainBackground {
+        @include MainFooter1440;
+    }
+}
+
+@media(min-width:1360px) and (max-width:1440px)
+{
+    .FooterMainBackground {
+        @include MainFooter1440;
+    }
+}
+@media(min-width:990px) and (max-width:1180px) {
+    .FooterMainBackground {
+        @include MainFooter1180;
+    }
+}
+@media(min-width:800px) and (max-width:990px) {
+    .FooterMainBackground {
+        @include MainFooter990;
+    }
+}
+@media(min-width:769px) and (max-width:800px) {
+    .FooterMainBackground {
+        @include MainFooter769;
+    }
+}
+@media(min-width:500px) and (max-width:767px) {
+    .FooterMainBackground {
+        @include MainFooter500;
+    }
+}
+@media(min-width:200px) and (max-width:500px) {
+    .FooterMainBackground {
+        @include MainFooter360;
+    }
+}
+
+
+
 
 
 

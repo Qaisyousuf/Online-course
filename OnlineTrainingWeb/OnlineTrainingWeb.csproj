@@ -260,6 +260,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SubscriptionFooterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -284,6 +285,12 @@
     <Content Include="Content\Images\768ExploratoinBanner.svg" />
     <Content Include="Content\Images\768OurVision.svg" />
     <Content Include="Content\Images\768_GigBackgroundTest.svg" />
+    <Content Include="Content\Images\Footer.svg" />
+    <Content Include="Content\Images\Footer1180.svg" />
+    <Content Include="Content\Images\Footer360.svg" />
+    <Content Include="Content\Images\Footer500.svg" />
+    <Content Include="Content\Images\Footer769.svg" />
+    <Content Include="Content\Images\Footer990.svg" />
     <Content Include="Content\Images\OurVison.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
@@ -1251,6 +1258,8 @@
     <Content Include="Views\Home\GetForlearner.cshtml" />
     <Content Include="Views\Home\GetOurVision.cshtml" />
     <Content Include="Views\Home\GetCovidData.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\SubscriptionFooter\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

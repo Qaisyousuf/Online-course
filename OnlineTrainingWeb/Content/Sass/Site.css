@@ -4,6 +4,17 @@
   -webkit-box-shadow: -3px -2px 5px -46px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: -3px -2px 5px -46px rgba(0, 0, 0, 0.75) !important; }
 
+.FooterFontStyle p {
+  color: #6984b3 !important; }
+.FooterFontStyle h1, .FooterFontStyle h2, .FooterFontStyle h3, .FooterFontStyle h4, .FooterFontStyle h5, .FooterFontStyle h6 {
+  color: #6984b3 !important;
+  font-weight: bold !important; }
+
+.linksStyle a {
+  color: #6984b3 !important; }
+.linksStyle i {
+  color: #6984b3 !important; }
+
 @media (min-width: 300px) and (max-width: 768px) {
   .HomebannerExplorationTextColor .display-2 {
     color: #3e5d94 !important;
@@ -495,7 +506,111 @@ p {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: auto;
+    height: 750px;
     width: auto; } }
+.FooterMainBackground {
+  background-image: url(../Images/Footer.svg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: center;
+  width: 100%;
+  height: 830px;
+  flex-direction: row; }
+
+@media (min-width: 1360px) and (max-width: 1920px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row; } }
+@media (min-width: 1360px) and (max-width: 1440px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row; } }
+@media (min-width: 990px) and (max-width: 1180px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer1180.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row; } }
+@media (min-width: 800px) and (max-width: 990px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer990.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row; } }
+@media (min-width: 769px) and (max-width: 800px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer769.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row; } }
+@media (min-width: 500px) and (max-width: 767px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer500.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 1600px;
+    flex-direction: row; } }
+@media (min-width: 200px) and (max-width: 500px) {
+  .FooterMainBackground {
+    background-image: url(../Images/Footer500.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 1600px;
+    flex-direction: row; } }
 
 /*# sourceMappingURL=Site.css.map */

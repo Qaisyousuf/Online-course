@@ -51,76 +51,120 @@
         @Html.Action("GetForlearner", "Home")
         @Html.Action("GetOurVision", "Home")
         @Html.Action("GetCovidData", "Home")
+       
+        <div class="FooterMainBackground">
+            <footer class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="bg-transparent">
+                            <!-- Mask & flexbox options-->
+                            <div class="mask">
+                                <!-- Content -->
+                                <div class="container h-100">
+                                    <!--Grid row-->
+                                    <div class="row align-items-center h-100">
+                                        <!--Grid column-->
+                                        <div class="col-md-6 pt-4 FooterFontStyle ">
+                                            <h1 class="text-center text-md-left text-lg-left text-xl-left">@Model.SiteTitle</h1>
+                                            <p class="text-justify">@Html.Raw(@Model.SiteContent) </p>
+
+                                        </div>
+                                        <!--Grid column-->
+                                        <!--Grid column-->
+                                        <div class="col-md-6">
+                                            <div class="view img-fluid">
+                                                <lottie-player src="@Model.AnimationUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                                            </div>
+                                        </div>
+                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+                                </div>
+                                <!-- Content -->
+                            </div>
+                            <!-- Mask & flexbox options-->
+                        </div>
+
+                        <div class="col-md-3 d-flex justify-content-center linksStyle">
+                            <ul class="list-unstyled text-center text-xl-left  text-lg-left text-md-left">
+                                @foreach (var item in Model.FooterLinks)
+                                {
+                                    <li><a href="@item.LinkUrl">@item.NavigationName</a></li>
+                                }
 
 
-        @*<p>&copy; @Model.SiteLastUpdatedDate - @Model.SiteName -@Model.SiteOwner</p>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center linksStyle ">
+                            <ul class="list-unstyled">
+                                <li class="pt-3"> <i class="fas fa-home fa-x1"></i> <a>Mumbai, Maharashtra, India</a> </li>
+                                <li class="pt-3"> <i class="fas fa-phone"></i> <a>+91-9920347952</a> </li>
+                                <li class="pt-3"> <i class="fas fa-envelope"></i> <a>abhishek@abhishekluv.com</a> </li>
+                                <li class="d-inline-flex pt-3 pl-0"> <i class="fab fa-paypal fa-2x"></i></li>
+                                <li class="d-inline-flex pt-3 pl-1"> <i class="fas fa-credit-card fa-2x"></i></li>
+                                <li class="d-inline-flex pt-3 pl-1"> <i class="fab fa-cc-mastercard fa-2x"></i></li>
+                                <li class="d-inline-flex pt-3 pl-1"> <i class="fab fa-cc-visa fa-2x"></i></li>
+                                <li class="d-inline-flex pt-3 pl-1"> <i class="fab fa-cc-apple-pay fa-2x"></i></li>
+                                <li class="d-inline-flex pt-3 pl-1"> <i class="fab fa-cc-amazon-pay fa-2x"></i></li>
+                            </ul>
+                        </div>
 
-        <ul>
-            @foreach (var item in Model.FooterLinksTag)
-            {
-                <li>@item</li>
-            }
-        </ul>*@
-        <!-- Footer -->
-        <!-- Footer -->
+                        <div class="col-md-3  justify-content-center linksStyle text-center">
+                            <ul class="list-unstyled ">
+                                <li class="d-lg-flex d-md-flex d-inline-flex justify-content-center pt-1 text-center text-md-left"><a type="button" class="btn btn-floating btn-fb"> <i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="d-lg-flex d-md-flex d-inline-flex justify-content-center pt-1"><a type="button" class="btn btn-floating btn-fb"> <i class="fab fa-github"></i></a></li>
+                                <li class="d-lg-flex d-md-flex d-inline-flex justify-content-center pt-1"><a type="button" class="btn btn-floating btn-fb"> <i class="fab fa-twitter"></i></a></li>
 
+                            </ul>
+                        </div>
+                        <div class="col-md-3  linksStyle">
+                            <div class="md-form mt-3">
+                                <input type="text" id="materialSubscriptionFormPasswords" class="form-control">
+                                <label for="materialSubscriptionFormPasswords">Name</label>
+                            </div>
+
+                            <!-- E-mai -->
+                            <div class="md-form">
+                                <input type="email" id="materialSubscriptionFormEmail" class="form-control">
+                                <label for="materialSubscriptionFormEmail">E-mail</label>
+                            </div>
+
+                            <!-- Sign in button -->
+                            <button class="btn btn-rounded">Submit</button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="container-fluid pt-3">
+                    <div class="row">
+
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="footer-copyright text-center  FooterFontStyle">
+                                <p>@Model.Sitecopyright</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="footer-copyright text-center  FooterFontStyle">
+                                <p>@Model.DesignedBy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <div class="footer-copyright text-center  FooterFontStyle">
+                                <p> Last Updated:@Model.SiteLastUpdatedDate</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+         
+       
     </div>
-    <footer class="page-footer font-small blue">
-
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <h5 class="text-uppercase">@Model.SiteName</h5>
-                    <p>@Model.SiteOwner</p>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-
-                        @foreach (var item in Model.FooterLinks)
-                        {
-                            <li>
-                                <a href="@item.LinkUrl">@item.NavigationName</a>
-                            </li>
-                        }
-
-
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-            @Model.Sitecopyright
-            <p>@Model.DesignedBy</p>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

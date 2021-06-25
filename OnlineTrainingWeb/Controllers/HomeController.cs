@@ -231,6 +231,7 @@ namespace OnlineTrainingWeb.Controllers
             return PartialView(CovidData);
         }
 
+      
         [ChildActionOnly]
         public ActionResult PartialMenus()
         {

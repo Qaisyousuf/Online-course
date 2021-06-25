@@ -2,7 +2,8 @@
 
 namespace ViewModel
 {
-    public class SubscriptionSystemViewModel
+    public class SubscriptionSystemViewModel:BaseViewModel
+    
     {
         public int Id { get; set; }
 

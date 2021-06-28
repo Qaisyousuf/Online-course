@@ -231,6 +231,110 @@ namespace OnlineTrainingWeb.Controllers
             return PartialView(CovidData);
         }
 
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetMetaData()
+        {
+            var metaTag = _uow.MetaTagRepository.GetAll();
+
+            List<MetaTagViewModel> viewmodel = new List<MetaTagViewModel>();
+
+            foreach (var item in metaTag)
+            {
+                viewmodel.Add(new MetaTagViewModel
+                {
+                    Id=item.Id,
+                    Name=item.Name,
+                    Content=item.Content,
+                });
+            }
+
+            ListOfViewModels MetaTagData = new ListOfViewModels
+            {
+                ListofMetaTag=viewmodel
+            };
+
+            return PartialView(MetaTagData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult TwitterTagData()
+        {
+            var twitterTag = _uow.TwitterTagRepository.GetAll();
+
+            List<TwitterMetaTagsViewModel> viewmodel = new List<TwitterMetaTagsViewModel>();
+
+            foreach (var item in twitterTag)
+            {
+                viewmodel.Add(new TwitterMetaTagsViewModel
+                {
+                    Id=item.Id,
+                    Name=item.Name,
+                    Content=item.Content,
+                });
+            }
+            ListOfViewModels TwitterData = new ListOfViewModels
+            {
+                ListofTwitterTag=viewmodel
+            };
+
+            return PartialView(TwitterData);
+        }
+        [HttpGet]
+        public ActionResult GetOGTagData()
+        {
+            var ogTag = _uow.OGTagsRepository.GetAll();
+
+            List<OpenGraphMetaTagsViewModel> viewmodel = new List<OpenGraphMetaTagsViewModel>();
+
+            foreach (var item in ogTag)
+            {
+                viewmodel.Add(new OpenGraphMetaTagsViewModel
+                {
+                    Id=item.Id,
+                    Name=item.Name,
+                    
+                    Content=item.Content,
+                });
+            }
+
+            ListOfViewModels ogData = new ListOfViewModels
+            {
+                ListofOGTag=viewmodel
+            };
+
+            return PartialView(ogData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetQuizContent()
+        {
+            var quizDataFromdb = _uow.QuizContentRepository.GetAll();
+
+            List<QuizContentViewModel> viewmodel = new List<QuizContentViewModel>();
+
+            foreach (var item in quizDataFromdb)
+            {
+                viewmodel.Add(new QuizContentViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    ImageUrl=item.ImageUrl,
+                    ButtonText=item.ButtonText,
+                    ButtonUrl=item.ButtonUrl,
+                });
+            }
+
+            ListOfViewModels QuizData = new ListOfViewModels
+            {
+                ListofQuizContnet=viewmodel
+            };
+            return PartialView(QuizData);
+        }
+
       
         [ChildActionOnly]
         public ActionResult PartialMenus()

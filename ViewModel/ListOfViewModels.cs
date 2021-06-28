@@ -13,5 +13,10 @@ namespace ViewModel
         public List<ForLearnerViewModel> ListOfForLearner { get; set; }
         public List<OurVisionViewModel> ListOfOurVision { get; set; }
         public List<COVID_19ViewModel> ListOfCovid { get; set; }
+        public List<MetaTagViewModel> ListofMetaTag { get; set; }
+        public List<OpenGraphMetaTagsViewModel> ListofOGTag { get; set; }
+        public List<TwitterMetaTagsViewModel> ListofTwitterTag { get; set; }
+        public List<QuizContentViewModel> ListofQuizContnet { get; set; }
+
     }
 }

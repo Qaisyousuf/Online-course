@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class TwitterMetaTagsViewModel
+    public class TwitterMetaTagsViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

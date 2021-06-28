@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class MetaTagViewModel
+    public class MetaTagViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class OpenGraphMetaTagsViewModel
+    public class OpenGraphMetaTagsViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

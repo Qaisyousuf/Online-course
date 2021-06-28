@@ -1,0 +1,9 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofOGTag != null)
+{
+    foreach (var item in Model.ListofOGTag)
+    {
+<meta property="@item.Name" content="@item.Content" />
+    }
+}

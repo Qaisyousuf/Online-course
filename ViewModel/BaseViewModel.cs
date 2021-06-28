@@ -17,10 +17,6 @@ namespace ViewModel
             FooterLinks = new List<FooterLinks>();
         }
 
-        
-
-
-       
         [Display(Name = "Site title")]
         public string SiteTitle { get; set; }
 

@@ -1,0 +1,11 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if(Model.ListofTwitterTag != null)
+{
+    foreach (var item in Model.ListofTwitterTag)
+    {
+
+        <meta property="@item.Name" content="@item.Content" />
+
+    }
+}

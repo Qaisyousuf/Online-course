@@ -682,9 +682,112 @@
     height: 1600px;
     flex-direction: row;
 }
+
+
+//Quiz section
+
+@mixin QuizMainBackgroundFullsize {
+    background-image: url(../Images/NotSure.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 600px;
+    width: auto;
+    
+}
+
+@mixin Quizbackground768 {
+    background-image: url(../Images/NotSure768.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height:800px;
+    width: auto;
+    margin-top:50px;
+}
+@mixin Quizbackground500 {
+    background-image: url(../Images/NotSure768.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.QuizMainBackground
+{
+    @include QuizMainBackgroundFullsize;
+}
+
+@media(min-width:500px) and (max-width:768px)
+{
+    .QuizMainBackground {
+        @include Quizbackground768;
+    }
+}
+@media(min-width:300px) and (max-width:500px) {
+    .QuizMainBackground {
+        @include Quizbackground768;
+    }
+}
 .HomebannerExplorationTextColor {
 
-   @include HomeBannerExplorationFontColor;
+    @include HomeBannerExplorationFontColor;
 }
 
 html, body, header, .view {
@@ -928,8 +1031,110 @@ p {
     }
 }
 
+@mixin AnimationBackGroundForQuiz {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+@mixin AnimaitonsubBacground {
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    height:500px;
+    width:500px;
+    z-index: -1;
+}
+
+@mixin LottiePlayerPosition {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+}
 
 
+
+
+
+@mixin AnimationBackGroundForQuiz768 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+@mixin AnimaitonsubBacground768 {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+    z-index: -1;
+}
+
+@mixin LottiePlayerPosition768 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+}
+.BackgroundAnimation {
+   
+   @include AnimationBackGroundForQuiz;
+}
+.AnimationMainBackground {
+   
+    @include AnimaitonsubBacground;
+    
+}
+.AnimationMainBackground lottie-player {
+   
+    @include LottiePlayerPosition;
+   
+}
+
+
+@media(min-width:500px) and (max-width:768px)
+{
+    .BackgroundAnimation {
+
+        @include AnimationBackGroundForQuiz768;
+    }
+
+    .AnimationMainBackground {
+
+        @include AnimaitonsubBacground768;
+    }
+
+    .AnimationMainBackground lottie-player {
+
+        @include LottiePlayerPosition768;
+    }
+}
+
+
+@media(min-width:300px) and (max-width:500px) {
+    .BackgroundAnimation {
+
+        @include AnimationBackGroundForQuiz768;
+    }
+
+    .AnimationMainBackground {
+
+        @include AnimaitonsubBacground768;
+    }
+
+    .AnimationMainBackground lottie-player {
+
+        @include LottiePlayerPosition768;
+    }
+}
+/*.QuizMainContent h1, p {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}*/
 
 
 

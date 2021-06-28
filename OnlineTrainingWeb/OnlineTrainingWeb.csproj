@@ -291,6 +291,8 @@
     <Content Include="Content\Images\Footer500.svg" />
     <Content Include="Content\Images\Footer769.svg" />
     <Content Include="Content\Images\Footer990.svg" />
+    <Content Include="Content\Images\NotSure.svg" />
+    <Content Include="Content\Images\NotSure768.svg" />
     <Content Include="Content\Images\OurVison.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
@@ -1260,6 +1262,10 @@
     <Content Include="Views\Home\GetCovidData.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\SubscriptionFooter\Create.cshtml" />
+    <Content Include="Views\Home\GetMetaData.cshtml" />
+    <Content Include="Views\Home\GetOGTagData.cshtml" />
+    <Content Include="Views\Home\TwitterTagData.cshtml" />
+    <Content Include="Views\Home\GetQuizContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

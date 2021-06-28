@@ -1,18 +1,19 @@
 ﻿@model ViewModel.BaseViewModel
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Html.Action("GetMetaData","Home")
+    @Html.Action("GetOGTagData","Home")
+    @Html.Action("TwitterTagData", "Home")
     <title>@ViewBag.Title - @Model.SiteTitle</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/Scripts/node_modules/lottie-player/dist/lottie-player.js"></script>
@@ -48,10 +49,12 @@
         @RenderBody()
         @Html.Action("GetCourseContent", "Home")
         @Html.Action("CourseEachSection", "Home")
+        @Html.Action("GetQuizContent", "Home")
+
         @Html.Action("GetForlearner", "Home")
         @Html.Action("GetOurVision", "Home")
         @Html.Action("GetCovidData", "Home")
-       
+
         <div class="FooterMainBackground">
             <footer class="container-fluid">
                 <div class="container">
@@ -66,7 +69,7 @@
                                         <!--Grid column-->
                                         <div class="col-md-6 pt-4 FooterFontStyle ">
                                             <h1 class="text-center text-md-left text-lg-left text-xl-left">@Model.SiteTitle</h1>
-                                            <p class="text-justify">@Html.Raw(@Model.SiteContent) </p>
+                                            <p class="text-justify text-center text-md-left text-lg-left text-xl-left">@Html.Raw(@Model.SiteContent) </p>
 
                                         </div>
                                         <!--Grid column-->
@@ -161,8 +164,8 @@
                 </div>
             </footer>
         </div>
-         
-       
+
+
     </div>
     
     @Scripts.Render("~/bundles/jquery")

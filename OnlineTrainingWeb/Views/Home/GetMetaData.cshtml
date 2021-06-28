@@ -1,0 +1,9 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofMetaTag != null)
+{
+    foreach (var item in Model.ListofMetaTag)
+    {
+        <meta name="@item.Name" content="@item.Content">
+    }
+}

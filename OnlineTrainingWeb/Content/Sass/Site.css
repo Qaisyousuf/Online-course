@@ -24,6 +24,86 @@
     color: #3e5d94 !important; }
   .HomebannerExplorationTextColor h1, .HomebannerExplorationTextColor h2, .HomebannerExplorationTextColor h3, .HomebannerExplorationTextColor h4, .HomebannerExplorationTextColor h5, .HomebannerExplorationTextColor h6 {
     color: #3e5d94 !important; } }
+.QuizMainBackground {
+  background-image: url(../Images/NotSure.svg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 0px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 600px;
+  width: auto; }
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .QuizMainBackground {
+    background-image: url(../Images/NotSure768.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    margin-top: 50px; } }
+@media (min-width: 300px) and (max-width: 500px) {
+  .QuizMainBackground {
+    background-image: url(../Images/NotSure768.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    margin-top: 50px; } }
 .HomebannerExplorationTextColor .display-2 {
   color: #3e5d94 !important;
   font-weight: bold !important; }
@@ -612,5 +692,70 @@ p {
     width: 100%;
     height: 1600px;
     flex-direction: row; } }
+.BackgroundAnimation {
+  position: relative;
+  top: 0px;
+  left: 0px; }
+
+.AnimationMainBackground {
+  position: absolute;
+  top: -150px;
+  left: 0px;
+  height: 500px;
+  width: 500px;
+  z-index: -1; }
+
+.AnimationMainBackground lottie-player {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 500px;
+  width: 500px; }
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .BackgroundAnimation {
+    position: relative;
+    top: 0px;
+    left: 0px; }
+
+  .AnimationMainBackground {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+    z-index: -1; }
+
+  .AnimationMainBackground lottie-player {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px; } }
+@media (min-width: 300px) and (max-width: 500px) {
+  .BackgroundAnimation {
+    position: relative;
+    top: 0px;
+    left: 0px; }
+
+  .AnimationMainBackground {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+    z-index: -1; }
+
+  .AnimationMainBackground lottie-player {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px; } }
+/*.QuizMainContent h1, p {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}*/
 
 /*# sourceMappingURL=Site.css.map */

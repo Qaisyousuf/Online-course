@@ -1,0 +1,37 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfUserBenefitsContent != null)
+{
+<div class="UserBenefitsBackground">
+    <div class="container">
+
+
+        <!--Section: Content-->
+        <section class="">
+
+            <div class="row">
+                @foreach (var item in Model.ListOfUserBenefitsContent.Take(1))
+                {
+                    <div class="col-md-12 text-center textColor">
+                        <div>
+
+                            <h3 class="font-weight-bold mb-4">@item.Maintitle</h3>
+
+                            <p>@item.Content</p>
+
+                            <a href="@item.ButtonUrl" class="btn btn-rounded"><i class="fas fa-sign-in-alt"></i> @item.ButtonText</a>
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+</div>
+
+}

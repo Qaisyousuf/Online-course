@@ -256,6 +256,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WorkExperienceTagController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\YouMayLikeController.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -274,17 +275,21 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\1000-AboutBanner.svg" />
     <Content Include="Content\Images\1024ExploratoinBanner.svg" />
     <Content Include="Content\Images\1360ExploratoinBanner.svg" />
     <Content Include="Content\Images\1360_GigBackgroundTest.svg" />
+    <Content Include="Content\Images\1440-AboutBanner.svg" />
     <Content Include="Content\Images\1440ExploratoinBanner.svg" />
     <Content Include="Content\Images\1440_GigBackgroundFinal.svg" />
     <Content Include="Content\Images\1920ExploratoinBanner.svg" />
     <Content Include="Content\Images\1920_GigBackgroundFinal.svg" />
+    <Content Include="Content\Images\500-AboutBanner.svg" />
     <Content Include="Content\Images\530ExploratoinBanner.svg" />
     <Content Include="Content\Images\768ExploratoinBanner.svg" />
     <Content Include="Content\Images\768OurVision.svg" />
     <Content Include="Content\Images\768_GigBackgroundTest.svg" />
+    <Content Include="Content\Images\780-AboutBanner.svg" />
     <Content Include="Content\Images\Footer.svg" />
     <Content Include="Content\Images\Footer1180.svg" />
     <Content Include="Content\Images\Footer360.svg" />
@@ -294,6 +299,7 @@
     <Content Include="Content\Images\NotSure.svg" />
     <Content Include="Content\Images\NotSure768.svg" />
     <Content Include="Content\Images\OurVison.svg" />
+    <Content Include="Content\Images\UserBenefits.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
     <Content Include="Content\Sass\BackendSite.css" />
@@ -1266,6 +1272,11 @@
     <Content Include="Views\Home\GetOGTagData.cshtml" />
     <Content Include="Views\Home\TwitterTagData.cshtml" />
     <Content Include="Views\Home\GetQuizContent.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Shared\_AboutLayout.cshtml" />
+    <Content Include="Views\About\GetAboutBanner.cshtml" />
+    <Content Include="Views\About\GetOnlineTrainingBenefits.cshtml" />
+    <Content Include="Views\About\GetUserBenefitsContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

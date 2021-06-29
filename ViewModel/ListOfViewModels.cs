@@ -17,6 +17,10 @@ namespace ViewModel
         public List<OpenGraphMetaTagsViewModel> ListofOGTag { get; set; }
         public List<TwitterMetaTagsViewModel> ListofTwitterTag { get; set; }
         public List<QuizContentViewModel> ListofQuizContnet { get; set; }
+        public List<AboutPageViewModel> ListofAboutPage { get; set; }
+        public List<AboutBannerViewModel> ListofAboutBanner { get; set; }
+        public List<OnlinetrainingbenefitsViewModel> ListofOnlinTrainingBenefits { get; set; }
+        public List<UserbenefitsContentsViewModel> ListOfUserBenefitsContent { get; set; }
 
     }
 }

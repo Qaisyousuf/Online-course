@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class UserbenefitsContentsViewModel
+    public class UserbenefitsContentsViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

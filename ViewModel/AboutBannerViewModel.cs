@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class AboutBannerViewModel
+    public class AboutBannerViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

@@ -44,17 +44,11 @@
 
 
     <div class="container-fluid body-content">
-        @Html.Action("GetHomeBanner", "Home")
-        @Html.Action("GetHomeExploration", "Home")
+        @Html.Action("GetAboutbanner", "About")
         @RenderBody()
-        @Html.Action("GetCourseContent", "Home")
-        @Html.Action("CourseEachSection", "Home")
-        @Html.Action("GetQuizContent", "Home")
+        @Html.Action("GetOnlineTrainingBenefits", "About")
+        @Html.Action("GetUserBenefitsContent", "About")
 
-        @Html.Action("GetForlearner", "Home")
-        @Html.Action("GetOurVision", "Home")
-        @Html.Action("GetCovidData", "Home")
-        
 
         <div class="FooterMainBackground">
             <footer class="container-fluid">

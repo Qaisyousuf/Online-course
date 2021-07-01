@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class WhyOnlineTrainingIsImportantViewModel
+    public class WhyOnlineTrainingIsImportantViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

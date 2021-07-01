@@ -126,5 +126,90 @@ namespace OnlineTrainingWeb.Controllers
 
             return PartialView(UserBenefitsContentData);
         }
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetUserBenefitsSection()
+        {
+            var userBenefitsSection = _uow.UserBenefitsSectionRepository.GetAll();
+
+            List<UserBenefitsSectionViewModel> viewmodel = new List<UserBenefitsSectionViewModel>();
+
+            foreach (var item in userBenefitsSection)
+            {
+                viewmodel.Add(new UserBenefitsSectionViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    IconUrl=item.IconUrl,
+                });
+            }
+
+            ListOfViewModels UserBenefitsSectionData = new ListOfViewModels
+            {
+                ListofUserBenefitsSection = viewmodel,
+            };
+
+            return PartialView(UserBenefitsSectionData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult HowOnlineTraningWorks()
+        {
+            var howOnlineTrainingWorks = _uow.HowOnlineTrainingWorksRepository.GetAll();
+
+            List<HowOnlineTrainingWorksViewModel> viewmodel = new List<HowOnlineTrainingWorksViewModel>();
+            foreach (var item in howOnlineTrainingWorks)
+            {
+                viewmodel.Add(new HowOnlineTrainingWorksViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    Content=item.Content,
+                    VideoUrl=item.VideoUrl,
+                    AnimationUrl=item.AnimationUrl,
+                    LogoUrlandroid=item.LogoUrlandroid,
+                    LogoUrlIOS=item.LogoUrlIOS,
+                    ApplicationDownloadButton=item.ApplicationDownloadButton,
+                    ApplicationDownloadUrl=item.ApplicationDownloadUrl,
+                });
+            }
+
+            ListOfViewModels HowOnlineTrainingWorks = new ListOfViewModels
+            {
+                ListofHowOnlineTrainingWorks=viewmodel,
+            };
+            return PartialView(HowOnlineTrainingWorks);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult ImportanceOfOnlineTraining()
+        {
+            var importanceofOnlineTraining = _uow.WhyOnlineTrainingIsImportantRepository.GetAll();
+
+            List<WhyOnlineTrainingIsImportantViewModel> viewmodel = new List<WhyOnlineTrainingIsImportantViewModel>();
+
+            foreach (var item in importanceofOnlineTraining)
+            {
+                viewmodel.Add(new WhyOnlineTrainingIsImportantViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    MainContent=item.MainContent,
+                    Title=item.Title,
+                    SubContent=item.SubContent,
+                    IconUrl=item.IconUrl,
+                    AnimationUrl=item.AnimationUrl,
+                });
+            }
+
+            ListOfViewModels ImportanceOfOnlineTrainingData = new ListOfViewModels
+            {
+                ListofImporanceofOnlineTraining=viewmodel,
+            };
+            return PartialView(ImportanceOfOnlineTrainingData);
+        }
     }
 }

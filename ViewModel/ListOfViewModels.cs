@@ -21,6 +21,9 @@ namespace ViewModel
         public List<AboutBannerViewModel> ListofAboutBanner { get; set; }
         public List<OnlinetrainingbenefitsViewModel> ListofOnlinTrainingBenefits { get; set; }
         public List<UserbenefitsContentsViewModel> ListOfUserBenefitsContent { get; set; }
+        public List<UserBenefitsSectionViewModel> ListofUserBenefitsSection { get; set; }
+        public List<HowOnlineTrainingWorksViewModel> ListofHowOnlineTrainingWorks { get; set; }
+        public List<WhyOnlineTrainingIsImportantViewModel> ListofImporanceofOnlineTraining { get; set; }
 
     }
 }

@@ -1,0 +1,140 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofHowOnlineTrainingWorks != null)
+{
+
+    <div class="container my-5 py-5 z-depth-1 HowOnlineTrainingWorkbackground">
+
+      
+            <section class="px-md-5 mx-md-5 text-center ">
+
+                <!--Grid row-->
+                <div class="row">
+                    @foreach (var item in Model.ListofHowOnlineTrainingWorks.Take(1))
+                    {
+                        <!--Grid column-->
+                    <div class="col-md-6 mb-4 mb-md-0 UserBenefitsTextStyle">
+
+                        <h3 class="font-weight-bold">@item.MainTitle</h3>
+
+                        <p class="text-muted text-justify">
+                            @item.Content
+                        </p>
+
+                        <a href="@item.ApplicationDownloadUrl" class="btn btn-rounded" target="_blank"> <i class="fas fa-cloud-download-alt"></i> @item.ApplicationDownloadButton</a>
+
+                        <hr class="my-5">
+
+                       
+
+                        <!--Facebook-->
+                        <!-- Grid row -->
+                      
+
+                            <!-- Grid column -->
+                            <div class="">
+
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                                    <iframe class="embed-responsive-item" src="@item.VideoUrl"
+                                                            allowfullscreen></iframe>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+                                               
+
+                                                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a>
+                                    <img class="img-fluid" src="https://i.ibb.co/8Y3qgYD/Video.png" alt="video"
+                                         data-toggle="modal" data-target="#modal1">
+                                </a>
+
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+
+                   
+                        <!-- Grid row -->
+
+                    </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4 mb-md-0">
+
+                            <!-- Card -->
+                            <div class="card card-cascade wider reverse ">
+
+
+
+                                <!-- Card content -->
+                                <div class="card card-cascade wider">
+
+                                    <!-- Card image -->
+                                    <div class=" view-cascade overlay">
+                                        <div class="view">
+                                            <lottie-player src="@item.AnimationUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card content -->
+                                    <div class="card-body card-body-cascade text-center UserBenefitsTextStyle z-depth-0 bg-transparent">
+
+                                        <!-- Title -->
+                                        <h5 class="card-title pt-4 font-weight-bold"><strong>@item.Title</strong></h5>
+                                        <!-- Subtitle -->
+                                        <!-- Text -->
+
+                                        <img src="@item.LogoUrlIOS" />
+                                        <img src="@item.LogoUrlandroid" />
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- Card -->
+
+
+                        </div>
+                        <!--Grid column-->
+                    }
+
+
+                </div>
+                <!--Grid row-->
+
+
+            </section>
+       
+        <!--Section: Content-->
+        
+        <!--Section: Content-->
+
+
+    </div>
+}
+   

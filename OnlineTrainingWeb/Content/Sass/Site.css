@@ -15,6 +15,12 @@
 .linksStyle i {
   color: #6984b3 !important; }
 
+.UserBenefitsTextStyle h1, .UserBenefitsTextStyle h2, .UserBenefitsTextStyle h3, .UserBenefitsTextStyle h4, .UserBenefitsTextStyle h5, .UserBenefitsTextStyle h6 {
+  color: #7b98c9 !important;
+  font-weight: bold !important; }
+.UserBenefitsTextStyle p {
+  color: #7b98c9 !important; }
+
 @media (min-width: 300px) and (max-width: 768px) {
   .HomebannerExplorationTextColor .display-2 {
     color: #3e5d94 !important;
@@ -875,28 +881,112 @@ p {
     align-items: center;
     height: 930px;
     padding-top: 100px; } }
-.UserBenefitsBackground {
-  background-image: url(../Images/UserBenefits.svg);
+/*.UserBenefitsBackground {
+    background-image: url(../Images/UserBenefits.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
+    margin-top:20px;
+}*/
+@media (min-width: 1500px) and (max-width: 1920px) {
+  .UserBenefitsBackground {
+    @Include UserBenefitsBackgroundFullSize; } }
+@media (min-width: 1500px) and (max-width: 1920px) {
+  .UserBenefitsBackground {
+    background-image: url(../Images/UserBenefits.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    margin-top: 20px; } }
+@media (min-width: 768px) and (max-width: 1500px) {
+  .UserBenefitsBackground {
+    background-image: url(../Images/UserBenefits.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 20px; } }
+@media (min-width: 300px) and (max-width: 768px) {
+  .UserBenefitsBackground {
+    background-image: url(../Images/768UserBenefits.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 700px;
+    margin-top: 20px; } }
+.HowOnlineTrainingWorkbackground {
+  background-image: url(../Images/HowTrainingWorks.svg);
+  background-position: center;
   background-size: cover;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 500px;
-  margin-top: 20px; }
+  background-attachment: fixed;
+  height: auto;
+  width: auto;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=Site.css.map */

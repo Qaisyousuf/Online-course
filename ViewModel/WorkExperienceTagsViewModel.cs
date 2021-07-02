@@ -20,6 +20,6 @@ namespace ViewModel
         [Display(Name ="Tag name")]
         public string TagsName { get; set; }
 
-        public virtual ICollection<WorkExperience> WorkExperiences { get; set; }
+        public List<WorkExperience> WorkExperiences { get; set; }
     }
 }

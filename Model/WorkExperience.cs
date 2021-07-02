@@ -19,8 +19,7 @@ namespace Models
         public string Content { get; set; }
         public string AnimationUrl { get; set; }
 
-
-        public  ICollection<WorkExperienceTags> WorkExperTags { get; set; }
+        public  List<WorkExperienceTags> WorkExperTags { get; set; }
 
 
     }

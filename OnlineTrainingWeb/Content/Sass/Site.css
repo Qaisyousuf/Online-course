@@ -989,4 +989,14 @@ p {
   width: auto;
   border-radius: 5px; }
 
+.GoogleReviewbackground {
+  background-image: url(../Images/GoogleReview.svg);
+  background-position: center;
+  background-size: cover;
+  height: auto; }
+
+.chip {
+  background-color: #2d5191 !important;
+  color: #b3cbf5 !important; }
+
 /*# sourceMappingURL=Site.css.map */

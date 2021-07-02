@@ -1,0 +1,56 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfWorkExperince != null || Model.ListOfWorkTags != null)
+{
+    <div class="container mt-5">
+
+
+        <!--Section: Content-->
+        <section>
+           
+            <!-- Grid row -->
+            <div class="row">
+                @foreach (var item in Model.ListOfWorkExperince.Take(1))
+                {
+                <div class="col-lg-7 mb-4 align-self-center text-center text-lg-left HomebannerExplorationTextColor">
+
+                    <h2 class="h2 mb-2 font-weight-bold">@item.MainTitle</h2>
+                    <h4 class="h2 mb-2">@item.Title</h4>
+                    <p class="text-muted mb-2 text-justify">@item.Content</p>
+
+                    <div class="Tags">
+                        @foreach (var Tags in Model.ListOfWorkTags)
+                        {
+                        <div class="chip z-depth-1">
+                            @Tags.TagsName
+                          
+                        </div>
+                        }
+                    </div>
+
+                </div>
+                    <div class="col-lg-5 mb-4">
+
+                        <!-- Featured image -->
+                        <div class=" overlay mb-4">
+                            <div class="view">
+                                <lottie-player src="@item.AnimationUrlFooter" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+}

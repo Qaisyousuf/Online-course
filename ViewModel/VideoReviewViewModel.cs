@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ViewModel
 {
-    public class VideoReviewViewModel
+    public class VideoReviewViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

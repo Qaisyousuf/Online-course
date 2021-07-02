@@ -24,6 +24,13 @@ namespace ViewModel
         public List<UserBenefitsSectionViewModel> ListofUserBenefitsSection { get; set; }
         public List<HowOnlineTrainingWorksViewModel> ListofHowOnlineTrainingWorks { get; set; }
         public List<WhyOnlineTrainingIsImportantViewModel> ListofImporanceofOnlineTraining { get; set; }
+        public List<StudentsSayViewModel> ListofStudentSays { get; set; }
+        public List<VideoReviewViewModel> ListofVideoReview { get; set; }
+        public List<TrainerIntroViewModel> ListofTrainerIntro { get; set; }
+        public List<TrainerSocialMediaViewModel> ListOfTrainerSocialMedia { get; set; }
+        public List<WorkExperienceViewModel> ListOfWorkExperince { get; set; }
+        public List<WorkExperienceTagsViewModel> ListOfWorkTags { get; set; }
+      
 
     }
 }

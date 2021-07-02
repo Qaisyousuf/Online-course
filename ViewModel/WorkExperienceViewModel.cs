@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class WorkExperienceViewModel
+    public class WorkExperienceViewModel:BaseViewModel
     {
         public WorkExperienceViewModel()
         {
@@ -26,15 +26,16 @@ namespace ViewModel
         [Required]
         [Display(Name ="Animation url")]
         [DataType(DataType.Url)]
-        public string AnimationUrl { get; set; }
+        public string AnimationUrlFooter { get; set; }
 
-        public virtual ICollection<WorkExperienceTags> WorkExperTags { get; set; }
+        
 
-        [Display(Name ="Tag Id")]
+        [Display(Name ="Work Tags")]
         public int[] TagsId { get; set; }
 
         [Display(Name ="Tag Name")]
         public List<string> TagsNames { get; set; }
 
+        public List<WorkExperienceTags> WorkExperTags { get; set; }
     }
 }

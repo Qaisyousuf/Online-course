@@ -1,0 +1,89 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofVideoReview != null)
+{
+<div class="container">
+    @foreach (var item in Model.ListofVideoReview.Take(1))
+    {
+        <div class="d-flex justify-content-center HomebannerExplorationTextColor mb-4">
+            <h2 class="font-weight-bold">@item.MainTitle</h2>
+        </div>
+    }
+
+    <div class="row">
+
+        @foreach (var item in Model.ListofVideoReview)
+        {
+            <div class="col-md-4">
+                <div class="card promoting-card my-4 z-depth-2">
+
+                    <!-- Card content -->
+                    <div class="card-body d-flex flex-row ">
+
+                        <!-- Avatar -->
+                        <img src="@item.CountryFlagUrl" class="rounded-circle mr-3 z-depth-1" height="50px" width="50px" alt="avatar">
+
+                        <!-- Content -->
+                        <div class="HomebannerExplorationTextColor">
+
+                            <!-- Title -->
+                            <h4 class="card-title font-weight-bold mb-2">@item.Name</h4>
+                            <!-- Subtitle -->
+                            <p class="card-text"><i class="far fa-clock pr-2"></i>@item.ProgramCompletionDate</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <video class="video-fluid z-depth-1" autoplay loop controls muted>
+                            <source src="@item.VideoUrl" type="video/mp4" />
+                        </video>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <div class="collapse-content HomebannerExplorationTextColor">
+
+                            <!-- Text -->
+                            <p class="card-text collapse" id="collapseContent">@item.Content</p>
+                            <!-- Button -->
+                            <a class="btn btn-rounded btn-sm collapsed" data-toggle="collapse" href="#collapseContent" aria-expanded="false" aria-controls="collapseContent"></a>
+
+
+                        </div>
+
+                    </div>
+                    <div class="card-footer d-flex flex-row">
+                        <img src="@item.ProgramImageUrl" class="rounded-circle mr-3" height="50px;" width="50px;" alt="avatar">
+
+                        <!-- Content -->
+                        <div>
+
+                            <!-- Title -->
+                            <div class="orange-text pt-3">
+                                <i class="fas fa-star"> </i>
+                                <i class="fas fa-star"> </i>
+                                <i class="fas fa-star"> </i>
+                                <i class="fas fa-star"> </i>
+                                <i class="fas fa-star-half-alt"> </i>
+                            </div>
+                            <!-- Subtitle -->
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>
+    <!-- Card -->
+    
+    <!-- Card -->
+}

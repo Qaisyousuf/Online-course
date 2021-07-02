@@ -29,16 +29,16 @@
                 </div>
 
                 <div class="form-group ">
-                    @Html.LabelFor(model => model.AnimationUrl, htmlAttributes: new { @class = "control-label " })
+                    @Html.LabelFor(model => model.AnimationUrlFooter, htmlAttributes: new { @class = "control-label " })
                     <div class="">
-                        @Html.EditorFor(model => model.AnimationUrl, new { htmlAttributes = new { @class = "form-control" } })
-
+                        @Html.EditorFor(model => model.AnimationUrlFooter, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.AnimationUrlFooter, "", new { @class = "text-danger" })
                     </div>
                 </div>
                 <div class="form-group">
                     @Html.LabelFor(model => model.TagsId, htmlAttributes: new { @class = "control-label" })
                     <div class="CheckBox">
-                        @Html.ListBoxFor(model=>model.TagsId,new MultiSelectList(ViewBag.FooterData, "Id", "NavigationName"),new { @class="form-control"})
+                        @Html.ListBoxFor(model=>model.TagsId,new MultiSelectList(ViewBag.TagsData, "Id", "TagsName"),new { @class="form-control"})
                         @Html.ValidationMessageFor(model => model.TagsId, "", new { @class = "text-danger" })
                     </div>
                 </div>

@@ -297,6 +297,7 @@
     <Content Include="Content\Images\Footer500.svg" />
     <Content Include="Content\Images\Footer769.svg" />
     <Content Include="Content\Images\Footer990.svg" />
+    <Content Include="Content\Images\GoogleReview.svg" />
     <Content Include="Content\Images\HowTrainingWorks.svg" />
     <Content Include="Content\Images\NotSure.svg" />
     <Content Include="Content\Images\NotSure768.svg" />
@@ -1282,6 +1283,10 @@
     <Content Include="Views\About\GetUserBenefitsSection.cshtml" />
     <Content Include="Views\About\HowOnlineTraningWorks.cshtml" />
     <Content Include="Views\About\ImportanceOfOnlineTraining.cshtml" />
+    <Content Include="Views\About\StudentSays.cshtml" />
+    <Content Include="Views\About\GetVedioReview.cshtml" />
+    <Content Include="Views\About\GetTrainerIntro.cshtml" />
+    <Content Include="Views\About\TrainerWorkExperience.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

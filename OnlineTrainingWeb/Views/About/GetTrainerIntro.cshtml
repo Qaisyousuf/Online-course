@@ -1,0 +1,78 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofTrainerIntro != null && Model.ListOfTrainerSocialMedia !=null)
+{
+<div class="container my-5 py-5 z-depth-1 HowOnlineTrainingWorkbackground">
+
+  
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center UserBenefitsTextStyle">
+        @foreach (var item in Model.ListofTrainerIntro.Take(1))
+        {
+            <h1>@item.TrainerLocation</h1>
+        }
+        <!--Grid row-->
+        <div class="row">
+
+            @foreach (var item in Model.ListofTrainerIntro)
+            {
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4 mb-md-0 UserBenefitsTextStyle">
+
+                    <h3 class="font-weight-bold text-center text-lg-left text-md-left mb-1">@item.Name</h3>
+                    <h5 class="font-weight-bold text-center text-lg-left text-md-left">.NET online instractor</h5>
+
+                    <p class="text-muted text-center text-lg-left text-md-left">
+                        @item.AboutTrainer
+                    </p>
+
+
+
+                    <hr class="my-5">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="avatar mx-auto">
+                                <img src="@item.TrainerImageUrl" class="rounded-circle z-depth-2 img-fluid">
+                            </div>
+                        </div>
+                        @foreach (var SocialMediaItem in Model.ListOfTrainerSocialMedia)
+                        {
+                            <div class=" mt-5">
+
+                                <a href="@SocialMediaItem.SocialMediaProfileUrl" target="_blank" class=" mx-1"><img src="@SocialMediaItem.SocialMediaIconUrl" /> </a>
+                               
+                            </div>
+                        }
+
+
+                    </div>
+
+                    <!--Facebook-->
+
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-5 mb-4 mb-md-0">
+
+                    <div class="view">
+                        <lottie-player src="@item.TrainerAnimation" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+            }
+
+
+        </div>
+        <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>
+}

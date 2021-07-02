@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class TrainerIntroViewModel
+    public class TrainerIntroViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-   public class AboutPageViewModel
+   public class AboutPageViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

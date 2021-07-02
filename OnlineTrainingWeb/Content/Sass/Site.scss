@@ -1445,3 +1445,23 @@
   @include HowOnlineTraningWorksBackground;
 }
 
+@mixin GoogleReviewBackground {
+   
+        background-image: url(../Images/GoogleReview.svg);
+       
+        background-position: center;
+        background-size: cover;
+        height: auto;
+
+}
+
+.GoogleReviewbackground{
+    @include GoogleReviewBackground;
+}
+
+.chip{
+    background-color:$ChipBackgroundColor !important;
+    color:$ChipColor !important;
+}
+
+

@@ -28,10 +28,14 @@ namespace OnlineTrainingWeb.Controllers
                     Title=item.Title,
                     BannerId=item.BannerId,
                     AboutBanners=item.AboutBanners,
+                    
                 });
+
+                ViewBag.PagetTitle = item.Title;
 
              
             }
+           
            
 
             ListOfViewModels aboutPageData = new ListOfViewModels
@@ -210,6 +214,154 @@ namespace OnlineTrainingWeb.Controllers
                 ListofImporanceofOnlineTraining=viewmodel,
             };
             return PartialView(ImportanceOfOnlineTrainingData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult StudentSays()
+        {
+            var studentSays = _uow.StudentsSaysRepository.GetAll();
+
+            List<StudentsSayViewModel> viewmodel = new List<StudentsSayViewModel>();
+
+            foreach (var item in studentSays)
+            {
+                viewmodel.Add(new StudentsSayViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    ProgramName=item.ProgramName,
+                    StudentName=item.StudentName,
+                    CountryName=item.CountryName,
+                    PicUrl=item.PicUrl,
+                });
+            }
+
+            ListOfViewModels StudentSays = new ListOfViewModels
+            {
+                ListofStudentSays=viewmodel,
+            };
+
+            return PartialView(StudentSays);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetVedioReview()
+        {
+            var videoReview = _uow.VideoReviewRepository.GetAll();
+
+            List<VideoReviewViewModel> viewmodel = new List<VideoReviewViewModel>();
+
+            foreach (var item in videoReview)
+            {
+                viewmodel.Add(new VideoReviewViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    Name=item.Name,
+                    CountryFlagUrl=item.CountryFlagUrl,
+                    VideoUrl=item.VideoUrl,
+                    ProgramCompletionDate=item.ProgramCompletionDate,
+                    ProgramImageUrl=item.ProgramImageUrl,
+                });
+            }
+
+            ListOfViewModels VideoReviewData = new ListOfViewModels
+            {
+                ListofVideoReview=viewmodel,
+            };
+
+            return PartialView(VideoReviewData);
+        }
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetTrainerIntro()
+        {
+            var trainerIntro = _uow.TrainerIntroRepository.GetAll();
+
+            List<TrainerIntroViewModel> viewmodel = new List<TrainerIntroViewModel>();
+
+            foreach (var item in trainerIntro)
+            {
+                viewmodel.Add(new TrainerIntroViewModel
+                {
+                    Id=item.Id,
+                    Name=item.Name,
+                    AboutTrainer=item.AboutTrainer,
+                    TrainerAnimation=item.TrainerAnimation,
+                    TrainerImageUrl=item.TrainerImageUrl,
+                    TrainerLocation=item.TrainerLocation,
+                });
+            }
+
+            var trainerSocialMedia = _uow.TrainerSocialMediaRepository.GetAll();
+
+            List<TrainerSocialMediaViewModel> SocialMediaViewModel = new List<TrainerSocialMediaViewModel>();
+
+            foreach (var item in trainerSocialMedia)
+            {
+                SocialMediaViewModel.Add(new TrainerSocialMediaViewModel
+                {
+                    Id = item.Id,
+                    SocialMediaProfileUrl = item.SocialMediaProfileUrl,
+                    SocialMediaIconUrl = item.SocialMediaIconUrl,
+                });
+            }
+
+            ListOfViewModels TrainerIntroData = new ListOfViewModels
+            {
+                ListofTrainerIntro=viewmodel,
+                ListOfTrainerSocialMedia=SocialMediaViewModel
+            };
+            return PartialView(TrainerIntroData);
+        }
+       [HttpGet]
+       [ChildActionOnly]
+       public ActionResult TrainerWorkExperience()
+        {
+            var trainerWorkExperinece = _uow.WorkExperienceRepository.GetAll("WorkExperTags").ToList();
+
+            List<WorkExperienceViewModel> viewmodel = new List<WorkExperienceViewModel>();
+
+            foreach (var item in trainerWorkExperinece)
+            {
+                var WorkTagsId = item.WorkExperTags.Select(x => x.Id).ToList();
+
+                var tagName = _uow.Context.WorkExperienceTags.Where(x=>WorkTagsId.Contains(x.Id)).Select(x => x.TagsName).ToList();
+                viewmodel.Add(new WorkExperienceViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    Content=item.Content,
+                    AnimationUrlFooter=item.AnimationUrl,
+                    TagsNames=tagName,
+
+                });
+            }
+
+
+            var workTags = _uow.WorkExperienceTagsRepository.GetAll();
+
+            List<WorkExperienceTagsViewModel> WorkTagViewModel = new List<WorkExperienceTagsViewModel>();
+
+            foreach (var item in workTags)
+            {
+                WorkTagViewModel.Add(new WorkExperienceTagsViewModel
+                {
+                    Id=item.Id,
+                    TagsName=item.TagsName,
+                });
+            }
+            ListOfViewModels WorkExperienceData = new ListOfViewModels
+            {
+                ListOfWorkExperince=viewmodel,
+                ListOfWorkTags=WorkTagViewModel,
+            };
+            return PartialView(WorkExperienceData);
         }
     }
 }

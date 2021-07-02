@@ -2,13 +2,13 @@
 
 namespace ViewModel
 {
-    public class TrainerSocialMediaViewModel
+    public class TrainerSocialMediaViewModel:BaseViewModel
     {
         public int Id { get; set; }
 
 
         [Required]
-        [Display(Name ="Profile Url")]
+        [Display(Name ="Social Profile Url")]
         public string SocialMediaProfileUrl { get; set; }
 
         [Required]

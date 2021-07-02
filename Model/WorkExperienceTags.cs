@@ -10,6 +10,6 @@ namespace Models
         }
         public string TagsName { get; set; }
 
-        public  ICollection<WorkExperience> WorkExperiences { get; set; }
+        public  List<WorkExperience> WorkExperiences { get; set; }
     }
 }

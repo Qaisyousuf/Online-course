@@ -29,7 +29,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         [HttpGet]
         public ActionResult GetWorkExperienceData()
         {
-            var workExperience = uow.WorkExperienceRepository.GetAll();
+            var workExperience = uow.WorkExperienceRepository.GetAll().ToList();
 
             List<WorkExperienceViewModel> viewmodel = new List<WorkExperienceViewModel>();
 
@@ -73,7 +73,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     MainTitle=viewmodel.MainTitle,
                     Title=viewmodel.Title,
                     Content=viewmodel.Content,
-                    AnimationUrl=viewmodel.AnimationUrl,
+                    AnimationUrl=viewmodel.AnimationUrlFooter,
                     WorkExperTags=viewmodel.WorkExperTags,
                 };
 
@@ -99,7 +99,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Id=workExperience.Id,
                 MainTitle=workExperience.MainTitle,
                 Title=workExperience.Title,
-                AnimationUrl=workExperience.AnimationUrl,
+                AnimationUrlFooter=workExperience.AnimationUrl,
                 Content=workExperience.Content,
 
             };
@@ -113,7 +113,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit([Bind(Include ="Id,MainTitle,Title,Content,AnimationUrl")]WorkExperienceViewModel viewmodel,int[] tagsid)
+        public ActionResult Edit([Bind(Include = "Id,MainTitle,Title,Content,AnimationUrlFooter")]WorkExperienceViewModel viewmodel,int[] tagsid)
         {
             if(ModelState.IsValid)
             {
@@ -122,7 +122,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 workExperience.MainTitle = viewmodel.MainTitle;
                 workExperience.Title = viewmodel.Title;
                 workExperience.Content = viewmodel.Content;
-                workExperience.AnimationUrl = viewmodel.AnimationUrl;
+                workExperience.AnimationUrl = viewmodel.AnimationUrlFooter;
 
                 var TagToAdd = uow.Context.WorkExperienceTags.Where(x => tagsid.Contains(x.Id)).ToList();
 
@@ -150,7 +150,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Id = workExperience.Id,
                 MainTitle = workExperience.MainTitle,
                 Title = workExperience.Title,
-                AnimationUrl = workExperience.AnimationUrl,
+                AnimationUrlFooter = workExperience.AnimationUrl,
                 Content = workExperience.Content,
 
             };
@@ -175,7 +175,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Id = workExperience.Id,
                 MainTitle = workExperience.MainTitle,
                 Title = workExperience.Title,
-                AnimationUrl = workExperience.AnimationUrl,
+                AnimationUrlFooter = workExperience.AnimationUrl,
                 Content = workExperience.Content,
 
             };

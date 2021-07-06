@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class WhatTrainerLovesViewModel
+    public class WhatTrainerLovesViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

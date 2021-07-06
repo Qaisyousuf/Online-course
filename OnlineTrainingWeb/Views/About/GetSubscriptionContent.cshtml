@@ -1,0 +1,53 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofSubscriptionContent != null)
+{
+
+    <div class="container pt-5 ">
+
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-6 text-center text-md-left text-lg-left HomebannerExplorationTextColor">
+
+            <!--Grid row-->
+            <div class="row">
+
+                @foreach (var item in Model.ListofSubscriptionContent.Take(1))
+                {
+                    <div class="col-md-6 mb-4 mb-md-0 my-5">
+
+                        <h5 class="font-weight-bold mb-3">@item.MainTitle</h5>
+
+                        <p class="text-justify">
+                            @item.MainContent
+                        </p>
+
+                        <hr class="my-3">
+
+                        <p class="font-weight-bold">@item.Title</p>
+                        <p class="text-justify">@item.SubContent</p>
+
+
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4 mb-md-0">
+
+                        <lottie-player src="@item.AnimationUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+
+                    </div>
+                }
+
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+
+}

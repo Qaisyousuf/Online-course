@@ -8,7 +8,7 @@ namespace ViewModel
         public int Id { get; set; }
 
         [Required]
-        [Display(Name ="Your Name")]
+        [Display(Name ="Name")]
         public string UserName { get; set; }
 
         [Required]

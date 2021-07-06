@@ -1,0 +1,102 @@
+﻿@model ViewModel.SubscriptionSystemViewModel
+
+@{
+    ViewBag.Title = "GetNewsLetter";
+    Layout = "~/Views/Shared/_AboutLayout.cshtml";
+}
+
+<div class="container mt-lg-n5 ">
+
+
+    <!--Section: Content-->
+    <section class="">
+
+        <div class="row ">
+            <div class="col-md-5 offset-md-1 mb-4">
+                
+               
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vy4op7tq.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+               
+
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                @using (Html.BeginForm("GetNewsLetter", "About", FormMethod.Post, new { onsubmit = "return SubmitFormCreate(this)" }))
+                {
+
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-md">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+                        <div class="">
+                            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label"})
+                            <div class="col-20">
+                                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = " form-control " } })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label " })
+                            <div class="col-20">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control .elem-demo" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="">
+                                <button class="btn btn-rounded btn-md">Subscribe</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>
+
+
+
+
+
+@section scripts {
+    <script>
+        function SubmitFormCreate(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+
+                            $.notify(data.message, {
+                                Position: "right",
+                                className: "success"
+                            });
+
+
+                        }
+                        else
+                            $.notify(data.message, {
+                                Position: "right",
+                                className: "error"
+                            })
+                    }
+                });
+            }
+            return false;
+        }
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

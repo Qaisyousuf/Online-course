@@ -259,6 +259,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\GetNewsLetterInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SubscriptionFooterController.cs" />
@@ -302,6 +303,7 @@
     <Content Include="Content\Images\NotSure.svg" />
     <Content Include="Content\Images\NotSure768.svg" />
     <Content Include="Content\Images\OurVison.svg" />
+    <Content Include="Content\Images\TrainePhilsophy.svg" />
     <Content Include="Content\Images\UserBenefits.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
@@ -1287,6 +1289,10 @@
     <Content Include="Views\About\GetVedioReview.cshtml" />
     <Content Include="Views\About\GetTrainerIntro.cshtml" />
     <Content Include="Views\About\TrainerWorkExperience.cshtml" />
+    <Content Include="Views\About\TrainePhilosophy.cshtml" />
+    <Content Include="Views\About\GetSubscriptionContent.cshtml" />
+    <Content Include="Views\GetNewsLetterInfo\GetNewsLetterContact.cshtml" />
+    <Content Include="Views\About\GetNewsLetter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

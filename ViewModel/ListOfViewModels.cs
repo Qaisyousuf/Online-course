@@ -30,6 +30,11 @@ namespace ViewModel
         public List<TrainerSocialMediaViewModel> ListOfTrainerSocialMedia { get; set; }
         public List<WorkExperienceViewModel> ListOfWorkExperince { get; set; }
         public List<WorkExperienceTagsViewModel> ListOfWorkTags { get; set; }
+        public List<TrainerPhilosophyViewModel> ListofTrainerPhilosophy { get; set; }
+        public List<WhatTrainerLovesViewModel> ListofWhatTrainerLoves { get; set; }
+        public List<TrainerVisionViewModel> ListofTraienrVision { get; set; }
+        public List<SubscriptionContentViewModel> ListofSubscriptionContent { get; set; }
+        
       
 
     }

@@ -1464,4 +1464,27 @@
     color:$ChipColor !important;
 }
 
+.TrainerPhilosophyBackground
+{
+    background-image:url(../Images/TrainePhilsophy.svg) !important;
+   background-repeat:no-repeat;
+   background-size:cover;
+    background-attachment:fixed;
+    height:auto;
+    border-radius:7px;
+
+}
+
+@Mixin TabCardBackground {
+    -webkit-box-shadow:$-web-CardBackground !important;
+    box-shadow:$CardBackgroundShadow !important;
+}
+.Card_Background {
+    @Include TabCardBackground;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.03) !important;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.03) !important;
+}
+.TabColor {
+    background-color: $TabBackgroundColor !important;
+}
 

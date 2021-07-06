@@ -45,16 +45,27 @@
 
     <div class="container-fluid body-content">
         @Html.Action("GetAboutbanner", "About")
+
+        @Html.Action("GetOnlineTrainingBenefits")
+        @Html.Action("GetUserBenefitsContent")
+        @Html.Action("GetUserBenefitsSection")
+        @Html.Action("HowOnlineTraningWorks")
+        @Html.Action("ImportanceOfOnlineTraining")
+        @Html.Action("StudentSays")
+        @Html.Action("GetVedioReview")
+        @Html.Action("GetTrainerIntro")
+        @Html.Action("TrainerWorkExperience")
+        @Html.Action("TrainePhilosophy")
+        @Html.Action("GetSubscriptionContent")
         @RenderBody()
-        @Html.Action("GetOnlineTrainingBenefits", "About")
-        @Html.Action("GetUserBenefitsContent", "About")
-        @Html.Action("GetUserBenefitsSection", "About")
-        @Html.Action("HowOnlineTraningWorks", "About")
-        @Html.Action("ImportanceOfOnlineTraining", "About")
-        @Html.Action("StudentSays", "About")
-        @Html.Action("GetVedioReview", "About")
-        @Html.Action("GetTrainerIntro", "About")
-        @Html.Action("TrainerWorkExperience", "About")
+
+        @*@Html.Action("GetSubscriptionContent", "About")*@
+
+
+
+
+
+
 
 
         <div class="FooterMainBackground">

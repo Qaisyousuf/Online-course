@@ -363,5 +363,137 @@ namespace OnlineTrainingWeb.Controllers
             };
             return PartialView(WorkExperienceData);
         }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult TrainePhilosophy()
+        {
+            var trainerPhilosophy = _uow.TrainerPhilosophyRepository.GetAll();
+
+            List<TrainerPhilosophyViewModel> viewmodel = new List<TrainerPhilosophyViewModel>();
+
+            foreach (var item in trainerPhilosophy)
+            {
+                viewmodel.Add(new TrainerPhilosophyViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Name=item.Name,
+                    Content=item.Content,
+                    ProfileImageUrl=item.ProfileImageUrl,
+                });
+            }
+
+            var trainerLoves = _uow.WhatTrainerLovesRepository.GetAll();
+
+            List<WhatTrainerLovesViewModel> trainerIntrest = new List<WhatTrainerLovesViewModel>();
+
+            foreach (var item in trainerLoves)
+            {
+                trainerIntrest.Add(new WhatTrainerLovesViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    IconUrl=item.IconUrl,
+                });
+            }
+
+            var trainerVision = _uow.TrainerVisionRepository.GetAll();
+
+            List<TrainerVisionViewModel> trainerVisionViewModel = new List<TrainerVisionViewModel>();
+
+            foreach (var item in trainerVision)
+            {
+                trainerVisionViewModel.Add(new TrainerVisionViewModel
+                {
+                    Id=item.Id,
+                    Title=item.Title,
+                    Content=item.Content,
+                    ProfileImageUrl=item.ProfileImageUrl,
+                    TrainerName=item.TrainerName,
+                    BestRegards=item.BestRegards,
+                });
+            }
+
+            ListOfViewModels TrainerPhilosophyData = new ListOfViewModels
+            {
+                ListofTrainerPhilosophy=viewmodel,
+                ListofWhatTrainerLoves=trainerIntrest,
+                ListofTraienrVision=trainerVisionViewModel,
+            };
+
+            return PartialView(TrainerPhilosophyData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetSubscriptionContent()
+        {
+            var subscriptionContent = _uow.SubscriptionContentRepository.GetAll();
+
+            List<SubscriptionContentViewModel> viewmodel = new List<SubscriptionContentViewModel>();
+
+            foreach (var item in subscriptionContent)
+            {
+                viewmodel.Add(new SubscriptionContentViewModel
+                {
+                    Id=item.Id,
+                    Title=item.Title,
+                    MainContent=item.MainContent,
+                    SubContent=item.SubContent,
+                    MainTitle=item.MainTitle,
+                    AnimationUrl=item.AnimationUrl,
+                });
+            }
+            
+            ListOfViewModels SubscriptionContetnData = new ListOfViewModels
+            {
+                ListofSubscriptionContent=viewmodel,
+            };
+
+            return PartialView(SubscriptionContetnData);
+        }
+
+        [Route("about-us")]
+        [HttpGet]
+        public ActionResult GetNewsLetter(string slug)
+        {
+            return View(new SubscriptionSystemViewModel());
+        }
+        [Route("about-us")]
+        [HttpPost]
+        public ActionResult GetNewsLetter(SubscriptionSystemViewModel viewmodel)
+        {
+            if(ModelState.IsValid)
+            {
+                var EmailExists = _uow.Context.SubscriptionSystems.Any(x => x.Email == viewmodel.Email);
+
+                if(EmailExists)
+                {
+                    return Json(new { error = true, message = "Email already exists" }, JsonRequestBehavior.AllowGet);
+                }
+
+                var subscription = new SubscriptionSystem
+                {
+                    UserName=viewmodel.UserName,
+                    Email=viewmodel.Email,
+                };
+
+                _uow.SubscriptionSystemRepository.Add(subscription);
+                _uow.Commit();
+
+                
+            }
+
+            return Json(new { success = true, message = "Thanks for subscribing" }, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [Route("ThankYou")]
+        public ActionResult ThankYou()
+        {
+            return View(new SubscriptionSystemViewModel());
+        }
     }
 }

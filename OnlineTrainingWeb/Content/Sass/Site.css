@@ -1018,4 +1018,11 @@ p {
 .TabColor {
   background-color: #133166 !important; }
 
+@media (min-width: 300px) and (max-width: 500px) {
+  .textColorForSecondHeading {
+    margin-top: 100px !important; }
+
+  .BenefitsOfOnlineClassSizing {
+    margin-top: 130px !important; } }
+
 /*# sourceMappingURL=Site.css.map */

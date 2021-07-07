@@ -66,6 +66,8 @@ namespace OnlineTrainingWeb.Controllers
                     JoinButtonUrl=item.JoinButtonUrl,
                     DiscoverButton=item.DiscoverButton,
                     DiscoverButtonUrl=item.DiscoverButtonUrl,
+                    MainSubTitle=item.MainSubTitle,
+                    Content=item.Content,
                 });
             }
             ListOfViewModels AboutBannerData = new ListOfViewModels

@@ -60,6 +60,7 @@ namespace OnlineTrainingWeb.Controllers
                 DiscoverButtonUrl=homebanner.DiscoverButton,
                 Content=homebanner.Content,
                 SubMaintitle=homebanner.SubMaintitle,
+                
             };
 
             return PartialView(viewmodel);

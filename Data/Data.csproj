@@ -334,6 +334,10 @@
     <Compile Include="Migrations\202107021404175_WorkTagTypeChanged.Designer.cs">
       <DependentUpon>202107021404175_WorkTagTypeChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107070850296_AboutPageModelChanged.cs" />
+    <Compile Include="Migrations\202107070850296_AboutPageModelChanged.Designer.cs">
+      <DependentUpon>202107070850296_AboutPageModelChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -443,6 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107021404175_WorkTagTypeChanged.resx">
       <DependentUpon>202107021404175_WorkTagTypeChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107070850296_AboutPageModelChanged.resx">
+      <DependentUpon>202107070850296_AboutPageModelChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

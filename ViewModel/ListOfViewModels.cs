@@ -34,6 +34,11 @@ namespace ViewModel
         public List<WhatTrainerLovesViewModel> ListofWhatTrainerLoves { get; set; }
         public List<TrainerVisionViewModel> ListofTraienrVision { get; set; }
         public List<SubscriptionContentViewModel> ListofSubscriptionContent { get; set; }
+        public List<ContactPageViewModel> ListofContactpage { get; set; }
+        public List<ContactBannerViewModel> ListofContactBanner { get; set; }
+        public List<ContactDetailsViewModel> ListofContactDetails { get; set; }
+
+  
         
       
 

@@ -1505,3 +1505,177 @@
         margin-top: 130px !important;
     }
 }
+@mixin ContactmainBannerFullsize {
+    background-image: url(../Images/ContactMainBanner.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 750px;
+}
+
+@mixin ContactBannerFor1920To1500 {
+    background-image: url(../Images/ContactMainBanner.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+}
+
+@mixin ContactBannerFor768 {
+    background-image: url(../Images/ContactMainBanner768.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 900px;
+}
+@mixin ContactBannerFor500 {
+    background-image: url(../Images/ContactMainBanner768.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 920px;
+}
+@mixin ContactBannerFor300 {
+    background-image: url(../Images/ContactMainBanner500.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 850px;
+}
+.ContactMainBanner {
+
+    @include ContactmainBannerFullsize;
+}
+@media(min-width:1500px) and (max-width:1920px) {
+    .ContactMainBanner {
+        @include ContactBannerFor1920To1500;
+    }
+}
+@media(min-width:500px) and (max-width:768px) {
+    .ContactMainBanner {
+        @include ContactBannerFor768;
+    }
+}
+@media(min-width:300px) and (max-width:500px) {
+    .ContactMainBanner {
+        @include ContactBannerFor300;
+    }
+}
+
+@mixin ContactExContent{
+    margin-top:100px;
+}
+@mixin ContactExContent500 {
+    margin-top: 0px;
+}
+@media(min-width:769px) and (max-width:990px) {
+    .ContactUsEx {
+        @include ContactExContent;
+    }
+}
+
+@media(min-width:300px) and (max-width:768px)
+{
+    .ContactUsEx{
+       @include ContactExContent500;
+    }
+    .ContactmainContent{
+        margin-top:100px;
+    }
+}
+@media(min-width:300px) and (max-width:500px) {
+    .ContactUsEx {
+        @include ContactExContent500;
+    }
+
+    .ContactmainContent {
+        margin-top: 100px;
+    }
+    .ContactMainTitle {
+        margin-top: 100px;
+    }
+}
+
+
+
+

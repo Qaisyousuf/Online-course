@@ -15,6 +15,14 @@ namespace ViewModel
         public string SubTitle { get; set; }
 
         [Required]
+        [Display(Name ="Content")]
+        public string Content { get; set; }
+
+        [Required]
+        [Display(Name ="Sub Content")]
+        public string SubContent { get; set; }
+
+        [Required]
         [Display(Name = "Image Url")]
         [DataType(DataType.Url)]
         public string ImageUrl { get; set; }

@@ -1,0 +1,53 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofContactBanner != null)
+{
+<div class="ContactMainBanner">
+    <div class="container ">
+        <header>
+
+            <!-- Full Page Intro -->
+            <div class="">
+                <!-- Mask & flexbox options-->
+                <div class="mask">
+                    <!-- Content -->
+                    <div class="container ContactmainContent ">
+                        <!--Grid row-->
+                        <div class="row align-items-center">
+                            @foreach (var item in Model.ListofContactBanner.Take(1))
+                            {
+                                <!--Grid column-->
+                                <div class="col-md-6 textColor ContactMainTitle ">
+                                    <h1 class="mb-2 font-weight-bold">@item.MainTitle</h1>
+                                    <p class="mb-2 pb-2">@item.SubTitle</p>
+                                    <a href="@item.DiscoverButtonTUrl" class="btn  btn-rounded btn-md ml-0"><i class="fas fa-sign-in-alt"></i> @item.DiscoverButton</a>
+                                    <a href="@item.JoinButtonUrl" class="btn   btn-rounded btn-rounded btn-md"> <i class="fas fa-book-open"></i> @item.JoinButton</a>
+                                </div>
+                                <!--Grid column-->
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <lottie-player src="@item.ImageUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                                </div>
+                                <div class="col-md-10 col-sm-12 col-lg-10 pt-4 textColorForSecondHeading offset-lg-1 offset-md-1 text-center ContactUsEx">
+                                    <h1 class=" ">@item.SubContent</h1>
+                                    <p class=" text-justify text-center">@item.Content</p>
+                                </div>
+                            }
+
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Mask & flexbox options-->
+            </div>
+            <!-- Full Page Intro -->
+
+        </header>
+    </div>
+</div>
+
+    
+    <!-- Main navigation -->
+}

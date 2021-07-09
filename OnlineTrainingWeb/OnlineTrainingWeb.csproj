@@ -259,6 +259,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\GetNewsLetterInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -292,6 +293,10 @@
     <Content Include="Content\Images\768UserBenefits.svg" />
     <Content Include="Content\Images\768_GigBackgroundTest.svg" />
     <Content Include="Content\Images\780-AboutBanner.svg" />
+    <Content Include="Content\Images\ContactMainBanner.svg" />
+    <Content Include="Content\Images\ContactMainBanner1920.svg" />
+    <Content Include="Content\Images\ContactMainBanner500.svg" />
+    <Content Include="Content\Images\ContactMainBanner768.svg" />
     <Content Include="Content\Images\Footer.svg" />
     <Content Include="Content\Images\Footer1180.svg" />
     <Content Include="Content\Images\Footer360.svg" />
@@ -1291,6 +1296,10 @@
     <Content Include="Views\About\GetSubscriptionContent.cshtml" />
     <Content Include="Views\GetNewsLetterInfo\GetNewsLetterContact.cshtml" />
     <Content Include="Views\About\GetNewsLetter.cshtml" />
+    <Content Include="Views\Shared\_ContactLayout.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\ContactBanner.cshtml" />
+    <Content Include="Views\Contact\ContactDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

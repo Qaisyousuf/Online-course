@@ -37,8 +37,8 @@ namespace ViewModel
         public List<ContactPageViewModel> ListofContactpage { get; set; }
         public List<ContactBannerViewModel> ListofContactBanner { get; set; }
         public List<ContactDetailsViewModel> ListofContactDetails { get; set; }
-
-  
+        public List<GeolocationStudentsViewModel> ListOfGeoLocation { get; set; }
+   
         
       
 

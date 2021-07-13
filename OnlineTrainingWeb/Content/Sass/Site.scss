@@ -1029,8 +1029,10 @@
     input,
     select,
     textarea {
-        max-width: 280px;
+        
     }
+
+
 
     .dl-horizontal dt {
         white-space: normal;
@@ -1104,7 +1106,7 @@
     }
 
     .textColorForSecondHeading {
-        h1 {
+        h1,h2,h3,h4,h5,h6,th,td {
             color: $SecondHeadingTextColor !important;
             text-align: center;
             font-weight: $HeadingTextWidth !important;
@@ -1676,6 +1678,138 @@
     }
 }
 
+@mixin ContactDetailsBackgroud {
+    background-image: url(../Images/CotnactDetails.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+   
+    height: 790px;
+}
+@mixin ContactDetailsBackgroud990 {
+    background-image: url(../Images/CotnactDetails.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 790px;
+    padding-top:100px;
+}
+@mixin ContactDetailsBackgroud768 {
+    background-image: url(../Images/CotnactDetails500.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1050px;
+    padding-top:100px;
+    margin-top:50px;
+    
+}
+@mixin ContactDetailsBackgroud500 {
+    background-image: url(../Images/CotnactDetails500.svg);
+    background-size: cover;
+    background-attachment:fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1190px;
+    padding-top: 60px;
+    margin-top: 150px;
+}
+
+.ContactDetailsBackground {
+   @include ContactDetailsBackgroud
+}
+
+@media(min-width:768px) and (max-width:900px)
+{
+    .ContactDetailsBackground {
+        @include ContactDetailsBackgroud990
+    }
+}
+@media(min-width:500px) and (max-width:768px) {
+    .ContactDetailsBackground {
+        @include ContactDetailsBackgroud768
+    }
+}
+@media(min-width:250px) and (max-width:500px) {
+    .ContactDetailsBackground {
+        @include ContactDetailsBackgroud500
+    }
+}
 
 
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
 
+.table-wrapper-scroll-y {
+    display: block;
+}

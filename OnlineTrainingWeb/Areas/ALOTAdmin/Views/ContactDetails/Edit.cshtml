@@ -51,6 +51,13 @@
                         @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
                     </div>
                 </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MapAnimationUrl, htmlAttributes: new { @class = "control-label " })
+                    <div class="">
+                        @Html.EditorFor(model => model.MapAnimationUrl, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.MapAnimationUrl, "", new { @class = "text-danger" })
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6">
                 <div class="form-group">

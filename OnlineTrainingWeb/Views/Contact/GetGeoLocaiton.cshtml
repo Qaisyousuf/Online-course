@@ -1,0 +1,77 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfGeoLocation != null)
+{
+    <div class="container my-sm-0 py-sm-0 my-md-2 py-md-2 py-lg-2 my-lg-3">
+
+
+        <!--Section: Content-->
+        <section>
+
+            <div class=" z-depth-0 bg-transparent">
+                <div class=" my-2 textColorForSecondHeading">
+
+                    @foreach (var item in Model.ListOfGeoLocation.Take(1))
+                    {
+                        <h3 class="text-center font-weight-bold mb-3  ">@item.MainTitle</h3>
+                    }
+
+
+                    <!--Grid row-->
+                    <div class="row my-3">
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4 mb-md-0">
+
+                            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_z0n7xi9u.json" background="transparent" speed=".5" style="width: auto; height: auto;" loop autoplay></lottie-player>
+
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4 mb-md-0 pt-md-4 pt-lg-4 pt-sm-0">
+
+                            <table class="table table-responsive-sm textColorForSecondHeading  table-wrapper-scroll-y my-custom-scrollbar">
+                                <thead>
+                                    <tr>
+                                        <th class="text-primary font-weight-bold" scope="col">Flag</th>
+                                        <th class="text-primary font-weight-bold" scope="col">Name</th>
+                                        <th class="text-primary font-weight-bold" scope="col">Country</th>
+                                        <th class="text-primary font-weight-bold" scope="col">Courses</th>
+                                        <th class="text-primary font-weight-bold" scope="col">Technology</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="textColorForSecondHeading">
+
+                                        @foreach (var item in Model.ListOfGeoLocation)
+                                        {
+                                    <tr>
+                                        <th scope="row"><i><img src="@item.CountryFlag" class="img-fluid" /></i> </th>
+                                        <td>@item.Name</td>
+                                        <td>
+                                            @item.CountryName.LandName
+                                        </td>
+                                        <td class="">@item.ProgramName</td>
+                                        <td class="">@item.Title</td>
+                                    </tr>
+                                        }
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                </div>
+            </div>
+
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+}

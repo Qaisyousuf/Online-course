@@ -19,7 +19,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
         }
         public ActionResult Index()
         {
-            GetContactFormData();
+            GetCountryName();
             return View();
         }
 
@@ -100,7 +100,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 CountryNames = contactForm.CountryNames,
                 CountryId = contactForm.CountryId,
             };
-            GetContactFormData();
+            GetCountryName();
             return View(viewmodel);
         }
     }

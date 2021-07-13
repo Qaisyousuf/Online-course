@@ -11,6 +11,8 @@ namespace Models
         public DateTime WorkingStartDate { get; set; }
         public DateTime WrokingEndDate { get; set; }
         public string Address { get; set; }
+        public string MapAnimationUrl { get; set; }
+
 
     }
 }

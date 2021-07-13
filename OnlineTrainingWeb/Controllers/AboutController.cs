@@ -35,12 +35,12 @@ namespace OnlineTrainingWeb.Controllers
 
              
             }
-           
-           
+
+
 
             ListOfViewModels aboutPageData = new ListOfViewModels
             {
-                ListofAboutPage=viewmodel
+                ListofAboutPage = viewmodel
             };
 
             return View(aboutPageData);

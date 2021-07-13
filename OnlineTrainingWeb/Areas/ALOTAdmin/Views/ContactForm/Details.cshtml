@@ -87,7 +87,7 @@
                                     <td class="font-weight-bold"> @Html.DisplayNameFor(Model => Model.Emplyees.NumberOfEmployee)</td>
 
                                     <td>
-                                        @Html.DropDownListFor(m => m.Emplyees, new SelectList(ViewBag.EmployeesNumber, "Id", "NumberOfEmployee"), "-----Select your country ------", new { @class = "form-control disabled" })
+                                        @Html.DropDownListFor(m => m.EmployeeId, new SelectList(ViewBag.EmployeesNumber, "Id", "NumberOfEmployee"), "-----Select your country ------", new { @class = "form-control disabled" })
 
                                     </td>
                                 </tr>

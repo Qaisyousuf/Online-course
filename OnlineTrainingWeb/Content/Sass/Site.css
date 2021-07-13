@@ -130,11 +130,6 @@ body {
   padding-left: 0px;
   padding-right: 0px; }
 
-input,
-select,
-textarea {
-  max-width: 280px; }
-
 .dl-horizontal dt {
   white-space: normal; }
 
@@ -196,7 +191,7 @@ textarea {
 p {
   color: #dfe8f0 !important; }
 
-.textColorForSecondHeading h1 {
+.textColorForSecondHeading h1, .textColorForSecondHeading h2, .textColorForSecondHeading h3, .textColorForSecondHeading h4, .textColorForSecondHeading h5, .textColorForSecondHeading h6, .textColorForSecondHeading th, .textColorForSecondHeading td {
   color: #3e5d94 !important;
   text-align: center;
   font-weight: bold !important; }
@@ -1134,5 +1129,113 @@ p {
 
   .ContactMainTitle {
     margin-top: 100px; } }
+.ContactDetailsBackground {
+  background-image: url(../Images/CotnactDetails.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 790px; }
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .ContactDetailsBackground {
+    background-image: url(../Images/CotnactDetails.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 790px;
+    padding-top: 100px; } }
+@media (min-width: 500px) and (max-width: 768px) {
+  .ContactDetailsBackground {
+    background-image: url(../Images/CotnactDetails500.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1050px;
+    padding-top: 100px;
+    margin-top: 50px; } }
+@media (min-width: 250px) and (max-width: 500px) {
+  .ContactDetailsBackground {
+    background-image: url(../Images/CotnactDetails500.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1190px;
+    padding-top: 60px;
+    margin-top: 150px; } }
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto; }
+
+.table-wrapper-scroll-y {
+  display: block; }
 
 /*# sourceMappingURL=Site.css.map */

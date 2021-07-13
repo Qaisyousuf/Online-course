@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class GeolocationStudentsViewModel
+    public class GeolocationStudentsViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

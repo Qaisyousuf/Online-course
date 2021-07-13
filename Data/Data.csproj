@@ -342,6 +342,10 @@
     <Compile Include="Migrations\202107071151594_PropertiesOfContactModelChanged.Designer.cs">
       <DependentUpon>202107071151594_PropertiesOfContactModelChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107090917382_PropertyAddedToContactDetails.cs" />
+    <Compile Include="Migrations\202107090917382_PropertyAddedToContactDetails.Designer.cs">
+      <DependentUpon>202107090917382_PropertyAddedToContactDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -457,6 +461,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107071151594_PropertiesOfContactModelChanged.resx">
       <DependentUpon>202107071151594_PropertiesOfContactModelChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107090917382_PropertyAddedToContactDetails.resx">
+      <DependentUpon>202107090917382_PropertyAddedToContactDetails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

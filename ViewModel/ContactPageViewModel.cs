@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class ContactPageViewModel
+    public class ContactPageViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

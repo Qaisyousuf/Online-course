@@ -41,6 +41,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     WorkingStartDate=item.WorkingStartDate,
                     WrokingEndDate=item.WrokingEndDate,
                     Address=item.Address,
+                    MapAnimationUrl=item.MapAnimationUrl,
                 });
             }
             return Json(new { data = viewmodel }, JsonRequestBehavior.AllowGet);
@@ -76,6 +77,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     WorkingStartDate=StartDateStartTimeCombination,
                     WrokingEndDate =EndDateEndTimeCombination,
                     Address = viewmodel.Address,
+                    MapAnimationUrl=viewmodel.MapAnimationUrl,
                 };
 
                 uow.ContactDetailsRepository.Add(contactdetails);
@@ -102,6 +104,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Title=contactDetails.Title,
                 MobileNumber=contactDetails.MobileNumber,
                 Email=contactDetails.Email,
+                MapAnimationUrl=contactDetails.MapAnimationUrl,
                 Address=contactDetails.Address,
                 WorkingStartDate=Convert.ToDateTime(StartDateModel),
                 WorkingStartTime=Convert.ToDateTime(StartTimeFromModel),
@@ -137,6 +140,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
 
                 contactDetails.WorkingStartDate = StartDateStartTimeCombination;
                 contactDetails.WrokingEndDate = EndDateEndTimeCombination;
+                contactDetails.MapAnimationUrl = viewmodel.MapAnimationUrl;
 
                 uow.ContactDetailsRepository.Update(contactDetails);
                 uow.Commit();
@@ -163,6 +167,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 MobileNumber = contactDetails.MobileNumber,
                 Email = contactDetails.Email,
                 Address = contactDetails.Address,
+                MapAnimationUrl=contactDetails.MapAnimationUrl,
                 WorkingStartDate = Convert.ToDateTime(StartDateModel),
                 WorkingStartTime = Convert.ToDateTime(StartTimeFromModel),
                 WrokingEndDate = Convert.ToDateTime(EndDateModel),
@@ -194,6 +199,7 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 MobileNumber = contactDetails.MobileNumber,
                 Email = contactDetails.Email,
                 Address = contactDetails.Address,
+                MapAnimationUrl=contactDetails.MapAnimationUrl,
                 WorkingStartDate = Convert.ToDateTime(StartDateModel),
                 WorkingStartTime = Convert.ToDateTime(StartTimeFromModel),
                 WrokingEndDate = Convert.ToDateTime(EndDateModel),

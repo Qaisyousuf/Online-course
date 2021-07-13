@@ -45,5 +45,9 @@ namespace ViewModel
 
         [Required]
         public string Address { get; set; }
+
+        [Required]
+        [Display(Name ="Animation Url")]
+        public string MapAnimationUrl { get; set; }
     }
 }

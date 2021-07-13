@@ -1304,7 +1304,6 @@
     <Content Include="Views\Contact\ContactDetails.cshtml" />
     <Content Include="Views\Contact\ContactForm.cshtml" />
     <Content Include="Views\Contact\GetGeoLocaiton.cshtml" />
-    <Content Include="Views\Contact\GetNewsLetter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

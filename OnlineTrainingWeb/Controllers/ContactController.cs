@@ -217,40 +217,6 @@ namespace OnlineTrainingWeb.Controllers
             return PartialView(GetGeoLocationData);
         }
 
-        [Route("Contact")]
-        [HttpGet]
-        public ActionResult GetNewsLetter(string slug)
-        {
-            return View(new SubscriptionSystemViewModel());
-        }
-        [Route("Contact")]
-        [HttpPost]
-        public ActionResult GetNewsLetter(SubscriptionSystemViewModel viewmodel)
-        {
-            if (ModelState.IsValid)
-            {
-                var EmailExists = _uow.Context.SubscriptionSystems.Any(x => x.Email == viewmodel.Email);
-
-                if (EmailExists)
-                {
-                    return Json(new { error = true, message = "Email already exists" }, JsonRequestBehavior.AllowGet);
-                }
-
-                var subscription = new SubscriptionSystem
-                {
-                    UserName = viewmodel.UserName,
-                    Email = viewmodel.Email,
-                };
-
-                _uow.SubscriptionSystemRepository.Add(subscription);
-                _uow.Commit();
-
-
-            }
-
-            return Json(new { success = true, message = "Thanks for subscribing" }, JsonRequestBehavior.AllowGet);
-
-        }
 
     }
 }

@@ -260,6 +260,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\GetNewsLetterInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -1304,6 +1305,10 @@
     <Content Include="Views\Contact\ContactDetails.cshtml" />
     <Content Include="Views\Contact\ContactForm.cshtml" />
     <Content Include="Views\Contact\GetGeoLocaiton.cshtml" />
+    <Content Include="Views\Shared\_Courses.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Courses\CoursesBanner.cshtml" />
+    <Content Include="Views\Courses\CodingCareer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

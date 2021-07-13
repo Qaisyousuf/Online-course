@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class LaunchYourCodingCareerViewModel
+    public class LaunchYourCodingCareerViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

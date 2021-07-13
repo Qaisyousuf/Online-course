@@ -41,6 +41,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     JoinButtonUrl=item.JoinButtonUrl,
                     DiscoverButton=item.DiscoverButton,
                     DiscoverButtonTUrl=item.DiscoverButtonTUrl,
+                    SubContent=item.SubContent,
+                    Content=item.Content,
                 });
             }
             return Json(new { data = viewmodel }, JsonRequestBehavior.AllowGet);
@@ -67,6 +69,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     JoinButtonUrl=viewmodel.JoinButtonUrl,
                     DiscoverButton=viewmodel.DiscoverButton,
                     DiscoverButtonTUrl=viewmodel.DiscoverButtonTUrl,
+                    SubContent=viewmodel.SubContent,
+                    Content=viewmodel.Content,
                 };
 
                 uow.CourseBannerRepository.Add(courseBanner);
@@ -90,6 +94,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 JoinButtonUrl=courseBanner.JoinButtonUrl,
                 DiscoverButton=courseBanner.DiscoverButton,
                 DiscoverButtonTUrl=courseBanner.DiscoverButtonTUrl,
+                Content=courseBanner.Content,
+                SubContent=courseBanner.SubContent,
             };
 
             return View(viewmodel);
@@ -110,6 +116,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 courseBanner.JoinButtonUrl = viewmodel.JoinButtonUrl;
                 courseBanner.DiscoverButton = viewmodel.DiscoverButton;
                 courseBanner.DiscoverButtonTUrl = viewmodel.DiscoverButtonTUrl;
+                courseBanner.SubContent = viewmodel.SubContent;
+                courseBanner.Content = viewmodel.Content;
 
                 uow.CourseBannerRepository.Update(courseBanner);
                 uow.Commit();
@@ -132,6 +140,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 JoinButtonUrl=courseBanner.JoinButtonUrl,
                 DiscoverButton=courseBanner.DiscoverButton,
                 DiscoverButtonTUrl=courseBanner.DiscoverButtonTUrl,
+                Content=courseBanner.Content,
+                SubContent=courseBanner.SubContent,
             };
 
             uow.CourseBannerRepository.Remove(courseBanner);
@@ -154,6 +164,8 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 JoinButtonUrl = courseBanner.JoinButtonUrl,
                 DiscoverButton = courseBanner.DiscoverButton,
                 DiscoverButtonTUrl = courseBanner.DiscoverButtonTUrl,
+                Content=courseBanner.Content,
+                SubContent=courseBanner.SubContent,
             };
 
             return View(viewmodel);

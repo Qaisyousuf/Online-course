@@ -38,6 +38,9 @@ namespace ViewModel
         public List<ContactBannerViewModel> ListofContactBanner { get; set; }
         public List<ContactDetailsViewModel> ListofContactDetails { get; set; }
         public List<GeolocationStudentsViewModel> ListOfGeoLocation { get; set; }
+        public List<CoursePageViewModel> ListOfCoursePage { get; set; }
+        public List<CourseBannerViewModel> ListofCourseBanner { get; set; }
+        public List<LaunchYourCodingCareerViewModel> ListofCodingCareer { get; set; }
    
         
       

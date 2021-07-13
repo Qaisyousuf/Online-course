@@ -346,6 +346,10 @@
     <Compile Include="Migrations\202107090917382_PropertyAddedToContactDetails.Designer.cs">
       <DependentUpon>202107090917382_PropertyAddedToContactDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107131322050_PropertyAddedToCoursesBanner.cs" />
+    <Compile Include="Migrations\202107131322050_PropertyAddedToCoursesBanner.Designer.cs">
+      <DependentUpon>202107131322050_PropertyAddedToCoursesBanner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -464,6 +468,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107090917382_PropertyAddedToContactDetails.resx">
       <DependentUpon>202107090917382_PropertyAddedToContactDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107131322050_PropertyAddedToCoursesBanner.resx">
+      <DependentUpon>202107131322050_PropertyAddedToCoursesBanner.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

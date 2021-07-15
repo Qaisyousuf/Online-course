@@ -1261,4 +1261,183 @@ p {
   align-items: center;
   height: 800px; }
 
+@media (min-width: 1500px) and (max-width: 1920px) {
+  .CoursesMainBanner {
+    background-image: url(../Images/ContactMainBanner.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px; } }
+@media (min-width: 768px) and (max-width: 990px) {
+  .CoursesMainBanner {
+    background-image: url(../Images/ContactMainBanner990.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 850px;
+    padding-top: 100px; }
+    .CoursesMainBanner .CoursesSecondContent {
+      margin-top: 200px; } }
+@media (min-width: 500px) and (max-width: 768px) {
+  .CoursesMainBanner {
+    background-image: url(../Images/ContactMainBanner768.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 950px;
+    padding-top: 150px; }
+    .CoursesMainBanner .CoursesSecondContent {
+      margin-top: 0px; } }
+@media (min-width: 300px) and (max-width: 500px) {
+  .CoursesMainBanner {
+    background-image: url(../Images/ContactMainBanner500.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 900px;
+    padding-top: 100px; }
+    .CoursesMainBanner .CoursesSecondContent {
+      margin-top: 0px; } }
+.LuanchingCodingBackground {
+  background-image: url(../Images/LaunchingCoding.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 600px;
+  border-radius: 5px; }
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .LuanchingCodingBackground {
+    background-image: url(../Images/LaunchingCoding768.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 1000px;
+    border-radius: 5px;
+    margin-top: 100px; } }
+@media (min-width: 280px) and (max-width: 500px) {
+  .LuanchingCodingBackground {
+    background-image: url(../Images/LaunchingCoding768.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 950px;
+    border-radius: 5px;
+    margin-top: 150px; } }
+
 /*# sourceMappingURL=Site.css.map */

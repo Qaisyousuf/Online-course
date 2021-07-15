@@ -298,6 +298,7 @@
     <Content Include="Content\Images\ContactMainBanner1920.svg" />
     <Content Include="Content\Images\ContactMainBanner500.svg" />
     <Content Include="Content\Images\ContactMainBanner768.svg" />
+    <Content Include="Content\Images\ContactMainBanner990.svg" />
     <Content Include="Content\Images\CotnactDetails.svg" />
     <Content Include="Content\Images\CotnactDetails500.svg" />
     <Content Include="Content\Images\Footer.svg" />
@@ -308,6 +309,8 @@
     <Content Include="Content\Images\Footer990.svg" />
     <Content Include="Content\Images\GoogleReview.svg" />
     <Content Include="Content\Images\HowTrainingWorks.svg" />
+    <Content Include="Content\Images\LaunchingCoding.svg" />
+    <Content Include="Content\Images\LaunchingCoding768.svg" />
     <Content Include="Content\Images\NotSure.svg" />
     <Content Include="Content\Images\NotSure768.svg" />
     <Content Include="Content\Images\OurVison.svg" />

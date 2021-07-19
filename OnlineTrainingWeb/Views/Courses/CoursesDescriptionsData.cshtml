@@ -1,0 +1,51 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if(Model.ListofCoursesDescriptions !=null)
+{
+    <div class="container my-5">
+        <div class="row">
+            @foreach (var item in Model.ListofCoursesDescriptions)
+            {
+                <div class="col-md-4">
+                    <div class="card card-cascade wider card-shwadow mb-4">
+
+                        <!--Card image-->
+                        <div class="view view-cascade card-shwadow">
+
+                                    <img src="@item.ImageUrl" class="card-img-top">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+
+                        </div>
+                        <!--/Card image-->
+                        <!--Card content-->
+                        <div class="card-body card-body-cascade card-background-color z-depth-0 text-center textColorForSecondHeading ">
+                            <!--Title-->
+                            <h6 class="card-title">@item.MainTitle</h6>
+                            <h4 class="font-weight-bold">@item.Title</h4>
+
+                            <p class="text-justify">
+                               @item.Content
+                            </p>
+
+
+                            <!--Linkedin-->
+                            <a class="btn btn-rounded btn-md" href="@item.TakeCourseButtonUrl"> @item.TakeCourseButton</a>
+                            <!--Twitter-->
+                          
+
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+         
+
+    </div>
+    
+}

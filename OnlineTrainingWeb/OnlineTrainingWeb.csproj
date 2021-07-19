@@ -261,6 +261,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\ForBusinessController.cs" />
     <Compile Include="Controllers\GetNewsLetterInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -314,6 +315,7 @@
     <Content Include="Content\Images\NotSure.svg" />
     <Content Include="Content\Images\NotSure768.svg" />
     <Content Include="Content\Images\OurVison.svg" />
+    <Content Include="Content\Images\QuikLinks.svg" />
     <Content Include="Content\Images\TrainePhilsophy.svg" />
     <Content Include="Content\Images\UserBenefits.svg" />
     <Content Include="Content\mdb.css" />
@@ -1312,6 +1314,12 @@
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Courses\CoursesBanner.cshtml" />
     <Content Include="Views\Courses\CodingCareer.cshtml" />
+    <Content Include="Views\Courses\CoursesDescriptionsData.cshtml" />
+    <Content Include="Views\Courses\LearningModel.cshtml" />
+    <Content Include="Views\Courses\WhoIsThisProgramForData.cshtml" />
+    <Content Include="Views\Courses\GetQuikLinks.cshtml" />
+    <Content Include="Views\Shared\_Business.cshtml" />
+    <Content Include="Views\ForBusiness\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

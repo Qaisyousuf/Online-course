@@ -41,6 +41,12 @@ namespace ViewModel
         public List<CoursePageViewModel> ListOfCoursePage { get; set; }
         public List<CourseBannerViewModel> ListofCourseBanner { get; set; }
         public List<LaunchYourCodingCareerViewModel> ListofCodingCareer { get; set; }
+        public List<CourseDescriptionViewModel> ListofCoursesDescriptions { get; set; }
+        public List<LearningModelViewModel> ListOfLearningModel { get; set; }
+        public List<WhoIsThisProgramForContentSectionViewModel> ListOfThisProgramFor { get; set; }
+        public List<WhoIsThisProgramForEachDetailsViewModel> ListofProgramDetails { get; set; }
+        public List<QuiklinkViewModel> ListofQuikLink { get; set; }
+        public List<BusinessPageViewModel> ListofBusinessPage { get; set; }
    
         
       

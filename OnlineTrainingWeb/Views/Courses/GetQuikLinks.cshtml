@@ -1,0 +1,58 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofQuikLink != null)
+{
+
+    <div class="container my-5 py-5 QuikLinkBakcground "  id="WhoIsThisProgramFor">
+        <div class="AnimationBackground">
+            <div class="animationPosition">
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ozkmwiih.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            </div>
+            <div class="ContentPosition">
+                <section class=" text-center TextColorForHeading">
+
+                    @foreach (var item in Model.ListofQuikLink.Take(1))
+                    {
+                        <h3 class="font-weight-bold  mb-2 pb-2">@item.MainTitle</h3>
+
+                        <!-- Section description -->
+                       
+                    }
+                    <!-- Section heading -->
+                    <!--First row-->
+                        <div class="row">
+                            @foreach (var SubItem in Model.ListofQuikLink)
+                            {
+                                <div class="col-md-2 mb-2 px-0 mx-0  TextColorForHeading">
+
+                                    <!-- Card -->
+                                    <a href="@SubItem.LinkUrl" class="card hoverable bg-transparent z-depth-0" >
+
+                                        <!-- Card content -->
+                                        <div class="card-body my-1">
+
+                                            <img src="@SubItem.IconUrl" />
+                                            <h5 class=" mb-0">@SubItem.Title</h5>
+
+                                        </div>
+
+                                    </a>
+                                    <!-- Card -->
+
+                                </div>
+                            }
+                          
+
+                        </div>
+                    <!--First row-->
+
+                </section>
+            </div>
+        </div>
+
+        <!--Section: Content-->
+        
+
+
+    </div>
+}

@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-   public class WhoIsThisProgramForContentSectionViewModel
+   public class WhoIsThisProgramForContentSectionViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

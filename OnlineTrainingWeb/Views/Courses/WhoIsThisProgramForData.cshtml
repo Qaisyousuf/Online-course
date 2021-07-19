@@ -1,0 +1,136 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfThisProgramFor != null && Model.ListofProgramDetails !=null)
+{
+    <div class="container mt-5">
+
+
+        <!--Section: Content-->
+        <section class="mx-md-5 dark-grey-text">
+
+            <!-- Grid row -->
+            <div class="row">
+                @foreach (var item in Model.ListOfThisProgramFor.Take(1))
+                {
+                    <div class="col-md-12">
+
+                        <!-- Card -->
+                        <div class="card card-cascade wider reverse TextColorForHeading">
+
+                            <!-- Card image -->
+                            <div class="view view-cascade overlay " id="WhoIsThisProgramFor">
+
+                                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_m4nwermf.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!-- Card content -->
+                            <div class="card-body card-body-cascade text-center">
+
+                                <!-- Title -->
+                                <h3 class="font-weight-bold">@item.MainTitle</h3>
+                                <!-- Data -->
+
+                                <p class="text-justify pt-3 mx-md-4 mx-lg-4 mx-sm-0">
+                                    @item.Content
+                                </p>
+
+                                <a href="@item.ReadMoreButtonUrl" class="btn btn-rounded btn-md mb-3"><i class="fas fa-sign-in-alt"></i> @item.ReadMoreButton</a>
+
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg" role="document">
+
+                                        <!--Content-->
+                                        <div class="modal-content">
+
+                                            <!--Body-->
+                                            <div class="modal-body mx-4 mb-0 p-0">
+
+                                                <div class="embed-responsive embed-responsive-16by9 z-depth-1">
+                                                    <iframe class="embed-responsive-item" src="@item.VideoUrl"
+                                                            allowfullscreen></iframe>
+                                                </div>
+
+                                            </div>
+
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-center">
+
+
+                                                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                            </div>
+
+                                        </div>
+                                        <!--/.Content-->
+
+                                    </div>
+                                </div>
+                                <!--Modal: Name-->
+
+                                <a>
+                                    <img class="img-fluid my-3 z-depth-2" src="https://i.ibb.co/8Y3qgYD/Video.png" alt="video"
+                                         data-toggle="modal" data-target="#modal1">
+                                </a>
+                            </div>
+                            <!-- Card content -->
+
+                        </div>
+                        <!-- Card -->
+                        <!-- Excerpt -->
+                        <div class="mt-5">
+
+                            <div class="container d-flex justify-content-center">
+
+                                <!-- Section -->
+                                <section class="">
+
+                                    <div class="row">
+                                        @foreach (var details in Model.ListofProgramDetails)
+                                        {
+                                            <div class="col-md-12 col-xl-12 mb-0 d-flex justify-content-center">
+                                                <div class="media pt-2">
+                                                    <div class="mr-4">
+                                                        <div class="avatar mx-auto mb-3" id="AvatarImage">
+                                                            <img src="@details.IconUrl" class="rounded-circle img-fluid"
+                                                           alt="First sample avatar image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="media-body pt-3">
+                                                        <h6 class=" chip mb-0 z-depth-1">@details.MainTitle</h6>
+                                                        <p class="text-muted">
+                                                            @details.Content
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+
+
+                                    </div>
+
+                                </section>
+                                <!-- Section -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                }
+                <!-- Grid column -->
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+         
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+}

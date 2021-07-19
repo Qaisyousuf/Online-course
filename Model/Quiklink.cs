@@ -13,7 +13,5 @@ namespace Models
         public string IconUrl { get; set; }
         public string LinkUrl { get; set; }
 
-
-
     }
 }

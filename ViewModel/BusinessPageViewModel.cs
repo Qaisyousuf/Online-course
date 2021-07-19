@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class BusinessPageViewModel
+    public class BusinessPageViewModel:BaseViewModel
     {
         public int Id { get; set; }
         public string Title { get; set; }

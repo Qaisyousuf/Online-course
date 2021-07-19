@@ -1117,6 +1117,19 @@
             text-align: center;
         }
     }
+
+.TextColorForHeading {
+    h1, h2, h3, h4, h5, h6, th, td {
+        color: $SecondHeadingTextColor !important;
+        text-align: center;
+        font-weight: $HeadingTextWidth !important;
+    }
+
+    p {
+        color: $SecondPragraphTextColor !important;
+        
+    }
+}
     //First Home Banner
     @media(min-wdith:1720px) and (max-width:1920px) {
         .HomeBannerMainSection {
@@ -2069,3 +2082,67 @@
         @include LaunchingCodingCareer500;
     }
 }
+
+
+@mixin CoursesDescriptionCardBackground {
+    -webkit-box-shadow: $-webkit-CardBackgroundShadow !important;
+    box-shadow: $CardBackgroundShadow !important;
+    border-radius: 4px;
+   
+}
+
+@mixin WhoisthisProgramFor {
+    -webkit-box-shadow: $-webkit-ShadowForCardBanner !important;
+    box-shadow: $ShadowForCardBanner !important;
+    -moz-box-shadow: $-Moz-CardShadowBanner !important;
+    border-radius: 4px;
+}
+
+#WhoIsThisProgramFor {
+    @include WhoisthisProgramFor;
+}
+
+.card.card-cascade .view.view-cascade.card-shwadow {
+    @include CoursesDescriptionCardBackground;
+}
+.card-background-color
+{
+    background-color:$card-background-color !important;
+}
+
+#AvatarImage img{
+
+    height:80px !important;
+    width:80px !important;
+}
+
+.AnimationBackground
+{
+    position:relative;
+    top:0px;
+    left:0px;
+   
+   
+
+}
+
+.animationPosition lottie-player {
+    position: absolute;
+    left:0;
+    top:-150px;
+    height: 500px;
+    width:auto;
+    z-index:-1;
+}
+
+.QuikLinkBakcground{
+    background-image:url(../Images/QuikLinks.svg);
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+    border-radius:5px !important;
+}
+
+
+
+

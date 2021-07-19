@@ -1,0 +1,40 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfLearningModel != null)
+{
+    <div class="container z-depth-0">
+
+
+        <!--Section: Content-->
+        <section class=" text-center TextColorForHeading ">
+
+            @foreach (var item in Model.ListOfLearningModel.Take(1))
+            {
+                <h1 class="font-weight-bold  pb-2 ">@item.MainTitle</h1>
+            }
+
+            <div class="row mx-3 mt-md-5 mt-lg-5 mt-sm-2">
+                @foreach (var item in Model.ListOfLearningModel)
+                {
+                    <div class="col-md-4 px-4 mb-2 TextColorForHeading" >
+
+                        <div class="img-fluid mb-0 mx-4 mb-3">
+                            <img src="@item.IconUrl" class="img-fluid" alt="smaple image">
+                        </div>
+                        <h5 class="font-weight-normal mb-3">@item.Title</h5>
+                        <p class="text-justify px-2 mb-lg-0">
+                            @item.Content
+                        </p>
+                    </div>
+                }
+
+
+            </div>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+   
+}

@@ -199,6 +199,13 @@ p {
   color: #133166 !important;
   text-align: center; }
 
+.TextColorForHeading h1, .TextColorForHeading h2, .TextColorForHeading h3, .TextColorForHeading h4, .TextColorForHeading h5, .TextColorForHeading h6, .TextColorForHeading th, .TextColorForHeading td {
+  color: #3e5d94 !important;
+  text-align: center;
+  font-weight: bold !important; }
+.TextColorForHeading p {
+  color: #133166 !important; }
+
 @media (min-wdith: 1720px) and (max-width: 1920px) {
   .HomeBannerMainSection {
     background-image: url(../Images/1920_GigBackgroundFinal.svg);
@@ -1004,7 +1011,7 @@ p {
 
 @Mixin TabCardBackground {
   -webkit-box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0.64) !important;
-  box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0.64) !important; }
+  box-shadow: 0px 0px 8px 3px rgba(95, 136, 255, 0.42) !important; }
 .Card_Background {
   @Include TabCardBackground;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.03) !important;
@@ -1439,5 +1446,42 @@ p {
     height: 950px;
     border-radius: 5px;
     margin-top: 150px; } }
+#WhoIsThisProgramFor {
+  -webkit-box-shadow: 0px 2px 34px 1px rgba(86, 139, 204, 0.33) !important;
+  box-shadow: 0px 2px 34px 1px rgba(86, 139, 204, 0.33) !important;
+  -moz-box-shadow: 0px 2px 34px 5px rgba(86, 139, 204, 0.35) !important;
+  border-radius: 4px; }
+
+.card.card-cascade .view.view-cascade.card-shwadow {
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(95, 136, 255, 0.42) !important;
+  box-shadow: 0px 0px 8px 3px rgba(95, 136, 255, 0.42) !important;
+  border-radius: 4px; }
+
+.card-background-color {
+  background-color: #FBFBFB !important; }
+
+#AvatarImage img {
+  height: 80px !important;
+  width: 80px !important; }
+
+.AnimationBackground {
+  position: relative;
+  top: 0px;
+  left: 0px; }
+
+.animationPosition lottie-player {
+  position: absolute;
+  left: 0;
+  top: -150px;
+  height: 500px;
+  width: auto;
+  z-index: -1; }
+
+.QuikLinkBakcground {
+  background-image: url(../Images/QuikLinks.svg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 5px !important; }
 
 /*# sourceMappingURL=Site.css.map */

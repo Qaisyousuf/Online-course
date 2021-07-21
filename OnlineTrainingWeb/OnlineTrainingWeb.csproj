@@ -308,6 +308,7 @@
     <Content Include="Content\Images\Footer500.svg" />
     <Content Include="Content\Images\Footer769.svg" />
     <Content Include="Content\Images\Footer990.svg" />
+    <Content Include="Content\Images\ForBusiness.svg" />
     <Content Include="Content\Images\GoogleReview.svg" />
     <Content Include="Content\Images\HowTrainingWorks.svg" />
     <Content Include="Content\Images\LaunchingCoding.svg" />
@@ -1136,6 +1137,7 @@
     <Content Include="Content\Sass\_CustomNavbar.scss" />
     <Content Include="Content\Sass\_CustomButtons.scss" />
     <Content Include="Content\Sass\_CustomImageUrl.scss" />
+    <Content Include="Content\Sass\_CustomBody.scss" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1320,6 +1322,7 @@
     <Content Include="Views\Courses\GetQuikLinks.cshtml" />
     <Content Include="Views\Shared\_Business.cshtml" />
     <Content Include="Views\ForBusiness\Index.cshtml" />
+    <Content Include="Views\ForBusiness\GetBusinessBanner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

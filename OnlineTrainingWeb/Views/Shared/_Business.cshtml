@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @Html.Action("GetMetaData","Home")
-    @Html.Action("GetOGTagData","Home")
+    @Html.Action("GetMetaData", "Home")
+    @Html.Action("GetOGTagData", "Home")
     @Html.Action("TwitterTagData", "Home")
     <title>@ViewBag.Title - @Model.SiteTitle</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
    
+    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <script src="~/Scripts/node_modules/lottie-player/dist/lottie-player.js"></script>
@@ -44,7 +45,7 @@
 
 
     <div class="container-fluid body-content">
-        @*@Html.Action("GetBusinessBanner", "ForBusiness")*@
+        @Html.Action("GetBusinessBanner", "ForBusiness")
       
         @RenderBody()
 

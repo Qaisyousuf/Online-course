@@ -47,6 +47,7 @@ namespace ViewModel
         public List<WhoIsThisProgramForEachDetailsViewModel> ListofProgramDetails { get; set; }
         public List<QuiklinkViewModel> ListofQuikLink { get; set; }
         public List<BusinessPageViewModel> ListofBusinessPage { get; set; }
+        public List<BusinessBannerViewModel> ListofBusinessBannerViewMoodel { get; set; }
    
         
       

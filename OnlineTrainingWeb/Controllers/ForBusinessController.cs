@@ -39,5 +39,38 @@ namespace OnlineTrainingWeb.Controllers
             };
             return View(BusinessPageData);
         }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetBusinessBanner()
+        {
+            var businessBanner = _uow.BusinessBannerRepository.GetAll();
+
+            List<BusinessBannerViewModel> businessviewmodel = new List<BusinessBannerViewModel>();
+
+            foreach (var item in businessBanner)
+            {
+                businessviewmodel.Add(new BusinessBannerViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    SubTitle=item.SubTitle,
+                    Content=item.Content,
+                    ImageUrl=item.ImageUrl,
+                    SubContent=item.SubContent,
+                    JoinButton=item.JoinButton,
+                    DiscoverButtonTUrl=item.DiscoverButtonTUrl,
+                    DiscoverButton=item.DiscoverButton,
+                    JoinButtonUrl=item.JoinButtonUrl,
+                });
+            }
+
+            ListOfViewModels GetBusinessBannerData = new ListOfViewModels
+            {
+                ListofBusinessBannerViewMoodel=businessviewmodel,
+            };
+
+            return PartialView(GetBusinessBannerData);
+        }
     }
 }

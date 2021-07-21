@@ -37,6 +37,7 @@ namespace OnlineTrainingWeb
                      "~/Content/bootstrap.css",
                      "~/Content/Sass/BackendSite.css",
                       "~/Content/mdb.min.css"));
+          
         }
     }
 }

@@ -87,7 +87,28 @@
                                     <td class="font-weight-bold">   @Html.DisplayNameFor(model => model.DiscoverButtonTUrl)</td>
                                     <td class="text-primary">  @Html.DisplayFor(model => model.DiscoverButtonTUrl)</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold">   @Html.DisplayNameFor(model => model.SubContent)</td>
+                                    <td class="text-primary">  @Html.DisplayFor(model => model.SubContent)</td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row">
+                                        <a class="btn-floating btn-sm btn-info"><i class="fas fa-tag"></i></a>
+                                    </th>
+                                    <td class="font-weight-bold">  @Html.DisplayNameFor(model => model.Content)</td>
+                                    <td class="collapse" id="collapseExample"> @Html.Raw(Model.Content)</td>
+                                    <td>
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample"
+                                                aria-expanded="false" aria-controls="collapseExample">
+                                            view content
+                                        </button>
+                                    </td>
 
+
+                                </tr>
                             </tbody>
                             <!--Table body-->
                         </table>

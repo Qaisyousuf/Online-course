@@ -1,0 +1,86 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofBusinessBannerViewMoodel != null)
+{
+    <div class="ForBusinessMainBackground">
+
+            <div class="container ">
+                <header>
+
+                    <!-- Full Page Intro -->
+                    <div class="">
+                        <!-- Mask & flexbox options-->
+                        <div class="mask">
+                            <!-- Content -->
+                            <div class="container ContactmainContent ">
+                                <!--Grid row-->
+                                <div class="row align-items-center">
+                                    @foreach (var item in Model.ListofBusinessBannerViewMoodel.Take(1))
+                                    {
+                                        <!--Grid column-->
+                                        <div class="col-md-7 textColor ContactMainTitle ">
+                                            <h1 class="mb-2 font-weight-bold">@item.MainTitle</h1>
+                                            <p class="mb-2 pb-2">@item.SubTitle</p>
+                                            <a href="@item.DiscoverButtonTUrl" class="btn  btn-rounded btn-md ml-0"><i class="fas fa-sign-in-alt"></i> @item.DiscoverButton</a>
+                                            <a href="@item.JoinButtonUrl" class="btn   btn-rounded btn-rounded btn-md"> <i class="fas fa-book-open"></i> @item.JoinButton</a>
+                                        </div>
+                                        <!--Grid column-->
+                                        <!--Grid column-->
+                                        <div class="col-md-5">
+                                            <lottie-player src="@item.ImageUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                                        </div>
+                                        <div class="col-md-10 col-sm-12 col-lg-10 pt-4 textColorForSecondHeading offset-lg-1 offset-md-1 text-center ForBusinessBannerExpolration">
+                                            <h1 class=" ">@item.SubContent</h1>
+                                            <p class=" text-justify text-center">@item.Content</p>
+                                        </div>
+                                    }
+
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                            </div>
+                            <!-- Content -->
+                        </div>
+                        <!-- Mask & flexbox options-->
+                    </div>
+                    <!-- Full Page Intro -->
+
+                </header>
+            </div>
+       
+    </div>
+    <div class="">
+        <div class="container my-5 z-depth-1">
+
+
+            <!--Section: Content-->
+            <section class="dark-grey-text">
+
+                <div class="row pr-lg-5">
+                    <div class="col-md-7 mb-4">
+
+                        <div class="view">
+                            <img src="https://mdbootstrap.com/img/illustrations/graphics(4).png" class="img-fluid" alt="smaple image">
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center">
+                        <div>
+
+                            <h3 class="font-weight-bold mb-4">Material Design Blocks</h3>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adip elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
+
+                            <button type="button" class="btn btn-orange btn-rounded mx-0">Download</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--Section: Content-->
+
+
+        </div>
+    </div>
+}

@@ -1,0 +1,65 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofTrustedByviewModel != null)
+{
+<div class="container TrustedMainBackground">
+
+
+    <!--Section: Content-->
+    <section class="">
+
+        <div class="row ">
+            @foreach (var item in Model.ListofTrustedByviewModel.Take(1))
+            {
+                <div class="col-md-6 mb-4">
+
+                    <div class="view">
+                        <lottie-player src="@item.AnimationUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                    </div>
+
+                </div>
+                <div class="col-md-6 d-flex align-items-center text-lg-left text-center">
+                    <div class="CustomBannerFontStyle">
+
+                        <h1 class="font-weight-bold mb-2">@item.MainTitle</h1>
+
+                        <p>@item.Title</p>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="my-3">
+
+            <section class="">
+
+                <div class="flex-center">
+
+                    <!--First row-->
+                    <div class="row">
+                        @foreach (var SubItem in Model.ListofTrustedByviewModel)
+                        {
+                            <div class="col-md-2 mb-4 flex-center">
+                                <img src="@SubItem.LogoUrl" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+                            </div>
+                        }
+                        <!--First column-->
+
+
+
+                    </div>
+                    <!--/First row-->
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>
+}

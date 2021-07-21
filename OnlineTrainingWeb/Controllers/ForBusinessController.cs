@@ -72,5 +72,33 @@ namespace OnlineTrainingWeb.Controllers
 
             return PartialView(GetBusinessBannerData);
         }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetTrustedBy()
+        {
+            var trustedby = _uow.TrustedbyForUpSkillingRepository.GetAll();
+
+            List<TrustedbyForUpSkillingViewModel> TrustedViewModel = new List<TrustedbyForUpSkillingViewModel>();
+
+            foreach (var item in trustedby)
+            {
+                TrustedViewModel.Add(new TrustedbyForUpSkillingViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    AnimationUrl=item.AnimationUrl,
+                    LogoUrl=item.LogoUrl,
+                });
+            }
+
+            ListOfViewModels TrustedByData = new ListOfViewModels
+            {
+                ListofTrustedByviewModel=TrustedViewModel,
+            };
+
+            return PartialView(TrustedByData);
+        }
     }
 }

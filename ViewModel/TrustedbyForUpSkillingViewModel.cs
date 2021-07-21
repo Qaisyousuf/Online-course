@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class TrustedbyForUpSkillingViewModel
+    public class TrustedbyForUpSkillingViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

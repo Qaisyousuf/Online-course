@@ -1323,6 +1323,7 @@
     <Content Include="Views\Shared\_Business.cshtml" />
     <Content Include="Views\ForBusiness\Index.cshtml" />
     <Content Include="Views\ForBusiness\GetBusinessBanner.cshtml" />
+    <Content Include="Views\ForBusiness\GetTrustedBy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

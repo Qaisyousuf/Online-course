@@ -1614,5 +1614,17 @@ p {
     /*padding-top: 100px;*/ }
     .ForBusinessMainBackground .ForBusinessBannerExpolration {
       margin-top: 0px; } }
+.CustomBannerFontStyle p {
+  color: #3e5d94 !important; }
+.CustomBannerFontStyle h1, .CustomBannerFontStyle h2, .CustomBannerFontStyle h3, .CustomBannerFontStyle h4, .CustomBannerFontStyle h5, .CustomBannerFontStyle h6 {
+  color: #3e5d94 !important;
+  font-weight: bold !important; }
+
+.TrustedMainBackground {
+  padding-top: 50px; }
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .TrustedMainBackground {
+    padding-top: 100px; } }
 
 /*# sourceMappingURL=Site.css.map */

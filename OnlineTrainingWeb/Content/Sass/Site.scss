@@ -2319,6 +2319,34 @@
     }
 }
 
+@mixin BusinessBannerFontStyle {
+    p {
+        color:$BannerFontColor !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $BannerFontColor !important;
+        font-weight: $FooterFontWidth !important;
+    }
+}
+
+.CustomBannerFontStyle{
+
+    @include BusinessBannerFontStyle;
+}
+
+.TrustedMainBackground {
+    padding-top: 50px;
+}
+
+@media(min-width:300px) and (max-width:768px)
+{
+    .TrustedMainBackground {
+        padding-top: 100px;
+    }
+}
+
+
 
 
 

@@ -49,6 +49,13 @@ namespace ViewModel
         public List<BusinessPageViewModel> ListofBusinessPage { get; set; }
         public List<BusinessBannerViewModel> ListofBusinessBannerViewMoodel { get; set; }
         public List<TrustedbyForUpSkillingViewModel> ListofTrustedByviewModel { get; set; }
+        public List<UpskillingExplorationViewModel> ListOfUpSkillingExploration { get; set; }
+        public List<UpskillingImportanceViewModel> ListOfImportanceOfUpSkilling { get; set; }
+        public List<WhyYouNeedUpskillingYourTeamViewModel> ListOfUpSkillingYourTeam { get; set; }
+        public List<WhyYouNeedUpSkillingTeamSectionViewModel> ListOfUpSkillingSection { get; set; }
+        public List<UpskillingEmployeeViewModel> ListofUpskillingEmployee { get; set; }
+
+
    
         
       

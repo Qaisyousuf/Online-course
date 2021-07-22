@@ -1,0 +1,36 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfImportanceOfUpSkilling != null)
+{
+    <div class="container">
+       
+        <div class="mask">
+          
+            <div class="container h-100">
+             
+                <div class="row align-items-center h-100">
+                  
+                    @foreach (var item in Model.ListOfImportanceOfUpSkilling.Take(1))
+                    {
+                    <div class="col-md-6 offset-md-1 offset-lg-1 mb-4 CustomBannerFontStyle">
+                        <h3 class="font-weight-bold mb-2">@item.MainTitle</h3>
+                        <p class="mb-2 text-justify">@item.Title</p>
+                        
+                        <a class="btn btn-rounded btn-sm" href="@item.RegisterButtonUrl">@item.RegisterButton</a>
+                        <a class="btn btn-rounded btn-sm" href="@item.ContactButtonUrl">@item.ContactButton</a>
+                    </div>
+                     
+                        <div class="col-md-5 mb-4 mt-3">
+                            <img src="@item.Animation" alt="" class="img-fluid">
+                        </div>
+                    }
+
+                  
+                </div>
+               
+            </div>
+          
+        </div>
+      
+    </div>
+}

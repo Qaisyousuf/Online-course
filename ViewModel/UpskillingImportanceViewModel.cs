@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class UpskillingImportanceViewModel
+    public class UpskillingImportanceViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

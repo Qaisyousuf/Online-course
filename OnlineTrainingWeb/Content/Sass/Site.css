@@ -1621,10 +1621,15 @@ p {
   font-weight: bold !important; }
 
 .TrustedMainBackground {
-  padding-top: 50px; }
+  padding-top: 10px; }
 
 @media (min-width: 300px) and (max-width: 768px) {
   .TrustedMainBackground {
     padding-top: 100px; } }
+.CardBackground {
+  background-image: url(../Images/LaunchingCoding.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
 
 /*# sourceMappingURL=Site.css.map */

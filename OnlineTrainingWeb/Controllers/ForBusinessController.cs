@@ -100,5 +100,134 @@ namespace OnlineTrainingWeb.Controllers
 
             return PartialView(TrustedByData);
         }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult GetUpSkillingExploration()
+        {
+            var upSkillingExploration = _uow.UpskillingExplorationRepository.GetAll();
+            List<UpskillingExplorationViewModel> viewmodel = new List<UpskillingExplorationViewModel>();
+
+            foreach (var item in upSkillingExploration)
+            {
+                viewmodel.Add(new UpskillingExplorationViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    AnimationUrl=item.AnimationUrl,
+                    Content=item.Content,
+                    IconUlr=item.IconUlr,
+                });
+            }
+
+            ListOfViewModels UpskillingExplorationData = new ListOfViewModels
+            {
+                ListOfUpSkillingExploration=viewmodel,
+            };
+
+            return PartialView(UpskillingExplorationData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult ImportanceofUpSkilling()
+        {
+            var importanceofUpskilling = _uow.UpskillingImportanceRepository.GetAll();
+
+            List<UpskillingImportanceViewModel> viewmodel = new List<UpskillingImportanceViewModel>();
+
+            foreach (var item in importanceofUpskilling)
+            {
+                viewmodel.Add(new UpskillingImportanceViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    Animation=item.Animation,
+                    RegisterButtonUrl=item.RegisterButtonUrl,
+                    RegisterButton=item.RegisterButton,
+                    ContactButton=item.ContactButton,
+                    ContactButtonUrl=item.ContactButtonUrl,
+                });
+            }
+
+            ListOfViewModels ImportanceOfUuSkillingData = new ListOfViewModels
+            {
+                ListOfImportanceOfUpSkilling=viewmodel,
+            };
+
+            return PartialView(ImportanceOfUuSkillingData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult UpSkillingTeam()
+        {
+            var upSkillingTeam = _uow.WhyYouNeedUpskillingYourTeamRepository.GetAll();
+
+            List<WhyYouNeedUpskillingYourTeamViewModel> viewmodel = new List<WhyYouNeedUpskillingYourTeamViewModel>();
+
+            foreach (var item in upSkillingTeam)
+            {
+                viewmodel.Add(new WhyYouNeedUpskillingYourTeamViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    AnimationUrl=item.AnimationUrl,
+                    Content=item.Content,
+
+                });
+            }
+
+
+            var upskillingSection = _uow.WhyYouNeedUpSkillingYourTeamSection.GetAll();
+
+            List<WhyYouNeedUpSkillingTeamSectionViewModel> UpSkillingSectionViewmodel = new List<WhyYouNeedUpSkillingTeamSectionViewModel>();
+
+            foreach (var item in upskillingSection)
+            {
+                UpSkillingSectionViewmodel.Add(new WhyYouNeedUpSkillingTeamSectionViewModel
+                {
+                    Id=item.Id,
+                    IconUrl=item.IconUrl,
+                    Title=item.Title,
+                });
+            }
+            ListOfViewModels UpSkillingYourTeamData = new ListOfViewModels
+            {
+                ListOfUpSkillingYourTeam=viewmodel,
+                ListOfUpSkillingSection=UpSkillingSectionViewmodel,
+            };
+            return PartialView(UpSkillingYourTeamData);
+        }
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult EmployeeUpSkilling()
+        {
+            var employeeUpSkilling = _uow.UpSkillingEmployeesRepository.GetAll();
+
+            List<UpskillingEmployeeViewModel> viewmodel = new List<UpskillingEmployeeViewModel>();
+
+            foreach (var item in employeeUpSkilling)
+            {
+                viewmodel.Add(new UpskillingEmployeeViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    TalkToExpertButton=item.TalkToExpertButton,
+                    TalkToExpertButtonUrl=item.TalkToExpertButtonUrl,
+                    IllstrationUrl=item.IllstrationUrl,
+                });
+            }
+
+            ListOfViewModels EmployeeUpskillingData = new ListOfViewModels
+            {
+                ListofUpskillingEmployee=viewmodel,
+            };
+
+            return PartialView(EmployeeUpskillingData);
+        }
     }
 }

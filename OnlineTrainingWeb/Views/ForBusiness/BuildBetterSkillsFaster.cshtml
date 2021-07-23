@@ -1,0 +1,71 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListOfBuildSkillsFasterViewModel != null)
+{
+    <div class="container my-5 py-5 z-depth-0">
+
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5  dark-grey-text">
+
+            <!--Grid row-->
+            <div class="row pr-lg-5">
+                @foreach (var item in Model.ListOfBuildSkillsFasterViewModel.Take(1))
+                {
+                    <div class="col-md-5 mb-4">
+
+                        <div class="view">
+                            <lottie-player src="@item.AnimatinUrl" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center ">
+                        <div class="CustomBannerFontStyle mx-2">
+
+                            <h3 class="font-weight-bold mb-2 text-uppercase">@item.MainTitle</h3>
+                            <h6 class="font-weight-bold mb-2 text-uppercase">@item.Title</h6>
+
+                            <p class="text-justify ">@item.Content</p>
+
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <!--Grid row-->
+            <!--Grid row-->
+            <section class="text-center">
+                <div class="row">
+                    @foreach (var item in Model.ListofFasterSectionViewModel)
+                    {
+                        <div class="col-lg-4 col-md-6 mb-4 CustomBannerFontStyle">
+
+                            <div class="view card-img-100 mx-auto mb-4">
+                                <div class="builSectionBackground">
+                                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_d36sucqs.json" background="transparent" speed="0.6" style="width: auto; height: auto;" loop autoplay></lottie-player>
+                                    <img src="@item.IconUrl" class="img-fluid" alt="smaple image">
+                                </div>
+
+                            </div>
+                            <h5 class="font-weight-normal mb-3">@item.MainTitle</h5>
+                            <p class="text-justify px-2 mb-md-0 mx-4">
+                              @item.Content
+                            </p>
+                        </div>
+                    }
+
+
+
+
+
+                </div>
+                <!--/Grid row-->
+            </section>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+}

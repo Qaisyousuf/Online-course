@@ -229,5 +229,105 @@ namespace OnlineTrainingWeb.Controllers
 
             return PartialView(EmployeeUpskillingData);
         }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult BuildBetterSkillsFaster()
+        {
+            var buildBetter = _uow.BuillBetterSkillsFasterRepository.GetAll();
+
+            List<BuillBetterSkillsFasterViewModel> viewmodel = new List<BuillBetterSkillsFasterViewModel>();
+
+            foreach (var item in buildBetter)
+            {
+                viewmodel.Add(new BuillBetterSkillsFasterViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Title=item.Title,
+                    Content=item.Content,
+                    AnimatinUrl=item.AnimatinUrl,
+                });
+            }
+
+            var buildBetterSkillsSection = _uow.BuildBetterSkillsFasterSectionRepository.GetAll();
+
+            List<BuildBetterSkillsFasterSectionViewModel> FasterSectionViewModel = new List<BuildBetterSkillsFasterSectionViewModel>();
+
+            foreach (var item in buildBetterSkillsSection)
+            {
+                FasterSectionViewModel.Add(new BuildBetterSkillsFasterSectionViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    IconUrl=item.IconUrl,
+                });
+            }
+
+            ListOfViewModels BuildBetterSKillsData = new ListOfViewModels
+            {
+                ListOfBuildSkillsFasterViewModel=viewmodel,
+                ListofFasterSectionViewModel=FasterSectionViewModel,
+            };
+            return PartialView(BuildBetterSKillsData);
+        }
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult ITSkillsGap()
+        {
+            var itSkillsGap = _uow.ITSkillsGapImpactsOnBusiness.GetAll();
+
+            List<ITSkillsGapImpactsOnBusinessViewModel> viewmodel = new List<ITSkillsGapImpactsOnBusinessViewModel>();
+
+            foreach (var item in itSkillsGap)
+            {
+                viewmodel.Add(new ITSkillsGapImpactsOnBusinessViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    Button=item.Button,
+                    ButtonUrl=item.ButtonUrl,
+                    AnimationUrl=item.AnimationUrl,
+
+                });
+            }
+
+            ListOfViewModels ITSkillsData = new ListOfViewModels
+            {
+                ListOfITSkillsGap=viewmodel,
+            };
+
+            return PartialView(ITSkillsData);
+        }
+
+        [HttpGet]
+        [ChildActionOnly]
+        public ActionResult ITSkillGapSection()
+        {
+            var itSkillsGapSection = _uow.ITGapSkillsSectionRepository.GetAll();
+
+            List<ITSkillGapSectionViewModel> viewmodel = new List<ITSkillGapSectionViewModel>();
+
+            foreach (var item in itSkillsGapSection)
+            {
+                viewmodel.Add(new ITSkillGapSectionViewModel
+                {
+                    MainTitle=item.MainTitle,
+                    Subcontent=item.Subcontent,
+                    AnimationUrl=item.AnimationUrl,
+                    Button=item.Button,
+                    ButtonUrl=item.ButtonUrl,
+                });
+            }
+
+            ListOfViewModels ITSkillGapSectionData = new ListOfViewModels
+            {
+                ListOfITSkillGapSection=viewmodel,
+            };
+
+            return PartialView(ITSkillGapSectionData);
+        }
     }
 }

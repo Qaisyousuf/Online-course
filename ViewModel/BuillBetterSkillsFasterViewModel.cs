@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class BuillBetterSkillsFasterViewModel
+    public class BuillBetterSkillsFasterViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

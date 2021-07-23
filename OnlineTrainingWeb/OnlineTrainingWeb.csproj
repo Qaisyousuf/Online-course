@@ -1328,6 +1328,9 @@
     <Content Include="Views\ForBusiness\ImportanceofUpSkilling.cshtml" />
     <Content Include="Views\ForBusiness\UpSkillingTeam.cshtml" />
     <Content Include="Views\ForBusiness\EmployeeUpSkilling.cshtml" />
+    <Content Include="Views\ForBusiness\BuildBetterSkillsFaster.cshtml" />
+    <Content Include="Views\ForBusiness\ITSkillsGap.cshtml" />
+    <Content Include="Views\ForBusiness\ITSkillGapSection.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

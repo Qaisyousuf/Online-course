@@ -2279,7 +2279,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 1000px;
+    height: 900px;
     /*padding-top: 100px;*/
 
     .ForBusinessBannerExpolration {
@@ -2342,7 +2342,7 @@
 @media(min-width:300px) and (max-width:768px)
 {
     .TrustedMainBackground {
-        padding-top: 100px;
+       margin-top:150px;
     }
 }
 
@@ -2354,7 +2354,27 @@
     
 }
 
+.UPSkillingEmployeesBackground {
+    background-image: url(../Images/LaunchingCoding.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:auto;
+}
 
+.builSectionBackground lottie-player {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   
+    z-index:-1;
+}
+.ImgBackground img
+{
+    position:relative;
+    top:0px;
+    left:0px;
 
+}
 
 

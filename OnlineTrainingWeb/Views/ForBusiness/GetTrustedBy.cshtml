@@ -2,7 +2,7 @@
 
 @if (Model.ListofTrustedByviewModel != null)
 {
-<div class="container TrustedMainBackground">
+<div class="container TrustedMainBackground py-4 px-3" id="WhoIsThisProgramFor">
 
     <!--Section: Content-->
     <section class="">
@@ -39,8 +39,8 @@
                     <div class="row">
                         @foreach (var SubItem in Model.ListofTrustedByviewModel)
                         {
-                            <div class="col-md-2 mb-4 flex-center">
-                                <img src="@SubItem.LogoUrl" class="img-fluid wow fadeIn" data-wow-delay=".2s">
+                            <div class="col-md-2 mb-4 flex-cente text-center ">
+                                <img src="@SubItem.LogoUrl" class="img-fluid wow fadeIn px-4" data-wow-delay=".2s">
                             </div>
                         }
                         <!--First column-->

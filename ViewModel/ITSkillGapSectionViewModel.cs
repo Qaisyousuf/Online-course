@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class ITSkillGapSectionViewModel
+    public class ITSkillGapSectionViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

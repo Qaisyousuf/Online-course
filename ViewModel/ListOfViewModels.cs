@@ -54,11 +54,11 @@ namespace ViewModel
         public List<WhyYouNeedUpskillingYourTeamViewModel> ListOfUpSkillingYourTeam { get; set; }
         public List<WhyYouNeedUpSkillingTeamSectionViewModel> ListOfUpSkillingSection { get; set; }
         public List<UpskillingEmployeeViewModel> ListofUpskillingEmployee { get; set; }
+        public List<BuillBetterSkillsFasterViewModel> ListOfBuildSkillsFasterViewModel { get; set; }
+        public List<BuildBetterSkillsFasterSectionViewModel> ListofFasterSectionViewModel { get; set; }
+        public List<ITSkillsGapImpactsOnBusinessViewModel> ListOfITSkillsGap { get; set; }
+        public List<ITSkillGapSectionViewModel> ListOfITSkillGapSection { get; set; }
 
-
-   
-        
-      
 
     }
 }

@@ -23,13 +23,13 @@
 
 @media (min-width: 300px) and (max-width: 768px) {
   .HomebannerExplorationTextColor .display-2 {
-    color: #3e5d94 !important;
+    color: #6984b3 !important;
     font-weight: bold !important;
     font-size: 2rem !important; }
   .HomebannerExplorationTextColor p {
-    color: #3e5d94 !important; }
+    color: #6984b3 !important; }
   .HomebannerExplorationTextColor h1, .HomebannerExplorationTextColor h2, .HomebannerExplorationTextColor h3, .HomebannerExplorationTextColor h4, .HomebannerExplorationTextColor h5, .HomebannerExplorationTextColor h6 {
-    color: #3e5d94 !important; } }
+    color: #6984b3 !important; } }
 .QuizMainBackground {
   background-image: url(../Images/NotSure.svg);
   background-size: cover;
@@ -111,12 +111,12 @@
     width: auto;
     margin-top: 50px; } }
 .HomebannerExplorationTextColor .display-2 {
-  color: #3e5d94 !important;
+  color: #6984b3 !important;
   font-weight: bold !important; }
 .HomebannerExplorationTextColor p {
-  color: #3e5d94 !important; }
+  color: #6984b3 !important; }
 .HomebannerExplorationTextColor h1, .HomebannerExplorationTextColor h2, .HomebannerExplorationTextColor h3, .HomebannerExplorationTextColor h4, .HomebannerExplorationTextColor h5, .HomebannerExplorationTextColor h6 {
-  color: #3e5d94 !important; }
+  color: #6984b3 !important; }
 
 html, body, header, .view {
   height: 100%; }
@@ -1610,7 +1610,7 @@ p {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 1000px;
+    height: 900px;
     /*padding-top: 100px;*/ }
     .ForBusinessMainBackground .ForBusinessBannerExpolration {
       margin-top: 0px; } }
@@ -1625,11 +1625,29 @@ p {
 
 @media (min-width: 300px) and (max-width: 768px) {
   .TrustedMainBackground {
-    padding-top: 100px; } }
+    margin-top: 150px; } }
 .CardBackground {
   background-image: url(../Images/LaunchingCoding.svg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center; }
+
+.UPSkillingEmployeesBackground {
+  background-image: url(../Images/LaunchingCoding.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: auto; }
+
+.builSectionBackground lottie-player {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1; }
+
+.ImgBackground img {
+  position: relative;
+  top: 0px;
+  left: 0px; }
 
 /*# sourceMappingURL=Site.css.map */

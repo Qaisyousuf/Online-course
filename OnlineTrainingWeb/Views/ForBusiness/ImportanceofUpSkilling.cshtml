@@ -2,35 +2,54 @@
 
 @if (Model.ListOfImportanceOfUpSkilling != null)
 {
-    <div class="container">
-       
-        <div class="mask">
-          
-            <div class="container h-100">
-             
-                <div class="row align-items-center h-100">
-                  
-                    @foreach (var item in Model.ListOfImportanceOfUpSkilling.Take(1))
-                    {
-                    <div class="col-md-6 offset-md-1 offset-lg-1 mb-4 CustomBannerFontStyle">
-                        <h3 class="font-weight-bold mb-2">@item.MainTitle</h3>
-                        <p class="mb-2 text-justify">@item.Title</p>
-                        
-                        <a class="btn btn-rounded btn-sm" href="@item.RegisterButtonUrl">@item.RegisterButton</a>
-                        <a class="btn btn-rounded btn-sm" href="@item.ContactButtonUrl">@item.ContactButton</a>
-                    </div>
-                     
-                        <div class="col-md-5 mb-4 mt-3">
-                            <img src="@item.Animation" alt="" class="img-fluid">
-                        </div>
-                    }
 
-                  
+    <div class="container py-5 " id="WhoIsThisProgramFor">
+
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center text-lg-left ">
+
+            <!--Grid row-->
+            <div class="row CustomBannerFontStyle">
+                @foreach (var item in Model.ListOfImportanceOfUpSkilling.Take(1))
+                {
+                <div class="col-md-6 mb-4 mb-md-0 h-100 pt-5 ">
+
+                    <h3 class="font-weight-bold">@item.MainTitle</h3>
+
+                    <p class="text-justify">
+                        @item.Title
+                    </p>
+
+                    <a class="btn btn-rounded btn-md ml-0" href="@item.ContactButtonUrl" role="button">@item.ContactButton<i class="fa fa-gem ml-2"></i></a>
+                    <a class="btn btn-rounded btn-md ml-0" href="@item.RegisterButtonUrl" role="button">@item.RegisterButton
+                    <i class="fa fa-gem ml-2"></i></a>
+
                 </div>
-               
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4 mb-md-0">
+
+                        <!--Image-->
+                        <div class="view overlay ">
+                            <img src="@item.Animation" class="img-fluid" alt="">
+
+                        </div>
+
+                    </div>
+                    <!--Grid column-->
+                }
+
+
+
             </div>
-          
-        </div>
-      
+            <!--Grid row-->
+
+
+        </section>
+        <!--Section: Content-->
+
+
     </div>
+    
 }

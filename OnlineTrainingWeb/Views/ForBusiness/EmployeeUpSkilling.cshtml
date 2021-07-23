@@ -1,6 +1,41 @@
 ﻿@model ViewModel.ListOfViewModels
 
-@if(Model.ListofUpskillingEmployee !=null)
+@if (Model.ListofUpskillingEmployee != null)
 {
+    <div class=" container my-5 py-5 UPSkillingEmployeesBackground" id="WhoIsThisProgramFor">
 
+
+        <!--Section: Content-->
+        <section class="">
+
+            <div class="row pr-lg-5">
+                @foreach (var item in Model.ListofUpskillingEmployee.Take(1))
+                {
+                    <div class="col-md-6 mb-4">
+
+                        <div class="view">
+                            <img src="@item.IllstrationUrl" class="img-fluid" alt="smaple image">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="HomebannerExplorationTextColor">
+
+                            <h3 class="font-weight-bold mb-4 text-uppercase">@item.MainTitle</h3>
+
+                            <p class="text-justify">@item.Content</p>
+
+                           <a href="@item.TalkToExpertButtonUrl" class="btn btn-rounded">@item.TalkToExpertButton</a>
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
 }

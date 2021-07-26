@@ -222,7 +222,9 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\NumberOfEmployeesController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OGTagsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OnlineTrainingBenefitsController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionExplorationController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuikLinkController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizBasicInfoController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizContentController.cs" />
@@ -1138,6 +1140,14 @@
     <Content Include="Content\Sass\_CustomButtons.scss" />
     <Content Include="Content\Sass\_CustomImageUrl.scss" />
     <Content Include="Content\Sass\_CustomBody.scss" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionBanner\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionBanner\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionBanner\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionBanner\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1331,6 +1341,8 @@
     <Content Include="Views\ForBusiness\BuildBetterSkillsFaster.cshtml" />
     <Content Include="Views\ForBusiness\ITSkillsGap.cshtml" />
     <Content Include="Views\ForBusiness\ITSkillGapSection.cshtml" />
+    <Content Include="Views\Home\OurVisionBanner.cshtml" />
+    <Content Include="Views\Shared\_OurVisionLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

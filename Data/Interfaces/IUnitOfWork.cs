@@ -73,6 +73,8 @@ namespace Data.Interfaces
         IMenuRepository MenuRepository { get; }
         IFooterLinksRepository FooterLinksRepository { get; }
         ISiteSettingrepository SiteSettingrepository { get; }
+        IOurVisionBannerRepository OurVisionBannerRepository { get; }
+        IOurVisionExplortaionRepository OurVisionExplortaionRepository { get; }
 
 
         void Commit();

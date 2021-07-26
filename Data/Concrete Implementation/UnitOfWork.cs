@@ -150,6 +150,10 @@ namespace Data.Concrete_Implementation
 
         public ISiteSettingrepository SiteSettingrepository => new SiteSettingrepository(Context);
 
+        public IOurVisionBannerRepository OurVisionBannerRepository => new OurVisionBannerRepository(Context);
+
+        public IOurVisionExplortaionRepository OurVisionExplortaionRepository => new OurVisionExplortaionRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

@@ -2362,19 +2362,21 @@
     height:auto;
 }
 
-.builSectionBackground lottie-player {
+.builSectionBackground  {
     position: absolute;
     top: 0px;
     left: 0px;
-   
+    
+}
+.builSectionBackground lottie-player
+{
     z-index:-1;
 }
-.ImgBackground img
-{
-    position:relative;
-    top:0px;
-    left:0px;
-
+.ImgBackground img {
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
+
 
 

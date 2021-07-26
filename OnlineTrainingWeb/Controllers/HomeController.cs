@@ -368,5 +368,36 @@ namespace OnlineTrainingWeb.Controllers
             context.Dispose();
             return PartialView(subMenus);
         }
+
+        [HttpGet]
+        [Route("OurVision")]
+        public ActionResult OurVisionBanner()
+        {
+            var ourVision = _uow.OurVisionRepository.GetAll();
+
+            List<OurVisionBannerViewModel> OurVisonBannerVM = new List<OurVisionBannerViewModel>();
+
+            foreach (var item in ourVision)
+            {
+                OurVisonBannerVM.Add(new OurVisionBannerViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    SubTitle=item.MainTitle,
+                    ImageUrl=item.ImageUrl,
+                    JoinButton=item.ImageUrl,
+                    JoinButtonUrl=item.ImageUrl,
+                    DiscoverButton=item.ImageUrl,
+                    DiscoverButtonUrl=item.ImageUrl,
+                });
+            }
+
+            ListOfViewModels OurVisionBannerData = new ListOfViewModels
+            {
+                ListOfOurVisoinBanner= OurVisonBannerVM,
+            };
+
+            return PartialView(OurVisionBannerData);
+        }
     }
 }

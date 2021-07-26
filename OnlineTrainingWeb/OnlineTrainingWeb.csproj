@@ -321,6 +321,8 @@
     <Content Include="Content\Images\QuikLinks.svg" />
     <Content Include="Content\Images\TrainePhilsophy.svg" />
     <Content Include="Content\Images\UserBenefits.svg" />
+    <Content Include="Content\Images\VisionBanner.svg" />
+    <Content Include="Content\Images\VisionBanner768.svg" />
     <Content Include="Content\mdb.css" />
     <Content Include="Content\mdb.min.css" />
     <Content Include="Content\Sass\BackendSite.css" />

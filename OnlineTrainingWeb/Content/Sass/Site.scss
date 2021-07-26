@@ -2379,4 +2379,79 @@
 }
 
 
+.VisionAnimation lottie-player {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   
+}
+.VisionImageBackground img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+}
+
+
+@mixin OurVisionbackground {
+    background-image: url(../Images/VisionBanner.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 700px;
+    z-index: -1;
+}
+@mixin OurVisionbackground768 {
+    background-image: url(../Images/VisionBanner768.svg);
+    background-size: cover;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    z-index: -1;
+}
+
+.OurVisonMainbackground {
+    @include OurVisionbackground;
+}
+
+@media(min-width:500px) and (max-width:768px)
+{
+    .OurVisonMainbackground {
+        @include OurVisionbackground768;
+    }
+}
+
+
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ViewModel
 {
-    public class OurVisionBannerViewModel
+    public class OurVisionBannerViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

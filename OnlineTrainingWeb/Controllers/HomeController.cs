@@ -373,7 +373,7 @@ namespace OnlineTrainingWeb.Controllers
         [Route("OurVision")]
         public ActionResult OurVisionBanner()
         {
-            var ourVision = _uow.OurVisionRepository.GetAll();
+            var ourVision = _uow.OurVisionBannerRepository.GetAll();
 
             List<OurVisionBannerViewModel> OurVisonBannerVM = new List<OurVisionBannerViewModel>();
 
@@ -383,21 +383,39 @@ namespace OnlineTrainingWeb.Controllers
                 {
                     Id=item.Id,
                     MainTitle=item.MainTitle,
-                    SubTitle=item.MainTitle,
+                    SubTitle=item.SubTitle,
                     ImageUrl=item.ImageUrl,
-                    JoinButton=item.ImageUrl,
-                    JoinButtonUrl=item.ImageUrl,
-                    DiscoverButton=item.ImageUrl,
-                    DiscoverButtonUrl=item.ImageUrl,
+                    JoinButton=item.JoinButton,
+                    JoinButtonUrl=item.JoinButtonUrl,
+                    DiscoverButton=item.DiscoverButton,
+                    DiscoverButtonUrl=item.DiscoverButtonTUrl,
                 });
             }
+            var visionExploration = _uow.OurVisionExplortaionRepository.GetAll();
+
+            List<OurVisionExplationViewModel> viewmodel = new List<OurVisionExplationViewModel>();
+
+            foreach (var item in visionExploration)
+            {
+                viewmodel.Add(new OurVisionExplationViewModel
+                {
+                    Id = item.Id,
+                    MainTitle = item.MainTitle,
+                    SubTitle = item.SubTitle,
+                    Content = item.Content,
+                    ImageUrl = item.ImageUrl,
+                });
+            }
+
 
             ListOfViewModels OurVisionBannerData = new ListOfViewModels
             {
                 ListOfOurVisoinBanner= OurVisonBannerVM,
+                ListofVisionExploration = viewmodel,
             };
 
-            return PartialView(OurVisionBannerData);
+            return View(OurVisionBannerData);
         }
+       
     }
 }

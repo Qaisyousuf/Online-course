@@ -59,6 +59,7 @@ namespace ViewModel
         public List<ITSkillsGapImpactsOnBusinessViewModel> ListOfITSkillsGap { get; set; }
         public List<ITSkillGapSectionViewModel> ListOfITSkillGapSection { get; set; }
         public List<OurVisionBannerViewModel> ListOfOurVisoinBanner { get; set; }
+        public List<OurVisionExplationViewModel> ListofVisionExploration { get; set; }
 
 
     }

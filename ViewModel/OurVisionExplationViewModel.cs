@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class OurVisionExplationViewModel
+    public class OurVisionExplationViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

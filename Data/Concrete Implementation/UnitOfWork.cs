@@ -154,6 +154,10 @@ namespace Data.Concrete_Implementation
 
         public IOurVisionExplortaionRepository OurVisionExplortaionRepository => new OurVisionExplortaionRepository(Context);
 
+        public IQuizBannerRepository QuizBannerRepository => new QuizBannerRepository(Context);
+
+        public IQuizPageRepository QuizPageRepository => new QuizPageRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

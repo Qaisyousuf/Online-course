@@ -60,6 +60,7 @@ namespace ViewModel
         public List<ITSkillGapSectionViewModel> ListOfITSkillGapSection { get; set; }
         public List<OurVisionBannerViewModel> ListOfOurVisoinBanner { get; set; }
         public List<OurVisionExplationViewModel> ListofVisionExploration { get; set; }
+        public List<QuizBannerViewModel> ListofQuizBanner { get; set; }
 
 
     }

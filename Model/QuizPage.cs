@@ -9,15 +9,12 @@ namespace Models
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public DateTime QuizDateTiem { get; set; }
-        public List<QuizQuestion> QuizQuestions { get; set; }
+       
+        [Display(Name ="Quiz")]
+        public int QuizBannerId { get; set; }
 
-
-        [Display(Name ="Quiz Basic info")]
-        public int QuizBasicInfoID { get; set; }
-
-        [ForeignKey("QuizBasicInfoID")]
-        public QuizBasicInfo QuizBasicInfo { get; set; }
+        [ForeignKey("QuizBannerId")]
+        public QuizBanner QuizBanners { get; set; }
 
     }
 }

@@ -416,6 +416,51 @@ namespace OnlineTrainingWeb.Controllers
 
             return View(OurVisionBannerData);
         }
-       
+
+        [HttpGet]
+        [Route("StartQuiz")]
+        public ActionResult QuizBanner()
+        {
+            var quizBanner = _uow.QuizBannerRepository.GetAll();
+            List<QuizBannerViewModel> viewmodel = new List<QuizBannerViewModel>();
+
+            foreach (var item in quizBanner)
+            {
+                viewmodel.Add(new QuizBannerViewModel
+                {
+                    Id=item.Id,
+                    MainTitle=item.MainTitle,
+                    Content=item.Content,
+                    ImageUrl=item.ImageUrl,
+                    JoinButton=item.JoinButton,
+                    JoinButtonUrl=item.JoinButtonUrl,
+                    DiscoverButton=item.DiscoverButton,
+                    DiscoverButtonTUrl=item.DiscoverButtonTUrl,
+                });
+            }
+            ListOfViewModels GetQuizBannerData = new ListOfViewModels
+            {
+                ListofQuizBanner=viewmodel,
+            };
+
+            return View(GetQuizBannerData);
+        }
+
+        [HttpGet]
+        [Route("StartQuiz")]
+        public ActionResult QuizBasicInfoContact()
+        {
+            return View(new QuizBasicInfoViewModel());
+        }
+        [HttpPost]
+        [Route("TakeQuiz")]
+        public ActionResult QuizBasicInfoContact(QuizBasicInfoViewModel viewmodel)
+        {
+            return View();
+        }
+
+
+
+
     }
 }

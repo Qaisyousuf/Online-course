@@ -7,8 +7,8 @@
     <ProjectGuid>{467ACB86-1573-454C-B487-D3514043E7DA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Model</RootNamespace>
-    <AssemblyName>Model</AssemblyName>
+    <RootNamespace>Models</RootNamespace>
+    <AssemblyName>Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -88,6 +88,7 @@
     <Compile Include="MetaTag.cs" />
     <Compile Include="OpenGraphMetaTags.cs" />
     <Compile Include="Quiklink.cs" />
+    <Compile Include="QuizBanner.cs" />
     <Compile Include="QuizResults.cs" />
     <Compile Include="SiteSettings.cs" />
     <Compile Include="ThankYouPage.cs" />

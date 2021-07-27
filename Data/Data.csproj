@@ -104,8 +104,10 @@
     <Compile Include="Concrete Implementation\OurVisionExplortaionRepository.cs" />
     <Compile Include="Concrete Implementation\OurVisionRepository.cs" />
     <Compile Include="Concrete Implementation\QuiklinkRepository.cs" />
+    <Compile Include="Concrete Implementation\QuizBannerRepository.cs" />
     <Compile Include="Concrete Implementation\QuizBasicInfoRepository.cs" />
     <Compile Include="Concrete Implementation\QuizContentRepository.cs" />
+    <Compile Include="Concrete Implementation\QuizPageRepository.cs" />
     <Compile Include="Concrete Implementation\QuizQuestionRepository.cs" />
     <Compile Include="Concrete Implementation\QuizResultsRepository.cs" />
     <Compile Include="Concrete Implementation\Repository.cs" />
@@ -178,8 +180,10 @@
     <Compile Include="Interfaces\IOurVisionExplortaionRepository.cs" />
     <Compile Include="Interfaces\IOurVisionRepository.cs" />
     <Compile Include="Interfaces\IQuiklinkRepository.cs" />
+    <Compile Include="Interfaces\IQuizBannerRepository.cs" />
     <Compile Include="Interfaces\IQuizBasicInfoRepository.cs" />
     <Compile Include="Interfaces\IQuizContentRepository.cs" />
+    <Compile Include="Interfaces\IQuizPageRepository.cs" />
     <Compile Include="Interfaces\IQuizQuestionRepository.cs" />
     <Compile Include="Interfaces\IQuizResultsRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
@@ -358,6 +362,14 @@
     <Compile Include="Migrations\202107191411476_PropertiesAddedToBusinessBanner.Designer.cs">
       <DependentUpon>202107191411476_PropertiesAddedToBusinessBanner.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107270738062_QuizBannerAdded.cs" />
+    <Compile Include="Migrations\202107270738062_QuizBannerAdded.Designer.cs">
+      <DependentUpon>202107270738062_QuizBannerAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107270900485_QuizPageModelChaged.cs" />
+    <Compile Include="Migrations\202107270900485_QuizPageModelChaged.Designer.cs">
+      <DependentUpon>202107270900485_QuizPageModelChaged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -482,6 +494,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107191411476_PropertiesAddedToBusinessBanner.resx">
       <DependentUpon>202107191411476_PropertiesAddedToBusinessBanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107270738062_QuizBannerAdded.resx">
+      <DependentUpon>202107270738062_QuizBannerAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107270900485_QuizPageModelChaged.resx">
+      <DependentUpon>202107270900485_QuizPageModelChaged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

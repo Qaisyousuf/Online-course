@@ -226,8 +226,10 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\OurVisionExplorationController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuikLinkController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\QuizBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizBasicInfoController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizContentController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\QuizPageController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizQuestionController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\QuizResultsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\RolesController.cs" />
@@ -267,6 +269,7 @@
     <Compile Include="Controllers\GetNewsLetterInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\QuizPageController.cs" />
     <Compile Include="Controllers\SubscriptionFooterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1150,6 +1153,14 @@
     <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\OurVisionExploration\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizBanner\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizBanner\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizBanner\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizBanner\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizPage\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizPage\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizPage\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\QuizPage\Details.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1344,10 +1355,14 @@
     <Content Include="Views\ForBusiness\ITSkillsGap.cshtml" />
     <Content Include="Views\ForBusiness\ITSkillGapSection.cshtml" />
     <Content Include="Views\Home\OurVisionBanner.cshtml" />
+    <Content Include="Views\Shared\_QuizLayout.cshtml" />
+    <Content Include="Views\Home\QuizBasicInfoContact.cshtml" />
     <Content Include="Views\Shared\_OurVisionLayout.cshtml" />
+    <Content Include="Views\Home\QuizBanner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\QuizPage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

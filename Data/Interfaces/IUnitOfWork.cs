@@ -75,6 +75,8 @@ namespace Data.Interfaces
         ISiteSettingrepository SiteSettingrepository { get; }
         IOurVisionBannerRepository OurVisionBannerRepository { get; }
         IOurVisionExplortaionRepository OurVisionExplortaionRepository { get; }
+        IQuizBannerRepository QuizBannerRepository { get; }
+        IQuizPageRepository QuizPageRepository { get; }
 
 
         void Commit();

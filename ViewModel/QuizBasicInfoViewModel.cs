@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class QuizBasicInfoViewModel
+    public class QuizBasicInfoViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

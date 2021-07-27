@@ -16,14 +16,10 @@ namespace ViewModel
         [Required]
         public string Content { get; set; }
 
-        [Display(Name ="Quiz Date Time")]
-        public DateTime QuizDateTiem { get; set; }
-        public List<QuizQuestion> QuizQuestions { get; set; }
+        [Display(Name = "Quiz")]
+        public int QuizBannerId { get; set; }
 
-        [Display(Name = "Quiz Basic info")]
-        public int QuizBasicInfoID { get; set; }
-
-        [ForeignKey("QuizBasicInfoID")]
-        public QuizBasicInfo QuizBasicInfo { get; set; }
+        [ForeignKey("QuizBannerId")]
+        public QuizBanner QuizBanners { get; set; }
     }
 }

@@ -269,7 +269,7 @@
     <Compile Include="Controllers\GetNewsLetterInfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\QuizPageController.cs" />
+    <Compile Include="Controllers\QuizPageFrontController.cs" />
     <Compile Include="Controllers\SubscriptionFooterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1358,11 +1358,14 @@
     <Content Include="Views\Shared\_QuizLayout.cshtml" />
     <Content Include="Views\Home\QuizBasicInfoContact.cshtml" />
     <Content Include="Views\Shared\_OurVisionLayout.cshtml" />
-    <Content Include="Views\Home\QuizBanner.cshtml" />
+    <Content Include="Views\QuizPageFront\Index.cshtml" />
+    <Content Include="Views\QuizPageFront\QuizBanner.cshtml" />
+    <Content Include="Views\QuizPageFront\ThankYou.cshtml" />
+    <Content Include="Views\QuizPageFront\QuizBasicInfoContact.cshtml" />
+    <Content Include="Views\QuizPageFront\RecomandedCourse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\QuizPage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

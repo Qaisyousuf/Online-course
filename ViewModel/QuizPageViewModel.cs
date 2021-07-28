@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ViewModel
 {
-    public class QuizPageViewModel
+    public class QuizPageViewModel:BaseViewModel
     {
         public int Id { get; set; }
 

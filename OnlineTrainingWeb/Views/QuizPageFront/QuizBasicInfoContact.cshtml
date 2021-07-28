@@ -1,20 +1,19 @@
-﻿@model ViewModel.ContactFormViewModel
+﻿@model ViewModel.QuizBasicInfoViewModel
 
 @{
     ViewBag.Title = "ContactForm";
-    Layout = "~/Views/Shared/_ContactLayout.cshtml";
+    Layout = "~/Views/Shared/_QuizLayout.cshtml";
 }
-
-<div class="container">
-    @using (Html.BeginForm("ContactForm", "Contact", FormMethod.Post, new { onsubmit = "return SubmitFormCreate(this)" }))
+<div class="container py-5 my-5" id="WhoIsThisProgramFor">
+    @using (Html.BeginForm("QuizBasicInfoContact", "QuizPageFront", FormMethod.Post, new { onsubmit = "return SubmitFormCreate(this)" }))
     {
         @Html.AntiForgeryToken()
 
         <!--Section: Contact v.2-->
-        <section class="mb-4 my-5 textColorForSecondHeading">
+        <section class="mb-4 my-5 CustomBannerFontStyle">
 
             <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Write to us</h2>
             <!--Section description-->
 
 
@@ -47,29 +46,14 @@
                         </div>
                         <div class="col-md-5 mx-md-4 mx-lg-4 px-4">
                             <div class="md-form mb-0">
-                                @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "control-label" })
-                                @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                                @Html.LabelFor(model => model.Mobile, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Mobile, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Mobile, "", new { @class = "text-danger" })
 
                             </div>
                         </div>
-                        <div class="col-md-5 mx-md-4 mx-lg-4 px-4">
-                            <div class="md-form mb-0">
-                                @Html.LabelFor(model => model.JobTitle, htmlAttributes: new { @class = "control-label " })
-                                @Html.EditorFor(model => model.JobTitle, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.JobTitle, "", new { @class = "text-danger" })
-
-                            </div>
-                        </div>
-                        <div class="col-md-5 mx-md-4 mx-lg-4 px-4">
-                            <div class=" md-form mb-0">
-                                @Html.LabelFor(model => model.EmployeeId, htmlAttributes: new { @class = "control-label " })
-
-                                @Html.DropDownListFor(m => m.EmployeeId, new SelectList(ViewBag.Employees, "Id", "NumberOfEmployee"), "Number of employees", new { @class = "mdb-select" })
-                                @Html.ValidationMessageFor(model => model.EmployeeId, "", new { @class = "text-danger" })
-
-                            </div>
-                        </div>
+                       
+                      
                         <div class="col-md-5 mx-md-4 mx-lg-4 px-4">
                             <div class="md-form mb-0 ">
                                 @Html.LabelFor(model => model.CountryId, htmlAttributes: new { @class = "control-label " })
@@ -82,17 +66,7 @@
                     </div>
                     <!--Grid row-->
                     <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-11 mx-md-4 mx-lg-4 px-4">
-                            <div class="md-form">
-                                @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label" })
-                                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control md-textarea", rows = "2", cols = "20" } })
-                                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-
-
+                  
                     <div class="form-md">
                         <div class="col-md-offset-2 col-md-10">
                             <button type="submit" class="btn btn-rounded"><i class="fas fa-paper-plane mr-2 "></i>Submit</button>
@@ -110,9 +84,22 @@
     }
 </div>
 
+<div class="container pt-5" >
+
+    <div class="CustomBannerFontStyle">
+        <h5>You may like our courses</h5>
+    </div>
+    @{
+        Html.RenderAction("CoursesDescriptionsData", "Courses");
+    }
+</div>
+
+
+
+
 @section scripts {
 
-    
+
     <script>
         $(document).ready(function () {
             $(".mdb-select").materialSelect();
@@ -146,3 +133,5 @@
     </script>
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+

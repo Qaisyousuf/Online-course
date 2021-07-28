@@ -44,10 +44,9 @@
 
 
     <div class="container-fluid body-content">
-
+        @Html.Action("QuizBanner", "QuizPageFront")
         @RenderBody()
-       
-
+        @*@Html.Action("RecomandedCourse", "QuizPageFront")*@
         <div class="FooterMainBackground">
             <footer class="container-fluid">
                 <div class="container">
@@ -157,7 +156,6 @@
                 </div>
             </footer>
         </div>
-
 
     </div>
     

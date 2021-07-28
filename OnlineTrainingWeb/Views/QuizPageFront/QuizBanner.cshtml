@@ -1,0 +1,45 @@
+﻿@model ViewModel.ListOfViewModels
+
+@if (Model.ListofQuizBanner !=null)
+{
+<div class="OurVisonMainbackground">
+    <div class="container my-5">
+
+
+        <!--Section: Content-->
+        <section class="textColor">
+
+            <div class="row pr-lg-5">
+                @foreach (var item in Model.ListofQuizBanner.Take(1))
+                {
+                    <div class="col-md-6 mb-4">
+
+                        <div class="view">
+                            <img src="@item.ImageUrl" class="img-fluid" alt="smaple image">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+
+                            <h3 class="font-weight-bold mb-4">@item.MainTitle</h3>
+
+                            <p>@item.Content</p>
+
+                            <a href="@item.DiscoverButtonTUrl" class="btn  btn-rounded btn-md ml-0"><i class="fas fa-sign-in-alt"></i> @item.DiscoverButton</a>
+                            <a href="@item.JoinButtonUrl" class="btn   btn-rounded btn-rounded btn-md"> <i class="fas fa-book-open"></i> @item.JoinButton</a>
+
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+</div>
+    
+}

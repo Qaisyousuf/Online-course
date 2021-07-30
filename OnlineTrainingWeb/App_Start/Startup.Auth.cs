@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Google;
 using Models;
 using Owin;
 
@@ -58,11 +59,11 @@ namespace OnlineTrainingWeb
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "424691353257-kccrnmnjpeinktmi54aegkjqakc5rr6e.apps.googleusercontent.com",
+                ClientSecret = "yTdtc_lWPrhVOweNUE-opN9d"
+            });
         }
     }
 }

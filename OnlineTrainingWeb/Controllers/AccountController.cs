@@ -12,7 +12,7 @@ using System;
 namespace OnlineTrainingWeb.Controllers
 {
     [Authorize]
-    public class AccountController : BaseController
+    public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
@@ -53,15 +53,17 @@ namespace OnlineTrainingWeb.Controllers
 
         //
         // GET: /Account/Login
+        [Route("Login")]
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View(new LoginViewModel());
         }
 
         //
         // POST: /Account/Login
+        [Route("Login")]
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -136,15 +138,17 @@ namespace OnlineTrainingWeb.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
+        [Route("Authrization")]
         public ActionResult Register()
         {
-            return View();
+            return View(new RegisterViewModel());
         }
 
         //
         // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
+        [Route("Authrization")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {

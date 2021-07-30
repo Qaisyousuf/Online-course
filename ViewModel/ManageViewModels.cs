@@ -2,10 +2,11 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
+using ViewModel;
 
 namespace OnlineTrainingWeb.ViewModel
 {
-    public class IndexViewModel
+    public class IndexViewModel:BaseViewModel
     {
         public bool HasPassword { get; set; }
         public IList<UserLoginInfo> Logins { get; set; }
@@ -14,18 +15,18 @@ namespace OnlineTrainingWeb.ViewModel
         public bool BrowserRemembered { get; set; }
     }
 
-    public class ManageLoginsViewModel
+    public class ManageLoginsViewModel : BaseViewModel
     {
         public IList<UserLoginInfo> CurrentLogins { get; set; }
         public IList<AuthenticationDescription> OtherLogins { get; set; }
     }
 
-    public class FactorViewModel
+    public class FactorViewModel : BaseViewModel
     {
         public string Purpose { get; set; }
     }
 
-    public class SetPasswordViewModel
+    public class SetPasswordViewModel : BaseViewModel
     {
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
@@ -39,7 +40,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string ConfirmPassword { get; set; }
     }
 
-    public class ChangePasswordViewModel
+    public class ChangePasswordViewModel : BaseViewModel
     {
         [Required]
         [DataType(DataType.Password)]
@@ -58,7 +59,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string ConfirmPassword { get; set; }
     }
 
-    public class AddPhoneNumberViewModel
+    public class AddPhoneNumberViewModel : BaseViewModel
     {
         [Required]
         [Phone]
@@ -66,7 +67,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string Number { get; set; }
     }
 
-    public class VerifyPhoneNumberViewModel
+    public class VerifyPhoneNumberViewModel : BaseViewModel
     {
         [Required]
         [Display(Name = "Code")]
@@ -78,7 +79,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string PhoneNumber { get; set; }
     }
 
-    public class ConfigureTwoFactorViewModel
+    public class ConfigureTwoFactorViewModel : BaseViewModel
     {
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }

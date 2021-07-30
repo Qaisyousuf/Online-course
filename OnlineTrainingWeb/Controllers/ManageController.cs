@@ -11,7 +11,7 @@ using OnlineTrainingWeb.ViewModel;
 namespace OnlineTrainingWeb.Controllers
 {
     [Authorize]
-    public class ManageController : BaseController
+    public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

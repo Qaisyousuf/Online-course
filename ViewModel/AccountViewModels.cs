@@ -5,7 +5,7 @@ using ViewModel;
 
 namespace OnlineTrainingWeb.ViewModel
 {
-    public class ExternalLoginConfirmationViewModel:BaseViewModel
+    public class ExternalLoginConfirmationViewModel
     {
         [Required]
         [Display(Name = "Email")]
@@ -17,7 +17,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string ReturnUrl { get; set; }
     }
 
-    public class SendCodeViewModel
+    public class SendCodeViewModel 
     {
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
@@ -48,7 +48,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string Email { get; set; }
     }
 
-    public class LoginViewModel
+    public class LoginViewModel:BaseViewModel
     {
         [Required]
         [Display(Name = "Email")]
@@ -64,7 +64,7 @@ namespace OnlineTrainingWeb.ViewModel
         public bool RememberMe { get; set; }
     }
 
-    public class RegisterViewModel
+    public class RegisterViewModel:BaseViewModel
     {
         [Required]
         [Display(Name ="Full Name")]
@@ -81,6 +81,7 @@ namespace OnlineTrainingWeb.ViewModel
         [Display(Name = "Password")]
         public string Password { get; set; }
 
+        [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]

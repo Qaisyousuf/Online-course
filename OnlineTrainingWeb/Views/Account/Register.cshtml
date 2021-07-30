@@ -1,47 +1,78 @@
 ﻿@model OnlineTrainingWeb.ViewModel.RegisterViewModel
 @{
     ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LoingLayout.cshtml";
 }
 
-<h2>@ViewBag.Title.</h2>
+<div class="LoginMainBackground">
+    <div class="LoginBackSizing">
+        <div class="container">
+            <div class="row  h-100">
+                <div class="col-md-5 offset-md-1 textColor pt-5">
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.FullName, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="card bg-transparent" id="WhoIsThisProgramFor">
+
+                            <h5 class="card-header  text-center py-4" id="WhoIsThisProgramFor">
+                                <strong>Sign up</strong>
+                            </h5>
+
+                            <!--Card content-->
+                            <div class="card-body px-lg-5 pt-0 textColor">
+
+                                <!-- Form -->
+
+                                <div class="md-form">
+                                       @Html.LabelFor(m => m.FullName, new { @class = "control-label" })
+                                        @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "text-danger" })
+                                   
+                                </div>
+                                <div class="md-form text-info">
+                                        @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                    
+                                </div>
+                                <div class="md-form">
+                                       @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                   
+                                </div>
+                                <div class="md-form">
+                                       @Html.LabelFor(m => m.ConfirmPassword, new { @class = "control-label" })
+                                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                                   
+                                </div>
+                                <!-- Sign in button -->
+                                <div class="text-center">
+
+                                    <button class="btn btn-rounded  my-2 waves-effect btn-md " type="submit">Register</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                       
+                    }
+                </div>
+                <div class="col-md-6">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_cctgy7u6.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+
+                </div>
+            </div>
         </div>
     </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
-        </div>
-    </div>
-}
+
+
+</div>
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

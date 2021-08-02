@@ -48,8 +48,8 @@
                                         <div>
                                             <!-- Remember me -->
                                             <div class="form-check">
-                                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input" })
-                                                @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-lable" })
+                                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input", style = "opacity: 1;"})
+                                                @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-label" })
                                             </div>
                                         </div>
                                         <div>
@@ -64,8 +64,8 @@
 
                                     <!-- Sign in button -->
                                     <div class="text-center">
-                                        <button class="btn btn-rounded  my-2 waves-effect btn-md" type="submit">Sign in</button>
-                                        <button class="btn btn-rounded  my-2 waves-effect btn-md " type="submit">Register</button>
+                                        <button class="bg-transparent btn btn-outline-white btn-rounded  my-2 waves-effect btn-md" type="submit">Sign in</button>
+                                        <a href="/AccountRegistration" class="">Register as a new user</a>
                                     </div>
 
                                     <!-- Register -->

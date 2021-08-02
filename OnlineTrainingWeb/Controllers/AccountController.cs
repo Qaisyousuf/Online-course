@@ -53,8 +53,9 @@ namespace OnlineTrainingWeb.Controllers
 
         //
         // GET: /Account/Login
-        [Route("Login")]
+        
         [AllowAnonymous]
+        [Route("Login")]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
@@ -63,9 +64,10 @@ namespace OnlineTrainingWeb.Controllers
 
         //
         // POST: /Account/Login
-        [Route("Login")]
+      
         [HttpPost]
         [AllowAnonymous]
+        [Route("Login")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
@@ -138,7 +140,7 @@ namespace OnlineTrainingWeb.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
-        [Route("Authrization")]
+       [Route("AccountRegistration")]
         public ActionResult Register()
         {
             return View(new RegisterViewModel());
@@ -148,7 +150,7 @@ namespace OnlineTrainingWeb.Controllers
         // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
-        [Route("Authrization")]
+        [Route("AccountRegistration")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
@@ -165,14 +167,14 @@ namespace OnlineTrainingWeb.Controllers
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
-                    return RedirectToAction("Index", "Home");
+                    string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                    await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    return View("Info");
+                    //return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
             }

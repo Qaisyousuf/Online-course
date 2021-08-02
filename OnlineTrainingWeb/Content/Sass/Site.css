@@ -1826,5 +1826,8 @@ p {
     -ms-flex-align: center;
     align-items: center;
     height: 950px; } }
+.btn-default {
+  background-color: red !important;
+  color: white !important; }
 
 /*# sourceMappingURL=Site.css.map */

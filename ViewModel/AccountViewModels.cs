@@ -41,7 +41,7 @@ namespace OnlineTrainingWeb.ViewModel
         public bool RememberMe { get; set; }
     }
 
-    public class ForgotViewModel
+    public class ForgotViewModel:BaseViewModel
     {
         [Required]
         [Display(Name = "Email")]

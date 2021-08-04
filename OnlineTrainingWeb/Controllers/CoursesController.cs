@@ -236,5 +236,37 @@ namespace OnlineTrainingWeb.Controllers
 
         }
 
+        [HttpGet]
+        [Route("CourseDescription/{id}")]
+        public ActionResult CourseMoreDetails(int? id)
+        {
+            var courseDetails = _uow.CourseDetailsRepository.GetById(id);
+
+            CourseDetailsViewModel viewmodel = new CourseDetailsViewModel
+            {
+                Id=courseDetails.Id,
+                MainTitle=courseDetails.MainTitle,
+                Title=courseDetails.Title,
+                Duration=courseDetails.Duration,
+                Language=courseDetails.Language,
+                ProgramName=courseDetails.ProgramName,
+                VideoLanguage=courseDetails.VideoLanguage,
+                Trainer=courseDetails.Trainer,
+                ImageUrl=courseDetails.ImageUrl,
+                Certification=courseDetails.Certification,
+                Level=courseDetails.Level,
+                Availability=courseDetails.Availability,
+                SutdentFinished=courseDetails.SutdentFinished,
+                CourseType=courseDetails.CourseType,
+                RegisterButton=courseDetails.RegisterButton,
+                RegisterButtonUrl=courseDetails.RegisterButtonUrl,
+                LifeTimeAccess=courseDetails.LifeTimeAccess,
+                SubContents=courseDetails.SubContents,
+            };
+
+            return View(viewmodel);
+
+        }
+
     }
 }

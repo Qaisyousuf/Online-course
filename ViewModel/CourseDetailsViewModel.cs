@@ -2,7 +2,7 @@
 
 namespace ViewModel
 {
-    public class CourseDetailsViewModel
+    public class CourseDetailsViewModel:BaseViewModel
     {
         public int Id { get; set; }
 
@@ -14,13 +14,37 @@ namespace ViewModel
         public string Title { get; set; }
 
         [Required]
+        [Display(Name ="Sub Content")]
+        public string SubContents { get; set; }
+
+        [Required]
+        [Display(Name ="Register Button")]
+        public string RegisterButton { get; set; }
+
+        [Required]
+        [Display(Name ="Register Button Url")]
+        public string RegisterButtonUrl { get; set; }
+
+        [Required]
+        [Display(Name ="Life time Access")]
+        public string LifeTimeAccess { get; set; }
+
+        [Required]
+        [Display(Name ="Course Type")]
+        public string CourseType { get; set; }
+
+        [Required]
+        [Display(Name ="Number of articales")]
+        public string NumArticales { get; set; }
+
+        [Required]
         public string Duration { get; set; }
 
         [Required]
         public string Language { get; set; }
 
         [Required]
-        [Display(Name ="Course Title")]
+        [Display(Name ="Program Title")]
         public string ProgramName { get; set; }
 
         [Required]

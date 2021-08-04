@@ -370,6 +370,10 @@
     <Compile Include="Migrations\202107270900485_QuizPageModelChaged.Designer.cs">
       <DependentUpon>202107270900485_QuizPageModelChaged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108031030536_PropetyAddedToCoursesDetailsModel.cs" />
+    <Compile Include="Migrations\202108031030536_PropetyAddedToCoursesDetailsModel.Designer.cs">
+      <DependentUpon>202108031030536_PropetyAddedToCoursesDetailsModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -500,6 +504,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107270900485_QuizPageModelChaged.resx">
       <DependentUpon>202107270900485_QuizPageModelChaged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108031030536_PropetyAddedToCoursesDetailsModel.resx">
+      <DependentUpon>202108031030536_PropetyAddedToCoursesDetailsModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

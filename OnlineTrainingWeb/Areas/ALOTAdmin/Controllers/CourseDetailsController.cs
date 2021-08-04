@@ -45,6 +45,13 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                     Level=item.Level,
                     Availability=item.Availability,
                     SutdentFinished=item.SutdentFinished,
+                    SubContents=item.SubContents,
+                    RegisterButton=item.RegisterButton,
+                    RegisterButtonUrl=item.RegisterButtonUrl,
+                    CourseType=item.CourseType,
+                    LifeTimeAccess=item.LifeTimeAccess,
+                    NumArticales=item.NumArticales,
+                    
                 });
             }
 
@@ -65,19 +72,25 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
             {
                 var courseDetails = new CourseDetails
                 {
-                    Id=viewmodel.Id,
-                    MainTitle=viewmodel.MainTitle,
-                    Title=viewmodel.Title,
-                    Duration=viewmodel.Duration,
-                    Language=viewmodel.Language,
-                    ProgramName=viewmodel.ProgramName,
-                    VideoLanguage=viewmodel.VideoLanguage,
-                    Trainer=viewmodel.Trainer,
-                    ImageUrl=viewmodel.ImageUrl,
-                    Certification=viewmodel.Certification,
-                    Level=viewmodel.Level,
-                    Availability=viewmodel.Availability,
-                    SutdentFinished=viewmodel.SutdentFinished,
+                    Id = viewmodel.Id,
+                    MainTitle = viewmodel.MainTitle,
+                    Title = viewmodel.Title,
+                    Duration = viewmodel.Duration,
+                    Language = viewmodel.Language,
+                    ProgramName = viewmodel.ProgramName,
+                    VideoLanguage = viewmodel.VideoLanguage,
+                    Trainer = viewmodel.Trainer,
+                    ImageUrl = viewmodel.ImageUrl,
+                    Certification = viewmodel.Certification,
+                    Level = viewmodel.Level,
+                    Availability = viewmodel.Availability,
+                    SutdentFinished = viewmodel.SutdentFinished,
+                    SubContents = viewmodel.SubContents,
+                    CourseType = viewmodel.CourseType,
+                    RegisterButton = viewmodel.RegisterButton,
+                    RegisterButtonUrl = viewmodel.RegisterButtonUrl,
+                    LifeTimeAccess=viewmodel.LifeTimeAccess,
+                    NumArticales=viewmodel.NumArticales,
 
                 };
 
@@ -107,6 +120,12 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Level=courseDetails.Level,
                 Availability=courseDetails.Availability,
                 SutdentFinished=courseDetails.SutdentFinished,
+                SubContents=courseDetails.SubContents,
+                RegisterButton=courseDetails.RegisterButton,
+                RegisterButtonUrl=courseDetails.RegisterButtonUrl,
+                LifeTimeAccess=courseDetails.LifeTimeAccess,
+                CourseType=courseDetails.CourseType,
+                NumArticales=courseDetails.NumArticales,
             };
 
             return View(viewmodel);
@@ -132,6 +151,12 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 courseDetails.Level = viewmodel.Level;
                 courseDetails.Availability = viewmodel.Availability;
                 courseDetails.SutdentFinished = viewmodel.SutdentFinished;
+                courseDetails.SubContents = viewmodel.SubContents;
+                courseDetails.RegisterButton = viewmodel.RegisterButton;
+                courseDetails.RegisterButtonUrl = viewmodel.RegisterButtonUrl;
+                courseDetails.LifeTimeAccess = viewmodel.LifeTimeAccess;
+                courseDetails.NumArticales = viewmodel.NumArticales;
+                courseDetails.CourseType = viewmodel.CourseType;
 
                 uow.CourseDetailsRepository.Update(courseDetails);
                 uow.Commit();
@@ -159,6 +184,12 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Level=courseDetails.Level,
                 Availability=courseDetails.Availability,
                 SutdentFinished=courseDetails.SutdentFinished,
+                SubContents=courseDetails.SubContents,
+                RegisterButton=courseDetails.RegisterButton,
+                RegisterButtonUrl=courseDetails.RegisterButtonUrl,
+                LifeTimeAccess=courseDetails.LifeTimeAccess,
+                CourseType=courseDetails.CourseType,
+                NumArticales=courseDetails.NumArticales,
             };
 
             uow.CourseDetailsRepository.Remove(courseDetails);
@@ -187,6 +218,12 @@ namespace OnlineTrainingWeb.Areas.ALOTAdmin.Controllers
                 Level = courseDetails.Level,
                 Availability = courseDetails.Availability,
                 SutdentFinished = courseDetails.SutdentFinished,
+                SubContents = courseDetails.SubContents,
+                RegisterButton = courseDetails.RegisterButton,
+                RegisterButtonUrl = courseDetails.RegisterButtonUrl,
+                LifeTimeAccess = courseDetails.LifeTimeAccess,
+                CourseType = courseDetails.CourseType,
+                NumArticales = courseDetails.NumArticales,
             };
 
             return View(viewmodel);

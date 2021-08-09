@@ -10,90 +10,74 @@
         <div class="container">
             <div class="row  h-100">
                 <div class="col-md-5 offset-md-1 textColor pt-5">
-                    <section id="loginForm">
-                        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-                        {
-                            @*@Html.AntiForgeryToken()*@
+                    <div class="card bg-transparent" id="WhoIsThisProgramFor">
+                        <section id="loginForm">
+                            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                            {
+                                @Html.AntiForgeryToken()
 
-                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-                            <!-- Material form login -->
-                            <div class="card bg-transparent" id="WhoIsThisProgramFor">
+                                    <h5 class="card-header  text-center py-4" id="WhoIsThisProgramFor">
+                                        <strong>Sign in</strong>
+                                    </h5>
 
-                                <h5 class="card-header  text-center py-4" id="WhoIsThisProgramFor">
-                                    <strong>Sign in</strong>
-                                </h5>
+                           
+                                    <div class="card-body px-lg-5 pt-0 textColor">
 
-                                <!--Card content-->
-                                <div class="card-body px-lg-5 pt-0 textColor">
+                                        <!-- Form -->
 
-                                    <!-- Form -->
+                                        <div class="md-form">
+                                            @Html.LabelFor(m => m.Email, new { @class = "control-label" })
 
-                                    <div class="md-form">
-                                        @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
 
-                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="md-form">
+                                            @Html.LabelFor(m => m.Password, new { @class = "control-label" })
 
-                                    </div>
-                                    <div class="md-form">
-                                        @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
 
-                                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                        </div>
 
-                                    </div>
+                                        <div class="d-flex justify-content-around">
+                                            <div>
+                                                <!-- Remember me -->
+                                                <div class="form-check">
+                                                    @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input", style = "opacity: 1;" })
+                                                    @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-label" })
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <!-- Forgot password -->
+                                                @*Enable this once you have account confirmation enabled for password reset functionality*@
+                                                <p>
+                                                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                                                </p>
 
-                                    <div class="d-flex justify-content-around">
-                                        <div>
-                                            <!-- Remember me -->
-                                            <div class="form-check">
-                                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "form-check-input", style = "opacity: 1;"})
-                                                @Html.LabelFor(m => m.RememberMe, new { @class = "form-check-label" })
                                             </div>
                                         </div>
-                                        <div>
-                                            <!-- Forgot password -->
-                                             @*Enable this once you have account confirmation enabled for password reset functionality*@
-                                            <p>
-                                                @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                                            </p>
-                                           
+
+
+                                        <div class="text-center">
+                                            <button class="bg-transparent btn btn-outline-white btn-rounded  my-2 waves-effect btn-md" type="submit">Sign in</button>
+                                            <a href="/AccountRegistration" class="">Register as a new user</a>
                                         </div>
-                                    </div>
-
-                                    <!-- Sign in button -->
-                                    <div class="text-center">
-                                        <button class="bg-transparent btn btn-outline-white btn-rounded  my-2 waves-effect btn-md" type="submit">Sign in</button>
-                                        <a href="/AccountRegistration" class="">Register as a new user</a>
-                                    </div>
-
-                                    <!-- Register -->
-                                    @*<p>
-                                        @Html.ActionLink("Register as a new user", "Register")
-                                    </p>*@
-
-                                    <div class="text-center mt-3">
-
-                                        <section id="socialLoginForm">
-                                            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-                                        </section>
 
                                     </div>
-                                    <!-- Social login -->
-                                    <!-- Form -->
 
-                                </div>
-
-                            </div>
-                            <!-- Material form login -->
-
-                            @* Enable this once you have account confirmation enabled for password reset functionality
-                            <p>
-                                @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                            </p>*@
-                        }
-                    </section>
+                            }
+                        </section>
+                        <div class="text-center mt-3">
+                            <section id="socialLoginForm">
+                                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                            </section>
+                        </div>
+                    </div>
+                    
+                   
                 </div>
                 <div class="col-md-6">
                     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>

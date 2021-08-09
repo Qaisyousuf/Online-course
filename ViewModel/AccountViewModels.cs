@@ -5,11 +5,16 @@ using ViewModel;
 
 namespace OnlineTrainingWeb.ViewModel
 {
-    public class ExternalLoginConfirmationViewModel
+    public class ExternalLoginConfirmationViewModel:BaseViewModel
     {
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name ="Full Name")]
+        public string FullName { get; set; }
+
     }
 
     public class ExternalLoginListViewModel:BaseViewModel
@@ -89,11 +94,9 @@ namespace OnlineTrainingWeb.ViewModel
 
 
         [DataType(DataType.Date)]
-        [Display(Name ="Created Date")]
         public DateTime CreatedDate { get; set; }
 
         [DataType(DataType.Time)]
-        [Display(Name = "Created Time")]
         public DateTime CreatedTime { get; set; }
     }
 

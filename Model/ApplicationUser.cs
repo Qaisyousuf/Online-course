@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Security.Claims;
@@ -15,6 +16,7 @@ namespace Models
 
         public string FullName { get; set; }
         
+        [DataType(DataType.DateTime)]
         public DateTime CreatedData { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)

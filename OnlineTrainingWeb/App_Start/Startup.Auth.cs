@@ -56,8 +56,8 @@ namespace OnlineTrainingWeb
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "510233863605645",
-               appSecret: "c24a98b5a19744f61271c8e179019f14");
+               appId: "900313414029603",
+               appSecret: "55b780bf2209e3f63882eeac4af8fa9b");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {

@@ -82,8 +82,9 @@ namespace OnlineTrainingWeb.Controllers
             {
                 if (!await UserManager.IsEmailConfirmedAsync(user.Id))
                 {
-                    ViewBag.UserName = $"We have sent an confimation email to {model.Email}";
+                    ViewBag.UserName = $"We've sent a confirmation email to {model.Email}";
                     ViewBag.errorMessage = "You must have a confirmed email to log on.";
+                    ViewBag.Message = "Email confirmation is required";
                     return View("Error");
                 }
             }
@@ -171,9 +172,9 @@ namespace OnlineTrainingWeb.Controllers
                 var CurrentDate = Convert.ToDateTime(model.CreatedDate.ToLongDateString());
                 var CurrentTime = Convert.ToDateTime(model.CreatedTime.ToLongTimeString());
 
-                var CurrentDateTime = new DateTime(CurrentDate.Year, CurrentDate.Month, CurrentDate.Day, CurrentTime.Hour, CurrentTime.Minute, CurrentTime.Second);
+                var CurrentDateTime = new DateTime(CurrentDate.Year, CurrentDate.Month, CurrentDate.Day, CurrentTime.Hour, CurrentTime.Minute, CurrentTime.Second) ;
 
-                var user = new ApplicationUser { FullName = model.FullName, UserName = model.Email, Email = model.Email, CreatedData = CurrentDateTime };
+                var user = new ApplicationUser { FullName = model.FullName, UserName = model.Email, Email = model.Email, CreatedData = DateTime.Now};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -207,6 +208,8 @@ namespace OnlineTrainingWeb.Controllers
                 return View("Error");
             }
             var result = await UserManager.ConfirmEmailAsync(userId, code);
+           
+            ViewBag.Message = $"Email confirmed";
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }
 
@@ -283,7 +286,9 @@ namespace OnlineTrainingWeb.Controllers
             if (result.Succeeded)
             {
                 return RedirectToAction("ResetPasswordConfirmation", "Account");
+               
             }
+           
             AddErrors(result);
             return View();
         }
@@ -392,7 +397,7 @@ namespace OnlineTrainingWeb.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email,FullName=model.FullName };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

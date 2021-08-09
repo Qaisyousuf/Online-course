@@ -21,13 +21,19 @@
                         else
                         {
                             <div class="card-title">
-                                <h5 class="text-white">@ViewBag.UserName</h5>
-                                <h5 class="text-white">@ViewBag.errorMessage</h5>
+                                <h4 class="text-danger"><i class="fas fa-envelope"></i> @ViewBag.Message</h4>
+                                <h5 class="text-white-50">@ViewBag.UserName</h5>
+                                <h5 class="text-white-50">@ViewBag.errorMessage</h5>
                             </div>
-                            
+                            <hr class="hr-light" />
+                            <div class="flex-row">
+                                <a class="card-link text-white-50">Your confirmation link will expire in 6 hours</a>
+
+                            </div>
+
                         }
                     }
-                   
+
                 </div>
                 <!-- Card -->
                

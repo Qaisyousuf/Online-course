@@ -19,7 +19,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44330</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -337,6 +337,7 @@
     <Content Include="Content\Images\OurVison.svg" />
     <Content Include="Content\Images\QuikLinks.svg" />
     <Content Include="Content\Images\ResetConfirmation.svg" />
+    <Content Include="Content\Images\SocialLogin.svg" />
     <Content Include="Content\Images\TrainePhilsophy.svg" />
     <Content Include="Content\Images\UserBenefits.svg" />
     <Content Include="Content\Images\VisionBanner.svg" />
@@ -1440,7 +1441,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57207</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57207/</IISUrl>
+          <IISUrl>https://localhost:44330/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

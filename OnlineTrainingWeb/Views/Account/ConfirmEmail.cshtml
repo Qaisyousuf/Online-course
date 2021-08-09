@@ -3,9 +3,29 @@
     Layout = "~/Views/Shared/_LoingLayout.cshtml";
 }
 
-<h2>@ViewBag.Title.</h2>
-<div>
-    <p>
-        Thank you for confirming your email. Please @Html.ActionLink("Click here to Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
-    </p>
+
+<div class="LoginMainBackground">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="card card-body my-5 py-5 bg-transparent" id="WhoIsThisProgramFor">
+                   
+                    <h5 class="card-title text-primary">@ViewBag.Title.</h5>
+                    <p class="card-text text-white">
+                        Thank you for confirming your email. Please login<a href="/Login" class="btn btn-rounded btn-md"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </p>
+                </div>
+                <!-- Card -->
+            </div>
+            <div class="col-md-5">
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_9xrenieu.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+            </div>
+
+        </div>
+
+    </div>
 </div>
+
+

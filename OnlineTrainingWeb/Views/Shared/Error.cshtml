@@ -2,8 +2,56 @@
 
 @{
     ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_LoingLayout.cshtml";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+
+<div class="LoginMainBackground">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="card card-body my-5 py-5 bg-transparent" id="WhoIsThisProgramFor">
+                    @{
+                        if (String.IsNullOrEmpty(ViewBag.errorMessage))
+                        {
+                            <h2 class="text-danger">An error occurred while processing your request.</h2>
+                        }
+                        else
+                        {
+                            <div class="card-title">
+                                <h5 class="text-white">@ViewBag.UserName</h5>
+                                <h5 class="text-white">@ViewBag.errorMessage</h5>
+                            </div>
+                            
+                        }
+                    }
+                   
+                </div>
+                <!-- Card -->
+               
+
+            </div>
+            <div class="col-md-5">
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_lcjjitzn.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@*@{
+    if (String.IsNullOrEmpty(ViewBag.errorMessage))
+    {
+        <h2 class="text-danger">An error occurred while processing your request.</h2>
+    }
+    else
+    {
+        <h2 class="text-danger">@ViewBag.errorMessage</h2>
+    }
+}*@
 

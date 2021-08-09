@@ -12,12 +12,12 @@ namespace OnlineTrainingWeb.ViewModel
         public string Email { get; set; }
     }
 
-    public class ExternalLoginListViewModel
+    public class ExternalLoginListViewModel:BaseViewModel
     {
         public string ReturnUrl { get; set; }
     }
 
-    public class SendCodeViewModel 
+    public class SendCodeViewModel:BaseViewModel
     {
         public string SelectedProvider { get; set; }
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
@@ -25,7 +25,7 @@ namespace OnlineTrainingWeb.ViewModel
         public bool RememberMe { get; set; }
     }
 
-    public class VerifyCodeViewModel
+    public class VerifyCodeViewModel:BaseViewModel
     {
         [Required]
         public string Provider { get; set; }
@@ -97,7 +97,7 @@ namespace OnlineTrainingWeb.ViewModel
         public DateTime CreatedTime { get; set; }
     }
 
-    public class ResetPasswordViewModel
+    public class ResetPasswordViewModel:BaseViewModel
     {
         [Required]
         [EmailAddress]
@@ -118,7 +118,7 @@ namespace OnlineTrainingWeb.ViewModel
         public string Code { get; set; }
     }
 
-    public class ForgotPasswordViewModel
+    public class ForgotPasswordViewModel:BaseViewModel
     {
         [Required]
         [EmailAddress]

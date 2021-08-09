@@ -4,9 +4,37 @@
     Layout = "~/Views/Shared/_LoingLayout.cshtml";
 }
 
-@{
-    ViewBag.Title = "Info";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<div class="LoginMainBackground">
+    <div class="container">
 
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="card card-body my-5 py-5 bg-transparent" id="WhoIsThisProgramFor">
+                    <h3 class="card-title text-white">@ViewBag.UserName</h3>
+                    <h5 class="card-title text-primary">@ViewBag.Success</h5>
+                    <p class="card-text text-white">
+                        @ViewBag.Message
+                    </p>
+                    <div class="flex-row">
+                        <a class="card-link text-white">Your confirmation link will expire in 6 hours</a>
+                       
+                    </div>
+                </div>
+                <!-- Card -->
+              
+            </div>
+            <div class="col-md-5">
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_lcjjitzn.json" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
+            </div>
+
+        </div>
+       
+    </div>
+</div>
+
+
+
+@*<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+<p class="text-success">@ViewBag.StatusMessage</p>*@

@@ -55,6 +55,7 @@ namespace OnlineTrainingWeb.Controllers
         // GET: /Account/Login
         
         [AllowAnonymous]
+      
         [Route("Login")]
         public ActionResult Login(string returnUrl)
         {
@@ -66,6 +67,7 @@ namespace OnlineTrainingWeb.Controllers
         // POST: /Account/Login
       
         [HttpPost]
+        [Authorize]
         [AllowAnonymous]
         [Route("Login")]
         [ValidateAntiForgeryToken]
@@ -75,7 +77,16 @@ namespace OnlineTrainingWeb.Controllers
             {
                 return View(model);
             }
-
+            var user = await UserManager.FindByNameAsync(model.Email);
+            if (user != null)
+            {
+                if (!await UserManager.IsEmailConfirmedAsync(user.Id))
+                {
+                    ViewBag.UserName = $"We have sent an confimation email to {model.Email}";
+                    ViewBag.errorMessage = "You must have a confirmed email to log on.";
+                    return View("Error");
+                }
+            }
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
@@ -160,19 +171,22 @@ namespace OnlineTrainingWeb.Controllers
                 var CurrentDate = Convert.ToDateTime(model.CreatedDate.ToLongDateString());
                 var CurrentTime = Convert.ToDateTime(model.CreatedTime.ToLongTimeString());
 
-                var CurrentDateTime= new DateTime(CurrentDate.Year, CurrentDate.Month, CurrentDate.Day, CurrentTime.Hour, CurrentTime.Minute, CurrentTime.Second);
+                var CurrentDateTime = new DateTime(CurrentDate.Year, CurrentDate.Month, CurrentDate.Day, CurrentTime.Hour, CurrentTime.Minute, CurrentTime.Second);
 
-                var user = new ApplicationUser {FullName=model.FullName, UserName = model.Email, Email = model.Email,CreatedData=CurrentDateTime };
+                var user = new ApplicationUser { FullName = model.FullName, UserName = model.Email, Email = model.Email, CreatedData = CurrentDateTime };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
+                    //await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
 
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    ViewBag.Message = "Check your email and confirm your account, you must be confirmed " + "before you can log in.";
+                    ViewBag.Success = $"Account Created succesfully";
+                    ViewBag.UserName = $"Hey! {model.FullName}";
                     return View("Info");
                     //return RedirectToAction("Index", "Home");
                 }
@@ -222,10 +236,10 @@ namespace OnlineTrainingWeb.Controllers
 
                 // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                 // Send an email with this link
-                // string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
-                // var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);		
-                // await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
-                // return RedirectToAction("ForgotPasswordConfirmation", "Account");
+                string code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
+                var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                return RedirectToAction("ForgotPasswordConfirmation", "Account");
             }
 
             // If we got this far, something failed, redisplay form

@@ -1884,5 +1884,18 @@ p {
     align-items: center;
     height: 100%;
     padding-top: 140px; } }
+.navbar {
+  z-index: 1040; }
+
+.side-nav {
+  margin-top: 45px !important; }
+
+.double-nav .breadcrumb-dn p {
+  color: #fff; }
+
+@media (min-width: 1200px) {
+  .fixed-sn main {
+    margin-left: 20% !important;
+    margin-right: 20% !important; } }
 
 /*# sourceMappingURL=Site.css.map */

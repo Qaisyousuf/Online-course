@@ -88,6 +88,7 @@ namespace Data
         public DbSet<FooterLinks> FooterLinks { get; set; }
         public DbSet<SiteSettings> SiteSettings { get; set; }
         public DbSet<QuizBanner> QuizBanners { get; set; }
+        public DbSet<DashboardUsers> DashboardUsers { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

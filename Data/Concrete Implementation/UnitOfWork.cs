@@ -158,6 +158,8 @@ namespace Data.Concrete_Implementation
 
         public IQuizPageRepository QuizPageRepository => new QuizPageRepository(Context);
 
+        public IDashboardUserRepository DashboardUserRepository => new DashBoardRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

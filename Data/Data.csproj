@@ -83,6 +83,7 @@
     <Compile Include="Concrete Implementation\CourseEachSubSectionRepository.cs" />
     <Compile Include="Concrete Implementation\CoursePageRepository.cs" />
     <Compile Include="Concrete Implementation\Covid19Repository.cs" />
+    <Compile Include="Concrete Implementation\DashBoardRepository.cs" />
     <Compile Include="Concrete Implementation\EmployeesNumbersRepository.cs" />
     <Compile Include="Concrete Implementation\FooterLinksRepository.cs" />
     <Compile Include="Concrete Implementation\ForLearnerRepository.cs" />
@@ -159,6 +160,7 @@
     <Compile Include="Interfaces\ICoursePageRepository.cs" />
     <Compile Include="Interfaces\ICourseSubSectionRepository.cs" />
     <Compile Include="Interfaces\ICovid19Repository.cs" />
+    <Compile Include="Interfaces\IDashboardUserRepository.cs" />
     <Compile Include="Interfaces\IEmployeesNumbersRepository.cs" />
     <Compile Include="Interfaces\IFooterLinksRepository.cs" />
     <Compile Include="Interfaces\IGeolocationStudentsRepository.cs" />
@@ -374,6 +376,10 @@
     <Compile Include="Migrations\202108031030536_PropetyAddedToCoursesDetailsModel.Designer.cs">
       <DependentUpon>202108031030536_PropetyAddedToCoursesDetailsModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108101455385_DashboardUserModelAdded.cs" />
+    <Compile Include="Migrations\202108101455385_DashboardUserModelAdded.Designer.cs">
+      <DependentUpon>202108101455385_DashboardUserModelAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -507,6 +513,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108031030536_PropetyAddedToCoursesDetailsModel.resx">
       <DependentUpon>202108031030536_PropetyAddedToCoursesDetailsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108101455385_DashboardUserModelAdded.resx">
+      <DependentUpon>202108101455385_DashboardUserModelAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

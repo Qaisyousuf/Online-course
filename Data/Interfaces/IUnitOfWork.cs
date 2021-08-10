@@ -77,6 +77,7 @@ namespace Data.Interfaces
         IOurVisionExplortaionRepository OurVisionExplortaionRepository { get; }
         IQuizBannerRepository QuizBannerRepository { get; }
         IQuizPageRepository QuizPageRepository { get; }
+        IDashboardUserRepository DashboardUserRepository { get; }
 
 
         void Commit();

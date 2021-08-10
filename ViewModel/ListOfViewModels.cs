@@ -62,6 +62,7 @@ namespace ViewModel
         public List<OurVisionExplationViewModel> ListofVisionExploration { get; set; }
         public List<QuizBannerViewModel> ListofQuizBanner { get; set; }
         public List<QuizPageViewModel> ListOfQuizPage { get; set; }
+        public List<DashboardUsersViewModel> ListofDashboard { get; set; }
        
 
 

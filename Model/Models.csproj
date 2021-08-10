@@ -76,6 +76,7 @@
     <Compile Include="ContactForm.cs" />
     <Compile Include="ContactPage.cs" />
     <Compile Include="CoursePage.cs" />
+    <Compile Include="DashboardUsers.cs" />
     <Compile Include="Emplyees.cs" />
     <Compile Include="FooterLinks.cs" />
     <Compile Include="GeolocationStudents.cs" />

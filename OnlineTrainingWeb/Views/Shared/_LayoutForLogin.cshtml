@@ -1,0 +1,64 @@
+﻿@model ViewModel.BaseViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/node_modules/lottie-player/dist/lottie-player.js"></script>
+
+</head>
+<body>
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg fixed-top scrolling-navbar right">
+        <a class="navbar-brand" href="#">.NET Online Instructor</a>
+        <button class="navbar-toggler btn btn-rounded btn-sm text-white " type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            @Html.Action("PartialMenus", "Home")
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    @Html.Partial("_LoginPartial")
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--/.Navbar -->
+
+    <div class="container-fluid body-content">
+
+        @RenderBody()
+
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav({
+                breakpoint: 1200
+            });
+            // SideNav Scrollbar Initialization
+            var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+            var ps = new PerfectScrollbar(sideNavScrollbar);
+        });
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

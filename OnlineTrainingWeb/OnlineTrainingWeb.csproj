@@ -314,6 +314,7 @@
     <Content Include="Content\Images\768_GigBackgroundTest.svg" />
     <Content Include="Content\Images\780-AboutBanner.svg" />
     <Content Include="Content\Images\Accounts.svg" />
+    <Content Include="Content\Images\boy.svg" />
     <Content Include="Content\Images\ContactMainBanner.svg" />
     <Content Include="Content\Images\ContactMainBanner1920.svg" />
     <Content Include="Content\Images\ContactMainBanner500.svg" />
@@ -322,6 +323,7 @@
     <Content Include="Content\Images\CotnactDetails.svg" />
     <Content Include="Content\Images\CotnactDetails500.svg" />
     <Content Include="Content\Images\CoursesDescripton.svg" />
+    <Content Include="Content\Images\DashboardBack.svg" />
     <Content Include="Content\Images\Footer.svg" />
     <Content Include="Content\Images\Footer1180.svg" />
     <Content Include="Content\Images\Footer360.svg" />
@@ -1397,6 +1399,7 @@
     <Content Include="Views\Shared\_CoursesDescriptoin.cshtml" />
     <Content Include="Views\Shared\_Dashbaord.cshtml" />
     <Content Include="Views\DashboardArea\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutForLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

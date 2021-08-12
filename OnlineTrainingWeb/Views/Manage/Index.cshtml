@@ -1,14 +1,15 @@
 ﻿@model OnlineTrainingWeb.ViewModel.IndexViewModel
 @{
     ViewBag.Title = "Manage";
-    Layout = "~/Views/Shared/_LoingLayout.cshtml";
+    Layout = "~/Views/Shared/_Dashbaord.cshtml";
+}
 }
 
 <div class="LoginMainBackground">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 textColor">
-                <h2>@ViewBag.Title.</h2>
+            <div class="col-md-4 offset-md-2 offset-lg-2 offset-xl-2 offset-sm-0 textColor">
+                <h2>@ViewBag.Title</h2>
 
                 <p class="text-success">@ViewBag.StatusMessage</p>
                 <div>
@@ -33,68 +34,78 @@
                             @Model.Logins.Count [
                             @Html.ActionLink("Manage", "ManageLogins") ]
                         </dd>
-                        @*
-                Phone Numbers can used as a second factor of verification in a two-factor authentication system.
-
-                 See <a href="https://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
-                    for details on setting up this ASP.NET application to support two-factor authentication using SMS.
-
-                 Uncomment the following block after you have set up two-factor authentication
-                        *@
-                        @*
-                <dt>Phone Number:</dt>
-                <dd>
-                    @(Model.PhoneNumber ?? "None")
-                    @if (Model.PhoneNumber != null)
-                    {
-                        <br />
-                        <text>[&nbsp;&nbsp;@Html.ActionLink("Change", "AddPhoneNumber")&nbsp;&nbsp;]</text>
-                        using (Html.BeginForm("RemovePhoneNumber", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-                        {
-                            @Html.AntiForgeryToken()
-                            <text>[<input type="submit" value="Remove" class="btn-link" />]</text>
-                        }
-                    }
-                    else
-                    {
-                        <text>[&nbsp;&nbsp;@Html.ActionLink("Add", "AddPhoneNumber")
-                    }
-                </dd>
-                        *@
+                        
+                           
+                        
+                        
+                            <dt>Phone Number:</dt>
+                            <dd>
+                                @(Model.PhoneNumber ?? "None")
+                                @if (Model.PhoneNumber != null)
+                                {
+                                    <br />
+                                    <text>[&nbsp;&nbsp;@Html.ActionLink("Change", "AddPhoneNumber")&nbsp;&nbsp;]</text>
+                                    using (Html.BeginForm("RemovePhoneNumber", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <text>[<input type="submit" value="Remove" class="btn-link" />]</text>
+                                    }
+                                }
+                                else
+                                {
+                                    <text>[&nbsp;&nbsp;@Html.ActionLink("Add", "AddPhoneNumber")
+                                    </text>
+                                }
+                            </dd>
+                        
                         <dt>Two-Factor Authentication:</dt>
                         <dd>
-                            @*<p>
-                                There are no two-factor authentication providers configured. See <a href="https://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
-                                for details on setting up this ASP.NET application to support two-factor authentication.
-                            </p>*@
-                            @*@if (Model.TwoFactor)
-                    {
-                        using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-                        {
-                            @Html.AntiForgeryToken()
-                            <text>Enabled
-                            <input type="submit" value="Disable" class="btn btn-link" />
-                            </text>
-                        }
-                    }
-                    else
-                    {
-                        using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-                        {
-                            @Html.AntiForgeryToken()
-                            <text>Disabled
-                            <input type="submit" value="Enable" class="btn btn-link" />
-                            </text>
-                        }
-                    }*@
+                            <p>
+                                    
+                                </p>
+                            @if (Model.TwoFactor)
+                                {
+                                    using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <text>Enabled
+                                        <input type="submit" value="Disable" class="btn btn-link" />
+                                        </text>
+                                    }
+                                }
+                                else
+                                {
+                                    using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <text>Disabled
+                                        <input type="submit" value="Enable" class="btn btn-link" />
+                                        </text>
+                                    }
+                                }
                         </dd>
                     </dl>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="~/Content/Images/Accounts.svg"  class="img-fluid"/>
+            <div class="col-md-5 offset-md-1 offset-lg-1 offset-xl-1 offset-sm-0">
+                <img src="~/Content/Images/Accounts.svg" class="img-fluid" />
             </div>
         </div>
     </div>
 </div>
 
+@section Scripts {
+  
+
+    <script>
+                $(document).ready(function () {
+                    $(".button-collapse").sideNav({
+                        breakpoint: 1200
+                    });
+                    // SideNav Scrollbar Initialization
+                    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+                    var ps = new PerfectScrollbar(sideNavScrollbar);
+                });
+    </script>
+
+}

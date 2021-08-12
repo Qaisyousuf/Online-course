@@ -1,38 +1,37 @@
 ﻿@model ViewModel.BaseViewModel
 @using Microsoft.AspNet.Identity
+@using System.Web
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
         @Html.AntiForgeryToken()
 
-<ul class="nav navbar-nav navbar-right textColor container">
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-circle fa-2x"></i>
-        </a>
-        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink-333">
-            <a class="dropdown-item" href="/Manage/Index"><i class="fas fa-cog"></i> Account</a>
-            <a class="dropdown-item" href="/Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-            <a class="dropdown-item" href="/Dashboard"><i class="fas fa-chalkboard-teacher"></i> Classes</a>
-          
-        </div>
-    </li>
-    @*<li class="pt-2">
-
-        @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-    </li>*@
-    @*<li class="hide"><a class="nav-link ml-auto" href="/Manage/Index"><span class="btn-floating btn-default  btn-sm"><i class="fas fa-unlock"></i> </span></a></li>*@
-    <li><a class="" href="javascript:document.getElementById('logoutForm').submit()"><span class="btn btn-rounded btn-sm">Log off</span></a></li>
-</ul>
+            <ul class="nav navbar-nav navbar-right textColor container">
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle mr-sm-5 mr-lg-0 mr-md-0" id="dropdownMenu2-2" data-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-circle fa-2x"></i>
+               </a>
+                <div class="dropdown-menu dropdown-primary  dropdown-menu-md-right dropdown-menu-xl-right" aria-labelledby="dropdownMenu2-2">
+                    <a class="dropdown-item mt-3" href="/Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                    <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()"> <i class="fas fa-power-off"></i> Log off</a>
+                </div>
+            </li>
+            @*<li class="pt-2">
+                <a class=" d-none d-lg-none " href="javascript:document.getElementById('logoutForm').submit()"><span class="btn btn-rounded btn-sm">Log off</span></a>
+            </li>*@
+            @*<li class="hide"><a class="nav-link ml-auto" href="/Manage/Index"><span class="btn-floating btn-default  btn-sm"><i class="fas fa-unlock"></i> </span></a></li>*@
+  
+        </ul>
     }
 }
-else
-{
+    else
+   {
     <ul class="nav navbar-nav navbar-right">
-        <li class=""><a class="nav-link ml-auto" href="/Login"><span class="btn btn-transparent btn-outline-white btn-rounded  btn-md"> Sign In <i class="fas fa-unlock"></i> </span></a></li>
+        <li class=""><a class="nav-link small ml-auto" href="/Login"><span class="btn btn-transparent btn-outline-white btn-rounded  btn-md"> Sign In <i class="fas fa-unlock"></i> </span></a></li>
         <li class=""><a class="nav-link ml-auto" href="/AccountRegistration"><span class="btn btn-transparent  btn-outline-white  btn-rounded btn-md"> Sign Up <i class="fas fa-key"></i> </span></a></li>
-       
+
     </ul>
-}
+    }

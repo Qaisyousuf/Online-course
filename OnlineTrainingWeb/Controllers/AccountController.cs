@@ -85,9 +85,12 @@ namespace OnlineTrainingWeb.Controllers
                     ViewBag.UserName = $"We've sent a confirmation email to {model.Email}";
                     ViewBag.errorMessage = "You must have a confirmed email to log on.";
                     ViewBag.Message = "Email confirmation is required";
+                    
+                    
                     return View("Error");
                 }
             }
+           
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
@@ -104,6 +107,7 @@ namespace OnlineTrainingWeb.Controllers
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
+            
         }
 
         //
@@ -373,6 +377,7 @@ namespace OnlineTrainingWeb.Controllers
                     // If the user does not have an account, then prompt the user to create an account
                     ViewBag.ReturnUrl = returnUrl;
                     ViewBag.LoginProvider = loginInfo.Login.LoginProvider;
+
                     return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = loginInfo.Email });
             }
         }
@@ -422,7 +427,9 @@ namespace OnlineTrainingWeb.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            
             return RedirectToAction("Index", "Home");
+          
         }
 
         //

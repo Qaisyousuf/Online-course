@@ -61,7 +61,7 @@ namespace ViewModel
         [Display(Name = "Site Copyright")]
         public string Sitecopyright { get; set; }
 
-
+       
        
         public List<FooterLinks> FooterLinks { get; set; }
     }

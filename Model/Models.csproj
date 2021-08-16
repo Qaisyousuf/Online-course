@@ -98,6 +98,7 @@
     <Compile Include="UpskillingEmployee .cs" />
     <Compile Include="UpskillingExploration.cs" />
     <Compile Include="UpskillingImportance.cs" />
+    <Compile Include="UserContact.cs" />
     <Compile Include="WhoIsThisProgramForContentSection.cs" />
     <Compile Include="WhoIsThisProgramForEachDetails.cs" />
     <Compile Include="WhyYouNeedUpskillingYourTeam.cs" />

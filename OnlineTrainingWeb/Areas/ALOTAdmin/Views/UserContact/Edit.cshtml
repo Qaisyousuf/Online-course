@@ -1,0 +1,69 @@
+﻿@model ViewModel.UserContactViewModel
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("Edit", "UserContact", FormMethod.Post, new { onsubmit = "return SubmitFormEdit(this)" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h5 class="text-primary">Do you want to update the <span class="chip chip blue lighten-4">@Model.ApplicationUser</span> </h5>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+        <div class="row offset-1">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ContactEmail, htmlAttributes: new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.ContactEmail, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ContactEmail, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ContactBy, htmlAttributes: new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.ContactBy, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ContactBy, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ApplicationUser, htmlAttributes: new { @class = "control-label" })
+                    <div class="">
+                        @Html.EditorFor(model => model.ApplicationUser, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ApplicationUser, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label" })
+                    <div class="">
+                        @Html.TextAreaFor(model => model.Message, new { rows = "10", style = "resize:none;width:400px;", placeholder = Html.DisplayNameFor(model => model.Content), @class = "form-control input-lg textarea-editor" })
+                        @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row offset-4">
+            <div class="form-group">
+                <button type="submit" value="Create" class="btn btn-primary btn-rounded btn-md"><i class="fas fa-save pr-2"></i> Save</button>  |
+                <button type="reset" value="Reset" class="btn btn-mdb-color btn-rounded btn-md"><i class="fas fa-redo-alt"></i> Reset</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+}
+

@@ -2,7 +2,7 @@
 
 namespace Data.Interfaces
 {
-    public interface IUnitOfWork:IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         ApplicationDbContext Context { get; }
 
@@ -27,7 +27,7 @@ namespace Data.Interfaces
         IHowOnlineTrainingWorksRepository HowOnlineTrainingWorksRepository { get; }
         ISubscriptionContentRepository SubscriptionContentRepository { get; }
         IWhyOnlineTrainingIsImportantRepository WhyOnlineTrainingIsImportantRepository { get; }
-        IStudentsSaysRepository StudentsSaysRepository { get; } 
+        IStudentsSaysRepository StudentsSaysRepository { get; }
         IVideoReviewRepository VideoReviewRepository { get; }
         IWhatTrainerLovesRepository WhatTrainerLovesRepository { get; }
         IWorkExperienceRepository WorkExperienceRepository { get; }
@@ -78,6 +78,7 @@ namespace Data.Interfaces
         IQuizBannerRepository QuizBannerRepository { get; }
         IQuizPageRepository QuizPageRepository { get; }
         IDashboardUserRepository DashboardUserRepository { get; }
+        IUserContactRepository UserContactRepository { get; }
 
 
         void Commit();

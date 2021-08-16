@@ -63,8 +63,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -261,6 +261,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\UpSkillingImportanceController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserbenefitsContentsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UserBenefitsSectionController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\UserContactController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\UsersController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\VideoReviewController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\WhatTrainerLovesController.cs" />
@@ -284,6 +285,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\QuizPageFrontController.cs" />
     <Compile Include="Controllers\SubscriptionFooterController.cs" />
+    <Compile Include="Controllers\UserContactAreaController.cs" />
+    <Compile Include="Controllers\UserContactPostController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1189,6 +1192,12 @@
     <Content Include="Areas\ALOTAdmin\Views\DashboardUsers\Create.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\DashboardUsers\Edit.cshtml" />
     <Content Include="Areas\ALOTAdmin\Views\DashboardUsers\Details.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserContact\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserContact\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\UserContact\Details.cshtml" />
+    <Content Include="CodeTemplates\EFModelFromDatabase\Context.cs.t4" />
+    <Content Include="CodeTemplates\EFModelFromDatabase\EntityType.cs.t4" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1400,12 +1409,17 @@
     <Content Include="Views\Shared\_Dashbaord.cshtml" />
     <Content Include="Views\DashboardArea\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutForLogin.cshtml" />
+    <Content Include="Views\UserContactArea\Create.cshtml" />
+    <Content Include="Views\UserContactArea\Index.cshtml" />
+    <Content Include="Views\UserContactPost\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>

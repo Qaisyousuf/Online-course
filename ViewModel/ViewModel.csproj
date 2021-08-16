@@ -160,6 +160,7 @@
     <Compile Include="UpskillingImportanceViewModel.cs" />
     <Compile Include="UserbenefitsContentsViewModel.cs" />
     <Compile Include="UserBenefitsSectionViewModel.cs" />
+    <Compile Include="UserContactViewModel.cs" />
     <Compile Include="VideoReviewViewModel.cs" />
     <Compile Include="WhatTrainerLovesViewModel.cs" />
     <Compile Include="WhatYouWillLearnViewModel.cs" />

@@ -67,7 +67,7 @@
 }
 
 @mixin BannerBackground_1920 {
-    background-image: url(../Images/1920_GigBackgroundFinal.svg);
+    background-image:url('Images/');
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -97,7 +97,7 @@
     }
 }
 @mixin BannerBackground_1440 {
-    background-image: url(../Images/1440_GigBackgroundFinal.svg);
+    background-image: url('Images/1440_GigBackgroundFinal.svg');
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -127,9 +127,9 @@
     }
 }
 @mixin BannerBackground_1366 {
-    background-image: url(../Images/1360_GigBackgroundTest.svg);
+    background-image: url('Images/1440_GigBackgroundFinal.svg');
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -153,11 +153,11 @@
 
     .textColorForSecondHeading {
         margin-top: 30px !important;
-        margin-bottom:0px;
+        margin-bottom: 0px;
     }
 }
 @mixin BannerBackground_990 {
-    background-image: url(../Images/1360_GigBackgroundTest.svg);
+    background-image: url('Images/1440_GigBackgroundFinal.svg');
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -183,12 +183,11 @@
 
     .textColorForSecondHeading {
         margin-top: 0px !important;
-       
     }
 }
 
 @mixin BannerBackground_768 {
-    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-image: url('Images/1440_GigBackgroundFinal.svg');
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -210,14 +209,14 @@
     -ms-flex-align: center;
     align-items: center;
     height: 850px;
-   
+
 
     .textColorForSecondHeading {
         margin-top: 0px !important;
     }
 }
 @mixin BannerBackground_530 {
-    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-image: url('@Url.Content("~/Images/1440_GigBackgroundFinal.svg")');
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -248,7 +247,7 @@
 
 
 @mixin AboutBannerFullSize {
-    background-image: url(../Images/1440-AboutBanner.svg);
+    background-image: url(Images/1440-AboutBanner.svg);
     background-size: cover;
    
     display: -ms-flexbox;
@@ -274,7 +273,7 @@
 }
 
 @mixin AboutBannerFullSize1920 {
-    background-image: url(../Images/1440-AboutBanner.svg);
+    background-image: url(/Images/1440-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -298,7 +297,7 @@
 }
 
 @mixin AboutBanner1000 {
-    background-image: url(../Images/1000-AboutBanner.svg);
+    background-image: url(/Images/1000-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -322,7 +321,7 @@
     padding-top:100px;
 }
 @mixin AboutBanner780 {
-    background-image: url(../Images/780-AboutBanner.svg);
+    background-image: url(/Images/780-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -347,7 +346,7 @@
 }
 
 @mixin AboutBanner500 {
-    background-image: url(../Images/500-AboutBanner.svg);
+    background-image: url(/Images/500-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -372,7 +371,7 @@
 }
 
 @mixin UserBenefitsBackgroundFullSize{
-     background-image: url(../Images/UserBenefits.svg);
+     background-image: url(/Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -396,7 +395,7 @@
     margin-top:20px;
 }
 @mixin UserBenefitsBackground1440 {
-    background-image: url(../Images/UserBenefits.svg);
+    background-image: url(/Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -421,7 +420,7 @@
 }
 
 @mixin UserBenefitsBackground768 {
-    background-image: url(../Images/768UserBenefits.svg);
+    background-image: url(/Images/768UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;

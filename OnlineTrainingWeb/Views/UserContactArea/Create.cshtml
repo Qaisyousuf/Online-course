@@ -1,0 +1,122 @@
+﻿@model ViewModel.UserContactViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Dashbaord.cshtml";
+}
+
+
+@if (Request.IsAuthenticated)
+{
+    <div class="container mt-5 pt-5">
+        @using (Html.BeginForm("Create", "UserContactArea", FormMethod.Post, new { onsubmit = "return SubmitFormCreate(this)" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <!--Section: Contact v.2-->
+            <section class="mb-4 mt-4 textColorForSecondHeading">
+
+                <!--Section heading-->
+                <!--Section description-->
+
+
+                <div class="row">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <!--Grid column-->
+                    <div class="col-md-9 col-lg-9 offset-lg-3 col-sm-12 offset-sm-0 offset-md-3 mb-md-0 mb-5">
+                        <h2 class="h1-responsive font-weight-bold text-center my-4">write to us</h2>
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <div class="col-md-5 mx-md-4 mx-lg-4 px-4 my-2">
+                                <div class="md-form mb-0">
+                                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label  " })
+                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-11 mx-md-4 mx-lg-4 px-4">
+                                <div class="md-form">
+                                    @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label" })
+                                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control md-textarea", rows = "2", cols = "20" } })
+                                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-md">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="submit" class="btn btn-rounded"><i class="fas fa-paper-plane mr-2 "></i>Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        }
+
+    </div>
+}
+
+
+@section scripts {
+    <script>
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".mdb-select").materialSelect();
+            $(".button-collapse").sideNav({
+                breakpoint: 1200
+            });
+            // SideNav Scrollbar Initialization
+            var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+            var ps = new PerfectScrollbar(sideNavScrollbar);
+        });
+    </script>
+    <script>
+
+        function SubmitFormCreate(form) {
+            $.validator.unobtrusive.parse(form);
+            if ($(form).valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function (data) {
+                        if (data.success) {
+
+                            $.notify(data.message, {
+                                Position: "right",
+                                className: "success"
+                            });
+
+                        }
+                        else
+                            $.notify(data.message, {
+                                Position: "right",
+                                className: "error"
+                            })
+                    }
+                });
+            }
+            return false;
+        }
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+
+}
+@{
+    Html.RenderAction("Index", "UserContactPost");
+}
+

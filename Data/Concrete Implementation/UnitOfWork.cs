@@ -160,6 +160,8 @@ namespace Data.Concrete_Implementation
 
         public IDashboardUserRepository DashboardUserRepository => new DashBoardRepository(Context);
 
+        public IUserContactRepository UserContactRepository => new UserContactRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

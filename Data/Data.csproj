@@ -130,6 +130,7 @@
     <Compile Include="Concrete Implementation\UpskillingImportanceRepository.cs" />
     <Compile Include="Concrete Implementation\UserbenefitsContentsRepository.cs" />
     <Compile Include="Concrete Implementation\UserBenefitsSectionRepository.cs" />
+    <Compile Include="Concrete Implementation\UserContactRepository.cs" />
     <Compile Include="Concrete Implementation\VideoReviewRepository.cs" />
     <Compile Include="Concrete Implementation\WhatTrainerLovesRepository.cs" />
     <Compile Include="Concrete Implementation\WhoIsThisProgramForEachDetailsRepository.cs" />
@@ -216,6 +217,7 @@
     <Compile Include="Interfaces\IWorkExperienceRepository.cs" />
     <Compile Include="Interfaces\IWorkExperienceTagsRepository.cs" />
     <Compile Include="Interfaces\IYouMayLikeRepository.cs" />
+    <Compile Include="Interfaces\IUserContactRepository.cs" />
     <Compile Include="Migrations\202102042239365_Initial.cs" />
     <Compile Include="Migrations\202102042239365_Initial.Designer.cs">
       <DependentUpon>202102042239365_Initial.cs</DependentUpon>
@@ -380,6 +382,26 @@
     <Compile Include="Migrations\202108101455385_DashboardUserModelAdded.Designer.cs">
       <DependentUpon>202108101455385_DashboardUserModelAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108130844319_UserContactModelAddedToDB.cs" />
+    <Compile Include="Migrations\202108130844319_UserContactModelAddedToDB.Designer.cs">
+      <DependentUpon>202108130844319_UserContactModelAddedToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108131017535_UserContactModelChanged.cs" />
+    <Compile Include="Migrations\202108131017535_UserContactModelChanged.Designer.cs">
+      <DependentUpon>202108131017535_UserContactModelChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108131311047_UsersContactModelChangedWithFullName.cs" />
+    <Compile Include="Migrations\202108131311047_UsersContactModelChangedWithFullName.Designer.cs">
+      <DependentUpon>202108131311047_UsersContactModelChangedWithFullName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108131420263_DataRemoved.cs" />
+    <Compile Include="Migrations\202108131420263_DataRemoved.Designer.cs">
+      <DependentUpon>202108131420263_DataRemoved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108131428068_newUserContactModelAdded.cs" />
+    <Compile Include="Migrations\202108131428068_newUserContactModelAdded.Designer.cs">
+      <DependentUpon>202108131428068_newUserContactModelAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -516,6 +538,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108101455385_DashboardUserModelAdded.resx">
       <DependentUpon>202108101455385_DashboardUserModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108130844319_UserContactModelAddedToDB.resx">
+      <DependentUpon>202108130844319_UserContactModelAddedToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108131017535_UserContactModelChanged.resx">
+      <DependentUpon>202108131017535_UserContactModelChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108131311047_UsersContactModelChangedWithFullName.resx">
+      <DependentUpon>202108131311047_UsersContactModelChangedWithFullName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108131420263_DataRemoved.resx">
+      <DependentUpon>202108131420263_DataRemoved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108131428068_newUserContactModelAdded.resx">
+      <DependentUpon>202108131428068_newUserContactModelAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

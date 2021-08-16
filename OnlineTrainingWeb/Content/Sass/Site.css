@@ -208,7 +208,7 @@ p {
 
 @media (min-wdith: 1720px) and (max-width: 1920px) {
   .HomeBannerMainSection {
-    background-image: url(../Images/1920_GigBackgroundFinal.svg);
+    background-image: url("Images/");
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -236,7 +236,7 @@ p {
       margin-bottom: 0px; } }
 @media (max-width: 1920px) {
   .HomeBannerMainSection {
-    background-image: url(../Images/1920_GigBackgroundFinal.svg);
+    background-image: url("Images/");
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -264,7 +264,7 @@ p {
       margin-bottom: 0px; } }
 @media (min-width: 1366px) and (max-width: 1440px) {
   .HomeBannerMainSection {
-    background-image: url(../Images/1440_GigBackgroundFinal.svg);
+    background-image: url("Images/1440_GigBackgroundFinal.svg");
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -292,7 +292,7 @@ p {
       margin-bottom: 0px; } }
 @media (max-width: 1366px) {
   .HomeBannerMainSection {
-    background-image: url(../Images/1360_GigBackgroundTest.svg);
+    background-image: url("Images/1440_GigBackgroundFinal.svg");
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -320,7 +320,7 @@ p {
       margin-bottom: 0px; } }
 @media (max-width: 768px) {
   .HomeBannerMainSection {
-    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-image: url("Images/1440_GigBackgroundFinal.svg");
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -346,7 +346,7 @@ p {
       margin-top: 0px !important; } }
 @media (min-width: 300px) and (max-width: 550px) {
   .HomeBannerMainSection {
-    background-image: url(../Images/768_GigBackgroundTest.svg);
+    background-image: url('@Url.Content("~/Images/1440_GigBackgroundFinal.svg")');
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -766,7 +766,7 @@ p {
     left: 0px;
 }*/
 .AboutBannerMainSection {
-  background-image: url(../Images/1440-AboutBanner.svg);
+  background-image: url(Images/1440-AboutBanner.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -790,7 +790,7 @@ p {
 
 @media (min-width: 1500px) and (max-width: 1920px) {
   .AboutBannerMainSection {
-    background-image: url(../Images/1440-AboutBanner.svg);
+    background-image: url(/Images/1440-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -813,7 +813,7 @@ p {
     height: 1024px; } }
 @media (max-width: 990px) {
   .AboutBannerMainSection {
-    background-image: url(../Images/1000-AboutBanner.svg);
+    background-image: url(/Images/1000-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -837,7 +837,7 @@ p {
     padding-top: 100px; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .AboutBannerMainSection {
-    background-image: url(../Images/780-AboutBanner.svg);
+    background-image: url(/Images/780-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -861,7 +861,7 @@ p {
     padding-top: 100px; } }
 @media (min-width: 300px) and (max-width: 500px) {
   .AboutBannerMainSection {
-    background-image: url(../Images/500-AboutBanner.svg);
+    background-image: url(/Images/500-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -912,7 +912,7 @@ p {
     @Include UserBenefitsBackgroundFullSize; } }
 @media (min-width: 1500px) and (max-width: 1920px) {
   .UserBenefitsBackground {
-    background-image: url(../Images/UserBenefits.svg);
+    background-image: url(/Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -936,7 +936,7 @@ p {
     margin-top: 20px; } }
 @media (min-width: 768px) and (max-width: 1500px) {
   .UserBenefitsBackground {
-    background-image: url(../Images/UserBenefits.svg);
+    background-image: url(/Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -960,7 +960,7 @@ p {
     margin-top: 20px; } }
 @media (min-width: 300px) and (max-width: 768px) {
   .UserBenefitsBackground {
-    background-image: url(../Images/768UserBenefits.svg);
+    background-image: url(/Images/768UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;

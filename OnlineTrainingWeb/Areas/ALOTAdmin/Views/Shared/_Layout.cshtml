@@ -12,7 +12,8 @@
     <link href=" https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href=" https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css" rel="stylesheet" />
 
-    @Styles.Render("~/Content/Sass")
+    <link href="~/Content/Sass/BackendSite.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
 
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
@@ -26,7 +27,7 @@
 
 
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
-            <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.4.2/js/dataTables.buttons.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.4.2/js/buttons.print.js"></script>
@@ -55,439 +56,422 @@
 </head>
 <body class="fixed-sn light-blue-skin">
 
-    <header>
-        <!-- Sidebar navigation -->
-        <div id="slide-out" class="side-nav sn-bg-4 fixed">
-            <ul class="custom-scrollbar">
-                <!-- Logo -->
-                <li>
-                    <div class="logo-wrapper waves-light">
-                        <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+
+    @if (Request.IsAuthenticated)
+    {
+        {
+            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <header>
+                    <!-- Sidebar navigation -->
+                    <div id="slide-out" class="side-nav sn-bg-4 fixed">
+                        <ul class="custom-scrollbar">
+                            <!-- Logo -->
+                            <li>
+                                @*<div class="logo-wrapper waves-light">
+                                        <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+                                    </div>*@
+                            </li>
+                            <!--/. Logo -->
+                            <!--Social-->
+                            <!--/Social-->
+                            <!--Search Form-->
+                            @*<li>
+                                    <form class="search-form" role="search">
+                                        <div class="form-group md-form mt-0 pt-1 waves-light">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </form>
+                                </li>*@
+                            <!--/.Search Form-->
+                            <!-- Side navigation links -->
+                            <li>
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-home"></i> Home
+                                            <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/HomePage/Index" class="waves-effect">Home Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/HomeBanner/Index" class="waves-effect">Banner</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/HomeExplanationBanner/Index" class="waves-effect">Exploration Banner</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/forlearner/Index" class="waves-effect">For Learner</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/OurVision/Index" class="waves-effect">Our Vision</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/OurVisionBanner/Index" class="waves-effect">Vision Banner</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/OurVisionExploration/Index" class="waves-effect">Vision Exploration </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/COVID19/Index" class="waves-effect">COVID 19</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/CourseEachSection/Index" class="waves-effect">Course Sub Section</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/CourseContents/Index" class="waves-effect">Course Contents</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r"><i class="fas fa-question-circle"></i> Quiz<i class="fas fa-angle-down rotate-icon"></i></a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/QuizContent/Index" class="waves-effect">Quiz Content</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/QuizBasicInfo/Index" class="waves-effect">Quiz Basic Info</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/QuizQuestion/Index" class="waves-effect">Quiz Question</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/QuizResults/Index" class="waves-effect">Quiz Results</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/QuizBanner/Index" class="waves-effect">Quiz Banner</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r"><i class="fas fa-eye"></i> About<i class="fas fa-angle-down rotate-icon"></i></a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/AboutPage/Index" class="waves-effect">About Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/AboutBanner/Index" class="waves-effect">About Banner</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="/ALOTAdmin/SubscriptionContent/Index" class="waves-effect">Subscription Content</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/SubscriptionSystem/Index" class="waves-effect">Subscription System</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/UserbenefitsContents/Index" class="waves-effect">User Benefits Content</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/UserBenefitsSection/Index" class="waves-effect">User Benefits Section</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/HowOnlineTrainingWorks/Index" class="waves-effect">How Online Training Works</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/OnlineTrainingBenefits/Index" class="waves-effect">Online Training Benefits</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WhyOnlineTrainingIsImportant/Index" class="waves-effect">Online Training Importance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/StudetnsSays/Index" class="waves-effect">Students Says</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/VideoReview/Index" class="waves-effect">Video Reviews </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-user"></i> Trainer <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TrainerIntro/Index" class="waves-effect">Trainer Intro</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WhatTrainerLoves/Index" class="waves-effect">Trainer Interest </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WorkExperienceTag/Index" class="waves-effect"> Work Tag </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WorkExperience/Index" class="waves-effect"> Trainer Work Experience </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TrainerVision/Index" class="waves-effect"> Trainer Vision </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TrainerPhilosophy/Index" class="waves-effect"> Trainer Philosophy </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TrainerSocialMedia/Index" class="waves-effect"> Trainer Social Media </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-chalkboard-teacher"></i> Course <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/CoursePage/Index" class="waves-effect"> Course Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/CourseBanner/Index" class="waves-effect"> Course Banner </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/CourseDetails/Index" class="waves-effect"> Course Details </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/CourseDescription/Index" class="waves-effect"> Course Description </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/YouMayLike/Index" class="waves-effect"> You May Like </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/LaunchYourCodingCareer/Index" class="waves-effect"> Launch Your Coding </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/QuikLink/Index" class="waves-effect"> Quik Link </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ThisProgramForWhoContentSection/Index" class="waves-effect"> This Program For </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WhoIsThisProgramEachDetails/Index" class="waves-effect"> This Program Details </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/LearningModel/Index" class="waves-effect"> Learning Model </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="far fa-envelope"></i> Contact <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ContactPage/Index" class="waves-effect"> Contact Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ContactBanner/Index" class="waves-effect"> Contact Banner </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ContactDetails/Index" class="waves-effect"> Contact Details </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/NumberOfEmployees/Index" class="waves-effect"> Number of Employees </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ContactForm/Index" class="waves-effect"> Contact Form </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/SubscriptionSystem/Index" class="waves-effect"> Subscription System </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TrainerSocialMedia/Index" class="waves-effect"> Trainer Social Media </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/GeoLocationStudents/Index" class="waves-effect"> Student Geo Location </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-business-time"></i> Business  <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/BusinessPage/Index" class="waves-effect"> Business Page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/BusinessBanner/Index" class="waves-effect"> Business Banner </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/UpSkillingImportance/Index" class="waves-effect"> Up Skilling Importance </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/UpSkillingExploration/Index" class="waves-effect"> Up Skilling Exploration </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TrustedbyForUpSkilling/Index" class="waves-effect">  Truested by Up Skilling </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WhyYouNeedUpskillingYourTeam/Index" class="waves-effect">  Up Skilling Your Team  </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/WhyYouNeedUpSkillingYourTeamSection/Index" class="waves-effect">  Up Skilling Your Team section </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/BuildBetterSkillsFaster/Index" class="waves-effect"> Build Skills Faster </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/BuildBetterSkillsFasterSeciton/Index" class="waves-effect"> Build Skills Faster section </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/UpSkillingEmployee/Index" class="waves-effect"> Up Skilling Employee </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ITSkillGapImpactOnbusiness/Index" class="waves-effect"> IT Skills Gap </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/ITGapSkillsSection/Index" class="waves-effect"> IT Skills Gap Section </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-tags"></i>Meta Tags Setting  <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/MetaTags/Index" class="waves-effect"> Meta Tags</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/OGTags/Index" class="waves-effect"> OG Tags </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/TwitterTags/Index" class="waves-effect"> Twitter Tags </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-cogs"></i>Acount Setting  <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/Users/Index" class="waves-effect"> User account</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/Roles/Index" class="waves-effect"> User role </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-bars"></i>Menu  Setting  <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/MenuSearch/Index" class="waves-effect"> Menu Search Box</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/Menus/Index" class="waves-effect"> Menus </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-bars"></i>Site  Setting  <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/FooterLinks/Index" class="waves-effect"> Footers Setting</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/SiteSettings/Index" class="waves-effect"> Site Setting </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="collapsible-header waves-effect arrow-r">
+                                            <i class="fas fa-bars"></i>User Dashboard  <i class="fas fa-angle-down rotate-icon"></i>
+                                        </a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li>
+                                                    <a href="/ALOTAdmin/DashboardUsers/Index" class="waves-effect"> Dashboard</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/SiteSettings/Index" class="waves-effect"> Site Setting </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ALOTAdmin/UserContact/Index" class="waves-effect">User Contact </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/. Side navigation links -->
+                        </ul>
+                        <div class="sidenav-bg mask-strong"></div>
                     </div>
-                </li>
-                <!--/. Logo -->
-                <!--Social-->
-                <li>
-                    <ul class="social">
-                        <li><a href="#" class="icons-sm fb-ic"><i class="fab fa-facebook-f"> </i></a></li>
-                        <li><a href="#" class="icons-sm pin-ic"><i class="fab fa-pinterest"> </i></a></li>
-                        <li><a href="#" class="icons-sm gplus-ic"><i class="fab fa-google-plus-g"> </i></a></li>
-                        <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter"> </i></a></li>
-                    </ul>
-                </li>
-                <!--/Social-->
-                <!--Search Form-->
-                @*<li>
-                    <form class="search-form" role="search">
-                        <div class="form-group md-form mt-0 pt-1 waves-light">
-                            <input type="text" class="form-control" placeholder="Search">
+                    <!--/. Sidebar navigation -->
+                    <!-- Navbar -->
+                    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+                        <!-- SideNav slide-out button -->
+                        <div class="float-left">
+                            <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
                         </div>
-                    </form>
-                </li>*@
-                <!--/.Search Form-->
-                <!-- Side navigation links -->
-                <li>
-                    <ul class="collapsible collapsible-accordion">
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-home"></i> Home
-                                <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/HomePage/Index" class="waves-effect">Home Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/HomeBanner/Index" class="waves-effect">Banner</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/HomeExplanationBanner/Index" class="waves-effect">Exploration Banner</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/forlearner/Index" class="waves-effect">For Learner</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/OurVision/Index" class="waves-effect">Our Vision</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/OurVisionBanner/Index" class="waves-effect">Vision Banner</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/OurVisionExploration/Index" class="waves-effect">Vision Exploration </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/COVID19/Index" class="waves-effect">COVID 19</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/CourseEachSection/Index" class="waves-effect">Course Sub Section</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/CourseContents/Index" class="waves-effect">Course Contents</a>
-                                    </li>
+                        <!-- Breadcrumb-->
+                        <div class="breadcrumb-dn mr-auto">
+                            <p>ALOT Admin</p>
+                        </div>
+                        <ul class="nav navbar-nav nav-flex-icons ml-auto">
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r"><i class="fas fa-question-circle"></i> Quiz<i class="fas fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/QuizContent/Index" class="waves-effect">Quiz Content</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/QuizBasicInfo/Index" class="waves-effect">Quiz Basic Info</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/QuizQuestion/Index" class="waves-effect">Quiz Question</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/QuizResults/Index" class="waves-effect">Quiz Results</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/QuizBanner/Index" class="waves-effect">Quiz Banner</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r"><i class="fas fa-eye"></i> About<i class="fas fa-angle-down rotate-icon"></i></a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/AboutPage/Index" class="waves-effect">About Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/AboutBanner/Index" class="waves-effect">About Banner</a>
-                                    </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
 
-                                    <li>
-                                        <a href="/ALOTAdmin/SubscriptionContent/Index" class="waves-effect">Subscription Content</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/SubscriptionSystem/Index" class="waves-effect">Subscription System</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/UserbenefitsContents/Index" class="waves-effect">User Benefits Content</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/UserBenefitsSection/Index" class="waves-effect">User Benefits Section</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/HowOnlineTrainingWorks/Index" class="waves-effect">How Online Training Works</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/OnlineTrainingBenefits/Index" class="waves-effect">Online Training Benefits</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WhyOnlineTrainingIsImportant/Index" class="waves-effect">Online Training Importance</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/StudetnsSays/Index" class="waves-effect">Students Says</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/VideoReview/Index" class="waves-effect">Video Reviews </a>
-                                    </li>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-user"></i> Trainer <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/TrainerIntro/Index" class="waves-effect">Trainer Intro</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WhatTrainerLoves/Index" class="waves-effect">Trainer Interest </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WorkExperienceTag/Index" class="waves-effect"> Work Tag </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WorkExperience/Index" class="waves-effect"> Trainer Work Experience </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/TrainerVision/Index" class="waves-effect"> Trainer Vision </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/TrainerPhilosophy/Index" class="waves-effect"> Trainer Philosophy </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/TrainerSocialMedia/Index" class="waves-effect"> Trainer Social Media </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-chalkboard-teacher"></i> Course <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/CoursePage/Index" class="waves-effect"> Course Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/CourseBanner/Index" class="waves-effect"> Course Banner </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/CourseDetails/Index" class="waves-effect"> Course Details </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/CourseDescription/Index" class="waves-effect"> Course Description </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/YouMayLike/Index" class="waves-effect"> You May Like </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/LaunchYourCodingCareer/Index" class="waves-effect"> Launch Your Coding </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/QuikLink/Index" class="waves-effect"> Quik Link </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/ThisProgramForWhoContentSection/Index" class="waves-effect"> This Program For </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WhoIsThisProgramEachDetails/Index" class="waves-effect"> This Program Details </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/LearningModel/Index" class="waves-effect"> Learning Model </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="far fa-envelope"></i> Contact <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/ContactPage/Index" class="waves-effect"> Contact Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/ContactBanner/Index" class="waves-effect"> Contact Banner </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/ContactDetails/Index" class="waves-effect"> Contact Details </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/NumberOfEmployees/Index" class="waves-effect"> Number of Employees </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/ContactForm/Index" class="waves-effect"> Contact Form </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/SubscriptionSystem/Index" class="waves-effect"> Subscription System </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/TrainerSocialMedia/Index" class="waves-effect"> Trainer Social Media </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/GeoLocationStudents/Index" class="waves-effect"> Student Geo Location </a>
-                                    </li>
+                                    <a class="dropdown-item" href="/Home"><i class="fas fa-tachometer-alt"></i> Home</a>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-business-time"></i> Business  <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/BusinessPage/Index" class="waves-effect"> Business Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/BusinessBanner/Index" class="waves-effect"> Business Banner </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/UpSkillingImportance/Index" class="waves-effect"> Up Skilling Importance </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/UpSkillingExploration/Index" class="waves-effect"> Up Skilling Exploration </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/TrustedbyForUpSkilling/Index" class="waves-effect">  Truested by Up Skilling </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WhyYouNeedUpskillingYourTeam/Index" class="waves-effect">  Up Skilling Your Team  </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/WhyYouNeedUpSkillingYourTeamSection/Index" class="waves-effect">  Up Skilling Your Team section </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/BuildBetterSkillsFaster/Index" class="waves-effect"> Build Skills Faster </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/BuildBetterSkillsFasterSeciton/Index" class="waves-effect"> Build Skills Faster section </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/UpSkillingEmployee/Index" class="waves-effect"> Up Skilling Employee </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/ITSkillGapImpactOnbusiness/Index" class="waves-effect"> IT Skills Gap </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/ITGapSkillsSection/Index" class="waves-effect"> IT Skills Gap Section </a>
-                                    </li>
+                                    <a class="" href="javascript:document.getElementById('logoutForm').submit()"><span class="btn btn-rounded btn-sm">Log off</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /.Navbar -->
+                </header>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-tags"></i>Meta Tags Setting  <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/MetaTags/Index" class="waves-effect"> Meta Tags</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/OGTags/Index" class="waves-effect"> OG Tags </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/TwitterTags/Index" class="waves-effect"> Twitter Tags </a>
-                                    </li>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-cogs"></i>Acount Setting  <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/Users/Index" class="waves-effect"> User account</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/Roles/Index" class="waves-effect"> User role </a>
-                                    </li>
+            }
+        }
+    }
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-bars"></i>Menu  Setting  <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/MenuSearch/Index" class="waves-effect"> Menu Search Box</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/Menus/Index" class="waves-effect"> Menus </a>
-                                    </li>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-bars"></i>Site  Setting  <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/FooterLinks/Index" class="waves-effect"> Footers Setting</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/SiteSettings/Index" class="waves-effect"> Site Setting </a>
-                                    </li>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="collapsible-header waves-effect arrow-r">
-                                <i class="fas fa-bars"></i>User Dashboard  <i class="fas fa-angle-down rotate-icon"></i>
-                            </a>
-                            <div class="collapsible-body">
-                                <ul>
-                                    <li>
-                                        <a href="/ALOTAdmin/DashboardUsers/Index" class="waves-effect"> Dashboard</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/SiteSettings/Index" class="waves-effect"> Site Setting </a>
-                                    </li>
-                                    <li>
-                                        <a href="/ALOTAdmin/UserContact/Index" class="waves-effect">User Contact </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <!--/. Side navigation links -->
-            </ul>
-            <div class="sidenav-bg mask-strong"></div>
-        </div>
-        <!--/. Sidebar navigation -->
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
-            <!-- SideNav slide-out button -->
-            <div class="float-left">
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
-            </div>
-            <!-- Breadcrumb-->
-            <div class="breadcrumb-dn mr-auto">
-                <p>ALOT Admin</p>
-            </div>
-            <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <!-- /.Navbar -->
-    </header>
-    <!--/.Double navigation-->
-    <!--Main Layout-->
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                    </ul>
-                </div>
-            </div>
-        </div>*@
 
     <div class="container body-content mt-4">
         @RenderBody()
@@ -496,21 +480,31 @@
             <p>&copy; @DateTime.Now.Year Online Training</p>
         </footer>
     </div>
+    <script>
+                    $(document).ready(function() {
 
+                        // SideNav Button Initialization
+                        $(".button-collapse").sideNav();
+           // SideNav Scrollbar Initialization
+            var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+            var ps = new PerfectScrollbar(sideNavScrollbar);
+                });
+    </script>
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/popper")
     @Scripts.Render("~/bundles/bootstrap")
     <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
     @RenderSection("scripts", required: false)
     <script>
-                    $(document).ready(function () {
-                        $(".button-collapse").sideNav({
-                            breakpoint: 1600
-                        });
-                    // SideNav Scrollbar Initialization
-                    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-                    var ps = new PerfectScrollbar(sideNavScrollbar);
+                    $(document).ready(function() {
+
+                        // SideNav Button Initialization
+                        $(".button-collapse").sideNav();
+           // SideNav Scrollbar Initialization
+            var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+            var ps = new PerfectScrollbar(sideNavScrollbar);
                 });
     </script>
+
 </body>
 </html>

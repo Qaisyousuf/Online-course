@@ -31,7 +31,7 @@
   .HomebannerExplorationTextColor h1, .HomebannerExplorationTextColor h2, .HomebannerExplorationTextColor h3, .HomebannerExplorationTextColor h4, .HomebannerExplorationTextColor h5, .HomebannerExplorationTextColor h6 {
     color: #6984b3 !important; } }
 .QuizMainBackground {
-  background-image: url(../Images/NotSure.svg);
+  background-image: url(Images/NotSure.svg);
   background-size: cover;
   background-position: center;
   margin-top: 0px;
@@ -58,7 +58,7 @@
 
 @media (min-width: 500px) and (max-width: 768px) {
   .QuizMainBackground {
-    background-image: url(../Images/NotSure768.svg);
+    background-image: url(Images/NotSure768.svg);
     background-size: cover;
     background-position: center;
     margin-top: 0px;
@@ -85,7 +85,7 @@
     margin-top: 50px; } }
 @media (min-width: 300px) and (max-width: 500px) {
   .QuizMainBackground {
-    background-image: url(../Images/NotSure768.svg);
+    background-image: url(Images/NotSure768.svg);
     background-size: cover;
     background-position: center;
     margin-top: 0px;
@@ -208,7 +208,7 @@ p {
 
 @media (min-wdith: 1720px) and (max-width: 1920px) {
   .HomeBannerMainSection {
-    background-image: url("Images/");
+    background-image: url("Content/Images/1920_GigBackgroundFinal.svg");
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -236,7 +236,7 @@ p {
       margin-bottom: 0px; } }
 @media (max-width: 1920px) {
   .HomeBannerMainSection {
-    background-image: url("Images/");
+    background-image: url("Content/Images/1920_GigBackgroundFinal.svg");
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -264,7 +264,7 @@ p {
       margin-bottom: 0px; } }
 @media (min-width: 1366px) and (max-width: 1440px) {
   .HomeBannerMainSection {
-    background-image: url("Images/1440_GigBackgroundFinal.svg");
+    background-image: url(~Images/1440_GigBackgroundFinal.svg);
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -292,7 +292,7 @@ p {
       margin-bottom: 0px; } }
 @media (max-width: 1366px) {
   .HomeBannerMainSection {
-    background-image: url("Images/1440_GigBackgroundFinal.svg");
+    background-image: url("/Images/1360_GigBackgroundTest.svg");
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -320,7 +320,7 @@ p {
       margin-bottom: 0px; } }
 @media (max-width: 768px) {
   .HomeBannerMainSection {
-    background-image: url("Images/1440_GigBackgroundFinal.svg");
+    background-image: url(Images/768_GigBackgroundTest.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -346,7 +346,7 @@ p {
       margin-top: 0px !important; } }
 @media (min-width: 300px) and (max-width: 550px) {
   .HomeBannerMainSection {
-    background-image: url('@Url.Content("~/Images/1440_GigBackgroundFinal.svg")');
+    background-image: url(Images/768_GigBackgroundTest.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -372,7 +372,7 @@ p {
       margin-top: 0px !important; } }
 @media (min-width: 1920px) {
   .SecondHomeBanner {
-    background-image: url(../Images/1920ExploratoinBanner.svg);
+    background-image: url(Images/1920ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     margin-top: 0px;
@@ -398,7 +398,7 @@ p {
     width: auto; } }
 @media (min-width: 1360px) and (max-width: 1440px) {
   .SecondHomeBanner {
-    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-image: url(Images/1440ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -423,7 +423,7 @@ p {
     width: auto; } }
 @media (min-width: 1280px) and (max-width: 1360px) {
   .SecondHomeBanner {
-    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-image: url(Images/1440ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -448,7 +448,7 @@ p {
     width: auto; } }
 @media (min-width: 990px) and (max-width: 1280px) {
   .SecondHomeBanner {
-    background-image: url(../Images/1440ExploratoinBanner.svg);
+    background-image: url(Images/1440ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -473,7 +473,7 @@ p {
     width: auto; } }
 @media (min-width: 768px) and (max-width: 990px) {
   .SecondHomeBanner {
-    background-image: url(../Images/1024ExploratoinBanner.svg);
+    background-image: url(Images/1024ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -498,7 +498,7 @@ p {
     width: auto; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .SecondHomeBanner {
-    background-image: url(../Images/768ExploratoinBanner.svg);
+    background-image: url(Images/768ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -523,7 +523,7 @@ p {
     width: auto; } }
 @media (min-width: 300px) and (max-width: 500px) {
   .SecondHomeBanner {
-    background-image: url(../Images/530ExploratoinBanner.svg);
+    background-image: url(Images/530ExploratoinBanner.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -547,7 +547,7 @@ p {
     height: 500px;
     width: auto; } }
 .OurVisonmainBackground {
-  background-image: url(../Images/OurVison.svg);
+  background-image: url(Images/OurVison.svg);
   background-size: cover;
   background-position: center;
   display: -ms-flexbox;
@@ -573,7 +573,7 @@ p {
 
 @media (min-width: 300px) and (max-width: 768px) {
   .OurVisonmainBackground {
-    background-image: url(../Images/768OurVision.svg);
+    background-image: url(Images/768OurVision.svg);
     background-size: cover;
     background-position: center;
     display: -ms-flexbox;
@@ -597,7 +597,7 @@ p {
     height: 750px;
     width: auto; } }
 .FooterMainBackground {
-  background-image: url(../Images/Footer.svg);
+  background-image: url(Images/Footer.svg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -611,7 +611,7 @@ p {
 
 @media (min-width: 1360px) and (max-width: 1920px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer.svg);
+    background-image: url(Images/Footer.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -624,7 +624,7 @@ p {
     flex-direction: row; } }
 @media (min-width: 1360px) and (max-width: 1440px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer.svg);
+    background-image: url(Images/Footer.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -637,7 +637,7 @@ p {
     flex-direction: row; } }
 @media (min-width: 990px) and (max-width: 1180px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer1180.svg);
+    background-image: url(Images/Footer1180.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -650,7 +650,7 @@ p {
     flex-direction: row; } }
 @media (min-width: 800px) and (max-width: 990px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer990.svg);
+    background-image: url(Images/Footer990.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -663,7 +663,7 @@ p {
     flex-direction: row; } }
 @media (min-width: 769px) and (max-width: 800px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer769.svg);
+    background-image: url(Images/Footer769.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -676,7 +676,7 @@ p {
     flex-direction: row; } }
 @media (min-width: 500px) and (max-width: 767px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer500.svg);
+    background-image: url(Images/Footer500.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -689,7 +689,7 @@ p {
     flex-direction: row; } }
 @media (min-width: 200px) and (max-width: 500px) {
   .FooterMainBackground {
-    background-image: url(../Images/Footer500.svg);
+    background-image: url(Images/Footer500.svg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -790,7 +790,7 @@ p {
 
 @media (min-width: 1500px) and (max-width: 1920px) {
   .AboutBannerMainSection {
-    background-image: url(/Images/1440-AboutBanner.svg);
+    background-image: url(Images/1440-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -813,7 +813,7 @@ p {
     height: 1024px; } }
 @media (max-width: 990px) {
   .AboutBannerMainSection {
-    background-image: url(/Images/1000-AboutBanner.svg);
+    background-image: url(Images/1000-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -837,7 +837,7 @@ p {
     padding-top: 100px; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .AboutBannerMainSection {
-    background-image: url(/Images/780-AboutBanner.svg);
+    background-image: url(Images/780-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -861,7 +861,7 @@ p {
     padding-top: 100px; } }
 @media (min-width: 300px) and (max-width: 500px) {
   .AboutBannerMainSection {
-    background-image: url(/Images/500-AboutBanner.svg);
+    background-image: url(Images/500-AboutBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -884,7 +884,7 @@ p {
     height: 930px;
     padding-top: 100px; } }
 /*.UserBenefitsBackground {
-    background-image: url(../Images/UserBenefits.svg);
+    background-image: url(Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -912,7 +912,7 @@ p {
     @Include UserBenefitsBackgroundFullSize; } }
 @media (min-width: 1500px) and (max-width: 1920px) {
   .UserBenefitsBackground {
-    background-image: url(/Images/UserBenefits.svg);
+    background-image: url(Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -936,7 +936,7 @@ p {
     margin-top: 20px; } }
 @media (min-width: 768px) and (max-width: 1500px) {
   .UserBenefitsBackground {
-    background-image: url(/Images/UserBenefits.svg);
+    background-image: url(Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -960,7 +960,7 @@ p {
     margin-top: 20px; } }
 @media (min-width: 300px) and (max-width: 768px) {
   .UserBenefitsBackground {
-    background-image: url(/Images/768UserBenefits.svg);
+    background-image: url(Images/768UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -983,7 +983,7 @@ p {
     height: 700px;
     margin-top: 20px; } }
 .HowOnlineTrainingWorkbackground {
-  background-image: url(../Images/HowTrainingWorks.svg);
+  background-image: url(Images/HowTrainingWorks.svg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -992,7 +992,7 @@ p {
   border-radius: 5px; }
 
 .GoogleReviewbackground {
-  background-image: url(../Images/GoogleReview.svg);
+  background-image: url(Images/GoogleReview.svg);
   background-position: center;
   background-size: cover;
   height: auto; }
@@ -1002,7 +1002,7 @@ p {
   color: #b3cbf5 !important; }
 
 .TrainerPhilosophyBackground {
-  background-image: url(../Images/TrainePhilsophy.svg) !important;
+  background-image: url(Images/TrainePhilsophy.svg) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1027,7 +1027,7 @@ p {
   .BenefitsOfOnlineClassSizing {
     margin-top: 130px !important; } }
 .ContactMainBanner {
-  background-image: url(../Images/ContactMainBanner.svg);
+  background-image: url(Images/ContactMainBanner.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1051,7 +1051,7 @@ p {
 
 @media (min-width: 1500px) and (max-width: 1920px) {
   .ContactMainBanner {
-    background-image: url(../Images/ContactMainBanner.svg);
+    background-image: url(Images/ContactMainBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1074,7 +1074,7 @@ p {
     height: 800px; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .ContactMainBanner {
-    background-image: url(../Images/ContactMainBanner768.svg);
+    background-image: url(Images/ContactMainBanner768.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1097,7 +1097,7 @@ p {
     height: 900px; } }
 @media (min-width: 300px) and (max-width: 500px) {
   .ContactMainBanner {
-    background-image: url(../Images/ContactMainBanner500.svg);
+    background-image: url(Images/ContactMainBanner500.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1137,7 +1137,7 @@ p {
   .ContactMainTitle {
     margin-top: 100px; } }
 .ContactDetailsBackground {
-  background-image: url(../Images/CotnactDetails.svg);
+  background-image: url(Images/CotnactDetails.svg);
   background-size: cover;
   background-attachment: fixed;
   display: -ms-flexbox;
@@ -1162,7 +1162,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 900px) {
   .ContactDetailsBackground {
-    background-image: url(../Images/CotnactDetails.svg);
+    background-image: url(Images/CotnactDetails.svg);
     background-size: cover;
     background-attachment: fixed;
     display: -ms-flexbox;
@@ -1187,7 +1187,7 @@ p {
     padding-top: 100px; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .ContactDetailsBackground {
-    background-image: url(../Images/CotnactDetails500.svg);
+    background-image: url(Images/CotnactDetails500.svg);
     background-size: cover;
     background-attachment: fixed;
     display: -ms-flexbox;
@@ -1213,7 +1213,7 @@ p {
     margin-top: 50px; } }
 @media (min-width: 250px) and (max-width: 500px) {
   .ContactDetailsBackground {
-    background-image: url(../Images/CotnactDetails500.svg);
+    background-image: url(Images/CotnactDetails500.svg);
     background-size: cover;
     background-attachment: fixed;
     display: -ms-flexbox;
@@ -1246,7 +1246,7 @@ p {
   display: block; }
 
 .CoursesMainBanner {
-  background-image: url(../Images/ContactMainBanner.svg);
+  background-image: url(Images/ContactMainBanner.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1270,7 +1270,7 @@ p {
 
 @media (min-width: 1500px) and (max-width: 1920px) {
   .CoursesMainBanner {
-    background-image: url(../Images/ContactMainBanner.svg);
+    background-image: url(Images/ContactMainBanner.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1293,7 +1293,7 @@ p {
     height: 800px; } }
 @media (min-width: 768px) and (max-width: 990px) {
   .CoursesMainBanner {
-    background-image: url(../Images/ContactMainBanner990.svg);
+    background-image: url(Images/ContactMainBanner990.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1319,7 +1319,7 @@ p {
       margin-top: 200px; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .CoursesMainBanner {
-    background-image: url(../Images/ContactMainBanner768.svg);
+    background-image: url(Images/ContactMainBanner768.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1345,7 +1345,7 @@ p {
       margin-top: 0px; } }
 @media (min-width: 300px) and (max-width: 500px) {
   .CoursesMainBanner {
-    background-image: url(../Images/ContactMainBanner500.svg);
+    background-image: url(Images/ContactMainBanner500.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1370,7 +1370,7 @@ p {
     .CoursesMainBanner .CoursesSecondContent {
       margin-top: 0px; } }
 .LuanchingCodingBackground {
-  background-image: url(../Images/LaunchingCoding.svg);
+  background-image: url(Images/LaunchingCoding.svg);
   background-size: cover;
   background-attachment: fixed;
   display: -ms-flexbox;
@@ -1396,7 +1396,7 @@ p {
 
 @media (min-width: 500px) and (max-width: 768px) {
   .LuanchingCodingBackground {
-    background-image: url(../Images/LaunchingCoding768.svg);
+    background-image: url(Images/LaunchingCoding768.svg);
     background-size: cover;
     background-attachment: fixed;
     display: -ms-flexbox;
@@ -1422,7 +1422,7 @@ p {
     margin-top: 100px; } }
 @media (min-width: 280px) and (max-width: 500px) {
   .LuanchingCodingBackground {
-    background-image: url(../Images/LaunchingCoding768.svg);
+    background-image: url(Images/LaunchingCoding768.svg);
     background-size: cover;
     background-attachment: fixed;
     display: -ms-flexbox;
@@ -1478,14 +1478,14 @@ p {
   z-index: -1; }
 
 .QuikLinkBakcground {
-  background-image: url(../Images/QuikLinks.svg);
+  background-image: url(Images/QuikLinks.svg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   border-radius: 5px !important; }
 
 .ForBusinessMainBackground {
-  background-image: url(../Images/ForBusiness.svg);
+  background-image: url(Images/ForBusiness.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1512,7 +1512,7 @@ p {
 
 @media (min-width: 1700px) and (max-width: 1920px) {
   .ForBusinessMainBackground {
-    background-image: url(../Images/ForBusiness.svg);
+    background-image: url(Images/ForBusiness.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1538,7 +1538,7 @@ p {
       margin-top: 100px; } }
 @media (min-width: 768px) and (max-width: 990px) {
   .ForBusinessMainBackground {
-    background-image: url(../Images/ForBusiness.svg);
+    background-image: url(Images/ForBusiness.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1564,7 +1564,7 @@ p {
       margin-top: 130px; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .ForBusinessMainBackground {
-    background-image: url(../Images/ForBusiness.svg);
+    background-image: url(Images/ForBusiness.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1590,7 +1590,7 @@ p {
       margin-top: 0px; } }
 @media (min-width: 250px) and (max-width: 500px) {
   .ForBusinessMainBackground {
-    background-image: url(../Images/ForBusiness.svg);
+    background-image: url(Images/ForBusiness.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1627,13 +1627,13 @@ p {
   .TrustedMainBackground {
     margin-top: 150px; } }
 .CardBackground {
-  background-image: url(../Images/LaunchingCoding.svg);
+  background-image: url(Images/LaunchingCoding.svg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center; }
 
 .UPSkillingEmployeesBackground {
-  background-image: url(../Images/LaunchingCoding.svg);
+  background-image: url(Images/LaunchingCoding.svg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1663,7 +1663,7 @@ p {
   left: 0px; }
 
 .OurVisonMainbackground {
-  background-image: url(../Images/VisionBanner.svg);
+  background-image: url(Images/VisionBanner.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1688,7 +1688,7 @@ p {
 
 @media (min-width: 500px) and (max-width: 768px) {
   .OurVisonMainbackground {
-    background-image: url(../Images/VisionBanner768.svg);
+    background-image: url(Images/VisionBanner768.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1711,7 +1711,7 @@ p {
     height: 800px;
     z-index: -1; } }
 .LoginMainBackground {
-  background-image: url(../Images/VisionBanner.svg);
+  background-image: url(Images/VisionBanner.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1736,7 +1736,7 @@ p {
 
 @media (min-width: 1260px) and (max-width: 1366px) {
   .LoginMainBackground {
-    background-image: url(../Images/VisionBanner1366.svg);
+    background-image: url(Images/VisionBanner1366.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1759,7 +1759,7 @@ p {
     height: 100vh; } }
 @media (min-width: 500px) and (max-width: 768px) {
   .LoginMainBackground {
-    background-image: url(../Images/VisionBanner768.svg);
+    background-image: url(Images/VisionBanner768.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1782,7 +1782,7 @@ p {
     height: 1150px; } }
 @media (min-width: 400px) and (max-width: 500px) {
   .LoginMainBackground {
-    background-image: url(../Images/VisionBanner768.svg);
+    background-image: url(Images/VisionBanner768.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1805,7 +1805,7 @@ p {
     height: 1100px; } }
 @media (min-width: 200px) and (max-width: 400px) {
   .LoginMainBackground {
-    background-image: url(../Images/LoginBackground500.svg);
+    background-image: url(Images/LoginBackground500.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1837,7 +1837,7 @@ p {
   z-index: -1; }
 
 .MoreCoursesDescrption {
-  background-image: url(../Images/CoursesDescripton.svg);
+  background-image: url(Images/CoursesDescripton.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1862,7 +1862,7 @@ p {
 
 @Media (min-width:300px) and (max-width:768px) {
   .MoreCoursesDescrption {
-    background-image: url(../Images/CoursesDescripton.svg);
+    background-image: url(Images/CoursesDescripton.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1910,7 +1910,7 @@ p {
   width: auto !important; }
 
 .DashboardBack {
-  background-image: url(../Images/DashboardBack.svg);
+  background-image: url(Images/DashboardBack.svg);
   background-size: cover;
   display: -ms-flexbox;
   display: -webkit-flex;

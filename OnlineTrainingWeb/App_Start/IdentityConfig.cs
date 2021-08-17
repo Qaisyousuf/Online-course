@@ -28,8 +28,8 @@ namespace OnlineTrainingWeb
         void sendMail(IdentityMessage message)
         {
             #region formatter
-            string text = string.Format("Please click on this link to {0}: {1}", message.Subject, message.Body);
-            string html = "Please confirm your account by clicking this link: <a href=\"" + message.Body + "\">link</a><br/>";
+            var body = string.Format("Please click on this link to {0}: {1}", message.Subject, message.Body);
+            var html = "Please confirm your account by clicking this link: <a href=\"" + message.Body + "\">link</a><br/>";
 
             html += HttpUtility.HtmlEncode(@"Or click on the copy the following link on the browser:" + message.Body);
             #endregion
@@ -38,12 +38,15 @@ namespace OnlineTrainingWeb
             msg.From = new MailAddress(ConfigurationManager.AppSettings["Email"].ToString());
             msg.To.Add(new MailAddress(message.Destination));
             msg.Subject = message.Subject;
-            msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-            msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+            msg.Body = message.Body;
+            msg.IsBodyHtml = true;
+            
+            //msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+            //msg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", Convert.ToInt32(587));
             System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(ConfigurationManager.AppSettings["Email"].ToString(), ConfigurationManager.AppSettings["Password"].ToString());
-            smtpClient.UseDefaultCredentials = true;
+            smtpClient.UseDefaultCredentials = false;
             smtpClient.Credentials = credentials;
             smtpClient.EnableSsl = true;
 

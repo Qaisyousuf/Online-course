@@ -33,8 +33,9 @@ namespace OnlineTrainingWeb
                       "~/Content/bootstrap.css",
                       "~/Content/Sass/site.css",
                        "~/Content/mdb.min.css"));
-            bundles.Add(new StyleBundle("~/Content/Sass").Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                      "~/Content/bootstrap.css",
+                     "~/Content/Sass/site.css",
                      "~/Content/Sass/BackendSite.css",
                       "~/Content/mdb.min.css"));
           

@@ -7,6 +7,7 @@ using Models;
 using ViewModel;
 namespace OnlineTrainingWeb.Controllers
 {
+    [HandleError]
     public class SubscriptionFooterController : BaseController
     {
         // GET: SubscriptionFooter

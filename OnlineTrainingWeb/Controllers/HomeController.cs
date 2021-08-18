@@ -5,20 +5,25 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ViewModel;
+using OnlineTrainingWeb.Infrastructure;
 
 namespace OnlineTrainingWeb.Controllers
 {
+
+   
+    [HandleError]
     public class HomeController : BaseController
     {
         
         public ActionResult Index(string slug)
         {
+           
             if (string.IsNullOrEmpty(slug))
                 slug = "home";
             if(!_uow.HomePageRepository.SlugExists(slug))
             {
                 TempData["PageNotFound"] = "Page not found";
-                return RedirectToAction(nameof(Index), new { slug="" });
+                return RedirectToAction(nameof(Index), new { slug= "PageNotFound" });
             }
 
             HomePageViewModel viewmodel;
@@ -417,7 +422,11 @@ namespace OnlineTrainingWeb.Controllers
             return View(OurVisionBannerData);
         }
 
-
+        [HttpGet]
+        public ActionResult PageNotFound()
+        {
+            return View();
+        }
 
     }
 }

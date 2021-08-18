@@ -7,6 +7,7 @@ using ViewModel;
 
 namespace OnlineTrainingWeb.Controllers
 {
+    [HandleError]
     public class UserContactPostController : BaseController
     {
         [Route("UserContactPost")]

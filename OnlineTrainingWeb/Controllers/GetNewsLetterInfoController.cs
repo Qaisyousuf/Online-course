@@ -7,6 +7,7 @@ using ViewModel;
 
 namespace OnlineTrainingWeb.Controllers
 {
+    [HandleError]
     public class GetNewsLetterInfoController : Controller
     {
         

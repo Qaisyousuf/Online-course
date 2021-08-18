@@ -12,6 +12,7 @@ using Microsoft.AspNet.Identity.Owin;
 
 namespace OnlineTrainingWeb.Controllers
 {
+    [HandleError]
     public class UserContactAreaController : BaseController
     {
         private readonly RoleManager<IdentityRole> _roleMange = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));

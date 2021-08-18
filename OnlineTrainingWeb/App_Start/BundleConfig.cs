@@ -31,13 +31,10 @@ namespace OnlineTrainingWeb
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/Sass/site.css",
+                      "~/Content/site.css",
+                       "~/Content/BackendSite.css",
                        "~/Content/mdb.min.css"));
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                     "~/Content/bootstrap.css",
-                     "~/Content/Sass/site.css",
-                     "~/Content/Sass/BackendSite.css",
-                      "~/Content/mdb.min.css"));
+           
           
         }
     }

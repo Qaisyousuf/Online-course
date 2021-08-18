@@ -8,6 +8,7 @@ using Models;
 
 namespace OnlineTrainingWeb.Controllers
 {
+    [HandleError]
     public class ContactController : BaseController
     {
         //[Route("Contact")]

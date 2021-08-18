@@ -8,6 +8,7 @@ using ViewModel;
 
 namespace OnlineTrainingWeb.Controllers
 {
+    [HandleError]
     public class CoursesController : BaseController
     {
         [Route("Courses")]

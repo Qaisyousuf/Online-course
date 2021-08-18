@@ -12,7 +12,7 @@
     <link href=" https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href=" https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css" rel="stylesheet" />
 
-    <link href="~/Content/Sass/BackendSite.css" rel="stylesheet" />
+    
     @Styles.Render("~/Content/css")
 
     @Scripts.Render("~/bundles/modernizr")
@@ -66,13 +66,13 @@
 
                 <header>
                     <!-- Sidebar navigation -->
-                    <div id="slide-out" class="side-nav sn-bg-4 fixed">
+                    <div id="slide-out" class="side-nav  fixed my-5">
                         <ul class="custom-scrollbar">
                             <!-- Logo -->
                             <li>
-                                @*<div class="logo-wrapper waves-light">
-                                        <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
-                                    </div>*@
+                                <div class="logo-wrapper waves-light">
+                                    <a href="#"><img src="~/Content/Images/boy.svg" class="img-fluid flex-center" id="profileImage"></a>
+                                    </div>
                             </li>
                             <!--/. Logo -->
                             <!--Social-->
@@ -437,7 +437,7 @@
                     </div>
                     <!--/. Sidebar navigation -->
                     <!-- Navbar -->
-                    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+                    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav navbar-dark">
                         <!-- SideNav slide-out button -->
                         <div class="float-left">
                             <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
@@ -448,16 +448,16 @@
                         </div>
                         <ul class="nav navbar-nav nav-flex-icons ml-auto">
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown dropdown-dark">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                                    aria-haspopup="true" aria-expanded="false">
-
+                                    <i class="fa fa-user"></i>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 
                                     <a class="dropdown-item" href="/Home"><i class="fas fa-tachometer-alt"></i> Home</a>
 
-                                    <a class="" href="javascript:document.getElementById('logoutForm').submit()"><span class="btn btn-rounded btn-sm">Log off</span></a>
+                                    <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()"><span class=""><i class="fas fa-power-off"></i> Log off</span></a>
                                 </div>
                             </li>
                         </ul>
@@ -472,8 +472,7 @@
 
 
 
-
-    <div class="container body-content mt-4">
+    <div class="container body-content my-5 py-5">
         @RenderBody()
         <hr />
         <footer>

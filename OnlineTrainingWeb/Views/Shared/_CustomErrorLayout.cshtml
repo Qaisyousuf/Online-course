@@ -1,14 +1,11 @@
-﻿@model ViewModel.BaseViewModel
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @Html.Action("GetMetaData","Home")
-    @Html.Action("GetOGTagData","Home")
-    @Html.Action("TwitterTagData", "Home")
-    <title>@ViewBag.Title - @Model.SiteTitle</title>
+   
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,11 +41,12 @@
 
 
     <div class="container-fluid body-content">
-
+      
+        
+      
         @RenderBody()
-       
 
-        <div class="FooterMainBackground">
+        @*<div class="FooterMainBackground">
             <footer class="container-fluid">
                 <div class="container">
                     <div class="row">
@@ -156,8 +154,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
-
+        </div>*@
 
     </div>
     

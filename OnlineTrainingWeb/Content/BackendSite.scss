@@ -1,4 +1,11 @@
-﻿@import'_CustomColor.scss';
+﻿$btn-primary: rgb(231, 161, 161);
+
+$background-color: BB7171;
+
+$PaddingLeft: 15px;
+$PaddingRight: 15px;
+$paddingTop: 50px;
+@import'_CustomColor.scss';
 @import'_custom-styles.scss';
 @import'_custom-variables.scss';
 @import'_CustomNavbar.scss';
@@ -17,8 +24,7 @@
     -webkit-box-shadow: $Collapse_webkit-box-shadow !important;
     -moz-box-shadow: $Collapse_moz-box-shadow !important;
     box-shadow: $Collapse_Navbar_Box_Shadow !important;
-    color:$CustomNavbarLinkColorScrolling !important;
-
+    color: $CustomNavbarLinkColorScrolling !important;
 }
 
 @mixin SmallAndMedumNavbar {
@@ -28,15 +34,17 @@
     background-color: $NavbarColorForScrolling !important;
 }
 
-@mixin CustomNavbarTextColor{
-
-    color:$customNavbarLinksColor;
-    font-weight:$navbarFountStyle;
+@mixin CustomNavbarTextColor {
+    color: $customNavbarLinksColor;
+    font-weight: $navbarFountStyle;
 }
+
 @mixin CustomNavbarTextColorHover {
     color: $NavbarTextHoverColor !important;
-    font-weight: $NavbarFontStyleHover !important;;
+    font-weight: $NavbarFontStyleHover !important;
+    ;
 }
+
 @mixin CustomNavbarTextColorCollapse {
     color: $CustomNavbarLinkColorScrolling;
     font-weight: $navbarFountStyle;
@@ -47,28 +55,26 @@
     font-weight: $navbarFountStyle;
 }
 
-@mixin Primarybutton{
-    color:$primaryButtonColor !important;
-    background-color:$primary-color !important;
+@mixin Primarybutton {
+    color: $primaryButtonColor !important;
+    background-color: $primary-color !important;
 }
 
-@mixin HeadingTextColor{
-    color:$HeadingTextColor !important;
-    font-weight:$HeadingTextWidth !important;
+@mixin HeadingTextColor {
+    color: $HeadingTextColor !important;
+    font-weight: $HeadingTextWidth !important;
 }
 
-@mixin PragraphText{
-    color:$PragraphTextColor !important;
+@mixin PragraphText {
+    color: $PragraphTextColor !important;
 }
 
-@mixin NavbarBrandHover{
-
-    color:$NavbarFontColor;
+@mixin NavbarBrandHover {
+    color: $NavbarFontColor;
 }
 
 @mixin BannerBackground_1920 {
     background-image: url(Images/1920_GigBackgroundFinal.svg);
-    background-image: url(/Content/);
     background-size: cover;
     margin-top: 0px;
     display: -ms-flexbox;
@@ -97,6 +103,7 @@
         margin-bottom: 0px;
     }
 }
+
 @mixin BannerBackground_1440 {
     background-image: url(Images/1440_GigBackgroundFinal.svg);
     background-size: cover;
@@ -127,6 +134,7 @@
         margin-bottom: 0px;
     }
 }
+
 @mixin BannerBackground_1366 {
     background-image: url(Images/1360_GigBackgroundTest.svg);
     background-size: cover;
@@ -157,6 +165,7 @@
         margin-bottom: 0px;
     }
 }
+
 @mixin BannerBackground_990 {
     background-image: url(Images/768_GigBackgroundTest.svg);
     background-size: cover;
@@ -216,6 +225,7 @@
         margin-top: 0px !important;
     }
 }
+
 @mixin BannerBackground_530 {
     background-image: url(Images/768_GigBackgroundTest.svg);
     background-size: cover;
@@ -250,7 +260,6 @@
 @mixin AboutBannerFullSize {
     background-image: url(Images/1440-AboutBanner.svg);
     background-size: cover;
-   
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -270,7 +279,6 @@
     -ms-flex-align: center;
     align-items: center;
     height: 664px;
-   
 }
 
 @mixin AboutBannerFullSize1920 {
@@ -319,8 +327,9 @@
     -ms-flex-align: center;
     align-items: center;
     height: 664px;
-    padding-top:100px;
+    padding-top: 100px;
 }
+
 @mixin AboutBanner780 {
     background-image: url(Images/780-AboutBanner.svg);
     background-size: cover;
@@ -371,8 +380,8 @@
     padding-top: 100px;
 }
 
-@mixin UserBenefitsBackgroundFullSize{
-     background-image: url(Images/UserBenefits.svg);
+@mixin UserBenefitsBackgroundFullSize {
+    background-image: url(Images/UserBenefits.svg);
     background-size: cover;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -393,8 +402,9 @@
     -ms-flex-align: center;
     align-items: center;
     height: 800px;
-    margin-top:20px;
+    margin-top: 20px;
 }
+
 @mixin UserBenefitsBackground1440 {
     background-image: url(Images/UserBenefits.svg);
     background-size: cover;
@@ -445,190 +455,190 @@
     margin-top: 20px;
 }
 
- @mixin Explorationbanner1920 {
-        background-image: url(Images/1920ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        margin-top: 0px;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 300px;
-        width: auto;
-    }
+@mixin Explorationbanner1920 {
+    background-image: url(Images/1920ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+}
 
- @mixin Explorationbanner1360 {
-        background-image: url(Images/1440ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: auto;
-        width: auto;
-    }
+@mixin Explorationbanner1360 {
+    background-image: url(Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
 
- @mixin Explorationbanner1280 {
-        background-image: url(Images/1440ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: auto;
-        width: auto;
-    }
+@mixin Explorationbanner1280 {
+    background-image: url(Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
 
- @mixin Explorationbanner1024 {
-        background-image: url(Images/1440ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: auto;
-        width: auto;
-    }
+@mixin Explorationbanner1024 {
+    background-image: url(Images/1440ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
 
- @mixin Explorationbanner990 {
-        background-image: url(Images/1024ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 300px;
-        width: auto;
-    }
+@mixin Explorationbanner990 {
+    background-image: url(Images/1024ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+}
 
- @mixin Explorationbanner768 {
-        background-image: url(Images/768ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 400px;
-        width: auto;
-    }
+@mixin Explorationbanner768 {
+    background-image: url(Images/768ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 400px;
+    width: auto;
+}
 
- @mixin Explorationbanner530 {
-        background-image: url(Images/530ExploratoinBanner.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 500px;
-        width: auto;
-    }
+@mixin Explorationbanner530 {
+    background-image: url(Images/530ExploratoinBanner.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 500px;
+    width: auto;
+}
 
- //How online trainig works
+//How online trainig works
 
 @mixin HowOnlineTraningWorksBackground {
     background-image: url(Images/HowTrainingWorks.svg);
@@ -639,136 +649,137 @@
     width: auto;
     border-radius: 5px;
 }
- //Our Vision
- @mixin OurVisionFullSize {
-        background-image: url(Images/OurVison.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 700px;
-        width: auto;
+//Our Vision
+@mixin OurVisionFullSize {
+    background-image: url(Images/OurVison.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 700px;
+    width: auto;
+}
+
+@mixin OurVisionSmallSize {
+    background-image: url(Images/768OurVision.svg);
+    background-size: cover;
+    background-position: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 750px;
+    width: auto;
+}
+//Course Each Section
+@mixin CourseEachSectionShadow {
+    border-radius: .25rem;
+    box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
+    -webkit-box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
+}
+
+.card.card-cascade .view.view-cascade {
+    @include CourseEachSectionShadow;
+}
+
+@mixin BannerSecondHeading {
+    color: $SecondHeadingTextColor !important;
+    font-weight: $SecondPragraphTextColor !important;
+}
+
+@mixin HomeBannerExplorationFontColor {
+
+    .display-2 {
+        color: $BannerExplorationTextColor !important;
+        font-weight: $BahherExplorationFontWidth !important;
     }
 
- @mixin OurVisionSmallSize {
-        background-image: url(Images/768OurVision.svg);
-        background-size: cover;
-        background-position: center;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 750px;
-        width: auto;
-    }
- //Course Each Section
- @mixin CourseEachSectionShadow {
-        border-radius: .25rem;
-        box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
-        -webkit-box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
-        -moz-box-shadow: -3px -2px 5px -46px rgba(0,0,0,0.75) !important;
+    p {
+        color: $BannerExplorationPragraphTextColor !important;
     }
 
-    .card.card-cascade .view.view-cascade {
-        @include CourseEachSectionShadow;
+    h1, h2, h3, h4, h5, h6 {
+        color: $BannerExplorationPragraphTextColor !important;
+        font-weight: $FooterFontWidth !important;
+    }
+}
+
+@mixin FooterFont {
+    p {
+        color: $FooterPraghraphText !important;
     }
 
-    @mixin BannerSecondHeading {
-        color: $SecondHeadingTextColor !important;
-        font-weight: $SecondPragraphTextColor !important;
+    h1, h2, h3, h4, h5, h6 {
+        color: $FooterHeadingText !important;
+        font-weight: $FooterFontWidth !important;
+    }
+}
+
+.FooterFontStyle {
+    @include FooterFont;
+}
+
+@mixin FooterLinksStyle {
+    a {
+        color: $FooterLinksColor !important;
     }
 
-    @mixin HomeBannerExplorationFontColor {
+    i {
+        color: $FooterLinksColor !important;
+    }
+}
 
-        .display-2 {
-            color: $BannerExplorationTextColor !important;
-            font-weight: $BahherExplorationFontWidth !important;
-        }
+.linksStyle {
+    @include FooterLinksStyle;
+}
 
-        p {
-            color: $BannerExplorationPragraphTextColor !important;
-        }
 
-        h1, h2, h3, h4, h5, h6 {
-            color: $BannerExplorationPragraphTextColor !important;
-            font-weight: $FooterFontWidth !important;
-        }
+@mixin UserBenefitsFontStyle {
+    h1, h2, h3, h4, h5, h6 {
+        color: $UserBenefitsTextColor !important;
+        font-weight: $UserBenefitsFontWidth !important;
     }
 
-    @mixin FooterFont {
-        p {
-            color: $FooterPraghraphText !important;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: $FooterHeadingText !important;
-            font-weight: $FooterFontWidth !important;
-        }
+    p {
+        color: $UserBenefitsTextColor !important;
     }
+}
 
-    .FooterFontStyle {
-        @include FooterFont;
-    }
-
-    @mixin FooterLinksStyle {
-        a {
-            color: $FooterLinksColor !important;
-        }
-
-        i {
-            color: $FooterLinksColor !important;
-        }
-    }
-
-    .linksStyle {
-        @include FooterLinksStyle;
-    }
-
-
-    @mixin UserBenefitsFontStyle{
-        h1,h2,h3,h4,h5,h6{
-            color:$UserBenefitsTextColor !important;
-            font-weight:$UserBenefitsFontWidth !important;
-
-        }
-        p{
-            color:$UserBenefitsTextColor !important;
-        }
-    }
-
-.UserBenefitsTextStyle{
+.UserBenefitsTextStyle {
     @include UserBenefitsFontStyle;
 }
+
 @mixin HomeBannerExplorationFontColor {
 
     .display-2 {
@@ -785,338 +796,337 @@
     }
 }
 
-    @mixin HomeBannerExplorationFontColorSmallSize {
+@mixin HomeBannerExplorationFontColorSmallSize {
 
-        .display-2 {
-            color: $BannerExplorationTextColor !important;
-            font-weight: $BahherExplorationFontWidth !important;
-            font-size: $DisplayTextSizeForSmall !important;
-        }
-
-        p {
-            color: $BannerExplorationPragraphTextColor !important;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: $BannerExplorationPragraphTextColor !important;
-        }
-    }
-
-    @media(min-width:300px) and (max-width:768px) {
-        .HomebannerExplorationTextColor {
-
-            @include HomeBannerExplorationFontColorSmallSize;
-        }
-    }
-    //footer
-    @mixin MainFooter {
-        background-image: url(Images/Footer.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 830px;
-        flex-direction: row;
-    }
-
-    @mixin MainFooter1440 {
-        background-image: url(Images/Footer.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 830px;
-        flex-direction: row;
-    }
-
-    @mixin MainFooter1180 {
-        background-image: url(Images/Footer1180.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 830px;
-        flex-direction: row;
-    }
-
-    @mixin MainFooter990 {
-        background-image: url(Images/Footer990.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 830px;
-        flex-direction: row;
-    }
-
-    @mixin MainFooter769 {
-        background-image: url(Images/Footer769.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 830px;
-        flex-direction: row;
-    }
-
-    @mixin MainFooter500 {
-        background-image: url(Images/Footer500.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 1600px;
-        flex-direction: row;
-    }
-
-    @mixin MainFooter360 {
-        background-image: url(Images/Footer500.svg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-end;
-        align-content: center;
-        width: 100%;
-        height: 1600px;
-        flex-direction: row;
-    }
-    //Quiz section
-    @mixin QuizMainBackgroundFullsize {
-        background-image: url(Images/NotSure.svg);
-        background-size: cover;
-        background-position: center;
-        margin-top: 0px;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 600px;
-        width: auto;
-    }
-
-    @mixin Quizbackground768 {
-        background-image: url(Images/NotSure768.svg);
-        background-size: cover;
-        background-position: center;
-        margin-top: 0px;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 800px;
-        width: auto;
-        margin-top: 50px;
-    }
-
-    @mixin Quizbackground500 {
-        background-image: url(Images/NotSure768.svg);
-        background-size: cover;
-        background-position: center;
-        margin-top: 0px;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 800px;
-        width: auto;
-        margin-top: 50px;
-    }
-
-    .QuizMainBackground {
-        @include QuizMainBackgroundFullsize;
-    }
-
-    @media(min-width:500px) and (max-width:768px) {
-        .QuizMainBackground {
-            @include Quizbackground768;
-        }
-    }
-
-    @media(min-width:300px) and (max-width:500px) {
-        .QuizMainBackground {
-            @include Quizbackground768;
-        }
-    }
-
-    .HomebannerExplorationTextColor {
-
-        @include HomeBannerExplorationFontColor;
-    }
-
-    html, body, header, .view {
-        height: $bodyandViewHieght;
-    }
-
-    body {
-        background-color: #FBFBFB !important;
-        font-family: $FamilyFont;
-    }
-
-    .body-content {
-        padding-top: $padding-top;
-        padding-left: $padding-left;
-        padding-right: $padding-right;
-    }
-
-    input,
-    select,
-    textarea {
-        
-    }
-
-
-
-    .dl-horizontal dt {
-        white-space: normal;
-    }
-
-    .navbar {
-        @include MainNavbar
-    }
-
-    .top-nav-collapse {
-
-        @include CollapseNavbar;
-        @include CustomNavbarTextColorCollapse;
-        color: $NavbarFontColor !important;
-    }
-
-    @media only screen and (max-width: 990px) {
-        .navbar {
-            @include SmallAndMedumNavbar
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .navbar {
-            @include SmallAndMedumNavbar
-        }
-    }
-
-    .navbar-nav .nav-link {
-
-        @include CustomNavbarTextColor
-    }
-
-    .navbar-nav .nav-link:hover {
-
-        @include CustomNavbarTextColorHover;
-    }
-
-    .navbar-brand {
-
-        @include BrandNavbar
-    }
-
-    .navbar-brand:hover {
-
-        @include NavbarBrandHover;
-    }
-
-    #LoginNavbarButton {
-        @include BrandNavbar
-    }
-
-    .btn {
-        @include Primarybutton
-    }
-
-
-
-
-
-
-
-
-
-    .textColor {
-        @include HeadingTextColor
+    .display-2 {
+        color: $BannerExplorationTextColor !important;
+        font-weight: $BahherExplorationFontWidth !important;
+        font-size: $DisplayTextSizeForSmall !important;
     }
 
     p {
-        @include PragraphText;
+        color: $BannerExplorationPragraphTextColor !important;
     }
 
-    .textColorForSecondHeading {
-        h1,h2,h3,h4,h5,h6,th,td {
-            color: $SecondHeadingTextColor !important;
-            text-align: center;
-            font-weight: $HeadingTextWidth !important;
-        }
-
-        p {
-            color: $SecondPragraphTextColor !important;
-            text-align: center;
-        }
+    h1, h2, h3, h4, h5, h6 {
+        color: $BannerExplorationPragraphTextColor !important;
     }
+}
+
+@media(min-width:300px) and (max-width:768px) {
+    .HomebannerExplorationTextColor {
+
+        @include HomeBannerExplorationFontColorSmallSize;
+    }
+}
+//footer
+@mixin MainFooter {
+    background-image: url(Images/Footer.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+
+@mixin MainFooter1440 {
+    background-image: url(Images/Footer.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+
+@mixin MainFooter1180 {
+    background-image: url(Images/Footer1180.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+
+@mixin MainFooter990 {
+    background-image: url(Images/Footer990.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+
+@mixin MainFooter769 {
+    background-image: url(Images/Footer769.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 830px;
+    flex-direction: row;
+}
+
+@mixin MainFooter500 {
+    background-image: url(Images/Footer500.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 1600px;
+    flex-direction: row;
+}
+
+@mixin MainFooter360 {
+    background-image: url(Images/Footer500.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 1600px;
+    flex-direction: row;
+}
+//Quiz section
+@mixin QuizMainBackgroundFullsize {
+    background-image: url(Images/NotSure.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 600px;
+    width: auto;
+}
+
+@mixin Quizbackground768 {
+    background-image: url(Images/NotSure768.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    margin-top: 50px;
+}
+
+@mixin Quizbackground500 {
+    background-image: url(Images/NotSure768.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.QuizMainBackground {
+    @include QuizMainBackgroundFullsize;
+}
+
+@media(min-width:500px) and (max-width:768px) {
+    .QuizMainBackground {
+        @include Quizbackground768;
+    }
+}
+
+@media(min-width:300px) and (max-width:500px) {
+    .QuizMainBackground {
+        @include Quizbackground768;
+    }
+}
+
+.HomebannerExplorationTextColor {
+
+    @include HomeBannerExplorationFontColor;
+}
+
+html, body, header, .view {
+    height: $bodyandViewHieght;
+}
+
+body {
+    background-color: #FBFBFB !important;
+    font-family: $FamilyFont;
+}
+
+.body-content {
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+input,
+select,
+textarea {
+}
+
+
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.navbar {
+    @include MainNavbar
+}
+
+.top-nav-collapse {
+
+    @include CollapseNavbar;
+    @include CustomNavbarTextColorCollapse;
+    color: $NavbarFontColor !important;
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar {
+        @include SmallAndMedumNavbar
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        @include SmallAndMedumNavbar
+    }
+}
+
+.navbar-nav .nav-link {
+
+    @include CustomNavbarTextColor
+}
+
+.navbar-nav .nav-link:hover {
+
+    @include CustomNavbarTextColorHover;
+}
+
+.navbar-brand {
+
+    @include BrandNavbar
+}
+
+.navbar-brand:hover {
+
+    @include NavbarBrandHover;
+}
+
+#LoginNavbarButton {
+    @include BrandNavbar
+}
+
+.btn {
+    @include Primarybutton
+}
+
+
+
+
+
+
+
+
+
+.textColor {
+    @include HeadingTextColor
+}
+
+p {
+    @include PragraphText;
+}
+
+.textColorForSecondHeading {
+    h1, h2, h3, h4, h5, h6, th, td {
+        color: $SecondHeadingTextColor !important;
+        text-align: center;
+        font-weight: $HeadingTextWidth !important;
+    }
+
+    p {
+        color: $SecondPragraphTextColor !important;
+        text-align: center;
+    }
+}
 
 .TextColorForHeading {
     h1, h2, h3, h4, h5, h6, th, td {
@@ -1127,271 +1137,271 @@
 
     p {
         color: $SecondPragraphTextColor !important;
-        
     }
 }
-    //First Home Banner
-    @media(min-wdith:1720px) and (max-width:1920px) {
-        .HomeBannerMainSection {
-            @include BannerBackground_1920;
-        }
+//First Home Banner
+@media(min-wdith:1720px) and (max-width:1920px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1920;
     }
+}
 
-    @media(max-width:1920px) {
-        .HomeBannerMainSection {
-            @include BannerBackground_1920;
-        }
+@media(max-width:1920px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1920;
     }
+}
 
-    @media(min-width:1366px) and (max-width:1440px) {
-        .HomeBannerMainSection {
-            @include BannerBackground_1440;
-        }
+@media(min-width:1366px) and (max-width:1440px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1440;
     }
+}
 
 
-    @media(max-width:1366px) {
-        .HomeBannerMainSection {
-            @include BannerBackground_1366;
-        }
+@media(max-width:1366px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_1366;
     }
+}
 
-    @media(max-width:768px) {
-        .HomeBannerMainSection {
-            @include BannerBackground_768;
-        }
+@media(max-width:768px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_768;
     }
+}
 
-    @media(min-width:300px) and (max-width:550px) {
-        .HomeBannerMainSection {
-            @include BannerBackground_530;
-        }
+@media(min-width:300px) and (max-width:550px) {
+    .HomeBannerMainSection {
+        @include BannerBackground_530;
     }
-    //SecondHomeBanner
-    @media(min-width:1920px) {
-        .SecondHomeBanner {
-            @include Explorationbanner1920;
-        }
+}
+//SecondHomeBanner
+@media(min-width:1920px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1920;
     }
+}
 
-    @media(min-width:1360px) and (max-width:1440px) {
-        .SecondHomeBanner {
-            @include Explorationbanner1360
-        }
+@media(min-width:1360px) and (max-width:1440px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1360
     }
+}
 
-    @media(min-width:1280px) and (max-width:1360px) {
-        .SecondHomeBanner {
-            @include Explorationbanner1280;
-        }
+@media(min-width:1280px) and (max-width:1360px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1280;
     }
+}
 
-    @media(min-width:990px) and (max-width:1280px) {
-        .SecondHomeBanner {
-            @include Explorationbanner1024;
-        }
+@media(min-width:990px) and (max-width:1280px) {
+    .SecondHomeBanner {
+        @include Explorationbanner1024;
     }
+}
 
-    @media(min-width:768px) and (max-width:990px) {
-        .SecondHomeBanner {
-            @include Explorationbanner990;
-        }
+@media(min-width:768px) and (max-width:990px) {
+    .SecondHomeBanner {
+        @include Explorationbanner990;
     }
+}
 
-    @media(min-width:500px) and (max-width:768px) {
-        .SecondHomeBanner {
-            @include Explorationbanner768;
-        }
+@media(min-width:500px) and (max-width:768px) {
+    .SecondHomeBanner {
+        @include Explorationbanner768;
     }
+}
 
-    @media(min-width:300px) and (max-width:500px) {
-        .SecondHomeBanner {
-            @include Explorationbanner530;
-        }
+@media(min-width:300px) and (max-width:500px) {
+    .SecondHomeBanner {
+        @include Explorationbanner530;
     }
+}
 
 
 
 
+.OurVisonmainBackground {
+    @include OurVisionFullSize {
+    }
+}
+
+
+@media(min-width:300px) and (max-width:768px) {
     .OurVisonmainBackground {
-        @include OurVisionFullSize {
+        @include OurVisionSmallSize {
         }
     }
+}
 
+.FooterMainBackground {
+    @include MainFooter;
+}
 
-    @media(min-width:300px) and (max-width:768px) {
-        .OurVisonmainBackground {
-            @include OurVisionSmallSize {
-            }
-        }
-    }
-
+@media(min-width:1360px) and (max-width:1920px) {
     .FooterMainBackground {
-        @include MainFooter;
+        @include MainFooter1440;
     }
+}
 
-    @media(min-width:1360px) and (max-width:1920px) {
-        .FooterMainBackground {
-            @include MainFooter1440;
-        }
+@media(min-width:1360px) and (max-width:1440px) {
+    .FooterMainBackground {
+        @include MainFooter1440;
     }
+}
 
-    @media(min-width:1360px) and (max-width:1440px) {
-        .FooterMainBackground {
-            @include MainFooter1440;
-        }
+@media(min-width:990px) and (max-width:1180px) {
+    .FooterMainBackground {
+        @include MainFooter1180;
     }
+}
 
-    @media(min-width:990px) and (max-width:1180px) {
-        .FooterMainBackground {
-            @include MainFooter1180;
-        }
+@media(min-width:800px) and (max-width:990px) {
+    .FooterMainBackground {
+        @include MainFooter990;
     }
+}
 
-    @media(min-width:800px) and (max-width:990px) {
-        .FooterMainBackground {
-            @include MainFooter990;
-        }
+@media(min-width:769px) and (max-width:800px) {
+    .FooterMainBackground {
+        @include MainFooter769;
     }
+}
 
-    @media(min-width:769px) and (max-width:800px) {
-        .FooterMainBackground {
-            @include MainFooter769;
-        }
+@media(min-width:500px) and (max-width:767px) {
+    .FooterMainBackground {
+        @include MainFooter500;
     }
+}
 
-    @media(min-width:500px) and (max-width:767px) {
-        .FooterMainBackground {
-            @include MainFooter500;
-        }
+@media(min-width:200px) and (max-width:500px) {
+    .FooterMainBackground {
+        @include MainFooter360;
     }
+}
 
-    @media(min-width:200px) and (max-width:500px) {
-        .FooterMainBackground {
-            @include MainFooter360;
-        }
-    }
+@mixin AnimationBackGroundForQuiz {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
 
-    @mixin AnimationBackGroundForQuiz {
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
+@mixin AnimaitonsubBacground {
+    position: absolute;
+    top: -150px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+    z-index: -1;
+}
 
-    @mixin AnimaitonsubBacground {
-        position: absolute;
-        top: -150px;
-        left: 0px;
-        height: 500px;
-        width: 500px;
-        z-index: -1;
-    }
-
-    @mixin LottiePlayerPosition {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 500px;
-        width: 500px;
-    }
+@mixin LottiePlayerPosition {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+}
 
 
 
 
 
-    @mixin AnimationBackGroundForQuiz768 {
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
+@mixin AnimationBackGroundForQuiz768 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
 
-    @mixin AnimaitonsubBacground768 {
-        position: absolute;
-        top: -100px;
-        left: 0px;
-        height: 500px;
-        width: 500px;
-        z-index: -1;
-    }
+@mixin AnimaitonsubBacground768 {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+    z-index: -1;
+}
 
-    @mixin LottiePlayerPosition768 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 500px;
-        width: 500px;
-    }
+@mixin LottiePlayerPosition768 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
+}
 
+.BackgroundAnimation {
+
+    @include AnimationBackGroundForQuiz;
+}
+
+.AnimationMainBackground {
+
+    @include AnimaitonsubBacground;
+}
+
+.AnimationMainBackground lottie-player {
+
+    @include LottiePlayerPosition;
+}
+
+
+@media(min-width:500px) and (max-width:768px) {
     .BackgroundAnimation {
 
-        @include AnimationBackGroundForQuiz;
+        @include AnimationBackGroundForQuiz768;
     }
 
     .AnimationMainBackground {
 
-        @include AnimaitonsubBacground;
+        @include AnimaitonsubBacground768;
     }
 
     .AnimationMainBackground lottie-player {
 
-        @include LottiePlayerPosition;
+        @include LottiePlayerPosition768;
+    }
+}
+
+
+@media(min-width:300px) and (max-width:500px) {
+    .BackgroundAnimation {
+
+        @include AnimationBackGroundForQuiz768;
     }
 
+    .AnimationMainBackground {
 
-    @media(min-width:500px) and (max-width:768px) {
-        .BackgroundAnimation {
-
-            @include AnimationBackGroundForQuiz768;
-        }
-
-        .AnimationMainBackground {
-
-            @include AnimaitonsubBacground768;
-        }
-
-        .AnimationMainBackground lottie-player {
-
-            @include LottiePlayerPosition768;
-        }
+        @include AnimaitonsubBacground768;
     }
 
+    .AnimationMainBackground lottie-player {
 
-    @media(min-width:300px) and (max-width:500px) {
-        .BackgroundAnimation {
-
-            @include AnimationBackGroundForQuiz768;
-        }
-
-        .AnimationMainBackground {
-
-            @include AnimaitonsubBacground768;
-        }
-
-        .AnimationMainBackground lottie-player {
-
-            @include LottiePlayerPosition768;
-        }
+        @include LottiePlayerPosition768;
     }
-    /*.QuizMainContent h1, p {
+}
+/*.QuizMainContent h1, p {
     position: absolute;
     top: 100px;
     left: 0px;
 }*/
-    //about banner background
-    .AboutBannerMainSection {
-        @include AboutBannerFullSize;
-    }
+//about banner background
+.AboutBannerMainSection {
+    @include AboutBannerFullSize;
+}
 
 @media(min-width:1500px) and (max-width:1920px) {
     .AboutBannerMainSection {
         @include AboutBannerFullSize1920;
     }
 }
-    @media(max-width:990px) {
-        .AboutBannerMainSection {
-            @include AboutBanner1000;
-        }
+
+@media(max-width:990px) {
+    .AboutBannerMainSection {
+        @include AboutBanner1000;
     }
+}
 
 @media(min-width:500px) and (max-width:768px) {
     .AboutBannerMainSection {
@@ -1430,12 +1440,10 @@
     margin-top:20px;
 }*/
 
-@media(min-width:1500px) and (max-width:1920px)
-{
+@media(min-width:1500px) and (max-width:1920px) {
     .UserBenefitsBackground {
         @Include UserBenefitsBackgroundFullSize;
     }
-   
 }
 
 @media(min-width:1500px) and (max-width:1920px) {
@@ -1449,6 +1457,7 @@
         @include UserBenefitsBackground1440;
     }
 }
+
 @media(min-width:300px) and (max-width:768px) {
     .UserBenefitsBackground {
         @include UserBenefitsBackground768;
@@ -1457,69 +1466,68 @@
 
 
 .HowOnlineTrainingWorkbackground {
-  @include HowOnlineTraningWorksBackground;
+    @include HowOnlineTraningWorksBackground;
 }
 
 @mixin GoogleReviewBackground {
-   
-        background-image: url(Images/GoogleReview.svg);
-       
-        background-position: center;
-        background-size: cover;
-        height: auto;
-
+    background-image: url(Images/GoogleReview.svg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
 }
 
-.GoogleReviewbackground{
+.GoogleReviewbackground {
     @include GoogleReviewBackground;
 }
 
-.chip{
-    background-color:$ChipBackgroundColor !important;
-    color:$ChipColor !important;
+.chip {
+    background-color: $ChipBackgroundColor !important;
+    color: $ChipColor !important;
 }
 
-.TrainerPhilosophyBackground
-{
-    background-image:url(Images/TrainePhilsophy.svg) !important;
-   background-repeat:no-repeat;
-   background-size:cover;
-    background-attachment:fixed;
-    height:auto;
-    border-radius:7px;
-
+.TrainerPhilosophyBackground {
+    background-image: url(Images/TrainePhilsophy.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    border-radius: 7px;
 }
 
 @Mixin TabCardBackground {
-    -webkit-box-shadow:$-web-CardBackground !important;
-    box-shadow:$CardBackgroundShadow !important;
+    -webkit-box-shadow: $-web-CardBackground !important;
+    box-shadow: $CardBackgroundShadow !important;
 }
+
 .Card_Background {
     @Include TabCardBackground;
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.03) !important;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.03) !important;
 }
+
 .TabColor {
     background-color: $TabBackgroundColor !important;
 }
 
 
-@mixin AboutBannerPositioning{
-    margin-top:100px !important;
+@mixin AboutBannerPositioning {
+    margin-top: 100px !important;
 }
+
 @mixin BenefitsOfOnlineTrainingPositioning {
     margin-top: 130px !important;
 }
 
-@media(min-width:300px) and (max-width:500px)
-{
+@media(min-width:300px) and (max-width:500px) {
     .textColorForSecondHeading {
         margin-top: 100px !important;
     }
+
     .BenefitsOfOnlineClassSizing {
         margin-top: 130px !important;
     }
 }
+
 @mixin ContactmainBannerFullsize {
     background-image: url(Images/ContactMainBanner.svg);
     background-size: cover;
@@ -1591,6 +1599,7 @@
     align-items: center;
     height: 900px;
 }
+
 @mixin ContactBannerFor500 {
     background-image: url(Images/ContactMainBanner768.svg);
     background-size: cover;
@@ -1614,6 +1623,7 @@
     align-items: center;
     height: 920px;
 }
+
 @mixin ContactBannerFor300 {
     background-image: url(Images/ContactMainBanner500.svg);
     background-size: cover;
@@ -1637,47 +1647,54 @@
     align-items: center;
     height: 850px;
 }
+
 .ContactMainBanner {
 
     @include ContactmainBannerFullsize;
 }
+
 @media(min-width:1500px) and (max-width:1920px) {
     .ContactMainBanner {
         @include ContactBannerFor1920To1500;
     }
 }
+
 @media(min-width:500px) and (max-width:768px) {
     .ContactMainBanner {
         @include ContactBannerFor768;
     }
 }
+
 @media(min-width:300px) and (max-width:500px) {
     .ContactMainBanner {
         @include ContactBannerFor300;
     }
 }
 
-@mixin ContactExContent{
-    margin-top:100px;
+@mixin ContactExContent {
+    margin-top: 100px;
 }
+
 @mixin ContactExContent500 {
     margin-top: 0px;
 }
+
 @media(min-width:769px) and (max-width:990px) {
     .ContactUsEx {
         @include ContactExContent;
     }
 }
 
-@media(min-width:300px) and (max-width:768px)
-{
-    .ContactUsEx{
-       @include ContactExContent500;
+@media(min-width:300px) and (max-width:768px) {
+    .ContactUsEx {
+        @include ContactExContent500;
     }
-    .ContactmainContent{
-        margin-top:100px;
+
+    .ContactmainContent {
+        margin-top: 100px;
     }
 }
+
 @media(min-width:300px) and (max-width:500px) {
     .ContactUsEx {
         @include ContactExContent500;
@@ -1686,6 +1703,7 @@
     .ContactmainContent {
         margin-top: 100px;
     }
+
     .ContactMainTitle {
         margin-top: 100px;
     }
@@ -1713,9 +1731,9 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-   
     height: 790px;
 }
+
 @mixin ContactDetailsBackgroud990 {
     background-image: url(Images/CotnactDetails.svg);
     background-size: cover;
@@ -1739,8 +1757,9 @@
     -ms-flex-align: center;
     align-items: center;
     height: 790px;
-    padding-top:100px;
+    padding-top: 100px;
 }
+
 @mixin ContactDetailsBackgroud768 {
     background-image: url(Images/CotnactDetails500.svg);
     background-size: cover;
@@ -1764,14 +1783,14 @@
     -ms-flex-align: center;
     align-items: center;
     height: 1050px;
-    padding-top:100px;
-    margin-top:50px;
-    
+    padding-top: 100px;
+    margin-top: 50px;
 }
+
 @mixin ContactDetailsBackgroud500 {
     background-image: url(Images/CotnactDetails500.svg);
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -1796,20 +1815,21 @@
 }
 
 .ContactDetailsBackground {
-   @include ContactDetailsBackgroud
+    @include ContactDetailsBackgroud
 }
 
-@media(min-width:768px) and (max-width:900px)
-{
+@media(min-width:768px) and (max-width:900px) {
     .ContactDetailsBackground {
         @include ContactDetailsBackgroud990
     }
 }
+
 @media(min-width:500px) and (max-width:768px) {
     .ContactDetailsBackground {
         @include ContactDetailsBackgroud768
     }
 }
+
 @media(min-width:250px) and (max-width:500px) {
     .ContactDetailsBackground {
         @include ContactDetailsBackgroud500
@@ -1851,6 +1871,7 @@
     align-items: center;
     height: 800px;
 }
+
 @mixin CoursesBanner1920to1500 {
     background-image: url(Images/ContactMainBanner.svg);
     background-size: cover;
@@ -1874,6 +1895,7 @@
     align-items: center;
     height: 800px;
 }
+
 @mixin CoursesBanner990 {
     background-image: url(Images/ContactMainBanner990.svg);
     background-size: cover;
@@ -1896,12 +1918,13 @@
     -ms-flex-align: center;
     align-items: center;
     height: 850px;
-    padding-top:100px;
+    padding-top: 100px;
 
     .CoursesSecondContent {
         margin-top: 200px;
     }
 }
+
 @mixin CoursesBannerFor768 {
     background-image: url(Images/ContactMainBanner768.svg);
     background-size: cover;
@@ -1924,13 +1947,14 @@
     -ms-flex-align: center;
     align-items: center;
     height: 950px;
-    padding-top:150px;
-    
+    padding-top: 150px;
+
 
     .CoursesSecondContent {
         margin-top: 0px;
     }
 }
+
 @mixin CoursesBannerFor300 {
     background-image: url(Images/ContactMainBanner500.svg);
     background-size: cover;
@@ -1953,7 +1977,7 @@
     -ms-flex-align: center;
     align-items: center;
     height: 900px;
-    padding-top:100px;
+    padding-top: 100px;
 
     .CoursesSecondContent {
         margin-top: 0px;
@@ -1961,7 +1985,7 @@
 }
 
 
-.CoursesMainBanner{
+.CoursesMainBanner {
     @include CoursesBannerFullSize;
 }
 
@@ -1970,11 +1994,11 @@
         @include CoursesBanner1920to1500;
     }
 }
+
 @media(min-width:768px) and (max-width:990px) {
     .CoursesMainBanner {
         @include CoursesBanner990;
     }
-  
 }
 
 @media(min-width:500px) and (max-width:768px) {
@@ -2014,6 +2038,7 @@
     height: 600px;
     border-radius: 5px;
 }
+
 @mixin LaunchingCodingCareer768 {
     background-image: url(Images/LaunchingCoding768.svg);
     background-size: cover;
@@ -2038,8 +2063,9 @@
     align-items: center;
     height: 1000px;
     border-radius: 5px;
-    margin-top:100px;
+    margin-top: 100px;
 }
+
 @mixin LaunchingCodingCareer500 {
     background-image: url(Images/LaunchingCoding768.svg);
     background-size: cover;
@@ -2068,15 +2094,15 @@
 }
 
 .LuanchingCodingBackground {
-   @include LaunchingCodingCareer;
-  
+    @include LaunchingCodingCareer;
 }
-@media(min-width:500px) and (max-width:768px)
-{
+
+@media(min-width:500px) and (max-width:768px) {
     .LuanchingCodingBackground {
         @include LaunchingCodingCareer768;
     }
 }
+
 @media(min-width:280px) and (max-width:500px) {
     .LuanchingCodingBackground {
         @include LaunchingCodingCareer500;
@@ -2088,7 +2114,6 @@
     -webkit-box-shadow: $-webkit-CardBackgroundShadow !important;
     box-shadow: $CardBackgroundShadow !important;
     border-radius: 4px;
-   
 }
 
 @mixin WhoisthisProgramFor {
@@ -2105,42 +2130,37 @@
 .card.card-cascade .view.view-cascade.card-shwadow {
     @include CoursesDescriptionCardBackground;
 }
-.card-background-color
-{
-    background-color:$card-background-color !important;
+
+.card-background-color {
+    background-color: $card-background-color !important;
 }
 
-#AvatarImage img{
-
-    height:80px !important;
-    width:80px !important;
+#AvatarImage img {
+    height: 80px !important;
+    width: 80px !important;
 }
 
-.AnimationBackground
-{
-    position:relative;
-    top:0px;
-    left:0px;
-   
-   
-
+.AnimationBackground {
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .animationPosition lottie-player {
     position: absolute;
-    left:0;
-    top:-150px;
+    left: 0;
+    top: -150px;
     height: 500px;
-    width:auto;
-    z-index:-1;
+    width: auto;
+    z-index: -1;
 }
 
-.QuikLinkBakcground{
-    background-image:url(Images/QuikLinks.svg);
-    background-position:center;
-    background-size:cover;
-    background-attachment:fixed;
-    border-radius:5px !important;
+.QuikLinkBakcground {
+    background-image: url(Images/QuikLinks.svg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5px !important;
 }
 
 
@@ -2167,13 +2187,13 @@
     -ms-flex-align: center;
     align-items: center;
     height: 750px;
-    padding-top:50px;
-    
-    .ForBusinessBannerExpolration
-        {
-        margin-top:50px;
+    padding-top: 50px;
+
+    .ForBusinessBannerExpolration {
+        margin-top: 50px;
     }
 }
+
 @mixin ForBusinessBanner1920 {
     background-image: url(Images/ForBusiness.svg);
     background-size: cover;
@@ -2202,6 +2222,7 @@
         margin-top: 100px;
     }
 }
+
 @mixin ForBusinessBanner990 {
     background-image: url(Images/ForBusiness.svg);
     background-size: cover;
@@ -2230,6 +2251,7 @@
         margin-top: 130px;
     }
 }
+
 @mixin ForBusinessBanner768 {
     background-image: url(Images/ForBusiness.svg);
     background-size: cover;
@@ -2258,6 +2280,7 @@
         margin-top: 0px;
     }
 }
+
 @mixin ForBusinessBanner500 {
     background-image: url(Images/ForBusiness.svg);
     background-size: cover;
@@ -2281,37 +2304,37 @@
     align-items: center;
     height: 900px;
     /*padding-top: 100px;*/
-
     .ForBusinessBannerExpolration {
         margin-top: 0px;
     }
 }
 
 .ForBusinessMainBackground {
-  
-   @include ForBusinessBanner;
-  
+
+    @include ForBusinessBanner;
 }
 
-@media(min-width:1700px) and (max-width:1920px)
-{
+@media(min-width:1700px) and (max-width:1920px) {
     .ForBusinessMainBackground {
 
         @include ForBusinessBanner1920;
     }
 }
+
 @media(min-width:768px) and (max-width:990px) {
     .ForBusinessMainBackground {
 
         @include ForBusinessBanner990;
     }
 }
+
 @media(min-width:500px) and (max-width:768px) {
     .ForBusinessMainBackground {
 
         @include ForBusinessBanner768;
     }
 }
+
 @media(min-width:250px) and (max-width:500px) {
     .ForBusinessMainBackground {
 
@@ -2321,7 +2344,7 @@
 
 @mixin BusinessBannerFontStyle {
     p {
-        color:$BannerFontColor !important;
+        color: $BannerFontColor !important;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -2330,7 +2353,7 @@
     }
 }
 
-.CustomBannerFontStyle{
+.CustomBannerFontStyle {
 
     @include BusinessBannerFontStyle;
 }
@@ -2339,19 +2362,17 @@
     padding-top: 10px;
 }
 
-@media(min-width:300px) and (max-width:768px)
-{
+@media(min-width:300px) and (max-width:768px) {
     .TrustedMainBackground {
-       margin-top:150px;
+        margin-top: 150px;
     }
 }
 
 .CardBackground {
-    background-image:url(Images/LaunchingCoding.svg);
-    background-size:cover;
-    background-attachment:fixed;
-    background-position:center;
-    
+    background-image: url(Images/LaunchingCoding.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .UPSkillingEmployeesBackground {
@@ -2359,19 +2380,19 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height:auto;
+    height: auto;
 }
 
-.builSectionBackground  {
+.builSectionBackground {
     position: absolute;
     top: 0px;
     left: 0px;
-    
 }
-.builSectionBackground lottie-player
-{
-    z-index:-1;
+
+.builSectionBackground lottie-player {
+    z-index: -1;
 }
+
 .ImgBackground img {
     position: relative;
     top: 0px;
@@ -2383,13 +2404,12 @@
     position: absolute;
     top: 0px;
     left: 0px;
-   
 }
+
 .VisionImageBackground img {
     position: relative;
     top: 0px;
     left: 0px;
-    
 }
 
 
@@ -2417,6 +2437,7 @@
     height: 700px;
     z-index: -1;
 }
+
 @mixin OurVisionbackground768 {
     background-image: url(Images/VisionBanner768.svg);
     background-size: cover;
@@ -2446,8 +2467,7 @@
     @include OurVisionbackground;
 }
 
-@media(min-width:500px) and (max-width:768px)
-{
+@media(min-width:500px) and (max-width:768px) {
     .OurVisonMainbackground {
         @include OurVisionbackground768;
     }
@@ -2477,6 +2497,7 @@
     height: 100vh;
     padding-top: 70px;
 }
+
 @mixin LoginBakcground1366 {
     background-image: url(Images/VisionBanner1366.svg);
     background-size: cover;
@@ -2498,9 +2519,9 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height:100vh;
-    
+    height: 100vh;
 }
+
 @mixin LoginBakcground768 {
     background-image: url(Images/VisionBanner768.svg);
     background-size: cover;
@@ -2523,8 +2544,8 @@
     -ms-flex-align: center;
     align-items: center;
     height: 1150px;
-   
 }
+
 @mixin LoginBakcground500 {
     background-image: url(Images/VisionBanner768.svg);
     background-size: cover;
@@ -2548,6 +2569,7 @@
     align-items: center;
     height: 1100px;
 }
+
 @mixin LoginBakcground400 {
     background-image: url(Images/LoginBackground500.svg);
     background-size: cover;
@@ -2571,8 +2593,9 @@
     align-items: center;
     height: 950px;
 }
+
 .LoginMainBackground {
-   @include LoginBakcgroundFullSize;
+    @include LoginBakcgroundFullSize;
 }
 
 @media(min-width:1260px) and (max-width:1366px) {
@@ -2580,26 +2603,28 @@
         @include LoginBakcground1366;
     }
 }
-@media(min-width:500px) and (max-width:768px)
-{
+
+@media(min-width:500px) and (max-width:768px) {
     .LoginMainBackground {
         @include LoginBakcground768;
     }
 }
+
 @media(min-width:400px) and (max-width:500px) {
     .LoginMainBackground {
         @include LoginBakcground500;
     }
 }
+
 @media(min-width:200px) and (max-width:400px) {
     .LoginMainBackground {
         @include LoginBakcground400;
     }
 }
 
-.btn-default{
-    background-color:red !important;
-    color:white !important;
+.btn-default {
+    background-color: red !important;
+    color: white !important;
 }
 
 .CourseAnimationBackground lottie-player {
@@ -2632,11 +2657,9 @@
     align-items: center;
     height: 100vh;
     padding-top: 70px;
-    
 }
 
-@Media(min-width:300px) and (max-width:768px)
-{
+@Media(min-width:300px) and (max-width:768px) {
     .MoreCoursesDescrption {
         background-image: url(Images/CoursesDescripton.svg);
         background-size: cover;
@@ -2683,16 +2706,16 @@
 }*/
 
 .side-nav {
-   background-color:#133166 !important;
+    background-color: #133166 !important;
 }
+
 .navbar-dark {
     background-color: #133166 !important;
 }
 
-.side-nav .logo-wrapper
-{
-height:200px !important;
- width:auto !important;
+.side-nav .logo-wrapper {
+    height: 200px !important;
+    width: auto !important;
 }
 
 .DashboardBack {
@@ -2720,3 +2743,14 @@ height:200px !important;
     /*padding-top: 70px;*/
 }
 
+
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}

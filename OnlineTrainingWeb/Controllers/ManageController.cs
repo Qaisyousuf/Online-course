@@ -11,6 +11,7 @@ using OnlineTrainingWeb.ViewModel;
 namespace OnlineTrainingWeb.Controllers
 {
     [Authorize]
+    [HandleError]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;

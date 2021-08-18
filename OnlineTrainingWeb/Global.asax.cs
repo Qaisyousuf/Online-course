@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using OnlineTrainingWeb.Infrastructure;
 
 namespace OnlineTrainingWeb
 {
@@ -16,7 +17,9 @@ namespace OnlineTrainingWeb
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-                
+            GlobalFilters.Filters.Add(new ExceptionLoggingFilter());
+            
+
         }
 
     }

@@ -6,12 +6,16 @@ using System.Web.Mvc;
 
 namespace OnlineTrainingWeb.Controllers
 {
-    [HandleError]
-    public class CoursesDescriptionController : BaseController
+    public class CustomErrorController : Controller
     {
-        [Route("CoursesDescription")]
+        // GET: CustomError
         public ActionResult Index()
         {
+            return View();
+        }
+        public ActionResult PageNotFound()
+        {
+            Response.StatusCode = 404;
             return View();
         }
     }

@@ -5,15 +5,18 @@ using System.Web;
 using System.Web.Mvc;
 using ViewModel;
 using Models;
+using OnlineTrainingWeb.Infrastructure;
 
 namespace OnlineTrainingWeb.Controllers
 {
+   
     public class AboutController : BaseController
     {
        
         [Route("about-us")]
         public ActionResult Index(string slug)
         {
+          
             var aboutPage = _uow.AboutPageRepository.GetAll();
 
             List<AboutPageViewModel> viewmodel = new List<AboutPageViewModel>();
@@ -48,8 +51,10 @@ namespace OnlineTrainingWeb.Controllers
 
         [HttpGet]
         [ChildActionOnly]
+       
         public ActionResult GetAboutBanner()
         {
+            
             var aboutBanner = _uow.AboutBannerRepository.GetAll();
 
             List<AboutBannerViewModel> viewmodel = new List<AboutBannerViewModel>();
@@ -496,6 +501,12 @@ namespace OnlineTrainingWeb.Controllers
         public ActionResult ThankYou()
         {
             return View(new SubscriptionSystemViewModel());
+        }
+        [Route("about-us")]
+        public ActionResult ErrorTest()
+        {
+            int value = int.Parse("dsfsdfsdf");
+            return View();
         }
     }
 }

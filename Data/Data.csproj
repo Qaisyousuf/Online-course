@@ -408,6 +408,10 @@
     <Compile Include="Migrations\202108190848053_ClassModelAdded.Designer.cs">
       <DependentUpon>202108190848053_ClassModelAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108241420030_NewModelAdded.cs" />
+    <Compile Include="Migrations\202108241420030_NewModelAdded.Designer.cs">
+      <DependentUpon>202108241420030_NewModelAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -562,6 +566,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108190848053_ClassModelAdded.resx">
       <DependentUpon>202108190848053_ClassModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108241420030_NewModelAdded.resx">
+      <DependentUpon>202108241420030_NewModelAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,7 +17,7 @@ namespace OnlineTrainingWeb
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            GlobalFilters.Filters.Add(new ExceptionLoggingFilter());
+            //GlobalFilters.Filters.Add(new ExceptionLoggingFilter());
             
 
         }

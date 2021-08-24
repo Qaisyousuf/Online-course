@@ -203,6 +203,7 @@
     <Compile Include="Areas\ALOTAdmin\Controllers\BuildBetterSkillsFasterSecitonController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\BusinessBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\BusinessPageController.cs" />
+    <Compile Include="Areas\ALOTAdmin\Controllers\ClassDataController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactBannerController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactDetailsController.cs" />
     <Compile Include="Areas\ALOTAdmin\Controllers\ContactFormController.cs" />
@@ -286,6 +287,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\QuizPageFrontController.cs" />
     <Compile Include="Controllers\SubscriptionFooterController.cs" />
+    <Compile Include="Controllers\UserClassDataController.cs" />
     <Compile Include="Controllers\UserContactAreaController.cs" />
     <Compile Include="Controllers\UserContactPostController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1085,6 +1087,10 @@
     <Content Include="Content\sass\Site.scss" />
     <Content Include="Content\sass\_colors.scss" />
     <Content Include="Content\sass\_CustomColor.scss" />
+    <Content Include="Areas\ALOTAdmin\Views\ClassData\Create.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ClassData\Index.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ClassData\Edit.cshtml" />
+    <Content Include="Areas\ALOTAdmin\Views\ClassData\Details.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -1305,6 +1311,7 @@
     <Content Include="Views\Shared\_CustomErrorLayout.cshtml" />
     <Content Include="Views\Shared\LogginingError.cshtml" />
     <Content Include="Views\CustomError\PageNotFound.cshtml" />
+    <Content Include="Views\UserClassData\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

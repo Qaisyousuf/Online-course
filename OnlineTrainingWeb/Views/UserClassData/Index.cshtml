@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ViewModel.ClassDataViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Dashbaord.cshtml";
+}
+
+@if (Request.IsAuthenticated)
+{
+    <div class="container my-5 py-5">
+        <div class="row">
+            <div class="col-md-9 col-lg-9 offset-lg-3 col-sm-12 offset-sm-0 offset-md-3">
+                @foreach (var item in Model.Where(x=>x.ApplicationUsers.UserName==User.Identity.Name))
+                {
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Contact by: @item.ClassName
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote text-dark mb-0">
+                                <p class="text-dark">@item.ContactedBy</p>
+                                <footer class="blockquote-footer">Logined User <cite title="Source Title">@item.UserName</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $(".mdb-select").materialSelect();
+            $(".button-collapse").sideNav({
+                breakpoint: 1200
+            });
+            // SideNav Scrollbar Initialization
+            var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+            var ps = new PerfectScrollbar(sideNavScrollbar);
+        });
+    </script>
+}

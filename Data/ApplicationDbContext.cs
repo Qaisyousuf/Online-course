@@ -90,6 +90,7 @@ namespace Data
         public DbSet<QuizBanner> QuizBanners { get; set; }
         public DbSet<DashboardUsers> DashboardUsers { get; set; }
         public DbSet<UserContact> UserContacts { get; set; }
+        public DbSet<ClassData> ClassDatas { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

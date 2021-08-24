@@ -70,6 +70,7 @@
     <Compile Include="BuillBetterSkillsFaster .cs" />
     <Compile Include="BusinessBanner.cs" />
     <Compile Include="BusinessPage.cs" />
+    <Compile Include="ClassData.cs" />
     <Compile Include="ContactBanner.cs" />
     <Compile Include="ContactCounter.cs" />
     <Compile Include="ContactDetails.cs" />

@@ -93,6 +93,7 @@
     <Compile Include="BusinessBannerViewModel.cs" />
     <Compile Include="BusinessPageViewModel.cs" />
     <Compile Include="CheckBoxItemViewModel.cs" />
+    <Compile Include="ClassDataViewModel.cs" />
     <Compile Include="ContactBannerViewModel.cs" />
     <Compile Include="ContactCounterViewModel.cs" />
     <Compile Include="ContactDetailsViewModel.cs" />

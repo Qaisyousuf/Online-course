@@ -162,6 +162,8 @@ namespace Data.Concrete_Implementation
 
         public IUserContactRepository UserContactRepository => new UserContactRepository(Context);
 
+        public IClassDataRepository ClassDataRepository => new ClassDataRepository(Context);
+
         public void Commit()
         {
             Context.SaveChanges();

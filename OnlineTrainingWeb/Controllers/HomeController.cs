@@ -23,7 +23,7 @@ namespace OnlineTrainingWeb.Controllers
             if(!_uow.HomePageRepository.SlugExists(slug))
             {
                 TempData["PageNotFound"] = "Page not found";
-                return RedirectToAction(nameof(Index), new { slug= "PageNotFound" });
+                return RedirectToAction(nameof(Index), new { slug= "" });
             }
 
             HomePageViewModel viewmodel;

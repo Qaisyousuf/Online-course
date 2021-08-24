@@ -79,6 +79,7 @@ namespace Data.Interfaces
         IQuizPageRepository QuizPageRepository { get; }
         IDashboardUserRepository DashboardUserRepository { get; }
         IUserContactRepository UserContactRepository { get; }
+        IClassDataRepository ClassDataRepository { get; }
 
 
         void Commit();

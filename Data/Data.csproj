@@ -70,6 +70,7 @@
     <Compile Include="Concrete Implementation\BuillBetterSkillsFasterRepository.cs" />
     <Compile Include="Concrete Implementation\BusinessBannerRepository.cs" />
     <Compile Include="Concrete Implementation\BusinessPageRepository.cs" />
+    <Compile Include="Concrete Implementation\ClassDataRepository.cs" />
     <Compile Include="Concrete Implementation\ContactBannerRepository.cs" />
     <Compile Include="Concrete Implementation\ContactDetailsRepository.cs" />
     <Compile Include="Concrete Implementation\ContactFormRepository.cs" />
@@ -148,6 +149,7 @@
     <Compile Include="Interfaces\IBuillBetterSkillsFasterRepository.cs" />
     <Compile Include="Interfaces\IBusinessBannerRepository.cs" />
     <Compile Include="Interfaces\IBusinessPageRepository.cs" />
+    <Compile Include="Interfaces\IClassDataRepository.cs" />
     <Compile Include="Interfaces\IContactBannerRepository.cs" />
     <Compile Include="Interfaces\IContactDetailsRepository.cs" />
     <Compile Include="Interfaces\IContactFormRepository.cs" />
@@ -402,6 +404,10 @@
     <Compile Include="Migrations\202108131428068_newUserContactModelAdded.Designer.cs">
       <DependentUpon>202108131428068_newUserContactModelAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108190848053_ClassModelAdded.cs" />
+    <Compile Include="Migrations\202108190848053_ClassModelAdded.Designer.cs">
+      <DependentUpon>202108190848053_ClassModelAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -553,6 +559,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108131428068_newUserContactModelAdded.resx">
       <DependentUpon>202108131428068_newUserContactModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108190848053_ClassModelAdded.resx">
+      <DependentUpon>202108190848053_ClassModelAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,22 +1,25 @@
-﻿@model ViewModel.QuizBannerViewModel
+﻿@model IEnumerable<ViewModel.ClassDataViewModel>
+
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Areas/ALOTAdmin/Views/Shared/_Layout.cshtml";
 }
 
 <div class="card">
     <h3 class="card-header blue-gradient white-text text-uppercase font-weight-normal text-center py-4">
-        Quiz Banner
+        Class Data
     </h3>
     <div class="card-body">
-        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","QuizBanner",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
+        <a class="btn btn-info btn-rounded btn-md" style="margin-bottom:10px" onclick="PopupForm('@Url.Action("Create","ClassData",new { Area="ALOTAdmin"})')"><i class="fa fa-plus"></i> Add New Record</a>
         <div class="table-responsive">
             <table id="dataTable" class="table table-hover table-responsive-sm">
                 <thead class="">
                     <tr>
                         <th scope="col" class="text-primary"><i class="fas fa-sort-numeric-down"></i># </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Main Title </th>
-                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> Join Button </th>
-                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Discover Button </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-newspaper"></i> Title </th>
+                        <th scope="col" class="text-primary"><i class="far fa-newspaper"></i> ClassName </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> UserName </th>
+                        <th scope="col" class="text-primary"><i class="fas fa-sign-in-alt"></i> Total Classes  </th>
                         <th scope="col" class="text-primary"><i class="fas fa-tools"></i> Action</th>
                     </tr>
                 </thead>
@@ -29,12 +32,6 @@
 </div>
 
 @section scripts{
-    <script>
-        $(".button-collapse").sideNav();
-        // SideNav Scrollbar Initialization
-        var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-        var ps = new PerfectScrollbar(sideNavScrollbar);
-    </script>
     <script>
         var Popup, dataTable;
         $(document).ready(function () {
@@ -58,7 +55,7 @@
 
                 ],
                 "ajax": {
-                    "url": "/ALOTAdmin/QuizBanner/GetQuizBannerData",
+                    "url": "/ALOTAdmin/ClassData/GetClassData",
                     "type": "GET",
                     "datatype": "json",
 
@@ -67,9 +64,10 @@
 
                 "columns": [
                     { "data": "Id" },
-                    { "data": "MainTitle" },
-                    { "data": "JoinButton" },
-                    { "data": "DiscoverButton" },
+                    { "data": "Title" },
+                    { "data": "ClassName" },
+                    { "data": "ApplicationUsers.FullName" },
+                    { "data": "TotalCourseDays" },
 
 
                     {
@@ -78,7 +76,7 @@
                         "data": "Id", "render": function (data)
 
                         {
-                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "QuizBanner")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "QuizBanner")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
+                            return "<a class='btn btn-info btn-md btn-rounded' onclick=PopupForm('@Url.Action("Edit", "ClassData")/" + data + "')><i class='far fa-edit'></i></a> | <a class='btn btn-default btn-md btn-rounded' onclick=PopupForm('@Url.Action("Details", "ClassData")/" + data + "')><i class='fas fa-info-circle'> </i></a> | <a class='btn btn-danger btn-md btn-rounded' style='margin-left:5px' onclick=Delete("+data+")><i class='fa fa-trash'></i></a>";
                     },
                         "orderable": false,
                         "searchable":false,
@@ -207,7 +205,7 @@
             {
                 $.ajax({
                     type: "POST",
-                    url: '@Url.Action("Delete", "QuizBanner")/' + id,
+                    url: '@Url.Action("Delete", "ClassData")/' + id,
                     success: function (data) {
                         if (data.success)
                         {
@@ -230,4 +228,3 @@
     </script>
 
 }
-
